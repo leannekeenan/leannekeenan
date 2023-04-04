@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Leanne</h1>
-<h3 align="center">A passionate frontend developer from California</h3>
+<h3 align="center">A passionate software engineer from California</h3>
 
 <p align="center">Thank you for stopping by to view my GitHub Portfolio repository!  Here you will find my most recent completed projects and any new additions that will be added to my live site, which you can view at <a href="https://leannekeenan.netlify.app">leannekeenan.netlify.app</a>.  </p>
 
