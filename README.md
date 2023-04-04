@@ -7,7 +7,7 @@
 
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=leannekeenan" alt="leannekeenan" /></a> </p>
 
-<p align="left"> <a href="https://twitter.com/leanne_m_keenan" target="blank"><img src="https://img.shields.io/twitter/follow/leanne_m_keenan?logo=twitter&style=for-the-badge" alt="leanne_m_keenan" /></a> </p>
+
 
 - 🔭 I’m currently working on [a Pokémon Pokédex](https://pokedex-classic.netlify.app/)
 
