@@ -1,4 +1,4 @@
-<h1>Rock Paper SCissors</h1>
+<h1>Rock Paper Scissors</h1>
 
 <p>
 The classic playground game of rock paper scissors come to life in virtual form. Play against the computer or with
