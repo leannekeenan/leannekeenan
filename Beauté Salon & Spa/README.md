@@ -49,7 +49,7 @@ Projects I have worked on similar to this include:
 </p>
 
 <ul>
-   <li>Urban Brews <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Urban%20Brews"> 
+   <li>Urban Brews: <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Urban%20Brews"> 
       https://github.com/leannekeenan/urbanbrews</a>
    </li>
 </ul>
