@@ -9,7 +9,7 @@
 
 
 
-- 📝 I’m currently working on improving developer skill sets 
+- 📝 I’m currently working on improving developer skill sets & finding awesome people to work with 😃
 
 - 📗 I’m currently learning **JS Algorithms, OOP, & API Integration**
 
