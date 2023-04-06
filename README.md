@@ -9,11 +9,11 @@
 
 
 
-- 🔭 I’m currently working on [a Pokémon Pokédex](https://pokedex-classic.netlify.app/)
+- 📝 I’m currently working on improving developer skill sets 
 
-- 🌱 I’m currently learning **JS Algorithms, OOP, & API Integration**
+- 📗 I’m currently learning **JS Algorithms, OOP, & API Integration**
 
-- 👯 I’m looking to collaborate on [with you on whatever you need help with! Send me a message](https://leannekeenan.netlify.app)
+- 🤝 I’m looking to collaborate on [with you on whatever you need help with! Send me a message](https://leannekeenan.netlify.app)
 
 - 👨‍💻 All of my projects are available at [leannekeenan.netlify.app](leannekeenan.netlify.app)
 
@@ -21,7 +21,7 @@
 
 - 📫 How to reach me **l_keenan@outlook.com**
 
-- ⚡ Fun fact **I love to bake and play D&D**
+- 🔍 Fun fact **I love to bake and play D&D**
 
 <h3 align="center">Connect with me:</h3>
 <p align="center">
