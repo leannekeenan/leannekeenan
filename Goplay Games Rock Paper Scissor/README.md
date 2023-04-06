@@ -6,7 +6,7 @@ The classic playground game of rock paper scissors come to life in virtual form.
 </p>
 
 <span>
-Link to project can be found here: <a href=""></a>
+Link to project can be found here: <a href="https://goplaygames-rock-paper-scissors.netlify.app">https://goplaygames-rock-paper-scissors.netlify.app</a>
 </span>
 
 <p align="center">
