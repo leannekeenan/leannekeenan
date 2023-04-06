@@ -19,7 +19,7 @@ How It's Made:
 </h2>
 
 <p>
-a user is asked to select an image of their choice to play against the computer.  
+A user is asked to select an image of their choice to play against the computer.  
 The image is then rerendered above the labels of "you' and "AI" to illustrate your choices
 At the end of the game, a banner stating who won or if the game was a tie appears under the user and AI choices
 Under the game winner declaration, the score tallys are provided to illustrate who has won the most games or 
