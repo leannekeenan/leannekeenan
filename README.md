@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Leanne</h1>
 <h3 align="center">A passionate software engineer from California</h3>
 
-<p align="center">Thank you for stopping by to view my GitHub Portfolio repository!  Here you will find my most recent completed projects and any new additions that will be added to my live site, which you can view at <a href="https://leannekeenan.netlify.app">leannekeenan.netlify.app</a>.  </p>
+<p align="center">Thank you for stopping by to view my GitHub portfolio repository!  Here you will find my most recent completed projects and any new additions that will be added to my live site, which you can view at <a href="https://leannekeenan.netlify.app">leannekeenan.netlify.app</a>.  </p>
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=leannekeenan&label=Profile%20views&color=0e75b6&style=flat" alt="leannekeenan" /> </p>
 
