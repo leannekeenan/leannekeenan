@@ -11,8 +11,9 @@ appointment.
 Link to project can be found here: <a href="https://beautesalon.netlify.app">https://beautesalon.netlify.app</a>
 </span>
 
-<img src="https://freedesignfile.com/upload/2017/08/Beautiful-hair-Beauties-model-Stock-Photo-12.jpg" 
-alt="beaute salon" align="center">
+<p align="center">
+     <img src="https://freedesignfile.com/upload/2017/08/Beautiful-hair-Beauties-model-Stock-Photo-12.jpg" alt="beaute salon">
+</p>
 
 <h2>
 How It's Made:
