@@ -46,6 +46,6 @@ Projects I have worked on similar to this include:
 
 <ul>
    <li> 
-	GoPlay Games Whack-a-Mole <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Goplay%20Games%20Rock%20Paper%20Scissor">GoPlay Games "Whack-a-Mole</a>
+	GoPlay Games Whack-a-Mole: <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Goplay%20Games%20Rock%20Paper%20Scissor">GoPlay Games "Whack-a-Mole</a>
    </li>
 </ul>
