@@ -1,6 +1,9 @@
 <h1>Leanne Keenan - Software Engineer</h1>
 
 <p>
+My portfolio page is intended to showcase my professional projects and skillsets as well give a bit of background infrmation about myself to help potential clients and companies see that I can be an asset to their teams and goals.
+	
+	
 I Majored in Information Technology,  where I got my first introduction to web development, and began working part-time 
 freelance after graduation.  I also was a contracted security lead for a MAANG company hoping to use the experience to 
 network and see the life of an engineer firsthand.  As a security lead with a background in development,  I noticed many 
