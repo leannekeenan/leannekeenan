@@ -15,8 +15,7 @@ Link to project can be found here: <a href="https://leannekeenan.netlify.app/">h
 </span>
 
 <p align="center">
-     <img src="https://media.istockphoto.com/id/1397171958/photo/abstract-aesthetic-background-with-90s-style-system-
-message-windows-old-vintage-computer.jpg?b=1&s=170667a&w=0&k=20&c=IUvvJ5Mav1lDVD-nYErRd35Wc7r0LuYxO3mwPuen6vM=" 
+     <img src="https://media.istockphoto.com/id/1397171958/photo/abstract-aesthetic-background-with-90s-style-system-message-windows-old-vintage-computer.jpg?b=1&s=170667a&w=0&k=20&c=IUvvJ5Mav1lDVD-nYErRd35Wc7r0LuYxO3mwPuen6vM=" 
 alt="desktop icon image">
 </p>
 
@@ -58,6 +57,6 @@ Projects I have worked on similar to this include:
 	Urban Brews: <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Urban%20Brews">https://github.com/leannekeenan/urbanbrews</a>
    </li>
    <li> 
-	Beauté Salon: <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Beaut%C3%A9%20Salon%20%26%20Spa">https://github.com/leannekeenan/beautesalon/a>
+	Beauté Salon: <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Beaut%C3%A9%20Salon%20%26%20Spa">https://github.com/leannekeenan/beautesalon</a>
    </li>
 </ul>
