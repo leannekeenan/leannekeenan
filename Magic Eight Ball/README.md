@@ -35,8 +35,6 @@ This project illustrates the use if if/else statemetns to control the flow of a 
 The if/else statements allow users to cycle through multiple options and choosing one at random based on user input
 </p>
 
-<h2>
-Examples:
-</h2>
+
 
 
