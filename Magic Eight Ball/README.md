@@ -39,12 +39,4 @@ The if/else statements allow users to cycle through multiple options and choosin
 Examples:
 </h2>
 
-<p>
-Projects I have worked on similar to this include:
-</p>
 
-<ul>
-   <li> 
-	<a href=""> </a>
-   </li>
-</ul>
