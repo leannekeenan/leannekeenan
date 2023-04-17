@@ -6,7 +6,9 @@ Get your daily dose of the cosmos with the daily nebula calendar.  See a new ima
 
 <span>
 Link to project can be found here: <a href="https://thedailynebula.netlify.app">
-The Daily Nebula Calendar
+
+https://thedailynebula.netlify.app/
+
 </a>
 </span>
 
