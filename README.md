@@ -13,7 +13,7 @@
 
 - 📗 I’m currently learning **JS Algorithms, OOP, & API Integration**
 
-- 🤝 I’m looking to collaborate on [my 100+ hours project]
+- 🤝 I’m looking to collaborate on [anything your interested in building - Let's connect today!](leannekeenan.netlify.app)
 
 - 👨‍💻 All of my projects are available at [leannekeenan.netlify.app](leannekeenan.netlify.app)
 
