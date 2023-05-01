@@ -32,9 +32,7 @@ Lessons Learned:
 </h2>
 
 <p>
-This site provided an opportunity to work with JavaScript in a more realistic way and apply it to an everyday object
-found on almost every website running today.  The project also gave me a cahance to work more with grids and find new ways to
-present content on a page outside of margin alterations.
+This site provided an opportunity to work with JavaScript in a more realistic way and apply it to an everyday object found on almost every website running today. The project also gave me a chance to work more with grids and find new ways to present content on a page outside of margin alterations.
 </p>
 
 <h2>
