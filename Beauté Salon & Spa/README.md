@@ -1,10 +1,7 @@
 <h1>Beauté Salon</h1>
 
 <p>
-Beauté Salon's site was created to provide a professional web presence to the salon and assist in managing appointments, 
-providing customers the option to view availbe services, prices, staff specialties, and promotional items improving customer 
-service.  The site has also provided the opportunity for clients to have the choice to call in or book online for their 
-appointment.
+Beauté Salon's site was created to provide a professional web presence to the salon and assist in managing appointments, providing customers the option to view available services, prices, staff specialties, and promotional items improving customer service. The site has also provided the opportunity for clients to have the choice to call in or book online for their appointment.
 </p>
 
 <span>
