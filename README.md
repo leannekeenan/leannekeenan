@@ -23,7 +23,7 @@
 
 <span>See [my website](https://leanne.keenan.netlify.app) for more information!</span>
 
-text-align="center">Projects</h1>
+<h1 text-align="center">Projects</h1>
 <table bordercolor="#66b2b2">
   
   <tr>
