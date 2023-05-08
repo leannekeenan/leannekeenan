@@ -42,9 +42,9 @@
           </p>
           <p><strong>CSS3,  HTML5, & Javascript</strong> - Portfolio Site including links to my projects, repositories, and ways to get in contact with me.</p>
       </td>
-  </tr>
   
-  <tr>
+  
+  
     <td width="50%" valign="top">
       <h3 align="center">Leanne Keenan - Software Engineer</h3>
       <br />
