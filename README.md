@@ -4,10 +4,7 @@
 <p align="center">Thank you for stopping by to view my GitHub portfolio repository!  Here you will find my most recent completed projects and any new additions that will be added to my live site, which you can view at <a href="https://leannekeenan.netlify.app">leannekeenan.netlify.app</a>.  </p>
 
     
-<img src="https://i.imgur.com/536JNd9.jpg" width="100%">text-align="center">
-  <a href="https://leannekeenan.netlify.app" target="_blank">
-    <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=23555f&style=plastic&logo=react&logo-color=white"/>
-  </a>
+
   <a href="https://www.linkedin.com/in/leanne-keenan/" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=LINKED-IN&color=cdf998&style=plastic&logo=linkedin&logo-color=white"/>
   </a>
