@@ -50,16 +50,16 @@
     <td width="50%" valign="top">
       <h3 align="center">Urban Brews Coffee</h3>
         <br />
-      <a target="_blank" href="">
+      <a target="_blank" href="https://urbanbrews.netlify.app">
             <img src="https://camo.githubusercontent.com/6050087f536bc232a6b92420dc27a9183ecb711cd2e33113d6951f07db1187d5/68747470733a2f2f696d616765732e756e73706c6173682e636f6d2f70686f746f2d313533313933373436353332322d3939303963653133663863613f69786c69623d72622d342e302e3326697869643d4d6e77784d6a4133664442384d48787a5a574679593268384d3378385a584e77636d567a6332386c4d6a427459574e6f6157356c6647567566444238664442386641253344253344266175746f3d666f726d6174266669743d63726f7026773d34303026713d3630" width="100%" alt="urban brews"/>
         </a>
         <br />
         <p align="center">
           
-  <a href="" target="_blank">
+  <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Urban%20Brews" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"/>
   </a>
-  <a href="" target="_blank">
+  <a href="https://urbanbrews.netlify.app" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
