@@ -8,7 +8,7 @@
 
 <div align="center">
   <p>About me: </p>
-  <p>I am formerly a security professional at META, motivated by the possibilities of technology.  My focus is on finding ways to improve myself and help make positive local and global impact.</p>
+  <p>I am a former security professional at META, motivated by the possibilities of technology.  My focus is on finding ways to improve myself and help make positive local and global impact.</p>
 </div>
 
 
