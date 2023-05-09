@@ -53,7 +53,7 @@
       <h3 align="center"></h3>
         <br />
       <a target="_blank" href="">
-            <img src="images/gif2.gif" width="100%"  alt="Rigley 2"/>
+            <img src="images/gif2.gif" width="100%"  alt=""/>
         </a>
         <br />
         <p align="center">
