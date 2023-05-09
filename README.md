@@ -71,15 +71,15 @@
     <td width="50%" valign="top">
       <h3 align="center">Leanne Keenan - Software Developer</h3>
       <br />
-        <a target="_blank" href="">
+        <a target="_blank" href="https://leannekeenan.netlify.app">
           <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="Portfolio"/>
         </a>
       <br />
         <p align="center">
-  <a href="" target="_blank">
+  <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Portfolio" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"/>
   </a>
-  <a href="" target="_blank">
+  <a href="https://leannekeenan.netlify.app" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
