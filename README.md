@@ -66,7 +66,7 @@ See [my website](https://leanne.keenan.netlify.app) for more information!
       <h3 align="center">Leanne Keenan - Software Engineer</h3>
       <br />
         <a target="_blank" href="https://leannekeenan.netlify.app">
-          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="Portfolio"/>
+          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="50%" alt="Portfolio"/>
         </a>
       <br />
         <p align="center">
@@ -86,7 +86,7 @@ See [my website](https://leanne.keenan.netlify.app) for more information!
       <h3 align="center">Beauté Salon</h3>
         <br />
         <a target="_blank" href="https://beautesalon.netlify.app/">
-          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="Beauté Salon"/>
+          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="50%" alt="Beauté Salon"/>
         </a>
         <br />
         <p align="center">
@@ -111,7 +111,7 @@ See [my website](https://leanne.keenan.netlify.app) for more information!
       <h3 align="center">Leanne Keenan - Software Engineer</h3>
       <br />
         <a target="_blank" href="https://leannekeenan.netlify.app">
-          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="Portfolio"/>
+          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="50%" alt="Portfolio"/>
         </a>
       <br />
         <p align="center">
@@ -131,7 +131,7 @@ See [my website](https://leanne.keenan.netlify.app) for more information!
       <h3 align="center">Beauté Salon</h3>
         <br />
         <a target="_blank" href="https://beautesalon.netlify.app/">
-          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="Beauté Salon"/>
+          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="50%" alt="Beauté Salon"/>
         </a>
         <br />
         <p align="center">
