@@ -53,7 +53,7 @@
       <h3 align="center"></h3>
         <br />
       <a target="_blank" href="">
-            <img src="images/gif2.gif" width="100%"  alt=""/>
+            <img src="" width="100%"  alt=""/>
         </a>
         <br />
         <p align="center">
@@ -65,16 +65,16 @@
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
-        <p><strong>Javascript & Phaser.js</strong> - The awaited sequel sees our Rigley friend jumping through firewalls "Flappy Bird" style.</p>
+        <p><strong>s</strong> - </p>
     </td>
   </tr>
   
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">ShawnCharles.com</h3>
+      <h3 align="center"></h3>
       <br />
-        <a target="_blank" href="https://shawncharles.com">
-          <img src="images/gif4.gif" width="100%" alt="Portfolio"/>
+        <a target="_blank" href="">
+          <img src="" width="100%" alt="Portfolio"/>
         </a>
       <br />
         <p align="center">
