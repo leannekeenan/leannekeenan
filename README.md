@@ -61,45 +61,46 @@ See [my website](https://leanne.keenan.netlify.app) for more information!
 
 <h1 align="center">Projects</h1>
 <table bordercolor="#66b2b2">
-  
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center">SpellVaultX - The Great Tome</h3>
-        <br />
-        <a target="_blank" href="https://cdna.artstation.com/p/assets/covers/images/016/818/064/large/bogomil-urukov-00.jpg">
-            <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="spellVaultX - The Great Tome"/>
+      <h3 align="center">Leanne Keenan - Software Engineer</h3>
+      <br />
+        <a target="_blank" href="https://leannekeenan.netlify.app">
+          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="Portfolio"/>
         </a>
-        <br />
+      <br />
         <p align="center">
-          
-  <a href="https://github.com/leannekeenan/100Devs/tree/main/dnd/The%20Great%20Tome" target="_blank">
+  <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Portfolio" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"/>
-  </a>  
-  <a href="https://spellvaultx-the-great-tome.netlify.app" target="_blank">
+  </a>
+  <a href="http://leannekeenan.netlify.app" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
-        <p><strong>API, CSS3, HTML5, JavaScript</strong> - This app was designed with D&D spellcasters in mind.  Keep all the data you need about your spells at your fingertips!<p>
+       <p><strong>CSS3,  HTML5, & Javascript</strong> - Portfolio Site including links to my projects, repositories, and ways to get in contact with me.</p>
     </td>
       
       
+      
     <td width="50%" valign="top">
-      <h3 align="center">Urban Brews Coffee</h3>
+      <h3 align="center">Beauté Salon</h3>
         <br />
-      <a target="_blank" href="https://urbanbrews.netlify.app/">
-            <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%"  alt="urban brews"/>
+        <a target="_blank" href="https://beautesalon.netlify.app/">
+          <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%" alt="Beauté Salon"/>
         </a>
         <br />
         <p align="center">
           
-  <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Urban%20Brews" target="_blank">
+  <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Beaut%C3%A9%20Salon%20%26%20Spa" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"/>
   </a>
-  <a href="https://urbanbrews.netlify.app" target="_blank">
+  <a href="https://beautesalon.netlify.app" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
-        <p><strong>CSS3, HTML5, JavaScript</strong> - Urban Brew Coffee Shop is a local brewery serving great beverages to fit your mood in an atmosphere gaurenteed to brighten your day.</p>
+        
+        <p><strong>HTML5, CSS3, & Javascript</strong> - a simple interface allowing customers  to view available services, prices, staff specialties, and promotional items.</p>
+    
     </td>
   </tr>
   
