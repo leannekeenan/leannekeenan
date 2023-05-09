@@ -86,10 +86,10 @@
         <p><strong>HTML5, CSS3, & Javascript</strong> - Portfolio Site including links to my projects and ways to get in contact with me.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center">Matching Cards</h3>
+      <h3 align="center"></h3>
         <br />
         <a target="_blank" href="">
-          <img src="" width="100%" alt="Matching Cards"/>
+          <img src="" width="100%" alt=""/>
         </a>
         <br />
         <p align="center">
