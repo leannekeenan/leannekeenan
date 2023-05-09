@@ -32,16 +32,16 @@
     <td width="50%" valign="top">
       <h3 align="center">SpellVaultX - The Great Tome</h3>
         <br />
-        <a target="_blank" href="">
+        <a target="_blank" href="https://spellvaultx-the-great-tome.netlify.app">
             <img src="https://cdna.artstation.com/p/assets/covers/images/016/818/064/large/bogomil-urukov-00.jpg?1553597886" width="100%" margin="0 auto" alt="SpellVaultX"/>
         </a>
         <br />
         <p align="center">
           
-  <a href="" target="_blank">
+  <a href="https://github.com/leannekeenan/100Devs/tree/main/dnd/The%20Great%20Tome" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"/>
   </a>  
-  <a href="" target="_blank">
+  <a href="https://spellvaultx-the-great-tome.netlify.app" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
@@ -83,7 +83,7 @@
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
-        <p><strong>CSS3,  HTML5, & Javascript</strong> - Portfolio Site including links to my projects, repositories, and ways to get in contact with me.</p>
+        <p><strong>CSS3,  HTML5, & JavaScript</strong> - Portfolio Site including links to my projects, repositories, and ways to get in contact with me.</p>
     </td>
     <td width="50%" valign="top">
       <h3 align="center">Beauté Salon</h3>
@@ -103,7 +103,7 @@
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
-        <p><strong>HTML5, CSS3, & Javascript</strong> - a simple interface allowing customers  to view available services, prices, staff specialties, and promotional items.</p>
+        <p><strong>HTML5, CSS3, & JavaScript</strong> - a simple interface allowing customers  to view available services, prices, staff specialties, and promotional items.</p>
     </td>
   </tr>
 </table>
