@@ -88,7 +88,7 @@
     <td width="50%" valign="top">
       <h3 align="center">Beauté Salon</h3>
         <br />
-        <a target="_blank" href="">
+        <a target="_blank" href="https://beautesalon.netlify.app">
           <p align="center">
           <img src="https://camo.githubusercontent.com/96cfc45121a451db66dd770c1e4e8e8b842bba0d32f0ee8fe3539ad9f44f8db7/68747470733a2f2f6672656564657369676e66696c652e636f6d2f75706c6f61642f323031372f30382f42656175746966756c2d686169722d42656175746965732d6d6f64656c2d53746f636b2d50686f746f2d31322e6a7067" width="100%" alt="beauté salon"/>
           </p>
@@ -96,10 +96,10 @@
         <br />
         <p align="center">
           
-  <a href="" target="_blank">
+  <a href="https://github.com/leannekeenan/leannekeenan/tree/main/Beaut%C3%A9%20Salon%20%26%20Spa" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=REPO&color=23555f&style=plastic&logo=github&logo-color=white"/>
   </a>
-  <a href="" target="_blank">
+  <a href="https://beautesalon.netlify.app" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
