@@ -1,4 +1,18 @@
 
+
+<h1 align="center">Hi 👋, I'm Leanne</h1>
+<h3 align="center">A passionate software engineer from California</h3>
+
+<p align="center">Thank you for stopping by to view my GitHub portfolio repository!  Here you will find my most recent completed projects and any new additions that will be added to my live site, which you can view at <a href="https://leannekeenan.netlify.app">leannekeenan.netlify.app</a>.  </p>
+
+
+<div align="center">
+  <p>About me: </p>
+  <p>I am formerly a security professional at META, motivated by the possibilities of technology.  My focus is on finding ways to improve myself and help make positive local and global impact.</p>
+</div>
+
+
+
 <p align="center">
   <a href="https://leannekeenan.netlify.app" target="_blank">
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=23555f&style=plastic&logo=react&logo-color=white"/>
@@ -23,17 +37,6 @@
     <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
     <img src="https://img.shields.io/static/v1?label=|&message=ADOBE&color=98bf53&style=plastic&logo=adobe"/> 
 </p>
-
-<h1 align="center">Hi 👋, I'm Leanne</h1>
-<h3 align="center">A passionate software engineer from California</h3>
-
-<p align="center">Thank you for stopping by to view my GitHub portfolio repository!  Here you will find my most recent completed projects and any new additions that will be added to my live site, which you can view at <a href="https://leannekeenan.netlify.app">leannekeenan.netlify.app</a>.  </p>
-
-
-<div align="center">
-  <p>About me: </p>
-  <p>I am formerly a security professional at META, motivated by the possibilities of technology.  My focus is on finding ways to improve myself and help make positive local and global impact.</p>
-</div>
 
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=leannekeenan&label=Profile%20views&color=0e75b6&style=flat" alt="leannekeenan" /> </p>
