@@ -30,10 +30,10 @@
   
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"></h3>
+      <h3 align="center">SpellVaultX - The Great Tome</h3>
         <br />
         <a target="_blank" href="">
-            <img src="" width="100%" alt=""/>
+            <img src="" width="100%" alt="SpellVaultX"/>
         </a>
         <br />
         <p align="center">
@@ -48,10 +48,10 @@
         <p><strong>Javascript, Bootstrap, Sass, Node.js, & Express.js</strong> - !</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"></h3>
+      <h3 align="center">Urban Brews Coffee</h3>
         <br />
       <a target="_blank" href="">
-            <img src="" width="100%"  alt=""/>
+            <img src="" width="100%"  alt="urban brews"/>
         </a>
         <br />
         <p align="center">
@@ -69,7 +69,7 @@
   
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"></h3>
+      <h3 align="center">Leanne Keenan - Software Developer</h3>
       <br />
         <a target="_blank" href="">
           <img src="" width="100%" alt="Portfolio"/>
@@ -86,10 +86,10 @@
         <p><strong>HTML5, CSS3, & Javascript</strong> - Portfolio Site including links to my projects and ways to get in contact with me.</p>
     </td>
     <td width="50%" valign="top">
-      <h3 align="center"></h3>
+      <h3 align="center">Beauté Salon</h3>
         <br />
         <a target="_blank" href="">
-          <img src="" width="100%" alt=""/>
+          <img src="" width="100%" alt="beauté salon"/>
         </a>
         <br />
         <p align="center">
