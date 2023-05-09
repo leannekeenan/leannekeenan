@@ -29,8 +29,6 @@
 <table bordercolor="#66b2b2">
   
   <tr>
-    
-    
     <td width="50%" valign="top">
       <h3 align="center">Travelara.org</h3>
         <br />
@@ -71,10 +69,10 @@
   
   <tr>
     <td width="50%" valign="top">
-      <h3 align="center"></h3>
+      <h3 align="center">ShawnCharles.com</h3>
       <br />
-        <a target="_blank" href="">
-          <img src="" width="100%" alt="Portfolio"/>
+        <a target="_blank" href="https://shawncharles.com">
+          <img src="images/gif4.gif" width="100%" alt="Portfolio"/>
         </a>
       <br />
         <p align="center">
