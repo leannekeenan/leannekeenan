@@ -33,7 +33,7 @@
       <h3 align="center">SpellVaultX - The Great Tome</h3>
         <br />
         <a target="_blank" href="">
-            <img src="" width="100%" alt="SpellVaultX"/>
+            <img src="https://cdna.artstation.com/p/assets/covers/images/016/818/064/large/bogomil-urukov-00.jpg?1553597886" width="100%" alt="SpellVaultX"/>
         </a>
         <br />
         <p align="center">
