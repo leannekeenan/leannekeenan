@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="https://i.ibb.co/bmX0Xmp/github-banner.png" alt="github-banner" border="0"></a>
+</p>
 
 <h1 align="center">Hi 👋, I'm Leanne</h1>
 <h3 align="center">A passionate software engineer from California</h3>
