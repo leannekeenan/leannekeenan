@@ -45,7 +45,7 @@
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
-        <p><strong></strong> - </p>
+        <p><strong></strong></p>
     </td>
     <td width="50%" valign="top">
       <h3 align="center"></h3>
@@ -63,7 +63,7 @@
     <img src="https://img.shields.io/static/v1?label=|&message=WEBSITE&color=cdf998&style=plastic&logo=wordpress&logo-color=white"/>
   </a>
       </p>
-        <p><strong>s</strong> - </p>
+        <p><strong>s</strong></p>
     </td>
   </tr>
   
