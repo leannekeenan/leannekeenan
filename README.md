@@ -87,7 +87,7 @@ See [my website](https://leanne.keenan.netlify.app) for more information!
       <h3 align="center">Urban Brews Coffee</h3>
         <br />
       <a target="_blank" href="https://urbanbrews.netlify.app/">
-            <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%"  alt="Rigley 2"/>
+            <img src="https://github.com/leannekeenan/leannekeenan/blob/main/Portfolio/assets/desktop.jpg?raw=true" width="100%"  alt="urban brews"/>
         </a>
         <br />
         <p align="center">
