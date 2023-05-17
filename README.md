@@ -44,7 +44,7 @@
 <p align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=leannekeenan" alt="leannekeenan" /></a> </p>
 
 
-- 📝 I’m currently working on improving developer skill sets & finding awesome people to work with 😃
+- 📝 I’m currently working on 100+ Hours Project: QuickTrax Time Tracker
 
 - 📗 I’m currently learning **JS Algorithms, OOP, & API Integration**
 
