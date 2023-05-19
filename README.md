@@ -1,3 +1,5 @@
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=leannekeenan&label=Profile%20views&color=0e75b6&style=flat" alt="leannekeenan" /> </p>
+
 <p align="center">
   <img src="https://i.ibb.co/G5qd20H/github-banner.png" alt="github-banner" border="0" width="100%">
 </p>
@@ -10,8 +12,6 @@
   <p>About me: </p>
   <p>I am a former security professional at META, motivated by the possibilities of technology.  My focus is on finding ways to improve myself and help make positive local and global impact.</p>
 </div>
-
-
 
 <p align="center">
   <a href="https://leannekeenan.netlify.app" target="_blank">
@@ -37,9 +37,6 @@
     <img src="https://img.shields.io/static/v1?label=|&message=JAVASCRIPT&color=3c7f5d&style=plastic&logo=javascript"/>
     <img src="https://img.shields.io/static/v1?label=|&message=ADOBE&color=98bf53&style=plastic&logo=adobe"/> 
 </p>
-
-
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=leannekeenan&label=Profile%20views&color=0e75b6&style=flat" alt="leannekeenan" /> </p>
 
 
 - 📝 I’m currently working on 100+ Hours Project: QuickTrax Time Tracker
