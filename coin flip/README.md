@@ -17,7 +17,7 @@ How It's Made:
 </h2>
 
 <p>
-CSS, HTML, JAVASCRIPT
+CSS HTML JAVASCRIPT
 	
 The concept was to build an app that can be easily used to help people who have difficulty making decisions
 and could use a virtual coin to let fate decide their choice for them. 
