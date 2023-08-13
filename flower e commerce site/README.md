@@ -13,7 +13,7 @@ bloomsandpetalsboutique.netlify.app</a>
 </span>
 
 <p align="center">
-     <img src="https://i.ibb.co/GV85xTg/background.jpg" alt=" pink sunflowers on counter with white brick backsplash">
+	<img src="https://i.ibb.co/GV85xTg/background.jpg" alt="pink sunflowers on counter with white brick backsplash">
 </p>
 
 <h2>
