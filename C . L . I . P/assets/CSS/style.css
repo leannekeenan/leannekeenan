@@ -26,17 +26,18 @@ header {
     right: 0;
     background: var(--gunmetal);
     box-shadow: 0 5px 10px var(--silver);
-    padding: 20px 7%;                                   /**/
+    padding: 1rem 7%;                                   
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
     text-transform: uppercase;
+    height: 5rem;
 }
 
 header .logo {
     font-weight: bolder;
-    font-size: 1.75rem;                                   /**/
+    font-size: 1.75rem;                                   
     color: var(--baby-blue);
     letter-spacing: .25rem;
 }
@@ -78,12 +79,25 @@ header label img{
     display: none;
 }
 
+.home {
+    margin-top: 5rem;
+}
 
+.hello {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.pitch {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 @media(max-width: 991px) {
     header {
-        padding: 1rem;                                  /**/
+        padding: 1rem;
     }
 
     header label img{
