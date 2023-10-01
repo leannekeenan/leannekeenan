@@ -35,9 +35,15 @@ header {
     height: 5rem;
 }
 
+header label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header .logo {
     font-weight: bolder;
-    font-size: 1.75rem;                                   
+    font-size: 1.5rem;                                   
     color: var(--baby-blue);
     letter-spacing: .25rem;
 }
@@ -74,7 +80,7 @@ header .navbar ul li a:hover {
 }
 
 header label img{
-    height: 2.5rem;
+    height: 2.65rem;
     cursor: pointer;
     display: none;
 }
@@ -94,14 +100,15 @@ h1 {
 
 .pitch {
     text-align: center;
-    width: 70%;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 
 @media(max-width: 991px) {
     h1 {
-        font-size: 2.55rem;
+        font-size: 2.50rem;
     }
     
 
@@ -139,4 +146,24 @@ h1 {
     #menu-bar:checked ~ .navbar {
         display: initial;
     }
+}
+
+@media(max-width: 400px) {
+
+    
+    .hello {
+        padding: 2rem 0;
+    }
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .hello p, .pitch {
+        font-size: .75rem;
+    }
+
+    .pitch {
+        padding: 1rem;
+    }
+
 }
