@@ -70,7 +70,7 @@ header .navbar ul li a {
 
 header .navbar ul li a:hover {
     background: var(--baby-blue);
-    color: var(--gunmetal)
+    color: var(--gunmetal);
 }
 
 
@@ -105,28 +105,19 @@ h1 {
     margin: 0 auto;
 }
 
-.slide img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.slideshow-container {
+    margin: 2.75rem auto;
 }
 
-.features {
-    margin-top: 80vh;
+.mySlides img {
+    height: 50vh;
     display: flex;
-    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 5px;
 }
 
-
-
-.features div div {
-    display: flex;
-    flex-direction: row;
-}
-
-.features .service {
-    flex-direction: column;
+.dots {
+    display: none;
 }
 
 @media(max-width: 991px) {
