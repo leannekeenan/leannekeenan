@@ -113,10 +113,21 @@ h1 {
 }
 
 .features {
-    margin-top: 70vh;
-    text-align: left;;
+    margin-top: 80vh;
+    display: flex;
+    flex-direction: column;
 }
 
+
+
+.features div div {
+    display: flex;
+    flex-direction: row;
+}
+
+.features .service {
+    flex-direction: column;
+}
 
 @media(max-width: 991px) {
     h1 {
