@@ -85,7 +85,7 @@ header label img{
     display: none;
 }
 
-.home {
+.landing {
     margin-top: 5rem;
 }
 
@@ -103,6 +103,18 @@ h1 {
     width: 100%;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.slide img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.features {
+    margin-top: 70vh;
+    text-align: left;;
 }
 
 
