@@ -2,7 +2,7 @@
 	--primary: #AF1308;
 	--secondary: #DB9943;
 	--background: #6F1B15;
-	--accent: #F8DF6D;
+	--accent: #EBD9BB;
 	--text: #3F1A18;
 }
 
@@ -14,11 +14,12 @@
     text-decoration: none;
 	color: var(--text);
 	font-family: 'Montserrat', sans-serif;
+    font-size: 62.5%;
 }
 
 body {
     min-height: 100vh;
-    background: url(/assets/images/background.jpg);
+    background: url();
 }
 
 header {
@@ -27,7 +28,7 @@ header {
     left: 0;
     right: 0;
     background: var(--primary);
-    box-shadow: 0 0.25rem 0.5rem rgba(199, 170, 6, 0.5);
+    box-shadow: 0 0.25rem 0.5rem rgba(199, 170, 6);
     padding: 0.25rem 2rem;
     display: flex;
     align-items: center;
@@ -39,16 +40,15 @@ header .logo {
 	flex-direction: column;
 	text-align: center;
     font-weight: bolder;
-	
 }
 
-header .logo a {
-	font-size: 1.3rem;
+header .logo a, footer .logo a {
+	font-size: 2rem;
 	color: var(--secondary);
 }
 
-header .logo span {
-	font-size: 0.8rem;
+header .logo span, footer .logo span {
+	font-size: 1.1rem;
 	color: var(--secondary)
 }
 
@@ -64,10 +64,10 @@ header .navbar ul li {
 }
 
 header .navbar ul li a {
-    font-size: 1.1rem;
+    font-size: 1.65rem;
     padding: 0.5rem 1.5rem;
     display: block;
-	color:var(--secondary);
+	color: var(--secondary);
     
  
 }
@@ -75,14 +75,14 @@ header .navbar ul li a {
 header .navbar ul li a:hover {
     background: var(--background);
     border-radius: 5px;
-    color: #fff;
+    color: var(--accent);
     
 }
 
 header .navbar ul li ul {
     position: absolute;
 	right: 5rem;
-	top: 2.8rem;
+	top: 4.3rem;
 	width: 225px;
     display: flex;
     flex-direction: column;
@@ -98,7 +98,7 @@ header .navbar ul li ul li {
 }
 
 header .navbar ul li ul li a {
-	color: var(--accent);
+	color: var(--secondary);
   
 }
 
@@ -110,9 +110,7 @@ header .navbar ul li ul li ul {
 
 header .navbar ul li:focus-within > ul,
 header .navbar ul li:hover > ul {
-    display: initial;
-   
-    
+    display: initial; 
 }
 
 #menu-bar {
@@ -120,22 +118,13 @@ header .navbar ul li:hover > ul {
 }
 
 header label {
-    font-size: 1.2rem;
     cursor: pointer;
     display: none;
 }
 
 .home {
-    height: 90%;
     width: 100%;
-    margin-top: 6rem;
-    margin-bottom: 3rem;
-}
-
-.about {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 8rem auto;
 }
 
 .banner, .contact {
@@ -146,34 +135,36 @@ header label {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-   
 }
 
 .banner .intro {
     margin: 0 auto;
     text-align: center;
     line-height: 2rem;
-    font-size: 1.3rem;
+    font-size: 3rem;
     width: 80%;
+    height: auto;
+    grid-area: 1 / 1 / 2 / 2;
 }
 
 .banner .intro h1 {
-    font-size: 3rem;
-    margin-bottom: 1.5rem;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    line-height: 3.75rem;
 }
 
 .banner .image img {
     border-radius: 50% 0 0 50%;
     float: right;
-    width: 100%;
-
+    width: 45vw;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 .home .banner .intro a {
     background: var(--background);
     color: var(--secondary);
     border-radius: 50% 0 50% 0;
-    width: 250px;
+    width: 45%;
     height: 45px;
     display: flex;
     align-items: center;
@@ -191,8 +182,11 @@ header label {
 .about {
     display: flex;
     width: 75%;
-    margin: 0 auto;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: center;
 }
+
 
 .about .award img {
     display: flex;
@@ -207,31 +201,32 @@ header label {
     align-items: center;
     justify-content: center;
     width: 80%;
-    font-size: 1rem;
+    font-size: 1.85rem;
     text-align: center;
-    line-height: 2.2rem;
+    line-height: 2.5rem;
     font-weight: bolder;
     margin: 0 auto;;
 }
 
 .menu {
-    background: #EBD9BB;
+    background: var(--accent);
     width: 80%;
     margin: 0 auto;
     max-width: 1000px;
     padding-top: 3rem;
     border-radius: 1rem;
-    box-shadow: 10px 20px 20px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 10px 40px 10px var(--background);
 }
 
 .menu h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.75rem;
     margin-bottom: 3rem;
 }
 
 .menu h3 {
     text-align: center;
+    font-size: 2rem;
     margin: 2rem 0;
 }
 
@@ -246,12 +241,28 @@ table tr {
     height: 75px;
 }
 
+
 tr.item{
-    height: 5rem;
+    height: 8rem;
+   
 }
+
+table tr td {
+    font-size: 1.5rem;
+}
+
+table tr td ul li, table tr td ul li strong {
+    font-size: 1.5rem;
+}
+
+
 
 .disclaimer {
     font-size: .75rem;
+}
+
+.disclaimer strong {
+    font-size: 1rem;
 }
 
 .item-name {
@@ -278,10 +289,10 @@ tr.item{
 .lunch-specials .lunch-extras {
     width: 70%;
 }
-
 .dinner-specials tr {
-    height: 40vh;
+    height: 150px;
 }
+
 
 
 .dinner-specials tr td {
@@ -311,20 +322,23 @@ tr.item{
 }
 
 .notice {
-    width: 40%;
+    width: 50%;
     line-height: 1.6rem;
+    line-height: 3rem;
 }
 
 .notice p, .notice ul li, .notice ul li a {
+    font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 .notice p {
-    margin: 1rem 0
+    margin: 1rem 0;
 }
 
 .notice ul li a {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     border-bottom: 2px solid rgba(219, 153, 67, 0.7);
 }
 
@@ -340,13 +354,67 @@ tr.item{
 .contact {
     margin: 3rem;
 }
+
+.contact iframe {
+    box-shadow: 10px 10px 40px 10px var(--background);
+    border-radius: 1.25rem;
+    width: 40vw;
+}
+
+
 .contact .location-hours {
     width: 80%;
     margin: 5rem;
 }
 
+.contact div {
+    margin: 1rem auto;
+}
+
+.contact div h3 {
+    font-size: 2.25rem;
+}
+
+.contact div div h2 {
+    font-size: 1.75rem;
+}
+.hours p {
+    font-size: 1.75rem;
+}
+footer .logo {
+    width: auto;
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+    font-weight: bolder;
+    float: left;
+}
+
+footer .creator {
+    float: right;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+footer .creator a {
+    font-size: 1.4rem;
+}
+
+footer span a {
+    text-decoration: underline;
+}
+
+
+.banner .intro h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
 
 @media(max-width: 1200px) {
+    
+
     .about {
         flex-direction: column;
         margin: 0 auto;
@@ -354,11 +422,11 @@ tr.item{
     }
 
     .about .award img {
-        height: 15rem;
+        height: 25rem;
     }
 
     .mission-statement {
-        margin: 2rem 0;;
+        margin: 2rem 0;
     }
 
     .mission-statement p {
@@ -372,6 +440,8 @@ tr.item{
 
 
 @media(max-width: 991px) {
+    
+
     header {
         padding: 20px;
     }
@@ -396,7 +466,7 @@ tr.item{
     header .navbar ul li ul {
         position: relative;
         width: 100%;
-       
+        top: 1rem;
     }   
 
     header .navbar ul li ul li ul {
@@ -417,24 +487,42 @@ tr.item{
        
     }
 
-    #menu-bar:checked ~ .navbar {
-        display: initial;
-       
-    }
     .home .banner {
         display: flex;
         margin: 0 auto;
+        margin-top: 10rem;
     }
 
     .home .banner .intro {
-        margin: 0 auto;
-        margin-top: 10rem;
+        margin: 1rem auto;
         width: 80%;    
+        font-size: 2.25rem;
+    
+        line-height: 2rem;
     }
+    .banner .intro h1 {
+        font-size: 2rem;
+    
+        line-height: 3rem;
+    } 
 
     .home .banner .banner-image img {
         display: none;
     }
+
+    .home .banner .intro p{
+        margin: 1rem;
+    }
+
+    .mission-statement p{
+        font-size: 1.5rem;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+       
+    }
+    
 
     table td {
         width: 100%;
@@ -443,7 +531,7 @@ tr.item{
     }
 
     tr.item{
-        height: 8rem;
+        height: 11rem;
     }
 
     .item-name {
@@ -454,9 +542,9 @@ tr.item{
     .item-description {
         max-width: 100%;
     }
-
+    
     .dinner-specials tr {
-        height: 45vh;
+        height: 225px;
     }
     
     .message {
@@ -468,10 +556,32 @@ tr.item{
         text-align: center;
         width: 100%;
     }
+
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
     
 }
 
 @media(max-width: 650px) {
+    * {font-size: 0.5rem;}
+    .banner .intro h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        line-height: 3rem;
+    }   
     
+    .banner .intro {
+        font-size: 1.75rem;
+    }
+    
+    .contact iframe {
+        width: 80vw;
+    }
 
+    .notice {
+        width: 80%;
+    }
 }

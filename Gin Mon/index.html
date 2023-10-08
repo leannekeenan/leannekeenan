@@ -4,13 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gin Mon Restaurant</title>
-    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/Gin Mon/assets/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
-    <header>
+    <header id="header">
         <div class="logo">
             <a href="">Gin Mon</a>
             <span>Szechuan & Mandrin Cusine</span>
@@ -21,10 +23,9 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li>
-                    <a href="#menu">Menu</a>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a>
                     <ul class="header-navbar-menu">
                         <li class="header-navbar-menu-category">
                             <a href="#chef-favorites">Chef Favorites</a>
@@ -69,10 +70,11 @@
                         
                     </ul>
                 </li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <section class="home" id="home">
            <div class="banner">
             <div class="intro">
@@ -83,7 +85,7 @@
             </div>
 
             <div class="image">
-                <img src="/assets/images/orange chicken.png" alt="">
+                <img src="/GinMon/assets/images/orange chicken.png" alt="">
             </div>
            </div>
            
@@ -102,6 +104,7 @@
             </p>
         </div>
     </section>
+
     <main class="menu" id="menu">
         <h2>Our Menu</h2>
         <div class="menu-items">
@@ -844,29 +847,34 @@
 
     <section class="contact" id="contact">
         <div class="map">
-            <iframe width="600" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8733149947093!2d-122.29557728915127!3d37.51090597193644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9f66a881c189%3A0xfba96f33ae6f96e6!2sGin%20Mon%20Chinese%20Restaurant!5e0!3m2!1sen!2sus!4v1694838119752!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8733149947093!2d-122.29557728915127!3d37.51090597193644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f9f66a881c189%3A0xfba96f33ae6f96e6!2sGin%20Mon%20Chinese%20Restaurant!5e0!3m2!1sen!2sus!4v1694838119752!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="location-hours">
+            
+            <h3>Visit Us At:</h3>
             <div class="address">
-                <p>1079 Alameda De Las Pulgas</p>
-                <span>Belmont, CA 94002</span>
-                <p>650.592.3663</p>
+                <h2>1079 Alameda De Las Pulgas</h2>
+                <h2>Belmont, CA 94002</h2>
+                
+            </div>
+
+            <div class="call">
+                <h3 class="phone">Or Call Us At:</h3>
+                <h2><h2>650.592.3663</h2></h2>
             </div>
 
             <div class="hours">
-                <p>Open seven (7) days a week</p>
-                <ul>
-                    <li>Monday - Saturday: 11:30AM - 9:30PM</li>
-                    <li>Sunday: 12:00 PM - 9:00 PM</li>
-                </ul>
+                <h3>We are open seven (7) days a week!</h3>
+                <div>
+                    <h2>Monday - Saturday: 11:30AM - 9:30PM</h2>
+                    <h2>Sunday: 12:00 PM - 9:00 PM</h2>
+                </div>
                 <p>We will be OPEN Christmas Eve & Day @ regular hours, both Dine-in + Take out !</p>
             </div>
         </div>
     </section>
 
-    <footer id="footer">
-        
-    </footer>
+   
 </body>
-<script src="/assets/js/index.js"></script>
+<script src="/Gin Mon/assets/js/index.js"></script>
 </html>
