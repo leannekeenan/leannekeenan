@@ -65,8 +65,7 @@ header .navbar ul li a {
     padding: 1rem 2rem;
     border-radius: 2px;
     color: var(--baby-blue);
-
-
+    
 }
 
 header .navbar ul li a:hover {
@@ -343,8 +342,9 @@ footer div a{
 
     header .navbar ul li a {
        padding: 1rem;
+       padding-right: 4.75rem;
        display: flex;
-       justify-content: flex-start;
+       justify-content: flex-end;
     }
 
  

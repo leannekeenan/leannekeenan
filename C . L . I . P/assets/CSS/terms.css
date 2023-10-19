@@ -1,0 +1,53 @@
+:root {
+    --lavender: #EAE8FF;
+    --light-grey: #D8D5DB;
+    --silver: #ADACB5;
+    --gunmetal: #2D3142;
+    --baby-blue: #B0D7FF;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background: var(--lav);
+    padding-top: 4rem;
+}
+
+h2 {
+    text-align: center;
+    color: var(--gunmetal);
+}
+
+h3 {
+    color: var(--baby-blue);
+}
+
+.please-read {
+    margin: 2rem 4rem;
+}
+
+.please-read p {
+    color: var(--silver);
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back a {
+    color: var(--gunmetal);
+    margin: 2rem;
+}
+
+.back a:hover {
+    border-bottom: 1px solid var(--gunmetal);
+}
