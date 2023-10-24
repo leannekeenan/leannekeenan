@@ -39,11 +39,11 @@
 </p>
 
 
-- 📝 I’m currently working on 100+ Hours Project: QuickTrax Time Tracker
+- 📝 I’m currently working on 100+ Hours Project: C.L.I.P (Comprehensive Log In Program)
 
 - 📗 I’m currently learning **JS Algorithms, OOP, & API Integration**
 
-- 🤝 I’m looking to collaborate on [anything your interested in building - Let's connect today!](leannekeenan.netlify.app)
+- 🤝 I’m looking to collaborate on [anything you may be interested in building - Let's connect today!](leannekeenan.netlify.app)
 
 - 👨‍💻 All of my projects are available at [leannekeenan.netlify.app](leannekeenan.netlify.app)
 
