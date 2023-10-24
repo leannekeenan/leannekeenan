@@ -180,8 +180,9 @@ h1 {
 }
 
 .why {
-    width: 50%;
-    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+    margin: 10% auto;
 }
 
 .why h2 {
@@ -299,16 +300,11 @@ footer div div:nth-child(1) {
 }
 
 footer div div a {
-    margin: 0 1.5rem;
+    margin: 0 .5rem;
 }
 
-footer div div a:nth-child(1) {
-    margin: 0;
-}
 
-footer div a{
-    margin: 1rem;
-}
+
 
 @media(max-width: 991px) {
     h1 {
@@ -360,15 +356,32 @@ footer div a{
         flex-direction: column-reverse;
         text-align: center;
     }
+    
 }
 
-@media(max-width: 750px) {
+@media(max-width: 700px) {
+    
+    footer div span {
+        font-size: 0.6rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    footer div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    footer div div a {
+        font-size: 0.8rem;
+        margin: 0.5rem auto;
+    }
     .reasons {
         display: flex; 
         flex-direction: column;
     }
-
-    
 }
 
 @media(max-width: 400px) {
