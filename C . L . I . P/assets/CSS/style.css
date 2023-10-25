@@ -202,12 +202,11 @@ h1 {
 .reason {
     text-align: center;
     width: 100%;
-    min-width: 260px;
+    min-width: 250px;
     padding: 3rem;
     margin: 0 auto;
     border: 1px solid var(--light-grey);
     box-shadow: 0 0 15px var(--light-grey), 0 0 15px var(--light-grey), 0 0 15px var(--light-grey), 0 0 15px var(--light-grey);
-
 }
 
 .reason h4 {

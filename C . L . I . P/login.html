@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.L.I.P - Login</title>
     <link rel="shortcut icon" href="/C . L . I . P/assets/MEDIA/C.L.I.P clear.png" type="image/x-icon">
-    <link rel="stylesheet" href="/C . L . I . P/assets/CSS/login.css">
+    <link rel="stylesheet" href="/C . L . I . P/assets/CSS/credentials.css">
 </head>
 <body>
     <header>       
@@ -14,11 +14,36 @@
 
    
     <div class="container">
-        <span>Log In</span>
-        <form action="" method="post">
-            <label for="name">Name</label>
-            <input type="text">
-        </form>
+        <div class="form-box">
+            <h2>Login</h2>
+            <form action="#">
+                                
+                    <div class="input-box" id="emailAddress">
+                        <span class="icon">
+                            <img src="https://api.iconify.design/material-symbols:alternate-email-rounded.svg" alt="email-icon">
+                        </span>
+                        <input type="email" name="user-email" placeholder="Email Address" id="">
+                    </div>
+
+                    <div class="input-box" id="password">
+                        <span class="icon">
+                            <img src="https://api.iconify.design/ri:lock-password-line.svg" alt="create-password-icon">
+                        </span>
+                        <input type="password" name="user-password" placeholder="Password" id="">
+                    </div>
+
+                    
+            </form>
+            <div class="options">
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    Remember Me
+                </label>
+                <div>
+                    <h3>Need an account? <a href="signup.html">Signup</a></h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     

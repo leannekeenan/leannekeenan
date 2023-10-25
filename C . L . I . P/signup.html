@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>C.L.I.P - Sign Up</title>
     <link rel="shortcut icon" href="/C . L . I . P/assets/MEDIA/C.L.I.P clear.png" type="image/x-icon">
-    <link rel="stylesheet" href="/C . L . I . P/assets/CSS/signup.css">
+    <link rel="stylesheet" href="/C . L . I . P/assets/CSS/credentials.css">
 </head>
 <body>
     <header>       
@@ -14,11 +14,60 @@
 
    
     <div class="container">
-        <span>Sign Up</span>
-        <form action="" method="post">
-            <label for="name">Name</label>
-            <input type="text">
-        </form>
+        <div class="form-box">
+            <h2>Create an Account</h2>
+            <form action="#">
+              
+                    <div class="input-box" id="firstName">
+                        <span class="icon">
+                            <img src="https://api.iconify.design/icon-park-twotone:edit-name.svg" alt="first-name-icon">
+                        </span>
+                        <input type="text" name="first-name" placeholder="First Name" id="first-name-input">
+                    </div>
+
+                    <div class="input-box" id="lastName">
+                        <span class="icon">
+                            <img src="https://api.iconify.design/icon-park-twotone:edit-name.svg" alt="last-name-icon">
+                        </span>
+                        <input type="text" name="last-name" placeholder="Last Name" id="last-name-input">
+                    </div>
+
+                    <div class="input-box" id="EID">
+                        <span class="icon">
+                            <img src="https://api.iconify.design/fa6-regular:id-badge.svg" alt="last-name-icon">
+                        </span>
+                        <input type="text" name="last-name" placeholder="Employee ID #" id="employee-id-input">
+                    </div>
+                    
+                    <div class="input-box" id="emailAddress">
+                        <span class="icon">
+                            <img src="https://api.iconify.design/material-symbols:alternate-email-rounded.svg" alt="email-icon">
+                        </span>
+                        <input type="email" name="user-email" placeholder="email address" id="">
+                    </div>
+
+                    <div class="input-box" id="newPassword">
+                        <span class="icon">
+                            <img src="https://api.iconify.design/ri:lock-password-line.svg" alt="create-password-icon">
+                        </span>
+                        <input type="password" name="user-password" placeholder="Create Password" id="">
+                    </div>
+
+                    <div class="input-box" id="passwordConfirmation">
+                        <span class="icon"><img src="https://api.iconify.design/ri:lock-password-line.svg" alt="create-password-icon"></span>
+                        <input type="password" name="user-password-confirm" placeholder="Confirm Password" id="">
+                    </div>
+            </form>
+            <div class="options">
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    Remember Me
+                </label>
+                <div>
+                    <h3>Already have an account? <a href="login.html">Login</a></h3>
+                </div>
+            </div>
+        </div>
     </div>
 
     
