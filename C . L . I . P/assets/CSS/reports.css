@@ -1,0 +1,124 @@
+:root {
+    --lavender: #EAE8FF;
+    --light-grey: #D8D5DB;
+    --silver: #ADACB5;
+    --gunmetal: #2D3142;
+    --baby-blue: #B0D7FF;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--gunmetal);
+}
+
+body {
+    background: var(--lav);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background: var(--gunmetal);
+    box-shadow: 0 5px 10px var(--silver);
+    padding: 1rem 7%;                                   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    text-transform: uppercase;
+    height: 5rem;
+}
+
+header label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: bolder;
+    font-size: 1.5rem;                                   
+    color: var(--baby-blue);
+    letter-spacing: .25rem;
+}
+
+
+header .navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header .navbar ul li {
+    margin: .25rem;
+}
+
+header .navbar ul li a {
+    font-size: 1.05rem;                                    
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    color: var(--baby-blue);
+    
+}
+
+header .navbar ul li a:hover {
+    background: rgba(176, 215, 255, 0.7);
+    color: var(--gunmetal);
+}
+
+
+
+#menu-bar {
+    display: none;
+}
+
+header label img{
+    height: 2.65rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 991px) {
+    
+    header label img{
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--gunmetal);
+        border-top: 1px solid var(--silver);
+        display: none;
+    }
+
+    header .navbar ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+    }
+
+    header .navbar ul li a {
+       padding: 1rem;
+       padding-right: 4.75rem;
+       display: flex;
+       justify-content: flex-end;
+    }
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+    }    
+}
