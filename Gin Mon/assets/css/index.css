@@ -26,7 +26,7 @@
 
 body {
     background: url('/Gin Mon/assets/images/background.jpg');
-    overflow-y: scroll;
+
 }
 
 header {
@@ -37,24 +37,26 @@ header {
     justify-content: space-between;
     background: var(--primary);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    padding: 0 3rem; /*addeds whitespace to left and right of header*/
+    padding: 1rem 3rem; /*addeds whitespace to left and right of header*/
     z-index: 1000;
     text-transform: uppercase;
-    
 }
 
 
 header .logo {
     font-weight: bolder;
     text-align: center;
+    
 }
 
 header .logo  h1 {
     font-size: 2.5rem;
+    color: var(--secondary)
 }
 
 header .logo span {
     font-size: 1.25rem;
+    color: var(--secondary)
 }
 
 header .navbar ul li {
@@ -66,7 +68,10 @@ header .navbar ul li a {
     padding: 17.25px;
     display: block;
     font-size: 1.25rem;
+    color: var(--secondary)
 }
+
+
 
 
 header .navbar ul li ul {
@@ -76,10 +81,12 @@ header .navbar ul li ul {
     display: none;
     z-index: 1001;
     max-height: 20px;
-    overflow-y: auto;
+    width: 200px;
+    
 }
 
 header .navbar ul li ul li {
+    background: rgba(146, 32, 24, 1);
     width: 100%;
     border-top: 1px solid var(--background);
 }
@@ -107,62 +114,46 @@ header label img{
     cursor: pointer;
 }
 
+.image img {
+    width: 100%;
+}
 
 .home {
     width: 100%;
-    margin: 8rem auto;
-}
-
-.banner, .contact {
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-}
-
-.banner .intro {
     margin: 0 auto;
+}
+
+.home .banner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.home .banner div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home .banner .intro span ,.home .banner .intro p, .home .banner .intro a {
+    font-size: 1.75rem;
     text-align: center;
-    line-height: 2rem;
-    font-size: 3rem;
-    width: 80%;
-    height: auto;
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.banner .intro h1 {
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    line-height: 3.75rem;
-}
-
-.banner .image img {
-    border-radius: 50% 0 0 50%;
-    float: right;
-    width: 45vw;
-    grid-area: 1 / 2 / 2 / 3;
+    margin: auto 5rem
 }
 
 .home .banner .intro a {
-    background: var(--background);
+    margin: 3rem;
+    padding: 1rem 2rem;
+    background-color: var(--background);
+    width: 200px;
     color: var(--secondary);
-    border-radius: 50% 0 50% 0;
-    width: 45%;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: bolder;
-    margin: 0 auto;
-    margin-top: 2rem;
-}
-
-.home .banner .intro a:hover {
-    background: var(--accent);
-    color: var(--background);
+    border-radius: 5px;
 }
 
 .about {
@@ -368,29 +359,6 @@ table tr td ul li, table tr td ul li strong {
 .hours p {
     font-size: 1.75rem;
 }
-footer .logo {
-    width: auto;
-    text-align: center;
-	display: flex;
-	flex-direction: column;
-    font-weight: bolder;
-    float: left;
-}
-
-footer .creator {
-    float: right;
-    margin: 1rem;
-    font-size: 2rem;
-}
-
-footer .creator a {
-    font-size: 1.4rem;
-}
-
-footer span a {
-    text-decoration: underline;
-}
-
 
 .banner .intro h1 {
     font-size: 4rem;
@@ -400,7 +368,9 @@ footer span a {
 
 .map {
     position: relative;
-    width: 80%;
+    inset: 0 auto 0 0;
+    width: 30%;
+    height: 300px;
     padding-bottom: 56.25%; /* For 16:9 Aspect Ratio */
     height: 0;
     overflow: hidden;
@@ -412,6 +382,26 @@ footer span a {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+footer {
+    padding: 2rem 1rem;
+    background: var(--primary);
+    font-size: 2rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer span a {
+    font-size: 1rem;
 }
 
 @media(max-width: 1200px) {
@@ -442,6 +432,12 @@ footer span a {
 header .navbar ul li a:hover {
     background: var(--background);
     color: var(--secondary);
+    border-radius: 5px;
+}
+
+.home .banner .intro a:hover {
+    background: var(--secondary);
+    color: var(--text)
 }
 
 
@@ -474,40 +470,15 @@ header .navbar ul li a:hover {
         width: 100%;
     }
 
-    header .navbar ul li ul li {
-        background: rgba(146, 32, 24, 0.5)
+    header .navbar ul li a:hover {
+        border-radius: 0;;
     }
 
     #toggle:checked ~ .navbar {
         display: initial;
     }
 
-    .home .banner {
-        display: flex;
-        margin: 0 auto;
-        margin-top: 10rem;
-    }
-
-    .home .banner .intro {
-        margin: 1rem auto;
-        width: 80%;    
-        font-size: 2.25rem;
     
-        line-height: 2rem;
-    }
-    .banner .intro h1 {
-        font-size: 2rem;
-    
-        line-height: 3rem;
-    } 
-
-    .home .banner .banner-image img {
-        display: none;
-    }
-
-    .home .banner .intro p{
-        margin: 1rem;
-    }
 
     .mission-statement p{
         font-size: 1.5rem;
@@ -564,5 +535,11 @@ header .navbar ul li a:hover {
 
     .map {
         width: 100%;
+      
+    }
+    
+    .map iframe {
+        width: 100%;
+        height: 100%;
     }
 }
