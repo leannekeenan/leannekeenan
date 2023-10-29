@@ -1,13 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-	color: var(--text);
-	font-family: 'Montserrat', sans-serif;
-}
-
+/*Theme*/
 :root {
 	--primary: #AF1308;
 	--secondary: #DB9943;
@@ -16,37 +7,562 @@
 	--text: #3F1A18;
 }
 
+
+
+
+/*Layout*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+	color: var(--text);
+    font-size: 62.5%;;
+}
+
+
+
 body {
-    min-height: 100vh;
     background: url('/Gin Mon/assets/images/background.jpg');
+    overflow-y: scroll;
 }
 
 header {
-    background: var(--primary);
+    position: fixed;
+    inset: 0 0 auto 0;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-around;
-    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--primary);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 0 3rem; /*addeds whitespace to left and right of header*/
+    z-index: 1000;
+    text-transform: uppercase;
+    
 }
 
+
 header .logo {
+    font-weight: bolder;
+    text-align: center;
+}
+
+header .logo  h1 {
+    font-size: 2.5rem;
+}
+
+header .logo span {
+    font-size: 1.25rem;
+}
+
+header .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    padding: 17.25px;
+    display: block;
+    font-size: 1.25rem;
+}
+
+
+header .navbar ul li ul {
+    position: absolute;
+    inset: auto auto auto 0;
+    background: var(--primary);
+    display: none;
+    z-index: 1001;
+    max-height: 20px;
+    overflow-y: auto;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid var(--background);
+}
+
+header .navbar ul li ul li ul {
+    left: 110px;
+    top: 0;
+}
+
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+    display: initial;
+}
+
+#toggle {
+    display: none;
+}
+
+header label {
+    display: none;
+}
+
+header label img{
+    height: 30px;
+    cursor: pointer;
+}
+
+
+.home {
+    width: 100%;
+    margin: 8rem auto;
+}
+
+.banner, .contact {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.banner .intro {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 3rem;
+    width: 80%;
+    height: auto;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.banner .intro h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    line-height: 3.75rem;
+}
+
+.banner .image img {
+    border-radius: 50% 0 0 50%;
+    float: right;
+    width: 45vw;
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.home .banner .intro a {
+    background: var(--background);
+    color: var(--secondary);
+    border-radius: 50% 0 50% 0;
+    width: 45%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: bolder;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+.home .banner .intro a:hover {
+    background: var(--accent);
+    color: var(--background);
+}
+
+.about {
+    display: flex;
+    width: 75%;
+    margin: 3rem auto;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about .award img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    max-height: 300px;
+}
+
+.about p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    font-size: 1.85rem;
+    text-align: center;
+    line-height: 2.5rem;
+    font-weight: bolder;
+    margin: 0 auto;;
+}
+
+.menu {
+    background: var(--accent);
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 40px 10px var(--background);
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
+}
+
+.menu h3 {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0;
+}
+
+table {
+    margin: 0 auto;
+    width: 90%;
+}
+
+table tr {
+    vertical-align: top;
+    width: 33%;
+    height: 75px;
+}
+
+
+tr.item{
+    height: 8rem;
+   
+}
+
+table tr td {
+    font-size: 1.5rem;
+}
+
+table tr td ul li, table tr td ul li strong {
+    font-size: 1.5rem;
+}
+
+
+
+.disclaimer {
+    font-size: .75rem;
+}
+
+.disclaimer strong {
+    font-size: 1rem;
+}
+
+.item-name {
+    text-align: left;
+    text-wrap: wrap;
+    width: 20%;
+}
+
+.item-description {
+    width: 100%;
+    padding: 0 4rem;
+    margin: 0 auto;
+}
+
+.item-price {
+    text-align: center;
+}
+
+.lunch-specials .item-description{
+    width: 75%;
+    margin: 0 auto;
+    padding: 0;
+}
+.lunch-specials .lunch-extras {
+    width: 70%;
+}
+.dinner-specials tr {
+    height: 150px;
+}
+
+
+
+.dinner-specials tr td {
+    line-height: 2.5rem;
+}
+
+.dinner-specials tr td.item-name {
+    line-height: 1.5rem;
+}
+
+
+
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem;
+}
+
+.message .image img {
+    height: 150px;
+}
+
+.message > div {
+    margin: 2rem;
+}
+
+.notice {
+    width: 50%;
+    line-height: 1.6rem;
+    line-height: 3rem;
+}
+
+.notice p, .notice ul li, .notice ul li a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+}
+
+.notice p {
+    margin: 1rem 0;
+}
+
+.notice ul li a {
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(219, 153, 67, 0.7);
+}
+
+.osha-link {
+    border-bottom: 2px solid rgba(219, 153, 67, 0.7);
+}
+
+.family {
+    float: right; 
+}
+
+
+.contact {
+    margin: 3rem;
+}
+
+.contact iframe {
+    box-shadow: 10px 10px 40px 10px var(--background);
+    border-radius: 1.25rem;
+    width: 40vw;
+}
+
+
+.contact .location-hours {
+    width: 80%;
+    margin: 5rem;
+}
+
+.contact div {
+    margin: 1rem auto;
+}
+
+.contact div h3 {
+    font-size: 2.25rem;
+}
+
+.contact div div h2 {
+    font-size: 1.75rem;
+}
+.hours p {
+    font-size: 1.75rem;
+}
+footer .logo {
+    width: auto;
+    text-align: center;
+	display: flex;
+	flex-direction: column;
+    font-weight: bolder;
+    float: left;
+}
+
+footer .creator {
+    float: right;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+footer .creator a {
+    font-size: 1.4rem;
+}
+
+footer span a {
+    text-decoration: underline;
+}
+
+
+.banner .intro h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+.map {
+    position: relative;
+    width: 80%;
+    padding-bottom: 56.25%; /* For 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 1200px) {
+    
+
+    .about {
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
+
+    .about .award img {
+        height: 25rem;
+    }
+
+    .mission-statement {
+        margin: 2rem 0;
+    }
+
+    .mission-statement p {
+        margin: 0 auto;
+    }
+}
+
+
+
+/*State*/
+header .navbar ul li a:hover {
+    background: var(--background);
     color: var(--secondary);
 }
 
-header nav ul {
-    display: flex;
-    flex-direction: row;
-}
 
-header nav ul li {
-    padding: 1rem 2rem
-}
 
-header nav ul li a{
-    color: var(--secondary)
-}
+@media(max-width: 991px) {
+    
+    header {
+        padding: 20px;
 
-header nav ul li ul {
-    display: flex;
-    flex-direction: column;
+    }
+
+    header label {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        inset: 100% 0 auto 0;
+        background: var(--primary);
+        display: none;
+    }
+
+    header .navbar ul li {
+        width: 100%;
+       
+    }
+
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+
+    header .navbar ul li ul li {
+        background: rgba(146, 32, 24, 0.5)
+    }
+
+    #toggle:checked ~ .navbar {
+        display: initial;
+    }
+
+    .home .banner {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 10rem;
+    }
+
+    .home .banner .intro {
+        margin: 1rem auto;
+        width: 80%;    
+        font-size: 2.25rem;
+    
+        line-height: 2rem;
+    }
+    .banner .intro h1 {
+        font-size: 2rem;
+    
+        line-height: 3rem;
+    } 
+
+    .home .banner .banner-image img {
+        display: none;
+    }
+
+    .home .banner .intro p{
+        margin: 1rem;
+    }
+
+    .mission-statement p{
+        font-size: 1.5rem;
+    }
+
+    #menu-bar:checked ~ .navbar {
+        display: initial;
+       
+    }
+    
+
+    table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    tr.item{
+        height: 11rem;
+    }
+
+    .item-name {
+        text-align: center;
+        width: 100%;
+    }
+
+    .item-description {
+        max-width: 100%;
+    }
+    
+    .dinner-specials tr {
+        height: 225px;
+    }
+    
+    .message {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .notice {
+        width: 80%;
+    }
+
+    .notice p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .map {
+        width: 100%;
+    }
 }
