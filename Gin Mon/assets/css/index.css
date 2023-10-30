@@ -26,6 +26,7 @@
 
 body {
     background: url('/Gin Mon/assets/images/background.jpg');
+    margin: 0;
 
 }
 
@@ -56,7 +57,7 @@ header .logo  h1 {
 
 header .logo span {
     font-size: 1.25rem;
-    color: var(--secondary)
+    color: var(--accent)
 }
 
 header .navbar ul li {
@@ -114,46 +115,61 @@ header label img{
     cursor: pointer;
 }
 
-.image img {
-    width: 100%;
-}
-
 .home {
+    height: 100vh;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url('/Gin Mon/assets/images/white\ rice\ in\ leopard\ bowl.jpg');
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+
+.banner {
+    position: absolute;
+    inset: 50% 0 auto 0;
+    transform: translate(0, -50%);
+    width: 70%;
     margin: 0 auto;
-}
-
-.home .banner {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 3rem;
-}
-
-.home .banner div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.home .banner .intro span ,.home .banner .intro p, .home .banner .intro a {
-    font-size: 1.75rem;
+    background:rgba(175, 19, 8, 0.8);
     text-align: center;
-    margin: auto 5rem
+    border-radius: 5px;
+    padding: 5rem;
+    line-height: 3.75rem;
 }
 
-.home .banner .intro a {
-    margin: 3rem;
-    padding: 1rem 2rem;
-    background-color: var(--background);
-    width: 200px;
+
+.banner .intro h2 {
     color: var(--secondary);
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+}
+
+.banner .intro span {
+    color: var(--accent);
+    font-size: 1.75rem;
+}
+
+.banner .intro p {
+    color: var(--accent);
+    font-size: 2rem;
+}
+
+.banner .intro a {
+    position: relative;
+    top: 2rem;
+    background: var(--background);
+    color: var(--secondary);
+    font-size: 1.75rem;
+    padding: 1rem 5rem;
     border-radius: 5px;
+}
+
+.banner .intro div {
+    line-height: 2rem;
 }
 
 .about {
@@ -243,6 +259,7 @@ table tr td ul li, table tr td ul li strong {
 }
 
 .item-name {
+    font-weight: 600;
     text-align: left;
     text-wrap: wrap;
     width: 20%;
@@ -330,13 +347,25 @@ table tr td ul li, table tr td ul li strong {
 
 
 .contact {
-    margin: 3rem;
+    margin: 3rem 12rem;
+    display: flex;
 }
 
-.contact iframe {
-    box-shadow: 10px 10px 40px 10px var(--background);
-    border-radius: 1.25rem;
-    width: 40vw;
+.map {
+    position: relative;
+    width: 80%;
+    overflow: hidden;     
+}
+
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
 }
 
 
@@ -360,29 +389,7 @@ table tr td ul li, table tr td ul li strong {
     font-size: 1.75rem;
 }
 
-.banner .intro h1 {
-    font-size: 4rem;
-    margin-bottom: 2rem;
-    line-height: 3rem;
-}
 
-.map {
-    position: relative;
-    inset: 0 auto 0 0;
-    width: 30%;
-    height: 300px;
-    padding-bottom: 56.25%; /* For 16:9 Aspect Ratio */
-    height: 0;
-    overflow: hidden;
-}
-
-.map iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 footer {
     padding: 2rem 1rem;
@@ -403,6 +410,27 @@ footer span {
 footer span a {
     font-size: 1rem;
 }
+
+
+
+/*State*/
+header .navbar ul li a:hover {
+    background: var(--background);
+    color: var(--secondary);
+    border-radius: 5px;
+}
+
+.home .banner .intro a:hover {
+    background: var(--secondary);
+    color: var(--text)
+}
+
+.map::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%; /* for a 16:9 aspect ratio */
+}
+
 
 @media(max-width: 1200px) {
     
@@ -425,22 +453,6 @@ footer span a {
         margin: 0 auto;
     }
 }
-
-
-
-/*State*/
-header .navbar ul li a:hover {
-    background: var(--background);
-    color: var(--secondary);
-    border-radius: 5px;
-}
-
-.home .banner .intro a:hover {
-    background: var(--secondary);
-    color: var(--text)
-}
-
-
 
 @media(max-width: 991px) {
     
@@ -472,6 +484,10 @@ header .navbar ul li a:hover {
 
     header .navbar ul li a:hover {
         border-radius: 0;;
+    }
+
+    .banner {
+        width: 80%;
     }
 
     #toggle:checked ~ .navbar {
@@ -520,11 +536,16 @@ header .navbar ul li a:hover {
     
     .notice {
         width: 80%;
+        text-align: c;
     }
 
     .notice p {
         text-align: center;
         width: 100%;
+    }
+
+    .notice ul li {
+        text-align: center;
     }
 
     .contact {
@@ -542,4 +563,52 @@ header .navbar ul li a:hover {
         width: 100%;
         height: 100%;
     }
+}
+
+
+@media (max-width: 400px) {
+    .contact {
+        margin: 0;
+        padding: 2.5rem
+    }
+    .contact .location-hours  {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        
+    }
+
+    .banner {
+        padding: 5rem 1rem;
+        line-height: 2.25rem;
+    }
+
+    .banner .intro h2 {
+        font-size: 2rem;
+        margin: 1rem;
+        margin-bottom: 0
+    }
+    .banner .intro p {
+        font-size: 1.5rem;
+    }
+    .banner .intro a {
+        padding: 1rem 2.5rem
+    }
+    .banner .intro span {
+        font-size: 1.25rem;
+    }
+
+
+
+    footer h2 {
+        font-size: 1rem;
+    }
+    footer h2 span {
+        font-size: 0.8rem;;
+    }
+
+    footer span {
+        font-size: 0.8rem;
+    }
+    
 }
