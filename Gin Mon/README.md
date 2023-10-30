@@ -1,12 +1,12 @@
 <h1>Gin Mon - Szcheuan & Mandrin Cusine</h1>
 
 <p>
-Gin Mon is a culinary gem that tantalizes the taste buds with a captivating fusion of Szechuan 
+Gin Mon is a culinary gem tantalizing the taste buds with a captivating fusion of Szechuan 
 and Mandarin cuisine.  Located at the crossroads of tradition and innovation, this restaurant 
 tantalizes the taste buds with a harmonious blend of fiery Szechuan spices and the delicate 
 subtlety of Mandarin flavors. From mouthwatering Szechuan peppercorn-infused dishes that set 
 taste buds ablaze to the artful presentation of Mandarin classics like Peking Duck, Gin Mon is 
-a haven for those with a pallate for the gourmet, an unforgettable dining experience.
+a haven for those with a palate for the gourmet, an unforgettable dining experience.
 </p>
 
 <span>
@@ -14,7 +14,7 @@ Link to the project can be found here: <a href="https.ginmonofbelmont.netlify.ap
 </span>
 
 <p align="center">
-     >
+     
      <img src="https://i.ibb.co/S3dkc10/2023-10-30.png" src="bowl of white rice">
 </p>
 
