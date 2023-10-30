@@ -1,4 +1,4 @@
-<h1>Gin Mon - Szcheuan & Mandrin Cusine</h1>
+<h1>Gin Mon of Belmont</h1>
 
 <p>
 Gin Mon is a culinary gem tantalizing the taste buds with a captivating fusion of Szechuan 
