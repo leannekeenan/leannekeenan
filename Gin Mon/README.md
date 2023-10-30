@@ -10,11 +10,11 @@ a haven for those with a pallate for the gourmet, an unforgettable dining experi
 </p>
 
 <span>
-Link to the project can be found here: <a href="https.ginmonofbelmont.netlify.app"></a>
+Link to the project can be found here: <a href="https.ginmonofbelmont.netlify.app">Gin Mon of Belmont</a>
 </span>
 
 <p align="center">
-     <img src="https://cdn.i-scmp.com/sites/default/files/styles/1920x1080/public/d8/images/2020/03/30/shutterstock_788006386-edit-2.jpg?itok=QpAQH9ai&quot" alt="bowl of white rice">
+     >
      <img src="https://i.ibb.co/S3dkc10/2023-10-30.png" src="bowl of white rice">
 </p>
 
