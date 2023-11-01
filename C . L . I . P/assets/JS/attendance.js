@@ -1,46 +1,51 @@
-var form = document.querySelector('form');
-
-document.querySelector('#dateHistory') //clockin history data input
-document.querySelector('#idHistory') // clockin history data input
-document.querySelector('#shiftHistory') //clockin history data input
-document.querySelector('#campusHistory') //clockin history data input
-document.querySelector('#clockInHistory') //clockin history data input
-document.querySelector('#clockOutHistory') //clockin history data input
-
-function updateHistory() {
-  var firstName = document.querySelector('#firstName').value;
-  var lastName = document.querySelector('#lastName').value;
-  var employeeID = document.querySelector('#employeeID').value;
-  var todaysDate = document.querySelector('#todaysDate').value;
-  var shift = document.querySelector('input[name="shift"]:checked').value;
-  var campus = document.querySelector('#campuses').value;
-  var timepunch = document.querySelector('input[name="timepunch"]:checked').value;
-
-  document.querySelector('#dateHistory').textContent = todaysDate;
-  document.querySelector('#idHistory').textContent = employeeID;
-  document.querySelector('#campusHistory').textContent = campus;
-  document.querySelector('#shiftHistory').textContent = shift;
-  document.querySelector('#clockInHistory').textContent = timepunch === 'clockInOption' ? 'In' : '';
-  document.querySelector('#clockOutHistory').textContent = timepunch === 'clockOutOption' ? 'Out' : '';
-}
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
-  updateHistory();
-});
-
-
-
-
-var showCurrentTime = document.querySelector('.clock');
+let showCurrentTime = document.querySelector('.clock');
 
 function updateClock() {
-   var now = new Date();
-   var hours = now.getHours();
-   var minutes = now.getMinutes();
-   var seconds = now.getSeconds();
-   showCurrentTime.textContent = ("0" + hours).substr(-2) + ":" + ("0" + minutes).substr(-2);
+   let now = new Date();
+   let hours = now.getHours();
+   let minutes = now.getMinutes();
+   let seconds = now.getSeconds()
+   let currentTime = ("0" + hours).substr(-2) + ":" + ("0" + minutes).substr(-2) + ":" + ("0" + seconds).substr(-2);
+   showCurrentTime.textContent = currentTime;
+   return currentTime; // Return the current time
 }
 
-setInterval(updateClock, 1000);
+let form = document.querySelector('form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+  let shift = document.querySelector('input[name="shift"]:checked').value;
+  let timepunch = document.querySelector('input[name="timepunch"]:checked').value;
+  let lunch = document.querySelector('input[name="lunch"]:checked').value;
+  
+  let firstName = document.getElementById('firstName').value;
+  let lastName = document.getElementById('lastName').value;
+  let employeeID = document.getElementById('employeeID').value;
+  let todaysDate = document.getElementById('todaysDate').value;
+ 
+  let campus = document.getElementById('campuses').value;
 
+  let currentTime = updateClock(); // Call the updateClock function and store the current time
+
+  let historyRow = document.getElementById('history');
+  historyRow.innerHTML = ''; // Clear the row
+
+  let cells = ['dateHistory', 'idHistory', 'campusHistory', 'shiftHistory', 'clockInHistory', 'clockOutHistory'];
+  cells.forEach(cell => {
+    let newCell = document.createElement('td');
+    newCell.id = cell;
+    historyRow.appendChild(newCell);
+  });
+
+  document.getElementById('dateHistory').innerText = todaysDate;
+  document.getElementById('idHistory').innerText = employeeID;
+  document.getElementById('campusHistory').innerText = campus;
+  document.getElementById('shiftHistory').innerText = shift;
+
+  if (timepunch === 'In') {
+    document.getElementById('clockInHistory').innerText = currentTime; // Display the current time in the 'clockInHistory' cell
+  } else if (timepunch === 'Out') {
+    document.getElementById('clockOutHistory').innerText = currentTime; // Display the current time in the 'clockOutHistory' cell
+  }
+});
+
+setInterval(updateClock, 1000);

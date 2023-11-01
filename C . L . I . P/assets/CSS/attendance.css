@@ -11,6 +11,11 @@
 
 .officerData {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.officerInfo {
+  width: 70%;
 }
 
 .clock {
@@ -151,7 +156,7 @@
   
  
   
-@media (max-width: 900px) {
+@media (max-width: 991px) {
      
       
   
@@ -180,6 +185,11 @@
 }
 
 @media(max-width: 575px) {
+  .analytics {
+    width: 100%;
+    margin: 0
+  }
+  
   .analytics table td, .analytics table th {
     font-size: .65rem;
   }
