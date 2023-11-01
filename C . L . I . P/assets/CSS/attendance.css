@@ -130,6 +130,7 @@
   border-spacing: 10px;      
   text-align: center;
   color:rgba(240, 248, 255, 0.7);
+  font-size: 1rem;
 }
   
 .analytics table .history {
@@ -176,7 +177,13 @@
   .timekeeping {
     top: 45%;
     } 
+}
+
+@media(max-width: 575px) {
+  .analytics table td, .analytics table th {
+    font-size: .65rem;
   }
+}
   
 @media (max-width: 400px) {
   
@@ -190,6 +197,10 @@
   .timekeeping {
     width: 80%;
     margin-top: 50%;
+  }
+
+  .analytics table td, .analytics table th {
+    font-size: .25rem;
   }
   
   .clock {
