@@ -19,15 +19,22 @@ document.addEventListener("DOMContentLoaded", function() {
       let todaysDate = document.getElementById('todaysDate').value;
       let campus = document.getElementById('campuses').value;
 
-      let timepunchIn = document.querySelector('input[name=""]:checked');
-      let timepunchOut = document.querySelector('input[name=""]:checked') ? document.querySelector('input[name="timePunchOut"]:checked').value : '';
-      let lunchStart = document.querySelector('input[name=""]:checked') ? document.querySelector('input[name="lunchStart"]:checked').value : '';
-      let lunchEnd = document.querySelector('input[name=""]:checked') ? document.querySelector('input[name="lunchEnd"]:checked').value : '';
-
-      let breakStart = document.querySelector( 'input[name = ""]')
+     
+      let start = document.querySelector('input[id="start"]:checked') 
+      let stop = document.querySelector('input[id="stop"]:checked') 
       
 
       let currentTime = updateClock(); // Call the updateClock function and store the current time
+
+      let clockInCell = document.createElement('td');
+      if (start) {
+        clockInCell.textContent = currentTime;
+      }
+
+      let clockOutCell = document.createElement('td');
+      if (stop) {
+        clockOutCell.textContent = currentTime;
+      }
 
       // Get the table
       let table = document.querySelector('.AnalyticsTable');
@@ -48,11 +55,7 @@ document.addEventListener("DOMContentLoaded", function() {
       let shiftCell = document.createElement('td');
       shiftCell.textContent = shift;
 
-      let clockInCell = document.createElement('td');
-      clockInCell.textContent = timepunchIn;
-
-      let clockOutCell = document.createElement('td');
-      clockOutCell.textContent = timepunchOut;
+      
       
 
 

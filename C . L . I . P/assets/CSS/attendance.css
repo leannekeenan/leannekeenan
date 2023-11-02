@@ -22,10 +22,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   font-size: 1.25em;
   font-weight: bold;
   padding: 10px 20px;
+  margin: 0 auto;
   width: 200px;
   border: 1px solid var(--gunmetal);
   border-radius: 5px;

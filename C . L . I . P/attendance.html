@@ -43,24 +43,29 @@
                 <legend>Shift Information</legend>
                 <div class="shiftTime">
                    <div>
-                    <input type="radio" name="shift" class="shiftOption" value="day" id="dayShift">Day
-                    <input type="radio" name="shift" class="shiftOption" value="swing" id="swingShift">Swing
-                    <input type="radio" name="shift" class="shiftOption" value="over" id="overnightShift">Overnight
+                    <input type="radio" name="shift" class="shiftOption" value="D" id="dayShift">Day
+                    <input type="radio" name="shift" class="shiftOption" value="S" id="swingShift">Swing
+                    <input type="radio" name="shift" class="shiftOption" value="O" id="overnightShift">Overnight
                    </div>
                    <div>
-                    <input type="radio" name="lunch" class="shiftOption" value="lunch" id="lunchShift">Lunch
-                    <input type="radio" name="break" class="shiftOption" value="break" id="breakShift">break
+                    <input type="radio" name="shift" class="shiftOption" value="L" id="lunchShift">Lunch
+                    <input type="radio" name="shift" class="shiftOption" value="B" id="breakShift">Break
                    </div>
                     <input class="officerInfo" type="date" id="todaysDate" placeholder="Today's Date">
                     <select class="officerInfo" id="campuses">
                         <option value="Choose One">Choose One</option>
-                        <option value="Bayfront">Bayfront</option>
-                        <option value="Classic">Classic</option>
-                        <option value="Chilco">Chilco</option>
-                        <option value="Gateway">Gateway</option>
-                        <option value="Willow">Willow</option>
-                        <option value="Events">Events</option>
+                        <option value="1">Bayfront</option>
+                        <option value="2">Classic</option>
+                        <option value="3">Chilco</option>
+                        <option value="4">Gateway</option>
+                        <option value="5">Willow</option>
+                        <option value="18">Events (Onsite)</option>
+                        <option value="19">Events (Offsite)</option>
                     </select>
+                    <div>
+                        <input type="radio" name="timepunch" id="start">Start
+                        <input type="radio" name="timepunch" id="stop">Stop
+                    </div>
                 </div>
             </fieldset>
             
@@ -91,7 +96,6 @@
                     <th>Shift</th>
                     <th>In</th>
                     <th>Out</th>
-                   
                 </tr>
                
             </tbody>
