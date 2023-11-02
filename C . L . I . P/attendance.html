@@ -40,11 +40,17 @@
             </fieldset>
 
             <fieldset class="shiftData">
-                <legend>Shift</legend>
+                <legend>Shift Information</legend>
                 <div class="shiftTime">
-                    <input type="radio" name="shift" class="shiftOption" value="day" id="dayShift">day
-                    <input type="radio" name="shift" class="shiftOption" value="swing" id="swingShift">swing
-                    <input type="radio" name="shift" class="shiftOption" value="over" id="overnightShift">overnight
+                   <div>
+                    <input type="radio" name="shift" class="shiftOption" value="day" id="dayShift">Day
+                    <input type="radio" name="shift" class="shiftOption" value="swing" id="swingShift">Swing
+                    <input type="radio" name="shift" class="shiftOption" value="over" id="overnightShift">Overnight
+                   </div>
+                   <div>
+                    <input type="radio" name="lunch" class="shiftOption" value="lunch" id="lunchShift">Lunch
+                    <input type="radio" name="break" class="shiftOption" value="break" id="breakShift">break
+                   </div>
                     <input class="officerInfo" type="date" id="todaysDate" placeholder="Today's Date">
                     <select class="officerInfo" id="campuses">
                         <option value="Choose One">Choose One</option>
@@ -53,23 +59,15 @@
                         <option value="Chilco">Chilco</option>
                         <option value="Gateway">Gateway</option>
                         <option value="Willow">Willow</option>
+                        <option value="Events">Events</option>
                     </select>
-  <!-- Add more options as needed -->
-</select>
                 </div>
             </fieldset>
             
-            <fieldset class="clockin/clockout">
-                <legend>Clock In / Clock Out</legend>
-                <input type="radio" name="timepunchIn" id="clockInOption"> In
-                <input type="radio" name="timepunchOut" id="clockOutOption">Out
-            </fieldset>
-            
-            <fieldset class="outForLunch/backFromLunch">
-                <legend>Start Lunch/ Stop Lunch</legend>
-                <input type="radio" name="lunchStart" id="lunchStartOption"> Start
-                <input type="radio" name="lunchEnd" id="lunchEndOption">Stop
-            </fieldset>
+         
+             
+             
+             
 
             <div class="clock"></div>
 
@@ -94,14 +92,6 @@
                     <th>In</th>
                     <th>Out</th>
                    
-                </tr>
-                <tr class="history" id="history">
-                    <td id="dateHistory"></td>
-                    <td id="idHistory"></td>
-                    <td id="campusHistory"></td>
-                    <td id="shiftHistory"></td>
-                    <td id="clockInHistory"></td>
-                    <td id="clockOutHistory"></td>
                 </tr>
                
             </tbody>

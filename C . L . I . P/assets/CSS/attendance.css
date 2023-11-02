@@ -125,7 +125,9 @@
 
 .analytics table tr {
   display: flex;
-  justify-content: space-evenly;      
+  justify-content: space-evenly;
+  border-bottom: 1px solid var(--baby-blue);
+  width: 100%    
 }
   
 .analytics table td, .analytics table th {
@@ -134,6 +136,9 @@
   border-collapse: separate;
   border-spacing: 10px;      
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color:rgba(240, 248, 255, 0.7);
   font-size: 1rem;
 }
@@ -182,6 +187,13 @@
   .timekeeping {
     top: 45%;
     } 
+
+    .timekeeping fieldset div{
+      display: flex;
+      flex-direction: column;  
+      margin-bottom: 20px;
+    }
+    
 }
 
 @media(max-width: 575px) {
@@ -197,11 +209,6 @@
   
 @media (max-width: 400px) {
   
-  .shiftTime {
-    display: flex;
-    flex-direction: column;  
-    margin-bottom: 20px;
-  }
   
   
   .timekeeping {
