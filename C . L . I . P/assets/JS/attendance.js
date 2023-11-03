@@ -19,28 +19,13 @@ document.addEventListener("DOMContentLoaded", function() {
       let todaysDate = document.getElementById('todaysDate').value;
       let campus = document.getElementById('campuses').value;
 
-     
-      let start = document.querySelector('input[id="start"]:checked') 
-      let stop = document.querySelector('input[id="stop"]:checked') 
+      let start = document.querySelector('input[id="start"]:checked'); 
+      let stop = document.querySelector('input[id="stop"]:checked'); 
       
-
       let currentTime = updateClock(); // Call the updateClock function and store the current time
-
-      let clockInCell = document.createElement('td');
-      if (start) {
-        clockInCell.textContent = currentTime;
-      }
-
-      let clockOutCell = document.createElement('td');
-      if (stop) {
-        clockOutCell.textContent = currentTime;
-      }
 
       // Get the table
       let table = document.querySelector('.AnalyticsTable');
-
-      // Create a new table row
-      let row = document.createElement('tr');
 
       // Create new table data elements and set their text content to the form values
       let dateCell = document.createElement('td');
@@ -55,10 +40,18 @@ document.addEventListener("DOMContentLoaded", function() {
       let shiftCell = document.createElement('td');
       shiftCell.textContent = shift;
 
-      
-      
+      let clockInCell = document.createElement('td');
+      if (start) {
+        clockInCell.textContent = currentTime;
+      }
 
+      let clockOutCell = document.createElement('td');
+      if (stop) {
+        clockOutCell.textContent = currentTime;
+      }
 
+      // Create a new table row
+      let row = document.createElement('tr');
 
       // Append these new table data elements to the new table row
       row.appendChild(dateCell);
@@ -68,8 +61,28 @@ document.addEventListener("DOMContentLoaded", function() {
       row.appendChild(clockInCell);
       row.appendChild(clockOutCell);
 
-      // Append the new table row to the table
-      table.appendChild(row);
+      let rows = table.querySelectorAll('tr');
+      let existingRow = null;
+      for (let i = 0; i < rows.length; i++) {
+        let cells = rows[i].querySelectorAll('td');
+        if (cells[0].textContent === todaysDate && cells[3].textContent === shift) {
+          existingRow = rows[i];
+          break;
+        }
+      }
+
+      if (existingRow) {
+        let startCell = existingRow.querySelector('td:nth-child(5)');
+        let stopCell = existingRow.querySelector('td:nth-child(6)');
+        if (start) {
+          startCell.textContent += ', ' + currentTime;
+        }
+        if (stop) {
+          stopCell.textContent += ', ' + currentTime;
+        }
+      } else {
+        table.appendChild(row);
+      }
   });
 
   setInterval(updateClock, 1000);
