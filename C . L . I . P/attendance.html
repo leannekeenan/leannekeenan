@@ -42,15 +42,21 @@
             <fieldset class="shiftData">
                 <legend>Shift Information</legend>
                 <div class="shiftTime">
-                   <div>
+                   <div id="shifts">
                     <input type="radio" name="shift" class="shiftOption" value="D" id="dayShift">Day
                     <input type="radio" name="shift" class="shiftOption" value="S" id="swingShift">Swing
                     <input type="radio" name="shift" class="shiftOption" value="O" id="overnightShift">Overnight
                    </div>
-                   <div>
-                    <input type="radio" name="shift" class="shiftOption" value="L" id="lunchShift">Lunch
-                    <input type="radio" name="shift" class="shiftOption" value="B" id="breakShift">Break
+                   <div id="breaks">
+                    <input type="radio" name="shift" class="shiftOption" value="1B" id="breakShift">First Break
+                    <input type="radio" name="shift" class="shiftOption" value="2B" id="breakShift">Second Break
+                    <input type="radio" name="shift" class="shiftOption" value="3B" id="breakShift">Third Break
                    </div>
+                   <div id="lunches">
+                    <input type="radio" name="shift" class="shiftOption" value="1L" id="firstLunch">First Lunch
+                    <input type="radio" name="shift" class="shiftOption" value="2L" id="secondLunch">Second Lunch
+                   </div>
+                   
                     <input class="officerInfo" type="date" id="todaysDate" placeholder="Today's Date">
                     <select class="officerInfo" id="campuses">
                         <option value="Choose One">Choose One</option>
