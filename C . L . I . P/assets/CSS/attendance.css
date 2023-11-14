@@ -155,7 +155,11 @@
   text-align: center;
 }
   
-
+#todaysDate, #campuses {
+  background: var(--light-grey);
+  margin: 0.5rem auto;
+  max-width: 200px;
+}
         
 
   
@@ -168,6 +172,10 @@
   .timekeeping fieldset {
     padding: 25px auto;
     display: block;
+  }
+
+  .timekeeping fieldset div {
+    font-size: 1rem;
   }
   
   .officerInfo {
@@ -189,10 +197,11 @@
     } 
 
     .timekeeping fieldset div{
-      display: flex;
-      flex-direction: column;  
-      margin-bottom: 20px;
+      
+      font-size: 0.6rem;
     }
+
+  
     
 }
 
@@ -201,10 +210,14 @@
     width: 100%;
     margin: 0
   }
-  
-  .analytics table td, .analytics table th {
-    font-size: .65rem;
+
+  .timekeeping fieldset div{
+    display: flex;
+    flex-direction: column;  
+    margin-bottom: 20px;
   }
+  
+ 
 }
   
 @media (max-width: 400px) {
