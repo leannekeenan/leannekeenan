@@ -1,3 +1,5 @@
+
+
 let thisDate = document.querySelector('#thisDate');
 let thisWeek = document.querySelector('#thisWeek');
 let thisMonth = document.querySelector('#thisMonth');
@@ -24,3 +26,4 @@ thisDate.innerText = date.toLocaleDateString("en-US", todaysDateOptions);
 thisWeek.innerText = `${formattedStart} - ${formattedEnd}`;
 thisMonth.innerText = date.toLocaleDateString("en-US", monthOptions);
 thisYear.innerText = date.toLocaleDateString('en-US', yearOptions);
+
