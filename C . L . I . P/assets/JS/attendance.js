@@ -87,3 +87,66 @@ document.addEventListener("DOMContentLoaded", function() {
  
   setInterval(updateClock, 1000);
 });
+
+document.querySelector('form').addEventListener('submit', function(event) {
+  event.preventDefault();
+ 
+  var todaysDate = document.querySelector('#todaysDate').value;
+  var employeeID = document.querySelector('#employeeID').value;
+  var campus = document.querySelector('.campus').value;
+  var shift = document.querySelector('.shift').value;
+ 
+  var start = document.querySelector('#start').checked;
+  var stop = document.querySelector('#stop').checked;
+ 
+  var userDetails = {
+    todaysDate: todaysDate,
+    employeeID: employeeID,
+    campus: campus,
+    shift: shift,
+    start: start,
+    stop: stop
+  };
+ 
+  localStorage.setItem('user-details', JSON.stringify(userDetails));
+ });
+ 
+ function registerUser(event) {
+  event.preventDefault();
+ 
+  var todaysDate = document.querySelector('#todaysDate').value;
+  var employeeID = document.querySelector('#employeeID').value;
+  var campus = document.querySelector('.campus').value;
+  var shift = document.querySelector('.shift').value;
+ 
+  var start = document.querySelector('#start').checked;
+  var stop = document.querySelector('#stop').checked;
+ 
+  var userDetails = {
+    todaysDate: todaysDate,
+    employeeID: employeeID,
+    campus: campus,
+    shift: shift,
+    start: start,
+    stop: stop
+  };
+ 
+  localStorage.setItem('user-details', JSON.stringify(userDetails));
+ }
+ 
+ function validateForm() {
+  let firstName = document.getElementById('firstName').value;
+  let lastName = document.getElementById('lastName').value;
+  let employeeID = document.getElementById('employeeID').value;
+  
+
+
+  if (!firstName || !lastName || !employeeID) {
+      alert('Please fill out all fields');
+      return false;
+  }
+
+  // Add more validation as needed
+
+  return true;
+}
