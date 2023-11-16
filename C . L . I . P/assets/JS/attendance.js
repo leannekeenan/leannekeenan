@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
       let now = new Date();
       let hours = now.getHours();
       let minutes = now.getMinutes();
-      let seconds = now.getSeconds()
-      let currentTime = ("0" + hours).substr(-2) + ":" + ("0" + minutes).substr(-2) + ":" + ("0" + seconds).substr(-2);
+      
+      let currentTime = ("0" + hours).substr(-2) + ":" + ("0" + minutes).substr(-2) ;
       showCurrentTime.textContent = currentTime;
       return currentTime; // Return the current time
   }

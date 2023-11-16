@@ -34,7 +34,7 @@
 
                     <div class="input-box" id="EID">
                         <span class="icon">
-                            <img src="https://api.iconify.design/fa6-regular:id-badge.svg" alt="last-name-icon">
+                            <img class="idBadge" src="https://api.iconify.design/fa6-regular:id-badge.svg" alt="last-name-icon">
                         </span>
                         <input type="text" name="last-name" placeholder="Employee ID #" id="employee-id-input">
                     </div>
@@ -43,19 +43,19 @@
                         <span class="icon">
                             <img src="https://api.iconify.design/material-symbols:alternate-email-rounded.svg" alt="email-icon">
                         </span>
-                        <input type="email" name="user-email" placeholder="email address" id="">
+                        <input type="email" name="user-email" placeholder="email address" id="user-email-input">
                     </div>
 
                     <div class="input-box" id="newPassword">
                         <span class="icon">
                             <img src="https://api.iconify.design/ri:lock-password-line.svg" alt="create-password-icon">
                         </span>
-                        <input type="password" name="user-password" placeholder="Create Password" id="">
+                        <input type="password" name="user-password" placeholder="Create Password" id="createPassword-input">
                     </div>
 
                     <div class="input-box" id="passwordConfirmation">
                         <span class="icon"><img src="https://api.iconify.design/ri:lock-password-line.svg" alt="create-password-icon"></span>
-                        <input type="password" name="user-password-confirm" placeholder="Confirm Password" id="">
+                        <input type="password" name="user-password-confirm" placeholder="Confirm Password" id="confirmPassword-input">
                     </div>
 
                     <div class="options">
@@ -67,7 +67,7 @@
                             <h3>Already have an account? <a href="login.html">Login</a></h3>
                         </div>
                     </div>
-                    <button class="submit" type="submit">Submit</button>
+                    <button class="submit" type="submit" onclick="registerUser(event)">Submit</button>
             </form>
             
         </div>

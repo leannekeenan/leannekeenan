@@ -230,12 +230,10 @@
   }
 
   .analytics table td, .analytics table th {
-    font-size: .25rem;
+    font-size: .65rem;
   }
   
-  .clock {
-    width: 80%;
-  }
+ 
   
   .timer {
     width: 100%;
