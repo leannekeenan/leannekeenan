@@ -1,152 +1,155 @@
+let validateForm;
+
 document.addEventListener("DOMContentLoaded", function() {
-  let showCurrentTime = document.querySelector('.clock');
-
-  function updateClock() {
-      let now = new Date();
-      let hours = now.getHours();
-      let minutes = now.getMinutes();
-      
-      let currentTime = ("0" + hours).substr(-2) + ":" + ("0" + minutes).substr(-2) ;
-      showCurrentTime.textContent = currentTime;
-      return currentTime; // Return the current time
-  }
-
-  let form = document.querySelector('form');
-  form.addEventListener('submit', function(event) {
-    event.preventDefault();
-    let employeeID = document.getElementById('employeeID').value;
-    let shift = document.querySelector('input[name="shift"]:checked').value;
-    let todaysDate = document.getElementById('todaysDate').value;
-    let campus = document.getElementById('campuses').value;
+ let showCurrentTime = document.querySelector('.clock');
  
-    let start = document.querySelector('input[id="start"]:checked'); 
-    let stop = document.querySelector('input[id="stop"]:checked'); 
-     
-    let currentTime = updateClock(); // Call the updateClock function and store the current time
+ function updateClock() {
+ let now = new Date();
+ let hours = now.getHours();
+ let minutes = now.getMinutes();
  
-    // Get the table
-    let table = document.querySelector('.AnalyticsTable');
- 
-    // Create a unique identifier for the row
-    let rowIdentifier = todaysDate + shift + employeeID + campus;
- 
-    // Check if a row for the current shift already exists
-    let row = Array.from(table.rows).find(row => row.getAttribute('data-identifier') === rowIdentifier);
- 
-    if (!row) {
-        // If not, create a new row
-        row = document.createElement('tr');
-        row.setAttribute('data-identifier', rowIdentifier);
-
-        // Create new table data elements and set their text content to the form values
-        let dateCell = document.createElement('td');
-        dateCell.textContent = todaysDate;
-
-        let idCell = document.createElement('td');
-        idCell.textContent = employeeID;
-
-        let campusCell = document.createElement('td');
-        campusCell.textContent = campus;
-
-        let shiftCell = document.createElement('td');
-        shiftCell.textContent = shift;
-
-        let clockInCell = document.createElement('td');
-        if (start) {
-          clockInCell.textContent = currentTime;
-        }
-
-        let clockOutCell = document.createElement('td');
-        if (stop) {
-          clockOutCell.textContent = currentTime;
-        }
-
-        // And append these new table data elements to the new row
-        row.appendChild(dateCell);
-        row.appendChild(idCell);
-        row.appendChild(campusCell);
-        row.appendChild(shiftCell);
-        row.appendChild(clockInCell);
-        row.appendChild(clockOutCell);
-
-        // And append the new row to the table
-        table.appendChild(row);
-    } else {
-        // Check if the row already has an end time
-        if (row.cells[5].textContent) {
-            // If it does, prevent the form submission and alert the user
-            event.preventDefault();
-            alert('Please clock out before you can clock in again.');
-        } else {
-            // Update the start and stop times on the row
-            row.cells[4].textContent = start ? currentTime : row.cells[4].textContent;
-            row.cells[5].textContent = stop ? currentTime : row.cells[5].textContent;
-        }
-    }
-  });
- 
-  setInterval(updateClock, 1000);
-});
-
-document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault();
- 
-  var todaysDate = document.querySelector('#todaysDate').value;
-  var employeeID = document.querySelector('#employeeID').value;
-  var campus = document.querySelector('.campus').value;
-  var shift = document.querySelector('.shift').value;
- 
-  var start = document.querySelector('#start').checked;
-  var stop = document.querySelector('#stop').checked;
- 
-  var userDetails = {
-    todaysDate: todaysDate,
-    employeeID: employeeID,
-    campus: campus,
-    shift: shift,
-    start: start,
-    stop: stop
-  };
- 
-  localStorage.setItem('user-details', JSON.stringify(userDetails));
- });
- 
- function registerUser(event) {
-  event.preventDefault();
- 
-  var todaysDate = document.querySelector('#todaysDate').value;
-  var employeeID = document.querySelector('#employeeID').value;
-  var campus = document.querySelector('.campus').value;
-  var shift = document.querySelector('.shift').value;
- 
-  var start = document.querySelector('#start').checked;
-  var stop = document.querySelector('#stop').checked;
- 
-  var userDetails = {
-    todaysDate: todaysDate,
-    employeeID: employeeID,
-    campus: campus,
-    shift: shift,
-    start: start,
-    stop: stop
-  };
- 
-  localStorage.setItem('user-details', JSON.stringify(userDetails));
+ let currentTime = ("0" + hours).substr(-2) + ":" + ("0" + minutes).substr(-2) ;
+ showCurrentTime.textContent = currentTime;
+ return currentTime;
  }
  
- function validateForm() {
-  let firstName = document.getElementById('firstName').value;
-  let lastName = document.getElementById('lastName').value;
-  let employeeID = document.getElementById('employeeID').value;
-  
+ let form = document.querySelector('form');
+ form.addEventListener('submit', function(event) {
+ event.preventDefault();
+ let employeeID = document.getElementById('employeeID').value;
+ let shift = document.querySelector('input[name="shift"]:checked').value;
+ let todaysDate = document.getElementById('todaysDate').value;
+ let campus = document.getElementById('campuses').value;
+ 
+ let startRadio = document.querySelector('input[id="start"]'); 
+ let stopRadio = document.querySelector('input[id="stop"]'); 
 
+ let start = updateClock(); 
+ let stop = stopRadio.checked ? updateClock() : null; 
 
-  if (!firstName || !lastName || !employeeID) {
-      alert('Please fill out all fields');
-      return false;
-  }
+ let table = document.querySelector('.AnalyticsTable');
+ let rowIdentifier = todaysDate + shift + employeeID + campus;
+ let row = Array.from(table.rows).find(row => row.getAttribute('data-identifier') === rowIdentifier);
+ 
+ if (!row) {
+ row = document.createElement('tr');
+ row.setAttribute('data-identifier', rowIdentifier);
+ 
+ let dateCell = document.createElement('td');
+ dateCell.textContent = todaysDate;
+ 
+ let idCell = document.createElement('td');
+ idCell.textContent = employeeID;
+ 
+ let campusCell = document.createElement('td');
+ campusCell.textContent = campus;
+ 
+ let shiftCell = document.createElement('td');
+ shiftCell.textContent = shift;
+ 
+ let clockInCell = document.createElement('td');
+ if (start) {
+ clockInCell.textContent = start;
+ }
 
-  // Add more validation as needed
+ let clockOutCell = document.createElement('td');
+ if (stop) {
+ clockOutCell.textContent = stop;
+ }
 
-  return true;
+ row.appendChild(dateCell);
+ row.appendChild(idCell);
+ row.appendChild(campusCell);
+ row.appendChild(shiftCell);
+ row.appendChild(clockInCell);
+ row.appendChild(clockOutCell);
+ 
+ table.appendChild(row);
+ } else {
+ if (row.cells[5].textContent && start) {
+ event.preventDefault();
+ alert('Please clock out before you can clock in again.');
+ } else {
+ row.cells[4].textContent = start ? start : row.cells[4].textContent;
+ row.cells[5].textContent = stop ? stop : row.cells[5].textContent;
+ }
+ }
+ 
+ let userDetails = {
+ todaysDate: todaysDate,
+ employeeID: employeeID,
+ campus: campus,
+ shift: shift,
+ start: start,
+ stop: stop ? stop : null
+ };
+ localStorage.setItem('user-details', JSON.stringify(userDetails));
+ });
+
+ validateForm = function() {
+ let firstName = document.getElementById('firstName').value;
+ let lastName = document.getElementById('lastName').value;
+ let employeeID = document.getElementById('employeeID').value;
+ let shift = document.querySelector('input[name="shift"]:checked').value;
+ let todaysDate = document.getElementById('todaysDate').value;
+ let campus = document.getElementById('campuses').value;
+ 
+ if (firstName === "" || lastName === "" || employeeID === "" || shift === "" || todaysDate === "" || campus === "") {
+ alert("All fields must be filled out");
+ return false;
+ }
+ return true;
+ }
+ 
+ let storedTableData = localStorage.getItem('table-data');
+
+ if (storedTableData) {
+ let tableData = JSON.parse(storedTableData);
+ let table = document.querySelector('.AnalyticsTable');
+
+ for (let i = 0; i < tableData.length; i++) {
+ let row = document.createElement('tr');
+
+ for (let key in tableData[i]) {
+ let cell = document.createElement('td');
+ cell.textContent = tableData[i][key];
+ row.appendChild(cell);
+ }
+
+ table.appendChild(row);
+ }
+ }
+
+ let storedUserDetails = localStorage.getItem('user-details');
+
+if (storedUserDetails) {
+ let userDetails = JSON.parse(storedUserDetails);
+
+ if (Array.isArray(userDetails)) {
+ userDetails.forEach(updateDOM);
+ } else {
+ updateDOM(userDetails);
+ }
 }
+
+ // Set the default value of the radio buttons to the current time
+ let startRadio = document.querySelector('input[id="start"]'); 
+ let stopRadio = document.querySelector('input[id="stop"]'); 
+
+ setInterval(updateClock, 1000);
+});
+
+function updateDOM(userDetails) {
+ let table = document.querySelector('.AnalyticsTable');
+ let row = document.createElement('tr');
+
+ for (let key in userDetails) {
+ let cell = document.createElement('td');
+ cell.textContent = userDetails[key];
+ row.appendChild(cell);
+ }
+
+ table.appendChild(row);
+}
+
+
