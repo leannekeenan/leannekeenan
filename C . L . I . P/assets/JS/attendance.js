@@ -11,27 +11,31 @@ let validateForm = function(event) {
     }
    
     return true;
-  };
-  
-  let showCurrentTime = document.querySelector('.clock');
-  
-  function updateClock() {
+ };
+ 
+ let showCurrentTime = document.querySelector('.clock');
+ 
+ let isStartTime = true;
+ 
+ function updateClock(timepunch) {
     let now = new Date();
     let hours = now.getHours();
     let minutes = now.getMinutes();
    
     let currentTime = ("0" + hours).substr(-2) + ":" + ("0" + minutes).substr(-2);
     showCurrentTime.textContent = currentTime;
+    isStartTime = timepunch === 'start';
+    isStopTime = timepunch === 'stop'
     return currentTime;
-  }
-  
-  function startClock() {
+ }
+ 
+ function startClock() {
     setInterval(updateClock, 1000);
-  }
-  
-  startClock();
-  
-  document.addEventListener("DOMContentLoaded", function() {
+ }
+ 
+ startClock();
+ 
+ document.addEventListener("DOMContentLoaded", function() {
     let form = document.querySelector('form');
     form.addEventListener('submit', function(event) {
         console.log('form submitted')
@@ -48,29 +52,36 @@ let validateForm = function(event) {
         let campus = document.getElementById('campuses').value;
         console.log('campus', campus)
         
-        let start = updateClock(); 
-        console.log('start', start)
-  
-        let stopRadio = document.querySelector('input[id="stop"]'); 
-        let stop = stopRadio.checked ? updateClock() : null; 
-        console.log('stop', stop)
-  
+        let timepunch = document.querySelector('input[name="timepunch"]:checked').value;
+        let time = updateClock(timepunch);
+        
         let userDetails = {
             todaysDate: todaysDate,
             employeeID: employeeID,
             campus: campus,
             shift: shift,
-            start: start,
-            stop: stop ? stop : null
-        };
+            start: isStartTime ? time : null,
+            stop: isStopTime ? time : null
+         };
         
         let userDetailsArray = JSON.parse(localStorage.getItem('user-details')) || [];
         let userExists = userDetailsArray.some(user => user.employeeID === employeeID && user.todaysDate === todaysDate && user.campus === campus && user.shift === shift);
-        if (!userExists) {
+        if (userExists) {
+            userDetailsArray.forEach(user => {
+                if (user.employeeID === employeeID && user.todaysDate === todaysDate && user.campus === campus && user.shift === shift) {
+                    if (isStartTime) {
+                        user.start = time;
+                    } else {
+                        user.stop = time;
+                    }
+                }
+            });
+           }
+            else {
             userDetailsArray.push(userDetails);
-            localStorage.setItem('user-details', JSON.stringify(userDetailsArray)); // Store userDetailsArray
         }
-   
+        localStorage.setItem('user-details', JSON.stringify(userDetailsArray)); // Store userDetailsArray
+    
         // Retrieve userDetailsArray from local storage and update the analytics table
         let storedUserDetails = localStorage.getItem('user-details');
         console.log('storedUserDetails', storedUserDetails)
@@ -83,16 +94,16 @@ let validateForm = function(event) {
             }
         }
     });
-    
+  
     function updateDOM(userDetails) {
         let table = document.querySelector('.AnalyticsTable');
         let rowIdentifier = userDetails.todaysDate + userDetails.shift + userDetails.employeeID + userDetails.campus;
         let row = Array.from(table.rows).find(row => row.getAttribute('data-identifier') === rowIdentifier);
-   
+    
         if (!row) {
             row = document.createElement('tr');
-            row.setAttribute('data-identifier', rowIdentifier);
-   
+            
+    
             // Create cells in the correct order
             let cells = [
                 document.createElement('td'), // Date
@@ -102,15 +113,15 @@ let validateForm = function(event) {
                 document.createElement('td'), // In
                 document.createElement('td') // Out
             ];
-   
+    
             // Append cells to row
             cells.forEach(cell => row.appendChild(cell));
-  
-            console.log(cells)
+   
+            
             // Append row to table
             table.appendChild(row);
         }
-   
+    
         // Set cell text content
         row.cells[0].textContent = userDetails.todaysDate;
         console.log('userDetails.todaysDate', userDetails.todaysDate)
@@ -125,5 +136,5 @@ let validateForm = function(event) {
         row.cells[5].textContent = userDetails.stop;
         console.log('userDetails.stop', userDetails.stop)
     }
-  });
-  
+ });
+ 
