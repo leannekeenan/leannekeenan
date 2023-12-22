@@ -1,6 +1,13 @@
 let isStartTime = true;
 let showCurrentTime = document.querySelector('.clock');
 
+// Add this MD5 function at the beginning of your script
+function md5(str) {
+    return window.btoa(
+        new Uint8Array([...str].map(char => char.charCodeAt(0)))
+    );
+}
+
 function updateClock(callback) {
     let now = new Date();
     let hours = now.getHours();
@@ -65,9 +72,11 @@ function submitForm(event) {
     };
 
     if (timepunch === 'start') {
-        userDetails.start = time;
+        userDetails.start = time; // Store time as a string
+        userDetails.stop = null; // Ensure 'stop' is null when 'start' is recorded
     } else if (timepunch === 'stop') {
-        userDetails.stop = time;
+        userDetails.stop = time; // Store time as a string
+        userDetails.start = null; // Ensure 'start' is null when 'stop' is recorded
     }
 
     console.log('User details:', userDetails);
@@ -75,16 +84,28 @@ function submitForm(event) {
     updateDOM(userDetails, time); // Pass 'time' to updateDOM
     document.querySelector('form').reset();
 
-    // Store the updated userDetailsArray in local storage
+    // Retrieve userDetailsArray from local storage
     let storedUserDetails = localStorage.getItem('user-details');
     let userDetailsArray = storedUserDetails ? JSON.parse(storedUserDetails) : [];
+
+    // Ensure that the user details are not stored with index positions
+    userDetailsArray = userDetailsArray.filter(user => user.employeeID !== userDetails.employeeID);
+
+    // Add the new user details to the array
     userDetailsArray.push(userDetails);
+
+    // Store the updated userDetailsArray in local storage
     localStorage.setItem('user-details', JSON.stringify(userDetailsArray));
 }
 
 function updateDOM(userDetails, currentTime) {
     let table = document.querySelector('.AnalyticsTable');
-    let rowIdentifier = userDetails.todaysDate + userDetails.shift + userDetails.employeeID + userDetails.campus;
+    let rowIdentifier = md5(
+        userDetails.todaysDate +
+        userDetails.shift +
+        userDetails.employeeID +
+        userDetails.campus
+    );
     let row = Array.from(table.rows).find(row => row.getAttribute('data-identifier') === rowIdentifier);
 
     if (!row) {
@@ -114,7 +135,6 @@ function updateDOM(userDetails, currentTime) {
     } else {
         row.cells[4].textContent = currentTime;
     }
-    
 }
 
 // Event listeners
@@ -128,7 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Retrieve userDetailsArray from local storage and update the analytics table
     let storedUserDetails = localStorage.getItem('user-details');
 
-    if (storedUserDetails !== '') {
+    if (storedUserDetails !== null) {
         let userDetailsArray = JSON.parse(storedUserDetails);
 
         if (Array.isArray(userDetailsArray)) {
