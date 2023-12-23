@@ -72,10 +72,10 @@ function submitForm(event) {
     };
 
     if (timepunch === 'start') {
-        userDetails.start = time; // Store time as a string
+        userDetails.start = time.getTime(); // Store time as a string
         userDetails.stop = null; // Ensure 'stop' is null when 'start' is recorded
     } else if (timepunch === 'stop') {
-        userDetails.stop = time; // Store time as a string
+        userDetails.stop = time.getTime(); // Store time as a string
         userDetails.start = null; // Ensure 'start' is null when 'stop' is recorded
     }
 
