@@ -10,11 +10,11 @@ body {
     background-image: url('/Sweet Adventures/assets/night sky of stars.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     margin-top: 15vh;
 }
 
-body header {
+body header{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,9 +35,15 @@ main {
     background-color: var(--secondary);
 }
 
+main nav {
+    background-color: var(--background);
+    height: 80px;
+}
+
 main nav ul {
     display: flex;
     align-items: center;
+    justify-content: center;
     justify-content: space-evenly;
 }
 
@@ -46,25 +52,44 @@ main nav ul li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  
+    justify-content: center; 
+    margin-top: 1%;
+    padding: 15px 25px
 }
 
 main nav ul li:hover {
-    background-color: var(--background);
+    background-color: var(--secondary);
+    
 }
 
 main nav ul li a {
     text-decoration: none;
+    color: var(--accent);
+    height: 20px;
 }
 
 main nav ul li a:hover {
-    color: var(--secondary)
+    color: var(--background)
 }
-
-
 
 main nav ul li ul {
     flex-direction: column;
     align-items: flex-start;
     display: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-logo {
+    width: 100px;
+    margin-top: 50px;
+}
+
+footer p {
+    color: var(--secondary)
 }
