@@ -34,6 +34,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+
+	
 }
 
 ol, ul {
@@ -102,8 +104,9 @@ input, select, textarea {
 	}
 
 	body {
-		background: url('/assets/css/images/night\ sky\ of\ stars.png')
+		background: url('/Sweet Adventures Club/assets/css/images/night\ sky\ of\ stars.png')
 	}
+	
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -3364,7 +3367,7 @@ input, select, textarea {
 
 		#main strong, #main b {
 			color: var(--background);
-			font-size: 3.5rem;
+			font-size: 2.5rem;
 		}
 
 		#main #intro p {
@@ -3742,7 +3745,8 @@ input, select, textarea {
 	}
 
 	footer section p {
-		color: var(--secondary)
+		color: var(--secondary);
+		text-align: center;
 	}
 
 	ul.icons {
