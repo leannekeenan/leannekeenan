@@ -3723,6 +3723,19 @@ input, select, textarea {
 
 		}
 
+/*shop*/
+
+.price {
+	width: 250px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+.price input {
+	width: 50px
+}
+
 /* Footer */
 
 	#footer {
@@ -3747,6 +3760,16 @@ input, select, textarea {
 	footer section p {
 		color: var(--secondary);
 		text-align: center;
+	}
+
+	footer a  {
+		border-bottom: none;
+		
+	}
+
+	footer a img {
+		width: 30%;
+		text-decoration: none;
 	}
 
 	ul.icons {
