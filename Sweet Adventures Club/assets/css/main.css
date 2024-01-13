@@ -2168,8 +2168,9 @@ input, select, textarea {
 	}
 
 		select option {
-			color: #ffffff;
-			background: #935d8c;
+			color: var(--primary);
+			background: var(--secondary);
+			text-align: center;
 		}
 
 	input[type="checkbox"] + label,
@@ -3340,7 +3341,7 @@ input, select, textarea {
 		background-color: #ffffff;
 		color: #636363;
 		border-radius: 0.25em;
-		
+		padding: 20px;
 	}
 
 	#main #intro {
@@ -3358,7 +3359,7 @@ input, select, textarea {
 	
 
 		#main input, #main select, #main textarea {
-			color: #636363;
+			color: var(--secondary);
 		}
 
 		#main a:hover {
@@ -3466,7 +3467,7 @@ input, select, textarea {
 				}
 
 		#main label {
-			color: #636363;
+			color: var(--primary);
 		}
 
 		#main input[type="text"],
@@ -3474,7 +3475,7 @@ input, select, textarea {
 		#main input[type="email"],
 		#main select,
 		#main textarea {
-			background-color: rgba(222, 222, 222, 0.25);
+			background-color: var(--background);
 			border-color: #dddddd;
 		}
 
@@ -3492,8 +3493,7 @@ input, select, textarea {
 		}
 
 			#main select option {
-				color: #636363;
-				background: #ffffff;
+				color: var(--primary);
 			}
 
 		#main input[type="checkbox"] + label,
@@ -3725,15 +3725,147 @@ input, select, textarea {
 
 /*shop*/
 
-.price {
-	width: 250px;
-	display: flex;
-	align-items: flex-start;
-	justify-content: space-between;
+#products {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-column-gap: 25px;
+	grid-row-gap: 25px;
+}
+	
+#blueberry { 
+	grid-area: 1 / 1 / 2 / 2; 
+}
+#caramel { 
+	grid-area: 1 / 2 / 2 / 3; 
+}
+#chocolate { 
+	grid-area: 1 / 3 / 2 / 4; 
+}
+#doubleBerry { 
+	grid-area: 2 / 1 / 3 / 2; 
+}
+#vanilla { 
+	grid-area: 2 / 2 / 3 / 3; 
+}
+#mango { 
+	grid-area: 2 / 3 / 3 / 4; 
+}
+#peach {
+	 grid-area: 3 / 1 / 4 / 2; 
+	}
+#raspberry { 
+	grid-area: 3 / 2 / 4 / 3; 
+}
+#strawberry { 
+	grid-area: 3 / 3 / 4 / 4; 
 }
 
-.price input {
-	width: 50px
+.product img {
+	max-width: 100%;
+	min-height: 300px;
+	height: auto;
+	border-radius: 5px;
+  }
+
+.productContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.productContainer:hover .purchase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity as needed */
+}
+
+.purchase {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Additional styles for the purchase dropdown within the hover state */
+.purchase label,
+.purchase select,
+.purchase div {
+  margin-bottom: 10px;
+}
+
+/* Restyle the quantity container within the purchase dropdown */
+.purchase div {
+  display: flex;
+  align-items: center;
+}
+
+/* Restyle the add and minus buttons within the purchase dropdown */
+.purchase img {
+  width: 20px; /* Adjust the size as needed */
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* Restyle the description div */
+.description {
+  padding: 10px;
+}
+
+
+@media screen and (max-width: 1080px) {
+	#products {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		grid-column-gap: 25px;
+		grid-row-gap: 25px;
+	}
+
+	#blueberry {
+		 grid-area: 1 / 1 / 2 / 2;
+		}
+	#caramel  {
+		 grid-area: 1 / 2 / 2 / 3;
+		}
+	#chocolate {
+		 grid-area: 2 / 1 / 3 / 2;
+		}
+	#doubleBerry {
+		 grid-area: 2 / 2 / 3 / 3;
+		}
+	#vanilla {
+		 grid-area: 3 / 1 / 4 / 2;
+		}
+	#mango {
+		 grid-area: 3 / 2 / 4 / 3;
+		}
+	#peach {
+		 grid-area: 4 / 1 / 5 / 2;
+		}
+	#raspberry {
+		 grid-area: 4 / 2 / 5 / 3;
+		}
+	#strawberry {
+		 grid-area: 5 / 1 / 6 / 2;
+		}
+		
+}
+
+@media screen and (max-width: 1080px) {
+	#products {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 /* Footer */

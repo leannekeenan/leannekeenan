@@ -1,42 +1,302 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/Sweet Adventures Club/assets/css/main.css" />
-</head>
-<body>
-   <section id="products">
-    <div class="productContainer">
-        <div class="product">
-            <img src="/Sweet Adventures Club/images/pic01.jpg" alt="">
-            <div class="description">
-                <h5>Cake Type</h5>
-                <p>about this cake...</p>
-                
-            </div>
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Stellar by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-            
-            <div class="price">
-                <h4>1/2 dozen - $36</h4>
-                <div>
-                    <img src="https://api.iconify.design/ic:outline-minus.svg?color=%23fdd700" alt="plus">
-                    <input type="number" name="quantity" id="">
-                    <img src="https://api.iconify.design/material-symbols:add.svg?color=%23fdd700" alt="minus">
-                </div>
-            </div>
-            <div class="price">
-                <h4>dozen - $72</h4>
-                <div>
-                    <img src="https://api.iconify.design/ic:outline-minus.svg?color=%23fdd700" alt="plus">
-                    <input type="number" name="quantity" id="">
-                    <img src="https://api.iconify.design/material-symbols:add.svg?color=%23fdd700" alt="minus">
-                </div>
-            </div>
-        </div>
-        
-    </div>
-   </section> 
-</body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Generic</h1>
+						<p>Ipsum dolor sit amet nullam</p>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+						<section class="products" id="products">
+  
+							<div class="productContainer" id="blueberry">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/barbarians blueberry blast.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Barbarian's Blueberry Blast</h5>
+										<p>Behold the barbaric burst of bold blueberry brilliance, a wild explosion of berry ecstasy that conquers the taste buds with untamed, fruity ferocity.</p>
+									</div>
+							</div>
+							<div class="productContainer" id="caramel">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/clerics celestial caramel.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Cleric's Celestial Caramel</h5>
+										<p>about this cake...</p>
+									</div>
+							</div>
+							<div class="productContainer" id="chocolate">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/druids decadent chocolate.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Druid's Decadent Chocolate</h5>
+										<p>about this cake...</p>
+									</div>
+							</div>
+							<div class="productContainer" id="doubleBerry">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/dwarven double berry.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Dwarven Double Berry</h5>
+										<p>A delightful duet of blackberries and boysenberries</p>
+									</div>
+							</div>
+							<div class="productContainer" id="vanilla">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/feywild french vanilla.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Feywild French Vanilla</h5>
+										<p>about this cake...</p>
+									</div>
+							</div>
+							<div class="productContainer" id="mango">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/monks mango melody.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Monk's Mango Melody</h5>
+										<p>about this cake...</p>
+									</div>
+							</div>
+							<div class="productContainer" id="peach">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/paladins peach paradise.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Paladin's Peach Paradise</h5>
+										<p>about this cake...</p>
+									</div>
+							</div>
+							<div class="productContainer" id="raspberry">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/raspberry rogue.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Rogue's Raspberry Radiance</h5>
+										<p>about this cake...</p>
+									</div>
+							</div>
+							<div class="productContainer" id="strawberry">
+								<div class="product">
+									<img src="/Sweet Adventures Club/assets/css/images/flavors/strawberry sorcerer.png" alt="">
+									<div class="purchase">
+										<label for="size">Select Size:</label>
+										<select id="size">
+                                            
+											<option value="half-dozen">Half Dozen</option>
+											<option value="full-dozen">Full Dozen</option>
+											<option value="7-inch">7 Inch Cake</option>
+										</select>  
+						
+										<label for="quantity">Quantity:</label>
+									<div>
+										<input type="number" id="quantity" value="1" min="1">
+									</div>
+								
+									<button onclick="addToCart()">Add to Cart</button>
+									</div>
+						
+									
+									</div>
+									<div class="description">
+										<h5>Sorcerer's Strawberry Serenity</h5>
+										<p>A sumptuous spellbinding strawberry stuffed enchantment supplying sweet sensations of satisfaction with every bite!</p>
+									</div>
+							</div>
+						   </section> 
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Want to Multiclass or make a Home Brew?</h2>
+							<p>Sent us a quick message with your specialty order and we willl get back to you</p>
+							
+						</section>
+						<section>
+							
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+							</ul>
+						</section>
+						
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
