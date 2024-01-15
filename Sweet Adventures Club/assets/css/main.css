@@ -3835,7 +3835,6 @@ header#header.menu-header div img {
   padding: 10px;
 }
 
-
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -3860,6 +3859,9 @@ header#header.menu-header div img {
 }
 
 .services .tab {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 1fr);
     width: 100%;
     padding: 20px;
     background-color: var(--background);
@@ -3880,12 +3882,6 @@ header#header.menu-header div img {
 .services input[type="radio"]:checked + label  {
     background-color: var(--background);
 }
-
-.flavor {
-	width: 100%;
-	display: flex;
-}
-
 
 @media screen and (max-width: 1080px) {
 	#products {
@@ -3966,8 +3962,10 @@ header#header.menu-header div img {
 	}
 
 	footer a img {
-		width: 30%;
+		width: 20%;
 		text-decoration: none;
+		display: flex;
+		margin: 0 auto;
 	}
 
 	ul.icons {
