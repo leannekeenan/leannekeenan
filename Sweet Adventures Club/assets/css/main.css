@@ -3836,6 +3836,57 @@ header#header.menu-header div img {
 }
 
 
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    max-height: 600px;
+    overflow-y: scroll;
+    margin: 50px auto;
+    padding: 35px;
+}
+
+.services input[type="radio"] {
+    display: none;
+}
+
+.services label {
+    padding: 25px;
+    background-color: rgba(245, 206, 212, 0.3);
+    font-weight: bold;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+}
+
+.services .tab {
+    width: 100%;
+    padding: 20px;
+    background-color: var(--background);
+    order: 1;
+    display: none;
+    border-radius: 5px;
+}
+
+.services p{
+    font-size: 1.15em;
+    padding-bottom: 30px;;
+}
+
+.services input[type="radio"]:checked + label + .tab {
+    display: inline;
+}
+
+.services input[type="radio"]:checked + label  {
+    background-color: var(--background);
+}
+
+.flavor {
+	width: 100%;
+	display: flex;
+}
+
+
 @media screen and (max-width: 1080px) {
 	#products {
 		display: grid;
