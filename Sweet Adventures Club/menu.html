@@ -10,6 +10,24 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+		<nav class="menu-nav">
+			<a href="index.html"><img src="/Sweet Adventures Club/assets/css/images/Sweet Adventures Logo.png" alt=""></a>
+			<ul>
+				<div>
+					<li><a href="#"><img src="https://api.iconify.design/material-symbols-light:shopping-cart.svg" alt=""></a></li>
+					<span class="tooltip">tooltip</span>
+				</div>
+				<div>
+					<li><a href="#"><img src="https://api.iconify.design/material-symbols:person-rounded.svg" alt=""></a></li>
+					<span class="tooltip">tooltip</span>
+				</div>
+				
+				<div>
+					<li><a href="#"><img src="https://api.iconify.design/ic:round-favorite.svg" alt=""></a></li>
+					<span class="tooltip">tooltip</span>
+				</div>
+			</ul>
+		</nav>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -272,7 +290,7 @@
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
+					<footer id="menu-footer">
 						<section>
 							<h2>Want to Multiclass or make a Home Brew?</h2>
 							<p>Sent us a quick message with your specialty order and we will get back to you</p>
@@ -281,70 +299,72 @@
 
 								<input type="radio" id="multiclass" name="serviceTypes" checked="checked">
 								<label for="multiclass">Multiclass</label>
-								<div class="tab">	
-									<div class="flavor" id="blueberry-flavor">
-										<input type="checkbox" name="blueberry" id="blueberry">
-										<label for="blueberry">Blueberry</label>
+								<div class="tab">
+									<p>Mix and Match to make your own marvelous masterpiece! Dive into our delectable selection of flavors, mix them to your heart's desire, and witness your dream dessert come to life.</p>
+									<div>
+										<input type="text" id="customerName" placeholder="name">
+										<input type="tel" id="customerNumber" placeholder="phone">
+										<input type="email" id="customerEmail" placeholder="email">
 									</div>
-
-									<div class="flavor" id="caramel-flavor">
-										<input type="checkbox" name="caramel" id="caramel">
-										<label for="caramel">Caramel</label>
-									</div>
-
-									<div class="flavor" id="chocolate-flavor">
-										<input type="checkbox" name="chocolate" id="chocolate">
-										<label for="chocolate">Chocolate</label>
-									</div>
-
-									<div class="flavor" id="boysenberry-flavor">
-										<input type="checkbox" name="boysenberry" id="boysenberry">
-										<label for="boysenberry">Boysenberry</label>
-									</div>
-
-									<div class="flavor" id="vanilla-flavor">
-										<input type="checkbox" name="vanilla" id="vanilla">
-										<label for="vanilla">Vanilla</label>
-									</div>
-
-									<div class="flavor" id="orange-flavor">
-										<input type="checkbox" name="ornge" id="orange">
-										<label for="orange">Orange</label>
-									</div>
-
-									<div class="flavor" id="peach-flavor">
-										<input type="checkbox" name="peach" id="peach">
-										<label for="peach">Peach</label>
-									</div>
-
-									<div class="flavor" id="raspberry-flavor">
-										<input type="checkbox" name="raspberry" id="raspberry">
-										<label for="raspberry">Raspberry</label>
-									</div>
-
-									<div class="flavor" id="strawberry-flavor">
-										<input type="checkbox" name="strawberry" id="strawberry">
-										<label for="strawberry">Strawberry</label>
-									</div>
+									<section class="flavors">
+										<div>
+											<input type="checkbox" id="blueberry-flavor">
+											<label for="blueberry-flavor">Blueberry</label>
+										</div>
+										<div>
+											<input type="checkbox" id="caramel-flavor">
+											<label for="caramel-flavor">Caramel</label>
+										</div>
+										<div>
+											<input type="checkbox" id="chocolate-flavor">
+											<label for="chocolate-flavor">Chocolate</label>
+										</div>
+										<div>
+											<input type="checkbox" id="boysenberry-flavor">
+											<label for="boysenberry-flavor">Boysenberry</label>
+										</div>
+										<div>
+											<input type="checkbox" id="vanilla-flavor">
+											<label for="vanilla-flavor">Vanilla</label>
+										</div>
+										<div>
+											<input type="checkbox" id="orange-flavor">
+											<label for="orange-flavor">Marmalade</label>
+										</div>
+										<div>
+											<input type="checkbox" id="peach-flavor">
+											<label for="peach-flavor">Peach</label>
+										</div>
+										<div>
+											<input type="checkbox" id="raspberry-flavor">
+											<label for="raspberry-flavor">Raspberry</label>
+										</div>
+										<div>
+											<input type="checkbox" id="">
+											<label for="">Strawberry</label>
+										</div>
+									</section>
+									<button>Submit</button>
 								</div>
-
+								
+								
 								<input type="radio" id="homebrew" name="serviceTypes">
 								<label for="homebrew">Homebrew</label>
 								<div class="tab">
-									<textarea name="" id="" cols="30" rows="10"></textarea>
+									<p>Craving a creative, custom culinary craft that we currently don't carry? comment below! We will work with you to whisk, whip, and work wonders and deliver your dream dessert directly to your doorstep</p>
+									<div>
+										<input type="text" id="customerName" placeholder="name">
+										<input type="tel" id="customerNumber" placeholder="phone">
+										<input type="email" id="customerEmail" placeholder="email">
+									</div>
+									<textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+									<button>Submit</button>
 								</div>
 
 							</section>
 						</section>
-						<section>
-							
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-							</ul>
-						</section>
-						<p id="back"> <a href="index.html"><img src="/Sweet Adventures Club/assets/css/images/Sweet Adventures Logo.png" alt=""></a></p>
+						
+						
 					</footer>
 
 					

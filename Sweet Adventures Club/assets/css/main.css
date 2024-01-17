@@ -2004,6 +2004,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2023,6 +2024,7 @@ input, select, textarea {
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="tel"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2048,6 +2050,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
 	}
@@ -2080,6 +2083,7 @@ input, select, textarea {
 			padding-left: 2.4em;
 			padding-right: 0.75em;
 			position: relative;
+			
 		}
 
 			input[type="checkbox"] + label:before,
@@ -2148,8 +2152,10 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
+		margin: 1%;
 		background-color: rgba(255, 255, 255, 0.075);
 		border-color: rgba(255, 255, 255, 0.35);
 	}
@@ -2157,9 +2163,10 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #8cc9f0;
+			border-color: var(--accent);
 			box-shadow: 0 0 0 1px #8cc9f0;
 		}
 
@@ -2176,6 +2183,12 @@ input, select, textarea {
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
 		color: rgba(255, 255, 255, 0.65);
+	}
+
+	.flavors input[type="checkbox"] + label,
+	.flavors input[type="radio"] + label {
+		color: rgba(255, 255, 255, 0.65);
+		width: 300px;
 	}
 
 		input[type="checkbox"] + label:before,
@@ -3475,6 +3488,7 @@ input, select, textarea {
 		#main input[type="text"],
 		#main input[type="password"],
 		#main input[type="email"],
+		
 		#main select,
 		#main textarea {
 			background-color: var(--background);
@@ -3486,7 +3500,7 @@ input, select, textarea {
 			#main input[type="email"]:focus,
 			#main select:focus,
 			#main textarea:focus {
-				border-color: #8cc9f0;
+				border-color: var(--accent);
 				box-shadow: 0 0 0 1px #8cc9f0;
 			}
 
@@ -3838,9 +3852,7 @@ header#header.menu-header div img {
 .services {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
-    max-height: 600px;
-    overflow-y: scroll;
+    
     margin: 50px auto;
     padding: 35px;
 }
@@ -3875,6 +3887,8 @@ header#header.menu-header div img {
     padding-bottom: 30px;;
 }
 
+
+
 .services input[type="radio"]:checked + label + .tab {
     display: inline;
 }
@@ -3882,6 +3896,21 @@ header#header.menu-header div img {
 .services input[type="radio"]:checked + label  {
     background-color: var(--background);
 }
+
+.services .flavors  {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	margin: 5%
+}
+
+.flavors div {
+	
+	margin: 0 auto;
+}
+
+
+
 
 @media screen and (max-width: 1080px) {
 	#products {
@@ -4039,6 +4068,11 @@ header#header.menu-header div img {
 
 		}
 
+#menu-footer {
+	max-width: 1000px;
+	margin: 5% auto;
+}
+
 /* Wrapper */
 
 	#wrapper {
@@ -4062,6 +4096,85 @@ header#header.menu-header div img {
 			}
 
 		}
+
+	.menu-nav {
+		display: flex;
+		justify-content: space-between;
+		margin: 75px;
+		margin-bottom: 0;
+	}
+
+
+	.menu-nav a {
+		border-bottom: none;
+	}
+
+	.menu-nav a img {
+		width: 100%;
+		max-width: 80px;
+		height: 100%;
+	}
+
+	.menu-nav ul {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-nav ul div {
+		position: relative;
+  display: inline-block;
+	}
+	
+	.menu-nav ul div .tooltip {
+		color:linear-gradient(90deg, rgba(153,106,48,1) 10%, rgba(242,232,152,1) 50%, rgba(153,106,48,1) 90%);
+		visibility: hidden;
+  		width: 120px;
+  		text-align: center;
+  		border-radius: 6px;
+  		padding: 5px 0;
+  		position: absolute;
+  		z-index: 1;
+ 		 bottom: -225%;
+  		left: 50%;
+  		margin-left: -60px;
+  		opacity: 0;
+  		transition: opacity 0.3s;
+	}
+
+	.menu-nav div.tooltip:after {
+		content: "";
+  		position: absolute;
+  		bottom: 100%;
+  		left: 50%;
+  		margin-left: -5px;
+  		border-width: 5px;
+  		border-style: solid;
+  		border-color: #555 transparent transparent transparent;
+	}
+
+	div:hover .tooltip {
+		visibility: visible;
+		opacity: 1;
+	  }
+
+	.menu-nav ul div li {
+		list-style: none;
+		padding: 0 15px;
+	}
+
+	.menu-nav ul div li a {
+		text-decoration: none;
+		border-bottom: none;
+		padding: 5px;
+	}
+
+	.menu-nav ul div li a img {
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		padding: 5px;
+		background:  linear-gradient(90deg, rgba(153,106,48,1) 10%, rgba(242,232,152,1) 50%, rgba(153,106,48,1) 90%);
+	}
 
 .headline {
 	text-align: center;
