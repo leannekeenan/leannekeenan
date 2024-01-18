@@ -1927,7 +1927,13 @@ input, select, textarea {
 	.button {
 		background-color: transparent;
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
-		color: #ffffff !important;
+		color: var(--secondary);
+		display: flex;
+		align-items: center;
+		margin: 0 auto;
+		justify-content: center;
+		width: 30%;
+		padding: 25px 0;
 	}
 
 		input[type="submit"]:hover,
@@ -1935,8 +1941,9 @@ input, select, textarea {
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(255, 255, 255, 0.075);
+			background-color: var(--highlight);
 		}
+		
 
 		input[type="submit"]:active,
 		input[type="reset"]:active,
@@ -2206,8 +2213,8 @@ input, select, textarea {
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #8cc9f0;
-		box-shadow: 0 0 0 1px #8cc9f0;
+		border-color: var(--accent);
+		box-shadow: 0 0 0 1px var(--accent);
 	}
 
 	::-webkit-input-placeholder {
@@ -3792,7 +3799,7 @@ header#header.menu-header div img {
 
 .product img {
 	max-width: 100%;
-	min-height: 300px;
+	min-height: 325px;
 	height: auto;
 	border-radius: 5px;
   }
