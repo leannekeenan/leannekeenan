@@ -3799,8 +3799,8 @@ header#header.menu-header div img {
 
 .product img {
 	max-width: 100%;
-	min-height: 325px;
-	height: auto;
+	min-height: 350px;
+	height: 100%;
 	border-radius: 5px;
   }
 
