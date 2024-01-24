@@ -3425,7 +3425,7 @@ input, select, textarea {
 		#main .button {
 			background-color: var(--background);
 			box-shadow: inset 0 0 0 1px #dddddd;
-			color: #636363 !important;
+			color: var(--secondary) !important;
 		}
 
 			#main input[type="submit"]:hover,
@@ -3433,7 +3433,7 @@ input, select, textarea {
 			#main input[type="button"]:hover,
 			#main button:hover,
 			#main .button:hover {
-				background-color: transparent;
+				background-color: var(--highlight);
 			}
 
 			#main input[type="submit"]:active,
@@ -3764,37 +3764,9 @@ header#header.menu-header div img {
 #products {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	grid-column-gap: 25px;
-	grid-row-gap: 25px;
-}
-	
-#blueberry { 
-	grid-area: 1 / 1 / 2 / 2; 
-}
-#caramel { 
-	grid-area: 1 / 2 / 2 / 3; 
-}
-#chocolate { 
-	grid-area: 1 / 3 / 2 / 4; 
-}
-#doubleBerry { 
-	grid-area: 2 / 1 / 3 / 2; 
-}
-#vanilla { 
-	grid-area: 2 / 2 / 3 / 3; 
-}
-#mango { 
-	grid-area: 2 / 3 / 3 / 4; 
-}
-#peach {
-	 grid-area: 3 / 1 / 4 / 2; 
-	}
-#raspberry { 
-	grid-area: 3 / 2 / 4 / 3; 
-}
-#strawberry { 
-	grid-area: 3 / 3 / 4 / 4; 
+	grid-template-rows: repeat(auto, 1fr);
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
 }
 
 .product img {
@@ -3818,9 +3790,15 @@ header#header.menu-header div img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 70%;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity as needed */
 }
+
+.productContainer .product .quantity #quantity {
+	background: var(--background);
+	color: var(--secondary);
+	text-align: center;
+	}
 
 .purchase {
   display: none;
@@ -4104,11 +4082,31 @@ header#header.menu-header div img {
 
 		}
 
-	.menu-nav {
+	.menu-nav{
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin: 75px;
 		margin-bottom: 0;
+	}
+
+	.menu-nav div {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-nav div ul li {
+		list-style: none;
+		padding: 0
+	}
+
+
+
+	.menu-nav div ul li a {
+		color: var(--secondary);
+		font-size: 1.2rem;
+		margin: 1rem;
+		padding: 0;
 	}
 
 
@@ -4117,9 +4115,7 @@ header#header.menu-header div img {
 	}
 
 	.menu-nav a img {
-		width: 100%;
-		max-width: 80px;
-		height: 100%;
+		height: 60px
 	}
 
 	.menu-nav ul {
@@ -4129,44 +4125,14 @@ header#header.menu-header div img {
 
 	.menu-nav ul div {
 		position: relative;
-  display: inline-block;
+  		display: inline-block;
 	}
 	
-	.menu-nav ul div .tooltip {
-		color:linear-gradient(90deg, rgba(153,106,48,1) 10%, rgba(242,232,152,1) 50%, rgba(153,106,48,1) 90%);
-		visibility: hidden;
-  		width: 120px;
-  		text-align: center;
-  		border-radius: 6px;
-  		padding: 5px 0;
-  		position: absolute;
-  		z-index: 1;
- 		 bottom: -225%;
-  		left: 50%;
-  		margin-left: -60px;
-  		opacity: 0;
-  		transition: opacity 0.3s;
-	}
-
-	.menu-nav div.tooltip:after {
-		content: "";
-  		position: absolute;
-  		bottom: 100%;
-  		left: 50%;
-  		margin-left: -5px;
-  		border-width: 5px;
-  		border-style: solid;
-  		border-color: #555 transparent transparent transparent;
-	}
-
-	div:hover .tooltip {
-		visibility: visible;
-		opacity: 1;
-	  }
 
 	.menu-nav ul div li {
 		list-style: none;
 		padding: 0 15px;
+		
 	}
 
 	.menu-nav ul div li a {
@@ -4188,4 +4154,8 @@ header#header.menu-header div img {
 	font-size: 2rem;
 	font-weight: 800;
 	margin-bottom: 120px;
+}
+
+.active {
+	border-bottom: 2px solid var(--secondary);
 }

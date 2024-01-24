@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Sweet Adventures Club - Menu</title>
+		<title>Sweet Adventures Club - Marketplace</title>
 		<link rel="shortcut icon" href="/Sweet Adventures Club/assets/css/images/Sweet Adventures Logo.png" type="image/x-icon">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -12,21 +12,24 @@
 	<body class="is-preload">
 		<nav class="menu-nav">
 			<a href="index.html"><img src="/Sweet Adventures Club/assets/css/images/Sweet Adventures Logo.png" alt=""></a>
-			<ul>
-				<div>
-					<li><a href="#"><img src="https://api.iconify.design/material-symbols-light:shopping-cart.svg" alt=""></a></li>
-					<span class="tooltip">tooltip</span>
-				</div>
-				<div>
-					<li><a href="#"><img src="https://api.iconify.design/material-symbols:person-rounded.svg" alt=""></a></li>
-					<span class="tooltip">tooltip</span>
-				</div>
-				
-				<div>
-					<li><a href="#"><img src="https://api.iconify.design/ic:round-favorite.svg" alt=""></a></li>
-					<span class="tooltip">tooltip</span>
-				</div>
-			</ul>
+			<div>
+				<ul>
+					<li><a href="menu.html">menu</a></li>
+					<li class="active"><a href="marketplace.html">marketplace</a></li>
+					<li><a href="community.html">community</a></li>
+					<li><a href="blog.html">blog</a></li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+					<div>
+						<li><a href="#">cart</a></li>
+					</div>
+					<div>
+						<li><a href="#">account</a></li>
+					</div>
+				</ul>
+			</div>
 		</nav>
 
 		<!-- Wrapper -->
@@ -52,20 +55,10 @@
 							<div class="productContainer" id="brandedCoffeeMugContainer">
 								<div class="product">
 									<img src="/Sweet Adventures Club/assets/css/images//merch/coffee mug [brand].png" alt="">
-									<div class="purchase">
-										<label for="size">Select Size:</label>
-										<select id="size">
-											<option value="extra-extra-large">XXL</option>
-											<option value="extra-large">XL</option>
-											<option value="large">L</option>
-											<option value="medium">M</option>
-											<option value="small">S</option>
-											<option value="extra-small">XS</option>
-											<option value="extra-extra-small">XXS</option>
-										</select>  
+									<div class="purchase"> 
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -75,7 +68,7 @@
 									
 									</div>
 									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
+										<h5>Coffee Mug w/ Logo</h5>
 									</div>
 							</div>
 							
@@ -83,19 +76,10 @@
 								<div class="product">
 									<img src="/Sweet Adventures Club/assets/css/images//merch/coffee mug [logo].png" alt="logoCoffeeMug">
 									<div class="purchase">
-										<label for="size">Select Size:</label>
-										<select id="size">
-											<option value="extra-extra-large">XXL</option>
-											<option value="extra-large">XL</option>
-											<option value="large">L</option>
-											<option value="medium">M</option>
-											<option value="small">S</option>
-											<option value="extra-small">XS</option>
-											<option value="extra-extra-small">XXS</option>
-										</select>  
+										  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -105,7 +89,7 @@
 									
 									</div>
 									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
+										<h5>Coffee Mug w/ Brand</h5>
 									</div>
 							</div>
 
@@ -125,7 +109,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -133,10 +117,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Unisex Hoodie w/ Logo [black]</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="greyLogoHoodieContainer">
@@ -155,18 +139,16 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
 									<button onclick="addToCart()">Add to Cart</button>
-									</div>
-						
-									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+									</div>	
+								</div>
+								<div class="description">
+									<h5>Unisex Hoodie w/ Logo [grey]</h5>
+								</div>
 							</div>
 
 							<div class="productContainer" id="mensBrandShirtBlack">
@@ -185,18 +167,16 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
 									<button onclick="addToCart()">Add to Cart</button>
 									</div>
-						
-									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Men's Sweet Adventures Club Graphic Tee w/ Brand [black]</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="mensLargeLogoShirtBlack">
@@ -215,18 +195,17 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
 									<button onclick="addToCart()">Add to Cart</button>
 									</div>
-						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Men's Sweet Adventures Club Graphic Tee w/ Large Logo [black]</h5>
+								</div>
 							</div>
 
 							<div class="productContainer" id="mensSmallLogoShirtBlack">
@@ -245,7 +224,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -253,10 +232,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Men's Sweet Adventures Club Graphic Tee w/ Small Logo [black]</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="mensBrandShirtWhite">
@@ -275,18 +254,16 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
 									<button onclick="addToCart()">Add to Cart</button>
 									</div>
-						
-									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Men's Sweet Adventures Club Graphic Brand Tee [white]</h5>
+								</div>
 							</div>
 
 							<div class="productContainer" id="mensLargeLogoShirtWhite">
@@ -305,7 +282,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -313,10 +290,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Men's Sweet Adventures Club Graphic Large Logo Tee [white]</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="mensSmallLogoShirtWhite">
@@ -335,18 +312,17 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
 									<button onclick="addToCart()">Add to Cart</button>
 									</div>
-						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Men's Sweet Adventures Club Graphic Small Logo Tee [white]</h5>
+								</div>
 							</div>
 
 							<div class="productContainer" id="womensBrandShirtBlack">
@@ -365,7 +341,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -373,10 +349,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Women's Sweet Adventures Club Graphic Brand Tee [black]</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="womensLargeLogoShirtBlack">
@@ -395,7 +371,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -403,10 +379,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Women's Sweet Adventures Club Graphic Large Logo Tee [black]</h5>
+								</div>
 							</div>
 
 							<div class="productContainer" id="womensSmallLogoShirtBlack">
@@ -425,7 +401,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -433,10 +409,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Women's Sweet Adventures Club Graphic Small Logo Tee [black]</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="womensBrandShirtWhite">
@@ -455,7 +431,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -463,10 +439,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Women's Sweet Adventures Club Graphic Small Brand Tee [white]</h5>
+								</div>
 							</div>
 
 							<div class="productContainer" id="womensLargeLogoShirtWhite">
@@ -485,7 +461,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -493,10 +469,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Women's Sweet Adventures Club Graphic Large Logo Tee [white]</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="womensSmallLogoShirtWhite">
@@ -515,7 +491,7 @@
 										</select>  
 						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -523,29 +499,18 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Women's Sweet Adventures Club Graphic Small Logo Tee [white]</h5>
+								</div>
 							</div>
 
 							<div class="productContainer" id="stickerLogo">
 								<div class="product">
 									<img src="/Sweet Adventures Club/assets/css/images//merch/Sweet Adventures Club sticker [logo].png" alt="">
 									<div class="purchase">
-										<label for="size">Select Size:</label>
-										<select id="size">
-											<option value="extra-extra-large">XXL</option>
-											<option value="extra-large">XL</option>
-											<option value="large">L</option>
-											<option value="medium">M</option>
-											<option value="small">S</option>
-											<option value="extra-small">XS</option>
-											<option value="extra-extra-small">XXS</option>
-										</select>  
-						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -553,29 +518,18 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Sweet Adventures Club Logo Sticker</h5>
+								</div>
 							</div>
 							
 							<div class="productContainer" id="stickerBrand">
 								<div class="product">
 									<img src="/Sweet Adventures Club/assets/css/images//merch/Sweet Adventures Club sticker [brand].png" alt="">
 									<div class="purchase">
-										<label for="size">Select Size:</label>
-										<select id="size">
-											<option value="extra-extra-large">XXL</option>
-											<option value="extra-large">XL</option>
-											<option value="large">L</option>
-											<option value="medium">M</option>
-											<option value="small">S</option>
-											<option value="extra-small">XS</option>
-											<option value="extra-extra-small">XXS</option>
-										</select>  
-						
 										<label for="quantity">Quantity:</label>
-									<div>
+										<div class="quantity">
 										<input type="number" id="quantity" value="1" min="1">
 									</div>
 								
@@ -583,10 +537,10 @@
 									</div>
 						
 									
-									</div>
-									<div class="description">
-										<h5>Men's Graphic T-Shirt</h5>
-									</div>
+								</div>
+								<div class="description">
+									<h5>Sweet Adventures Club Brand Sticker</h5>
+								</div>
 							</div>
 						</section> 
 					</div>
