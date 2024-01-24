@@ -3147,6 +3147,8 @@ input, select, textarea {
 					max-width: 30%;
 				}
 
+
+
 		@media screen and (max-width: 1280px) {
 
 			#header {
@@ -3175,6 +3177,26 @@ input, select, textarea {
 
 			#header {
 				padding: 3em 2em 0.1em 2em ;
+			}
+
+			header#header.menu-header div img {
+				position: relative;
+  				display: inline-block;
+				width: 100%;
+			}
+
+			header#header.menu-header .intro {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				right: 0;
+				margin: 2.5rem;
+				transform: translate(-50%, -50%);
+				background: var(--secondary);
+				opacity: 0.8;
+				color: var(--primary);
+				font-size: 18px;
+				z-index: 100;
 			}
 
 				#header p {
@@ -3356,6 +3378,19 @@ input, select, textarea {
 		}
 
 /* Main */
+	.menu-title {
+		text-align: center;
+	}
+	.menu-title h2 {
+		color: var(--secondary);
+		font-weight: 400;
+		font-size: 2.25rem;
+	}
+
+	.menu-title p {
+		color: var(--secondary);
+		font-size: 1.25rem;
+	}
 
 	#main {
 		background-color: #ffffff;
@@ -3383,7 +3418,7 @@ input, select, textarea {
 		}
 
 		#main a:hover {
-			color: #636363;
+			color:#636363;
 		}
 
 		#main strong, #main b {
@@ -3770,10 +3805,8 @@ header#header.menu-header div img {
 }
 
 .product img {
-	max-width: 100%;
-	min-height: 350px;
-	height: 100%;
 	border-radius: 5px;
+	width: 100%;
   }
 
 .productContainer {
@@ -3915,13 +3948,13 @@ header#header.menu-header div img {
 	#chocolate {
 		 grid-area: 2 / 1 / 3 / 2;
 		}
-	#doubleBerry {
+	#boysenberry {
 		 grid-area: 2 / 2 / 3 / 3;
 		}
 	#vanilla {
 		 grid-area: 3 / 1 / 4 / 2;
 		}
-	#mango {
+	#marmalade {
 		 grid-area: 3 / 2 / 4 / 3;
 		}
 	#peach {
@@ -4084,7 +4117,7 @@ header#header.menu-header div img {
 
 	.menu-nav{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-evenly;
 		align-items: center;
 		margin: 75px;
 		margin-bottom: 0;
@@ -4093,11 +4126,15 @@ header#header.menu-header div img {
 	.menu-nav div {
 		display: flex;
 		align-items: center;
+		justify-content: center;
 	}
 
 	.menu-nav div ul li {
 		list-style: none;
-		padding: 0
+		padding: 0;
+		margin: 0 .5rem;
+		text-align: center;
+		border-radius: 5px 5px 0 0;
 	}
 
 
@@ -4112,6 +4149,10 @@ header#header.menu-header div img {
 
 	.menu-nav a {
 		border-bottom: none;
+	}
+
+	.menu-nav li:hover {
+		background: rgba(244, 230, 209, 0.3);
 	}
 
 	.menu-nav a img {
