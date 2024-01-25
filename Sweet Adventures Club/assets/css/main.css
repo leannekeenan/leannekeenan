@@ -3809,7 +3809,7 @@ header#header.menu-header div img {
 	width: 100%;
   }
 
-.productContainer {
+.productContainer, .merchandise {
   position: relative;
   display: inline-block;
 }
@@ -3823,8 +3823,21 @@ header#header.menu-header div img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 66.5%;
   background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity as needed */
+}
+
+.merchContainer:hover .purchase {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity as needed */
 }
 
 .productContainer .product .quantity #quantity {
@@ -3857,10 +3870,13 @@ header#header.menu-header div img {
 
 /* Restyle the add and minus buttons within the purchase dropdown */
 .purchase img {
-  width: 20px; /* Adjust the size as needed */
+	 /* Adjust the size as needed */
   cursor: pointer;
-  margin: 0 5px;
+ 
+  object-fit: cover;
 }
+
+
 
 /* Restyle the description div */
 .description {
