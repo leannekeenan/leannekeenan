@@ -1,12 +1,21 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
 
+@property --gradient-angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
 :root {
     --primary: #071630;/*midnight blue*/
     --secondary: #F4E6D1; /*cheesecake*/
     --background: #48006A; /*royal purple*/
     --accent: #FFD700; /*golden treasure*/
     --highlight: #DE2504; /*red dragon*/
+
+	--lightGold: #F2E898;
+	--darkGold:  #996A30;
 }
 
 html, body, div, span, applet, object,
@@ -3380,9 +3389,10 @@ input, select, textarea {
 /* Main */
 	.menu-title {
 		text-align: center;
+		
 	}
 	.menu-title h2 {
-		color: var(--secondary);
+		color: var(--accent);
 		font-weight: 400;
 		font-size: 2.25rem;
 	}
@@ -3627,13 +3637,7 @@ input, select, textarea {
 			color: #636363;
 		}
 
-		#main header.major h2:after {
-			background-color: #dddddd;
-			background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-			background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-		}
+		
 
 		#main table tbody tr {
 			border-color: #dddddd;
@@ -3784,9 +3788,47 @@ input, select, textarea {
 /*shop*/
 
 header#header.menu-header{
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 50px;
+grid-row-gap: 50px;
 }
+
+.intro { grid-area: 1 / 1 / 2 / 2; }
+
+.intro h1, .menu-header h1 {
+	color: var(--accent);
+}
+
+.intro p {
+	color: var(--secondary);
+}
+
+header#header.menu-header div img {
+	height: 100%;
+	aspect-ratio: 1/1;
+	padding: 15px;
+	background: linear-gradient(
+		var(--gradient-angle), var(--lightGold), var(--darkGold), var(--lightGold)
+	);
+	animation: rotation 20s linear infinite;
+}
+.introImg img {
+	height: 100%;
+	filter: blur(0);
+}
+
+.introImg::before, 
+.introImg::after { 
+	grid-area: 1 / 2 / 2 / 3;
+	position: relative;
+	inset: 0;
+	border-radius: inherit;
+	
+	
+}
+
 
 header#header.menu-header div {
 	width: 100%;
@@ -3823,7 +3865,7 @@ header#header.menu-header div img {
   top: 0;
   left: 0;
   width: 100%;
-  height: 66.5%;
+  height: 325px;
   background-color: rgba(255, 255, 255, 0.7); /* Adjust the background color and opacity as needed */
 }
 
@@ -3982,6 +4024,10 @@ header#header.menu-header div img {
 	#strawberry {
 		 grid-area: 5 / 1 / 6 / 2;
 		}
+
+		.productContainer:hover .purchase {
+			height: 400px;
+		}
 		
 }
 
@@ -3991,6 +4037,11 @@ header#header.menu-header div img {
 		flex-direction: column;
 		align-items: center;
 	}
+
+	.productContainer:hover .purchase {
+		
+		height: 80%;
+		}
 }
 
 /* Footer */
