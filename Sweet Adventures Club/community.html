@@ -35,9 +35,16 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" class="alt">
-						
-					</header>
+				<header class="menu-header" id="header">
+					<div class="intro">
+						<h1>Welcome to the Sweet Adventures Society</h1>
+						<p>Mingle with like-minded members, swap sagas of D&D campaigns, and revel in the camaraderie that comes with sharing the magic of a perfectly crafted dessert.</p>
+						<a href="#services">Join Today</a>
+					</div>
+					<div class="introImg">
+						<img src="/Sweet Adventures Club/assets/css/images/gather round.png" alt="">
+					</div>
+				</header>
 
 				<!-- Nav -->
 					<nav id="nav">
@@ -51,25 +58,12 @@
 
 				<!-- Main -->
 					<div id="main">
-						<!--Introduction Section-->
-
-							<section id="intro" class="main">
-								<h2><strong>Welcome to the Sweet Adventures Society</strong></h2>
-								<p>community page</p>
-
-								<img src="/Sweet Adventures Club/assets/css/images/gather round.png" alt="">
-							</section>
-
-							<div class="headline">
-								<p>Mingle with like-minded members, swap sagas of D&D campaigns, and revel in the camaraderie that comes with sharing the magic of a perfectly crafted dessert.</p>
-								<p></p>
-							</div>
-
+					
 						<!-- Story Section -->
 							<section id="alliance" class="main">
 								
 								<h3>Artisans Alliance</h3>
-								<p>A space where members can share their artistic endeavors, collaborate on projects, and celebrate the intersection of artistry and the sweet adventures. The Artisans Alliance fosters a supportive environment for like-minded individuals to showcase their skills and inspire one another within the community.</p>
+								<p>A space where members can share their artistic endeavors, collaborate on campaigns, and celebrate the intersection of artistry, imagination, and sweet adventure.</p>
 								<a href="alliance.html">Artisans Alliance</a>
 							</section>
 
@@ -101,24 +95,46 @@
 					</div>
 
 				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Spread the Word</h2>
-							<p>Craving more sweet adventures? Follow us on social media and be the first to see where our sweet adventures take us next! Your support is the key to our magical journey—share the joy, spread the magic! #SweetAdventuresClub</p>
-							
-						</section>
-						<section>
-							<h2>Follow Us</h2>
-							
-							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-								
-							</ul>
-						</section>
+				<footer id="menu-footer">
+					<section>
 						
-					</footer>
+						
+						<section class="services" id="services">
+
+							<input type="radio" id="signup" name="serviceTypes" checked="checked">
+							<label for="signup">Sign Up</label>
+							<div class="tab">
+								<h2>Ready to Start Your Sweet Adventure?</h2>
+								<p>Join the Sweet Adventures Club today!</p>
+								<div>
+									<input type="text" id="setCustomerFirstName" placeholder="first name">
+									<input type="text" id="setCustomerLastName" placeholder="last name">
+									<input type="email" id="setCustomerEmail" placeholder="email">
+									<input type="text" id="setCustomerUserName" placeholder="username">
+									<input type="password" id="setCustomerPassword" placeholder="password">
+									<input type="password" id="verifyAccountPassword" placeholder="confirm password">
+								</div>
+								<button>Submit</button>
+							</div>
+							
+							
+							<input type="radio" id="signin" name="serviceTypes">
+							<label for="signin">Sign In</label>
+							<div class="tab">
+								<h2>Ready for More Sweet Adventures?</h2>
+								<p>Sign in and resume your flavorful escapades!</p>
+								<div>
+									<input type="text" id="customerUserName" placeholder="username">
+									<input type="email" id="customerEmail" placeholder="email">
+								</div>
+								<button>Submit</button>
+							</div>
+
+						</section>
+					</section>
+					
+					
+				</footer>
 
 			</div>
 

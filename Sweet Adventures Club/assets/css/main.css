@@ -3708,7 +3708,8 @@ input, select, textarea {
 				}
 				#main .main a:hover {
 					background: var(--highlight);
-					color: var(--primary)
+					color: var(--primary);
+					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				}
 
 		@media screen and (max-width: 1280px) {
@@ -3789,13 +3790,30 @@ input, select, textarea {
 
 header#header.menu-header{
 	display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 1fr;
-grid-column-gap: 50px;
-grid-row-gap: 50px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 1fr;
+	grid-column-gap: 50px;
+	grid-row-gap: 50px;
 }
 
+
+
 .intro { grid-area: 1 / 1 / 2 / 2; }
+
+.intro a {
+	background: var(--background);
+	color: var(--accent);
+	padding: 10px;
+	border-radius: 15px;
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+	border: none;
+}
+
+.intro a:hover {
+	background: var(--highlight);
+}
 
 .intro h1, .menu-header h1 {
 	color: var(--accent);
