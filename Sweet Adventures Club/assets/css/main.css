@@ -3353,7 +3353,7 @@ input, select, textarea {
 					#nav ul li a.active {
 						background-color: var(--secondary);
 						box-shadow: none;
-						color: var(--background)
+						color: var(--background);
 					}
 
 		#nav.alt {
@@ -3706,9 +3706,8 @@ input, select, textarea {
 					text-align: center;
 					
 				}
-				#main .main a:hover {
+				#main .main a:hover, .intro a:hover {
 					background: var(--highlight);
-					color: var(--primary);
 					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				}
 
