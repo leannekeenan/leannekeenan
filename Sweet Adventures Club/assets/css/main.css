@@ -326,7 +326,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #ffffff;
+		color: var(--accent);
 	}
 
 	blockquote {
@@ -2443,7 +2443,8 @@ input, select, textarea {
 		}
 
 			.image.main img {
-				width: 100%;
+				width: 60%;
+				margin: 0 auto;
 			}
 
 /* List */
@@ -3820,7 +3821,7 @@ header#header.menu-header{
 
 
 
-header#header.menu-header div img {
+header#header.menu-header div img, .main img {
 	height: 100%;
 	aspect-ratio: 1/1;
 	padding: 15px;
@@ -4091,7 +4092,7 @@ header#header.menu-header div img {
 	}
 
 	footer a img {
-		width: 20%;
+		width: 8%;
 		text-decoration: none;
 		display: flex;
 		margin: 0 auto;
