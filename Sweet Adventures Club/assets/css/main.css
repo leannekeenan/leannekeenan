@@ -3818,9 +3818,7 @@ header#header.menu-header{
 	color: var(--accent);
 }
 
-.intro p {
-	color: var(--secondary);
-}
+
 
 header#header.menu-header div img {
 	height: 100%;
