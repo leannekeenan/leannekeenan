@@ -3417,9 +3417,21 @@ input, select, textarea {
 	}
 
 	#main a {
-		width: 300px;
+		width: 100%;
 		position: relative;
-		left:80%
+		left: 80%;
+		display: flex;
+		flex-direction: row;
+		align-items: baseline;
+	}
+
+	#main .resources a {
+		position: relative;
+		left: 0;
+	}
+
+	#main .resources a:hover {
+		color: var(--accent)
 	}
 
 	
@@ -3697,7 +3709,7 @@ input, select, textarea {
 					color: var(--primary)
 				}
 				
-				#main .main a {
+				#main .main .link {
 					background: var(--background);
 					color: var(--accent);
 					padding: 10px;
@@ -3705,12 +3717,16 @@ input, select, textarea {
 					display: inline-block;
 					width: 22%;
 					text-align: center;
-					
 				}
 				#main .main a:hover, .intro a:hover {
 					background: var(--highlight);
 					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				}
+
+				
+
+				
+				
 
 		@media screen and (max-width: 1280px) {
 
@@ -4059,6 +4075,9 @@ header#header.menu-header div img {
 		height: 80%;
 		}
 }
+
+
+
 
 /* Footer */
 
