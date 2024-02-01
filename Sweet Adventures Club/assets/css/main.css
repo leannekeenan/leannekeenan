@@ -3185,29 +3185,8 @@ input, select, textarea {
 
 		@media screen and (max-width: 736px) {
 
-			#header {
-				padding: 3em 2em 0.1em 2em ;
-			}
+			
 
-			header#header.menu-header div img {
-				position: relative;
-  				display: inline-block;
-				width: 100%;
-			}
-
-			header#header.menu-header .intro {
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				right: 0;
-				margin: 2.5rem;
-				transform: translate(-50%, -50%);
-				background: var(--secondary);
-				opacity: 0.8;
-				color: var(--primary);
-				font-size: 18px;
-				z-index: 100;
-			}
 
 				#header p {
 					font-size: 1em;
@@ -3723,6 +3702,23 @@ input, select, textarea {
 					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				}
 
+				header div a {
+					background: var(--background);
+					color: var(--accent);
+					padding: 10px;
+					border-radius: 10px;
+					display: inline-block;
+					width: 22%;
+					text-align: center;
+					border-bottom: none;
+				}
+
+				header div a:hover {
+					color: var(--accent);
+					background: var(--highlight);
+					transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				}
+
 				
 
 				
@@ -3810,6 +3806,27 @@ header#header.menu-header{
 	grid-template-rows: 1fr;
 	grid-column-gap: 50px;
 	grid-row-gap: 50px;
+}
+
+@media screen and (max-width: 1080px) {
+	header#header.menu-header {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 3rem;
+
+	}
+
+	header#header.menu-header .introImg {
+		position: absolute;
+		top: 25%;
+		bottom: 100%;
+		left: 15%;
+		right: 15%;
+		height: 70%;
+		width: 70%;
+		z-index: -1;
+		
+	}
 }
 
 
