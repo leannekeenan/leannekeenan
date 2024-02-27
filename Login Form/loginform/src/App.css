@@ -1,0 +1,53 @@
+.App {
+  background: rgba(255, 255, 255, 0.5);
+  padding: .5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: rgba(34,193,195, 1);
+  text-wrap: wrap;
+  max-width: 200px;
+  margin: 0 auto
+}
+
+form div{
+  display: flex;
+  justify-content: flex-end;
+  padding: .5rem
+}
+
+form div label {
+  display: flex;
+  align-items: flex-start;
+  padding: .5rem
+}
+
+form div input {
+  width: 100%;
+}
+
+form div a  {
+  margin: 0 auto;
+  background: rgba(253,187,45,1);
+  width: 60%;
+  line-height: 2rem;
+  border: 3px solid rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+form div a:hover {
+ background: rgba(34,193,195, 1);
+ color: rgba(253,187,45, 0.8);
+
+}
+
+form span {
+  font-size: .75rem;
+}
+
