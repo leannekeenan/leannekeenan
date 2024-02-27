@@ -1,6 +1,6 @@
-import Intro from './Homepage'
+import Homepage from './Homepage'
 import './App.css';
-import Navbar from './navbar';
+import Navbar from './Navbar';
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Navbar />
     <div className="App">
       
-      <Intro />
+      <Homepage />
     </div>
     </div>
   );

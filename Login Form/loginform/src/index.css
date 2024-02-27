@@ -22,15 +22,21 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   position: absolute;
-  top: 2rem;
+  top: 0;
   right: 0;
   left: 0;
- }
-
-#image {
-  background: '/Login Form/loginform/public/logo192.png';
-  height: 100%
+  background: rgba(15, 15, 15, 0.8);
+  color: #C8C8C8;
 }
+
+nav * {
+  padding: 0.5rem 1rem;
+}
+
+nav div img {
+  height: 50px;
+}
+

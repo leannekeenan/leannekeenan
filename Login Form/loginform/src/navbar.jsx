@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <nav>
             <div>
-                <span id='image'>logo</span> 
+                <img id='image' src="/logo-no-background.png" alt="" />
             </div>
             <div>
                 <span>Daily Task Organizer</span>
