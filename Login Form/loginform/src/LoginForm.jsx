@@ -3,6 +3,7 @@ import React from 'react'
 const LoginForm = () => {
     return (
         <form>
+            <h2>Login</h2>
             <div>
                 <label htmlFor="username">username</label>
                 <input type="text" id="username" />
@@ -22,7 +23,7 @@ const LoginForm = () => {
             </span>
 
             <div>
-                <a href="#">Sign Up</a>
+                <a id='signup-link' href="#">Sign Up</a>
             </div>
         </form>
     )

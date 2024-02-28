@@ -1,4 +1,4 @@
-import Homepage from './Homepage'
+import LoginForm from './LoginForm'
 import './App.css';
 import Navbar from './Navbar';
 
@@ -8,7 +8,7 @@ function App() {
       <Navbar />
     <div className="App">
       
-      <Homepage />
+      <LoginForm />
     </div>
     </div>
   );
