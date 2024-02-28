@@ -7,7 +7,7 @@ const Navbar = () => {
                 <img id='image' src="/logo-no-background.png" alt="" />
             </div>
             <div>
-                <span>Daily Task Organizer</span>
+                <span>Task Manager</span>
             </div>
         </nav>
     )
