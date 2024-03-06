@@ -162,7 +162,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		color: var(--primary)
+		color: transparent
 	}
 
 		.mySite {
@@ -2216,6 +2216,10 @@ input, select, textarea {
 		width: 300px;
 	}
 
+	.flavors div label:focus {
+		border: var(--accent);
+	}
+
 	::-webkit-input-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 	}
@@ -3036,6 +3040,17 @@ input, select, textarea {
 					
 				}
 
+				.link {
+					background: var(--background);
+					color: var(--accent);
+					padding: 10px;
+					border-radius: 10px;
+					display: inline-block;
+					width: 25%;
+					text-align: center;
+					margin: 0 auto;
+				}
+
 				#main .main .link {
 					background: var(--background);
 					color: var(--accent);
@@ -3059,7 +3074,8 @@ input, select, textarea {
 				#main .main img {
 					display: flex;
 					margin: 0 auto;
-					width: 80%;
+					width: 60%;
+					box-shadow: 0 0 25px var(--accent)
 				}
 
 
@@ -4410,7 +4426,7 @@ body.is-menu-visible #menu {
 .services .flavors  {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(5, 1fr);
+	grid-template-rows: repeat(4, 1fr);
 	margin: 5%
 }
 
@@ -4682,6 +4698,8 @@ body.is-menu-visible #menu {
 
 		.capture {
 			display: flex;
-			margin: 0 auto;
-			width: 50%
+			margin: 3rem auto;
+			width: 60%;
+			box-shadow: 0 0 15px var(--lightGold);
+			border-radius: 25px;
 		}
