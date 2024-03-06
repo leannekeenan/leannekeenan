@@ -2011,6 +2011,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -2025,11 +2026,13 @@ input, select, textarea {
 		padding: 0 1em;
 		text-decoration: none;
 		width: 100%;
+		margin: 1rem 0;
 	}
 
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="tel"],:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -2055,8 +2058,10 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
+		
 	}
 
 	textarea {
@@ -2155,6 +2160,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select,
 	textarea {
 		background-color: rgba(255, 255, 255, 0.075);
@@ -2164,10 +2170,11 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #8cc9f0;
-			box-shadow: 0 0 0 1px #8cc9f0;
+			border-color: var(--accent);
+			box-shadow: 0 0 0 1px var(--accent);
 		}
 
 	select {
@@ -2178,6 +2185,8 @@ input, select, textarea {
 			color: var(--secondary);
 			background: #935d8c;
 		}
+
+		
 
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
@@ -2199,8 +2208,12 @@ input, select, textarea {
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #8cc9f0;
-		box-shadow: 0 0 0 1px #8cc9f0;
+		border-color: var(--accent);
+		box-shadow: 0 0 0 1px var(--accent);
+	}
+
+	.flavors div label {
+		width: 300px;
 	}
 
 	::-webkit-input-placeholder {
@@ -2222,6 +2235,7 @@ input, select, textarea {
 	.formerize-placeholder {
 		color: rgba(255, 255, 255, 0.5) !important;
 	}
+
 
 /* Icon */
 
@@ -3911,6 +3925,7 @@ body.is-menu-visible #menu {
 		#main input[type="text"],
 		#main input[type="password"],
 		#main input[type="email"],
+		#main input[type="tel"],
 		#main select,
 		#main textarea {
 			background-color: rgba(222, 222, 222, 0.25);
@@ -3920,10 +3935,11 @@ body.is-menu-visible #menu {
 			#main input[type="text"]:focus,
 			#main input[type="password"]:focus,
 			#main input[type="email"]:focus,
+			input[type="tel"]:focus,
 			#main select:focus,
 			#main textarea:focus {
-				border-color: #8cc9f0;
-				box-shadow: 0 0 0 1px #8cc9f0;
+				border-color: var(--accent);
+				box-shadow: 0 0 0 1px var(--accent);
 			}
 
 		#main select {
@@ -4399,7 +4415,6 @@ body.is-menu-visible #menu {
 }
 
 .flavors div {
-	
 	margin: 0 auto;
 }
 
