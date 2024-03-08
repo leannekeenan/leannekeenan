@@ -85,6 +85,7 @@ li ul li {
 .details li {
     margin-left: 3rem;
     list-style: circle;
+    color: dark green;
 }
 
 @media screen and (max-width: 400px) {
