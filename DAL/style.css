@@ -82,6 +82,11 @@ li ul li {
     height: 100;
 }
 
+.details li {
+    margin-left: 3rem;
+    list-style: circle;
+}
+
 @media screen and (max-width: 400px) {
     body {
         font-size: 0.8rem;
