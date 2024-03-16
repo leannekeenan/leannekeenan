@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Crawl Card Game</title>
+    <link rel="stylesheet" href="/Dungeon Crawl Card Game/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="instructions"></div>
+        
+        <div class="game">
+            <div class="actions">
+                <div class="deck"></div>
+                <div class="options">
+                    <table>
+                        <thead>
+                            <th>Action</th>
+                            <th>Effect</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Forge [STR]</td>
+                                <td>Add 2 additional Right Path cards to the discard pile from outside the game. </td>
+                            </tr>
+                            <tr>
+                                <td>Scout [DEX]</td>
+                                <td>Reveal the top card of the deck in addition to a card in the river, choose one</td>
+                            </tr>
+                            <tr>
+                                <td>Investigate [INT]</td>
+                                <td>Draw 3 cards from the deck, choose 1, and put it on the bottom of the deck. Shuffle the remaining cards and place them on top of the deck. </td>
+                            </tr>
+                            <tr>
+                                <td>Consider [WIS]</td>
+                                <td>Reveal 2 cards in the river this turn and choose one. </td>
+                            </tr>
+                            <tr>
+                                <td>Boost [CHA]</td>
+                                <td>Remove a Dead End card in the river from the game. Draw a new card from the deck and place it face down in the river.  </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card" id="card1"></div>
+                <div class="card" id="card2"></div>
+                <div class="card" id="card3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/Dungeon Crawl Card Game/script.js"></script>
+</html>

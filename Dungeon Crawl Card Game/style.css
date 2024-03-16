@@ -1,0 +1,31 @@
+.deck, .card {
+    height: 300px;
+    width: 200px;
+    background-color: green;
+    margin: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px grey;
+}
+.card {
+    background-color: transparent;
+}
+
+.cards, .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    width: 500px;
+}
+
+td {
+    background-color: #D5D5D5;
+    padding: 8px;
+    text-align: center;
+}
+td:nth-child(1) {
+    width: 200px
+}
