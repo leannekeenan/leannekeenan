@@ -1,7 +1,7 @@
 <h1>Dungeon Crawl: A Card Game</h1>
 
 <p>
-  Inspired by the TTRPG gaming mechanic created by Micha Risenger of "Tales from the Stinky Dragon"
+  Inspired by the TTRPG dungeon crawl gaming mechanic created by Micha Risenger of "Tales from the Stinky Dragon"
 
    Embark on an adventure as you navigate through your DM's treacherous dungeon represented by this deck of cards. 
    Players must roll a 20-sided die to meet or beat the DC of the dungeon and strategically choose from five action 
