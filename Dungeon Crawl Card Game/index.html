@@ -12,14 +12,31 @@
     <main class="container">
 
         <div class="game-intro">
-            <h1>Dungeon Crawl</h1>
-            <span>The Card Game</span>
+            <div class="welcome">
+                <h1>Dungeon Crawl</h1>
+                <span>The Card Game</span>
+            </div>
+
+            <div class="dungeon-types">
+                <select id="menu" name="menu">
+                    <option id="default" value="default">Choose a Background</option>
+                    <option id="frost" value="frost">Frost Palace</option>
+                    <option id="grassland" value="grassland">Grassland Temple</option>
+                    <option id="meadow" value="meadow">Meadow's Grotto</option>
+                    <option id="mountain" value="mountain">Mountain Cavern</option>
+                    <option id="stone" value="stone">Stone Castle</option>
+                    <option id="swamp" value="swamp">Swampland Portcullis</option>
+                    <option id="underground" value="underground">Underground </option>
+                    <option id="reset" value="reset">Reset</option>
+                  </select>
+            </div>
+
         </div>
 
         <div class="game-details">
 
             <div class="game-deck" id="game-deck">
-                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/deck.png" alt="">
+                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/deck.png" alt="">
             </div>
 
             <div class="game-instructions">
@@ -61,7 +78,7 @@
             <div class="card" id="card3"></div>
 
             <div class="card" id="discard">
-                <img src="/Dungeon Crawl Card Game/assets/images/empty.jpg" alt="">
+                <img src="/Dungeon Crawl Card Game/assets/images/cards/empty.jpg" alt="">
             </div>
 
         </div>
