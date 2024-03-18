@@ -4,53 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dungeon Crawl Card Game</title>
-    <link rel="stylesheet" href="/Dungeon Crawl Card Game/style.css">
+    <link rel="stylesheet" href="/Dungeon Crawl Card Game/assets/css/style.css">
+    <link rel="shortcut icon" href="/Dungeon Crawl Card Game/assets/images/deck.png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <div class="instructions"></div>
-        
-        <div class="game">
-            <div class="actions">
-                <div class="deck"></div>
-                <div class="options">
-                    <table>
-                        <thead>
-                            <th>Action</th>
-                            <th>Effect</th>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Forge [STR]</td>
-                                <td>Add 2 additional Right Path cards to the discard pile from outside the game. </td>
-                            </tr>
-                            <tr>
-                                <td>Scout [DEX]</td>
-                                <td>Reveal the top card of the deck in addition to a card in the river, choose one</td>
-                            </tr>
-                            <tr>
-                                <td>Investigate [INT]</td>
-                                <td>Draw 3 cards from the deck, choose 1, and put it on the bottom of the deck. Shuffle the remaining cards and place them on top of the deck. </td>
-                            </tr>
-                            <tr>
-                                <td>Consider [WIS]</td>
-                                <td>Reveal 2 cards in the river this turn and choose one. </td>
-                            </tr>
-                            <tr>
-                                <td>Boost [CHA]</td>
-                                <td>Remove a Dead End card in the river from the game. Draw a new card from the deck and place it face down in the river.  </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <header></header>
+    <main class="container">
+
+        <div class="game-intro">
+            <h1>Dungeon Crawl</h1>
+            <span>The Card Game</span>
+        </div>
+
+        <div class="game-details">
+
+            <div class="game-deck" id="game-deck">
+                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/deck.png" alt="">
             </div>
-            <div class="cards">
-                <div class="card" id="card1"></div>
-                <div class="card" id="card2"></div>
-                <div class="card" id="card3"></div>
+
+            <div class="game-instructions">
+                <table>
+                    <thead>
+                        <th>Action</th>
+                        <th>Effect</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Forge [STR]</td>
+                            <td>Add 2 additional Right Path cards to the discard pile from outside the game. </td>
+                        </tr>
+                        <tr>
+                            <td>Scout [DEX]</td>
+                            <td>Reveal the top card of the deck in addition to a card in the river, choose one</td>
+                        </tr>
+                        <tr>
+                            <td>Investigate [INT]</td>
+                            <td>Draw 3 cards from the deck, choose 1, and put it on the bottom of the deck. Shuffle the remaining cards and place them on top of the deck. </td>
+                        </tr>
+                        <tr>
+                            <td>Consider [WIS]</td>
+                            <td>Reveal 2 cards in the river this turn and choose one. </td>
+                        </tr>
+                        <tr>
+                            <td>Boost [CHA]</td>
+                            <td>Remove a Dead End card in the river from the game. Draw a new card from the deck and place it face down in the river.  </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </div>
+
+        <div class="game-river">
+
+            <div class="card" id="card1"></div>
+            <div class="card" id="card2"></div>
+            <div class="card" id="card3"></div>
+            <div class="card" id="discard">
+                <img src="/Dungeon Crawl Card Game/assets/images/empty.jpg" alt="">
+            </div>
+
+        </div>
+    </main>
+    <footer></footer>
 </body>
-<script src="/Dungeon Crawl Card Game/script.js"></script>
+<script src="/Dungeon Crawl Card Game/assets/js/script.js"></script>
 </html>

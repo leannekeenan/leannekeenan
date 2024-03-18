@@ -1,0 +1,82 @@
+* {
+    font-size: 1rem;
+}
+
+.game-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.deck, .card{
+    width: 35vw;
+    max-width: 400px;
+    height: 100%
+}
+
+.deck:hover {
+    cursor: pointer;
+}
+
+tr td:nth-child(2) {
+    max-width: 500px;
+}
+
+td {
+    height: 40px;
+}
+tr:nth-child(odd) {
+    background-color: #f3f3f3;
+}
+
+tr:hover {
+    background-color: rgb(233, 226, 189);
+    cursor: pointer;
+}
+
+table td, table th {
+    padding: 10px
+}
+
+
+th {
+    background-color: #a9a9a9;
+    color: white;
+    font-size: 1.5rem;
+}
+
+th:hover {
+    cursor: default;
+}
+
+.game-river {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 1px 1px 10px lightgrey;
+    margin: 1rem;
+    height: 33vh;
+    border-radius: 7px;
+}
+
+.card:nth-child(4) {
+    background-image: none;
+}
+
+#discard span {
+    
+   position: relative;
+   top: 0;
+
+
+}
+
+#discard {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
