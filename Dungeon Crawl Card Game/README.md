@@ -1,4 +1,4 @@
-<h1 margin="0 auto">Dungeon Crawl: A Card Game</h1>
+<h1>Dungeon Crawl: A Card Game</h1>
 
 <p>
   Inspired by the TTRPG gaming mechanic created by Micha Risenger of "Tales from the Stinky Dragon"
