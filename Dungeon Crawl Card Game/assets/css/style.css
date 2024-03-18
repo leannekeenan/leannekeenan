@@ -70,6 +70,7 @@ th:hover {
 
 .card:hover {
     box-shadow: 1px 1px 10px gold;
+    cursor: pointer;
 }
 
 #discard {
