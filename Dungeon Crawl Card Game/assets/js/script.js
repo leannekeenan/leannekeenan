@@ -13,80 +13,81 @@ let card3 = document.getElementById('card3');
 let discard = document.getElementById('discard');
 
 
-let frost = document.getElementById('frost');
-let grassland = document.getElementById('grassland');
-let meadow = document.getElementById('meadow');
+let forest = document.getElementById('forest');
+let castle = document.getElementById('castle');
 let mountain = document.getElementById('mountain');
-let stone = document.getElementById('stone');
+let skyFortress = document.getElementById('skyFortress');
+let planes = document.getElementById('planes');
 let swamp = document.getElementById('swamp');
 let underground = document.getElementById('underground');
-let reset = document.getElementById('reset');
+let kingdomEntry = document.getElementById('kingdomEntry');
+
 
 let menu = document.getElementById('menu')
 
 
-frost.addEventListener('click', frostBackground)
-grassland.addEventListener('click', grasslandBackground)
-meadow.addEventListener('click', meadowBackground)
+forest.addEventListener('click', forestBackground)
+castle.addEventListener('click', castleBackground)
 mountain.addEventListener('click', mountainBackground)
-stone.addEventListener('click', stoneBackground)
+skyFortress.addEventListener('click', skyFortressBackground)
+planes.addEventListener('click', planesBackground)
 swamp.addEventListener('click', swampBackground)
 underground.addEventListener('click', undergroundBackground)
-reset.addEventListener('click', resetBackground)
+kingdomEntry.addEventListener('click', kingdomEntryBackground)
 
 menu.addEventListener('change', select)
 
-function frostBackground() {
-document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/frost palace.jpg')";
+function forestBackground() {
+document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/forest at sunset.jpg')";
 }
 
-function grasslandBackground() {
-document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/grassland temple.jpg')";
-}
-
-function meadowBackground() {
-document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/meadow cavern.jpg')";
-}
-
-function mountainBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/mountain cavern.jpg')";
-}
-
-function stoneBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/stone castle.jpg')";
+function castleBackground() {
+document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/mysterious castle.jpg')";
 }
 
 function swampBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/swamp.jpg')";
+    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/swamptown.jpg')";
+}
+
+function mountainBackground() {
+document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/mountainside tavern.jpg')";
+}
+
+function skyFortressBackground() {
+    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/sky fortress.jpg')";
+}
+
+function planesBackground() {
+    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/sun dappled planes.jpg')";
 }
 
 function undergroundBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/underground ertrance.jpg')";
+    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/underground cavern.jpg')";
 }
 
-function resetBackground() {
- document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/dungeon-default.jpg')";
+function kingdomEntryBackground() {
+ document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/default.jpg')";
 }
 
 function select() {
     let option = menu.value;
 
     switch(option) {
-        case 'frost': frostBackground();
+        case 'forest': forestBackground();
         break;
-        case 'grassland': grasslandBackground();
-        break;
-        case 'meadow': meadowBackground();
-        break;
-        case 'mountain': mountainBackground();
-        break;
-        case 'stone': stoneBackground();
+        case 'castle': castleBackground();
         break;
         case 'swamp': swampBackground();
         break;
+        case 'mountain': mountainBackground();
+        break;
+        case 'skyFortress': skyFortressBackground();
+        break;
+        case 'planes': planesBackground();
+        break;
         case 'underground': undergroundBackground();
         break;
-        default : resetBackground()
+        default : kingdomEntryBackground()
     }
 }
 

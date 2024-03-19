@@ -1,36 +1,39 @@
 /*
-All images are the property of DeviantArt and are copyrighted to various artists including AEON-LUX of Forgotten Path. Unauthorized reproduction, distribution, or use of these images without the explicit consent of DeviantArt and the respective artists is strictly prohibited and may result in legal action.
+All images are the property of DeviantArt, GoodFon, and Rawpixel, and are copyrighted to various artists. Unauthorized reproduction, distribution, or use of these images without the explicit consent of DeviantArt and the respective artists is strictly prohibited and may result in legal action.
 */
 
 * {
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100%;
-
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 
-.game-details {
+.game-intro {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 3rem ;
 }
 
-.deck {
-    width: 35vw;
-    max-width: 400px;
-    height: 100%;
+select, .option {
+    color: rgba(0, 0, 0, 0.7);
 }
 
-.card {
-    width: 60%;
-    max-width: 275px;
-}
-
-.deck:hover {
-    cursor: pointer;
+table {
+    border: 5px solid grey;
+    background-color: grey;
+    box-shadow: 1px 1px 15px black;
+    margin: 0 auto;
 }
 
 tr td:nth-child(2) {
@@ -68,52 +71,35 @@ th:hover {
     cursor: default;
 }
 
-.game-river {
+.game {
     display: flex;
+    justify-content: space-between;
+    width: 100%; /* Adjust the width of the game container */
     margin: 0 auto;
-    align-items: center;
-    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .card {
-    box-shadow: 1px 1px 10px lightgrey;
-    margin: 1rem;
-    height:400px; 
-    border-radius: 7px;
+    display: inline-block; /* Ensures the cards are displayed horizontally */
+    position: relative; /* Positioning context for the image */
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    
 }
 
-.card:hover {
-    box-shadow: 1px 1px 10px gold;
-    cursor: pointer;
+.card img {
+    display: block;
+    width: 100%; /* Ensure the image fills the entire card */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px;
 }
 
-#discard {
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
+.card:hover img {
+    box-shadow: 0 0 20px 0 gold;
+    margin: 0;
+    padding: 0;
 }
 
 
-
-@media (max-width: 1000px) {
-
-    * {
-        font-size: 0.9rem;
-    }
-
-    .game-details, .game-river {
-        display: flex;
-        flex-direction: column;        
-    }
-
-    .game-details {
-        flex-direction: column-reverse;
-    }
-
-    .deck {
-        width: 60vw;
-    }
-    .card {
-        width: 42.25%;
-    }
-}
