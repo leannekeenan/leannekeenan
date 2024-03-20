@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 6rem 3rem;
+}
+
+main {
+    box-shadow: 1px 1px 10px;
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 60px; 
+    color: teal;
+}
+
+h2, .dates {
+    color: teal
+}
+
+.position {
+    font-size: 24px;
+}
+
+.job {
+    margin: 1.5rem 0;
+}
+
+.job:nth-child(1) {
+    margin-top: 0
+}
+
+.dates {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.positions, .details h2, .container h2 {
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: .25rem;
+}
+
+.accomplishments li {
+    margin-left: 5%;
+    list-style-type: disc;
+}
+
+.accomplishments li ul li {
+    list-style-type: circle;
+    margin-left: 5%;
+}
+
+.resume {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.details {
+    margin: 2rem;
+}
+
+.col1 {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.title {
+    margin-top: 2rem;
+}
+
+.col2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
