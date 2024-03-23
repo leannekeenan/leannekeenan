@@ -4,7 +4,7 @@
 </p>
 
 <span>
-<a href="</a>
+<a href=""></a>
 </span>
 
 <p align="center">
