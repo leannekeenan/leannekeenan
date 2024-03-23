@@ -8,7 +8,7 @@
 </span>
 
 <p align="center">
-     <img align="center" src="https://img.freepik.com/premium-photo/light-bulb-with-colorful-paint-splashes-black-background_887999-890.jpg" alt="">
+     <img margin="0" src="https://img.freepik.com/premium-photo/light-bulb-with-colorful-paint-splashes-black-background_887999-890.jpg" alt="">
 </p>
 
 <h2>
