@@ -1,4 +1,4 @@
-<h1>Random Background Color Generator</h1>
+<h1>ChromaBlend: A Random Background Color Generator</h1>
 
 <p>
 </p>
