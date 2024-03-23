@@ -4,7 +4,7 @@
 </p>
 
 <span>
-<a href=""></a>
+Link to project can be found here: <a href="https://chromablend.netlify.app">https://chromablend.netlify.app</a>
 </span>
 
 <p align="center">
