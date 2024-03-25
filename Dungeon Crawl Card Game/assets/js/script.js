@@ -95,7 +95,7 @@ function select() {
 select()
 
 /*
-*---------------------What do I want to have happen---------------------*
+*---What do I want to have happen---*
 
 + Create 5 different cards with five types of cards: 
     right path
