@@ -114,7 +114,7 @@ li {
 .about div {
     background: rgb(212, 202, 202);
     margin: 1rem;
-    padding: 1rem    
+    padding: 1rem ;   
 }
 
 #deck {
@@ -128,6 +128,12 @@ li {
     position: relative; /* Positioning context for the image */
     margin: 1rem;
     border-radius: 15px;
+}
+
+.addons div {
+    max-width: 285px;
+    margin: 0;
+    padding: 0;;
 }
 
 
