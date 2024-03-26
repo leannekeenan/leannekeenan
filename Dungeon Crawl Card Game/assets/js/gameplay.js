@@ -1,104 +1,59 @@
-
 let body = document.querySelector('body')
-let gameDeck = document.getElementById('game-deck');
-let forge = document.getElementById('forge');
-let scout = document.getElementById('scout');
-let investigate = document.getElementById('investigate');
-let consider = document.getElementById('consider');
-let boost = document.getElementById('boost');
+//game deck 
+let deck = document.getElementById('deck');
+//game river
 let river = document.getElementById('river');
+//river cards
 let card1 = document.getElementById('card1');
 let card2 = document.getElementById('card2');
 let card3 = document.getElementById('card3');
-let discard = document.getElementById('discard');
+//any and all cards with the class of "card"
+let card = document.querySelector('.card');
+
+//effects river -- holds cards from the effect options when chosen
 let effects = document.getElementById('effects');
-
-
-
-let deck = document.getElementById('deck');
-
-let backOfCard = '/Dungeon Crawl Card Game/assets/images/cards/deck.png'
+//deck image element
+let backOfCard = '/Dungeon Crawl Card Game/assets/images/cards/deck.png';
+//card image elements
 let rightPath = '/Dungeon Crawl Card Game/assets/images/cards/Right Path.png';
 let deadEnd = '/Dungeon Crawl Card Game/assets/images/cards/Dead End.png';
 let trap = '/Dungeon Crawl Card Game/assets/images/cards/Trap.png';
 let monster = '/Dungeon Crawl Card Game/assets/images/cards/Monster.png';
 let treasure = '/Dungeon Crawl Card Game/assets/images/cards/Treasure.png';
-
+//card array
 let cards = [rightPath, deadEnd, trap, monster, treasure];
-let card;
 
-let riverState = {
-    cards: [],
-    flipped: [false, false, false]
-}
 
-let gameState = {
-    
-}
-
-function initializeRiver() {
-    for (let i = 0; i < 3; i++) {
-        let card = document.createElement('img');
-        card.src = backOfCard;
-        gameRiver.appendChild(card);
-        riverState.cards.push(backOfCard);
-    }
-}
-
-function flipCard(index) {
-    if (!riverState.flipped[index]) {
-        riverState.flipped[index] = true;
-        gameRiver.children[index].src = riverState.cards[index];
-    }
-}
+deck.addEventListener('click', randomize);
 
 function randomize() {
-    let randomizer1 = Math.floor(Math.random() * cards.length);
-    let randomizer2 = Math.floor(Math.random() * cards.length);
-    let randomizer3 = Math.floor(Math.random() * cards.length);
+    let randomCards = [];
+    for (let i = 0; i < 3; i++) {
+        let randomIndex = Math.floor(Math.random() * cards.length);
+        let randomCard = cards[randomIndex];
+        randomCards.push(randomCard);
+    }
 
-    let randomCard1 = cards[randomizer1];
-    let randomCard2 = cards[randomizer2];
-    let randomCard3 = cards[randomizer3];
+    card1.innerHTML = `<img src="${backOfCard}" data-face="${randomCards[0]}" />`;
+    card2.innerHTML = `<img src="${backOfCard}" data-face="${randomCards[1]}" />`;
+    card3.innerHTML = `<img src="${backOfCard}" data-face="${randomCards[2]}" />`;
 
-    console.log(randomCard1);
-    console.log(randomCard2);
-    console.log(randomCard3);
-
-    let cardStyle = window.getComputedStyle(document.querySelector('.card'));
-    let cardWidth = parseFloat(cardStyle.width);
-    let cardHeight = parseFloat(cardStyle.height);
- 
-    let newCard1 = document.createElement('img');
-    let newCard2 = document.createElement('img');
-    let newCard3 = document.createElement('img');
-
-    newCard1.src = randomCard1;
-    newCard1.height = cardHeight;
-    newCard1.width = cardWidth
-    newCard2.src = randomCard2;
-    newCard2.height = cardHeight;
-    newCard2.width = cardWidth
-    newCard3.src = randomCard3;
-    newCard3.height = cardHeight;
-    newCard3.width = cardWidth
- 
-    card1.innerHTML = ''; // Clear existing content in card1
-    card2.innerHTML = ''; // Clear existing content in card2
-    card3.innerHTML = ''; // Clear existing content in card3
- 
-    card1.appendChild(newCard1);
-    card2.appendChild(newCard2);
-    card3.appendChild(newCard3);
-   
-   
+    card1.firstChild.addEventListener('click', toggleCardFace);
+    card2.firstChild.addEventListener('click', toggleCardFace);
+    card3.firstChild.addEventListener('click', toggleCardFace);
 }
-randomize()
 
+function toggleCardFace(event) {
+    let card = event.target;
+    let backOfCardSrc = card.dataset.face;
+    if (card.src.includes(backOfCardSrc)) {
+        card.src = backOfCard;
+    } else {
+        card.src = backOfCardSrc;
+    }
+}
 
-
-
-
+randomize(); // Initialize the game when the page loads
 
 /*
 *---What do I want to have happen---*
@@ -170,4 +125,3 @@ randomize()
 Once all 55 cards have been played, the player can click the empty deck to reshuffle the cards and present a new deck, keeping any current cards in play 
 
 */
-deck.addEventListener('click', randomize)

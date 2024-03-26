@@ -14,8 +14,14 @@ body {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    
+    background-attachment: fixed;   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem ;
 }
 
 
@@ -74,12 +80,7 @@ th:hover {
 }
 
 
-.game-intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3rem ;
-}
+
 
 .game-details {
     margin: 4rem 0;
@@ -87,32 +88,33 @@ th:hover {
 
 h1 {
     text-align: center;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
 }
 
 .about {
-    background-color: rgba(173, 182, 175, 0.5);
+    background-color: rgba(173, 182, 175, 0.8);
     margin: 3rem auto;
     padding: 2rem;
 }
 
+.about p, .about div p, li {
+    font-size: 1.2rem;
+}
+
+li {
+    list-style: "+";
+    padding: 3px 10px;
+    margin-left: 2.75rem;
+}
+
 .about div {
+    background: rgb(212, 202, 202);
     margin: 1rem;
-}
-
-.about div:nth-child(odd) {
-    text-align: left;
-}
-
-.about div:nth-child(even) {
-    text-align: right;
-}
-
-.about div:nth-child(1), .about div:nth-child(5) {
-    text-align: center;
-}
-
-.about div p, .about div ul li {
-    line-height: 1.75rem;
+    padding: 1rem    
 }
 
 #deck {
@@ -148,12 +150,12 @@ h1 {
 }
 
 #deck:hover img {
-    box-shadow: 0 0 30px green;
+    box-shadow: 0 0 30px rgb(113, 241, 113);
     border-radius: 15px;
 }
 
 #discard {
-    border: 3px solid rgb(197, 23, 23)
+    border: 4px solid rgb(197, 23, 23)
 }
 
 #discard:hover img {
