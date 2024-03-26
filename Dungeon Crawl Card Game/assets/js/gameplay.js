@@ -6,7 +6,7 @@ let scout = document.getElementById('scout');
 let investigate = document.getElementById('investigate');
 let consider = document.getElementById('consider');
 let boost = document.getElementById('boost');
-let gameRiver = document.getElementById('game-river');
+let river = document.getElementById('river');
 let card1 = document.getElementById('card1');
 let card2 = document.getElementById('card2');
 let card3 = document.getElementById('card3');
@@ -14,20 +14,10 @@ let discard = document.getElementById('discard');
 let effects = document.getElementById('effects');
 
 
-let forest = document.getElementById('forest');
-let castle = document.getElementById('castle');
-let mountain = document.getElementById('mountain');
-let skyFortress = document.getElementById('skyFortress');
-let planes = document.getElementById('planes');
-let swamp = document.getElementById('swamp');
-let underground = document.getElementById('underground');
-let kingdomEntry = document.getElementById('kingdomEntry');
-
-
-let backgroundMenu = document.getElementById('backgroundMenu');
 
 let deck = document.getElementById('deck');
 
+let backOfCard = '/Dungeon Crawl Card Game/assets/images/cards/deck.png'
 let rightPath = '/Dungeon Crawl Card Game/assets/images/cards/Right Path.png';
 let deadEnd = '/Dungeon Crawl Card Game/assets/images/cards/Dead End.png';
 let trap = '/Dungeon Crawl Card Game/assets/images/cards/Trap.png';
@@ -37,95 +27,76 @@ let treasure = '/Dungeon Crawl Card Game/assets/images/cards/Treasure.png';
 let cards = [rightPath, deadEnd, trap, monster, treasure];
 let card;
 
-deck.addEventListener('click', randomize)
+let riverState = {
+    cards: [],
+    flipped: [false, false, false]
+}
+
+let gameState = {
+    
+}
+
+function initializeRiver() {
+    for (let i = 0; i < 3; i++) {
+        let card = document.createElement('img');
+        card.src = backOfCard;
+        gameRiver.appendChild(card);
+        riverState.cards.push(backOfCard);
+    }
+}
+
+function flipCard(index) {
+    if (!riverState.flipped[index]) {
+        riverState.flipped[index] = true;
+        gameRiver.children[index].src = riverState.cards[index];
+    }
+}
 
 function randomize() {
-   let randomizer = Math.floor(Math.random() * cards.length);
-   let randomCard = cards[randomizer];
-   console.log(randomCard)
+    let randomizer1 = Math.floor(Math.random() * cards.length);
+    let randomizer2 = Math.floor(Math.random() * cards.length);
+    let randomizer3 = Math.floor(Math.random() * cards.length);
 
-   let newCard = document.createElement('img');
-   newCard.src = randomCard;
+    let randomCard1 = cards[randomizer1];
+    let randomCard2 = cards[randomizer2];
+    let randomCard3 = cards[randomizer3];
 
-   if(card1.innerHTML === '') {
-    card1.appendChild(newCard)
-   }
-   else if(card1.innerHTML !== '' && card2.innerHTML === '') {
-    card2.appendChild(newCard)
-   }
-   else if(card1.innerHTML !== '' && card2.innerHTML !== '' && card3.innerHTML === '') {
-    card3.appendChild(newCard)
-   }
+    console.log(randomCard1);
+    console.log(randomCard2);
+    console.log(randomCard3);
+
+    let cardStyle = window.getComputedStyle(document.querySelector('.card'));
+    let cardWidth = parseFloat(cardStyle.width);
+    let cardHeight = parseFloat(cardStyle.height);
+ 
+    let newCard1 = document.createElement('img');
+    let newCard2 = document.createElement('img');
+    let newCard3 = document.createElement('img');
+
+    newCard1.src = randomCard1;
+    newCard1.height = cardHeight;
+    newCard1.width = cardWidth
+    newCard2.src = randomCard2;
+    newCard2.height = cardHeight;
+    newCard2.width = cardWidth
+    newCard3.src = randomCard3;
+    newCard3.height = cardHeight;
+    newCard3.width = cardWidth
+ 
+    card1.innerHTML = ''; // Clear existing content in card1
+    card2.innerHTML = ''; // Clear existing content in card2
+    card3.innerHTML = ''; // Clear existing content in card3
+ 
+    card1.appendChild(newCard1);
+    card2.appendChild(newCard2);
+    card3.appendChild(newCard3);
+   
+   
 }
 randomize()
 
 
-forest.addEventListener('click', forestBackground)
-castle.addEventListener('click', castleBackground)
-mountain.addEventListener('click', mountainBackground)
-skyFortress.addEventListener('click', skyFortressBackground)
-planes.addEventListener('click', planesBackground)
-swamp.addEventListener('click', swampBackground)
-underground.addEventListener('click', undergroundBackground)
-kingdomEntry.addEventListener('click', kingdomEntryBackground)
 
-backgroundMenu.addEventListener('change', select)
-
-function forestBackground() {
-document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/forest at sunset.jpg')";
-}
-
-function castleBackground() {
-document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/mysterious castle.jpg')";
-}
-
-function swampBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/swamptown.jpg')";
-}
-
-function mountainBackground() {
-document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/mountainside tavern.jpg')";
-}
-
-function skyFortressBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/sky fortress.jpg')";
-}
-
-function planesBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/sun dappled planes.jpg')";
-}
-
-function undergroundBackground() {
-    document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/underground cavern.jpg')";
-}
-
-function kingdomEntryBackground() {
- document.body.style.backgroundImage = "url('/Dungeon Crawl Card Game/assets/images/dungeons/default.jpg')";
-}
-
-function select() {
-    let option = backgroundMenu.value;
-
-    switch(option) {
-        case 'forest': forestBackground();
-        break;
-        case 'castle': castleBackground();
-        break;
-        case 'swamp': swampBackground();
-        break;
-        case 'mountain': mountainBackground();
-        break;
-        case 'skyFortress': skyFortressBackground();
-        break;
-        case 'planes': planesBackground();
-        break;
-        case 'underground': undergroundBackground();
-        break;
-        default : kingdomEntryBackground()
-    }
-}
-
-select()
 
 
 
@@ -199,3 +170,4 @@ select()
 Once all 55 cards have been played, the player can click the empty deck to reshuffle the cards and present a new deck, keeping any current cards in play 
 
 */
+deck.addEventListener('click', randomize)

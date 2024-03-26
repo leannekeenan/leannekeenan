@@ -18,16 +18,6 @@ body {
     
 }
 
-.game-intro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 3rem ;
-}
-
-.game-details {
-    margin-bottom: 4rem;
-}
 
 select, .option {
     color: rgba(0, 0, 0, 0.7);
@@ -83,28 +73,71 @@ th:hover {
     box-sizing: border-box;
 }
 
-.card {
-    display: inline-block; /* Ensures the cards are displayed horizontally */
-    position: relative; /* Positioning context for the image */
+
+.game-intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem ;
+}
+
+.game-details {
+    margin: 4rem 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.about {
+    background-color: rgba(173, 182, 175, 0.5);
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+.about div {
     margin: 1rem;
-    width: auto;  
-    height: 100%;
-    border-radius: 15px;
+}
+
+.about div:nth-child(odd) {
+    text-align: left;
+}
+
+.about div:nth-child(even) {
+    text-align: right;
+}
+
+.about div:nth-child(1), .about div:nth-child(5) {
+    text-align: center;
+}
+
+.about div p, .about div ul li {
+    line-height: 1.75rem;
 }
 
 #deck {
     background: rgb(113, 241, 113);
-    border-radius: 15px;
     padding: 4px;
+   
 }
+
+.card {
+    display: inline-block; /* Ensures the cards are displayed horizontally */
+    position: relative; /* Positioning context for the image */
+    margin: 1rem;
+    border-radius: 15px;
+}
+
+
 
 .card img {
     display: block;
     width: 100%; /* Ensure the image fills the entire card */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 250px;
+    height: 100%; /* Maintain aspect ratio */
+    border-radius: 15px;
    
 }
+
 
 .card:hover img {
     box-shadow: 0 0 20px 0 gold;
@@ -137,15 +170,16 @@ th:hover {
 .table {
     border: 5px solid rgb(47, 75, 55);
     background: rgba(63, 99, 73, 0.5);
+    
+}
+
+
+.about, .game, .addons, .table {
+    max-width: 1200px;
+    margin: 2rem auto;
     border-radius: 15px;
 }
 
-
-.game, .addons, .table {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.effects  {
+.effects, .river  {
     display: flex;
 }
