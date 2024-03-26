@@ -83,10 +83,16 @@ th:hover {
 .card {
     display: inline-block; /* Ensures the cards are displayed horizontally */
     position: relative; /* Positioning context for the image */
-    margin: 0 auto;
-    padding: 0;
-    width: auto;
-    
+    margin: 1rem;
+    width: auto;  
+    height: 100%;
+    border-radius: 15px;
+}
+
+#deck {
+    background: green;
+    border-radius: 15px;
+    padding: 0.25rem;
 }
 
 .card img {
@@ -94,12 +100,19 @@ th:hover {
     width: 100%; /* Ensure the image fills the entire card */
     height: auto; /* Maintain aspect ratio */
     max-width: 250px;
+   
 }
 
 .card:hover img {
     box-shadow: 0 0 20px 0 gold;
+    border-radius: 15px;
     margin: 0;
     padding: 0;
+}
+
+#deck:hover img {
+    box-shadow: 0 0 20px green;
+    border-radius: 15px;
 }
 
 .addons {

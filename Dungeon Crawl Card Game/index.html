@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dungeon Crawl Card Game</title>
     <link rel="stylesheet" href="/Dungeon Crawl Card Game/assets/css/style.css">
-    <link rel="shortcut icon" href="/Dungeon Crawl Card Game/assets/images/deck.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/Dungeon Crawl Card Game/assets/images/cards/deck.png" type="image/x-icon">
 </head>
 <body>
     <header></header>
@@ -18,7 +18,7 @@
             </div>
 
             <div class="dungeon-types">
-                <select id="menu" name="menu">
+                <select id="backgroundMenu" name="menu">
                     <option class="option" id="default" value="default">Choose a Background</option>
                     <option class="option" id="forest" value="forest">Forest at Sunset</option>
                     <option class="option" id="castle" value="castle">Mysterious Castle</option>
@@ -45,11 +45,11 @@
                     <tbody>
                         <tr class="action" id="forge">
                             <td>Forge [STR]</td>
-                            <td>Add 2 additional Right Path cards to the discard pile from outside the game. </td>
+                            <td>Add 2 additional Right Path cards to the deck</td>
                         </tr>
                         <tr class="action" id="scout">
                             <td>Scout [DEX]</td>
-                            <td>Reveal the top card of the deck in addition to a card in the river, choose one</td>
+                            <td>The top card of the deck is revealed in addition to one choosen card in the river, choose one of these cards</td>
                         </tr>
                         <tr class="action" id="investigate">
                             <td>Investigate [INT]</td>
@@ -70,25 +70,25 @@
 
         <div class="game">
             
-            <div class="card">
+            <div class="card" id="deck">
                 <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/deck.png" alt="">
             </div>
             
             <div class="card" id="card1">
-                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/deck.png" alt="">
+                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/empty card.png" alt="">
             </div>
             <div class="card" id="card2">
-                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/deck.png" alt="">
+                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/empty card.png" alt="">
             </div>
             <div class="card" id="card3">
-                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/deck.png" alt="">
+                <img class="deck" src="/Dungeon Crawl Card Game/assets/images/cards/empty card.png" alt="">
             </div>
             
         </div>
 
         <div class="addons">
             <div class="card" id="discard">
-                <img src="/Dungeon Crawl Card Game/assets/images/cards/empty.jpg" alt="">
+                <img src="/Dungeon Crawl Card Game/assets/images/cards/empty card.png" alt="">
             </div>
     
             <div class="effects" id="effects"></div>
