@@ -25,6 +25,10 @@ body {
     margin: 3rem ;
 }
 
+.game-details {
+    margin-bottom: 4rem;
+}
+
 select, .option {
     color: rgba(0, 0, 0, 0.7);
 }
@@ -75,7 +79,6 @@ th:hover {
     display: flex;
     justify-content: space-between;
     width: 100%; /* Adjust the width of the game container */
-    margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
 }
@@ -90,9 +93,9 @@ th:hover {
 }
 
 #deck {
-    background: green;
+    background: rgb(113, 241, 113);
     border-radius: 15px;
-    padding: 0.25rem;
+    padding: 4px;
 }
 
 .card img {
@@ -108,17 +111,41 @@ th:hover {
     border-radius: 15px;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 
 #deck:hover img {
-    box-shadow: 0 0 20px green;
+    box-shadow: 0 0 30px green;
     border-radius: 15px;
 }
 
+#discard {
+    border: 3px solid rgb(197, 23, 23)
+}
+
+#discard:hover img {
+    box-shadow: 0 0 30px red;
+}
+
 .addons {
-    border: 5px solid rgba(0, 0, 0, 0.7);
-    padding: 10%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.table {
+    border: 5px solid rgb(47, 75, 55);
+    background: rgba(63, 99, 73, 0.5);
+    border-radius: 15px;
 }
 
 
+.game, .addons, .table {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.effects  {
+    display: flex;
+}
