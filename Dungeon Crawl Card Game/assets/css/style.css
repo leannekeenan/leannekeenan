@@ -21,7 +21,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 3rem ;
+    padding: 2rem;
+    background-color: #5d856c;
 }
 
 
@@ -81,11 +82,6 @@ th:hover {
 
 
 
-
-.game-details {
-    margin: 4rem 0;
-}
-
 h1 {
     text-align: center;
     font-size: 2rem;
@@ -95,32 +91,67 @@ h2 {
     font-size: 1.4rem;
 }
 
+.howTo h2 {
+    font-size: 2.2rem;
+}
+
+.banner {
+    margin: 8rem auto;
+    padding: 5rem;
+    max-width: 800px;
+    background: rgba(110, 109, 109, 0.5)
+}
+
+.banner h1, .banner p {
+    color: rgb(212, 202, 202);
+    font-weight: 800;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+}
+
+.banner p {
+    font-size: 1.4rem;
+}
+
 .about {
     background-color: rgba(173, 182, 175, 0.8);
     margin: 3rem auto;
     padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.howTo {
+    background-color: rgba(173, 182, 175, 0.8);
+    margin: 3rem auto;
+    padding: 2rem;
+    max-width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
 }
 
 .about p, .about div p, li {
     font-size: 1.2rem;
 }
 
-li {
+.paragraph li {
     list-style: "+";
     padding: 3px 10px;
     margin-left: 2.75rem;
 }
 
-.about div {
+.about div, .instructions div {
     background: rgb(212, 202, 202);
     margin: 1rem;
-    padding: 1rem ;   
+    padding: 1rem ;  
+    border-radius: 15px; 
 }
 
 #deck {
     background: rgb(113, 241, 113);
     padding: 4px;
-   
 }
 
 .card {
@@ -130,20 +161,11 @@ li {
     border-radius: 15px;
 }
 
-.addons div {
-    max-width: 285px;
-    margin: 0;
-    padding: 0;;
-}
-
-
-
 .card img {
     display: block;
     width: 100%; /* Ensure the image fills the entire card */
     height: 100%; /* Maintain aspect ratio */
     border-radius: 15px;
-   
 }
 
 
@@ -168,13 +190,6 @@ li {
     box-shadow: 0 0 30px red;
 }
 
-.addons {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-}
-
 .table {
     border: 5px solid rgb(47, 75, 55);
     background: rgba(63, 99, 73, 0.5);
@@ -182,7 +197,7 @@ li {
 }
 
 
-.about, .game, .addons, .table {
+.about, .game,  .table {
     max-width: 1200px;
     margin: 2rem auto;
     border-radius: 15px;
@@ -190,4 +205,59 @@ li {
 
 .effects, .river  {
     display: flex;
+}
+
+
+.howTo div {
+    width: 100%;
+}
+
+.howTo h2, .howTo h3 {
+    text-align: center;
+}
+
+.instructions {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.instructions .cardTypes li {
+    list-style: none;
+}
+
+.instructions h3 {
+    font-size: 1.4rem;
+}
+
+.instructions li {
+    margin: 0.75rem 0;
+    margin-left: 2rem;
+}
+
+.instructions li ul li {
+    margin-left: 2rem;
+}
+
+.instructions li p {
+    font-size: 1.2rem;
+}
+
+.cardTypes ul li{
+    text-align: center;
+}
+
+.cardTypes ul li h4 {
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+@media(max-width: 1400px) {
+   
+
+    .instructions {
+        flex-direction: column; /* Stack divs on top of each other */
+        align-items: center;
+        width: 100%;
+    }
 }
