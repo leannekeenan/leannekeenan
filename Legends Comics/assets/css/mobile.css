@@ -1,0 +1,52 @@
+@media (max-width: 800px) {
+
+    #landing {
+        min-height: 100dvh;
+    }
+
+    #title-page-content {
+        width: 100%;
+        height: inherit;
+    }
+    #title-page-carousel {
+        display: none;
+    }
+    #company .title img {
+        width: 50%;
+    }
+
+    .stores a {
+        font-size: 1em;
+        margin: 0;
+        padding: 0.25rem
+    }
+
+    .main-nav {
+        width: 90%;
+    }
+
+    .main-nav ul li {
+        padding: 15px;
+    }
+
+    .sticky {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .pitch {
+        display: block;
+        width: 80%;
+    }
+
+    #pitch-image {
+        padding-right: 15px;
+        padding-bottom: 0;
+    }
+
+    #pitch-content p {
+        font-size: 2.25vw;
+    }
+
+    
+}

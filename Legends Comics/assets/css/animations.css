@@ -1,0 +1,15 @@
+@keyframes is-preload {
+    0% {
+        opacity: 0%
+    }
+
+    100% {
+        opacity: 100%
+    }
+}
+
+.is-preload {
+    opacity: 0; /* Start with transparency */
+    animation: is-preload 5s ease forwards; /* Apply the fade-in animation */
+
+}
