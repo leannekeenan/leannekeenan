@@ -9,19 +9,23 @@
 }
 
 body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
     background: var(--OffBlack);
-    transform: translate(0, 10%);
+    margin:  0 auto;
     font-size: var(--font-size);
     color: var(--White);
     font-family: "Inter", sans-serif;
 }
 
 .container {
+    text-align: center;
     background: var(--DarkGrey);
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 50%;
     align-items: center;
     border-radius: 15px;
+    padding: 25px;
 }
 
 .container * {
@@ -30,8 +34,17 @@ body {
     flex-direction: column;
 }
 
+.user-name {
+   font-size: 1.1rem;
+}
+
+.location {
+    font-size: 1.2rem;
+}
+
 .user-info img {
-    padding: 2rem;
+    margin: 0 auto;
+    width: 60%;
 }
 
 .user-info .user-name {
@@ -40,10 +53,11 @@ body {
 
 .user-info .about .location {
     color: var(--Green);
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 .quote {
+    font-size: 0.8rem;
     padding-bottom: 2rem;
 }
 
@@ -71,6 +85,5 @@ body {
 }
 
 .user-info img {
-    border-radius: 50%;
-    
+    border-radius: 50%; 
 }

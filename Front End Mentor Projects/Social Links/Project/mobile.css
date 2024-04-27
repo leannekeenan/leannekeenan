@@ -1,5 +1,21 @@
-@media (max-width: 375px) {
- * {
-    font-size: var(font-size) - 4px;
- }
+@media(max-width: 500px) {
+   .user-info img {
+      padding: 0;
+  }
+   .user-name {
+      font-size: 1rem;
+   }
+   
+   .location {
+       font-size: 1.1rem;
+   }
+   .quote {
+      font-size: 0.8rem;
+      padding-bottom: 1rem;
+  }
+  
+  .user-info .about .location {
+   color: var(--Green);
+   padding-bottom: 1rem;
+}
 }
