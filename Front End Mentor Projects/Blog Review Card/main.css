@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Figtree";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: var(--Yellow);
+}
+
+main {
+    background: var(--White);
+    max-width: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 0 var(--Black);
+    padding: 15px;
+    
+}
+
+#card-image, #about, #author{
+    margin-bottom: 1rem
+}
+
+h1 {
+    font-size: 1.4rem;
+    padding: 10px 0;
+}
+
+#card-image img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+}
+
+.about .button {
+    background: var(--Yellow);
+    width: fit-content;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--Black);
+    font-weight: 600;
+    padding: 5px 10px;
+    margin: 10px 0
+}
+
+#author {
+    display: flex;
+}
+
+#author img {
+    width: 35px
+}
+
+#author h2 {
+    font-size: 0.8rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    margin: 0 0.75rem
+}
