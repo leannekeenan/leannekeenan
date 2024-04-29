@@ -40,10 +40,10 @@ function changeImage(img) {
     //if the answer id toggled off
     if (img.src.includes('icon-plus.svg')) {
         //the image will replace the "+" logo"
-        img.src = '/faq-accordion-main/assets/images/icon-minus.svg'; 
+        img.src = '/Front End Mentor Projects/FAQ Accordion/faq-accordion-main/assets/images/icon-minus.svg'; 
         //otherwise the image will revert back to the "+" logo
     } else {
-        img.src = '/faq-accordion-main/assets/images/icon-plus.svg'; 
+        img.src = '/Front End Mentor Projects/FAQ Accordion/faq-accordion-main/assets/images/icon-plus.svg'; 
     }
 }
 
