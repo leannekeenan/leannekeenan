@@ -35,34 +35,7 @@ toggle4.addEventListener('click', function() {
 });
 
 
-//Create a function to change the toggle button image
-function changeImage(img) {
-    //if the answer id toggled off
-    if (img.src.includes('icon-plus.svg')) {
-        //the image will replace the "+" logo"
-        img.src = '/Front End Mentor Projects/FAQ Accordion/faq-accordion-main/assets/images/icon-minus.svg'; 
-        //otherwise the image will revert back to the "+" logo
-    } else {
-        img.src = '/Front End Mentor Projects/FAQ Accordion/faq-accordion-main/assets/images/icon-plus.svg'; 
-    }
-}
 
-//Add the 'changeImage' function to each toggle button in the DOM
-toggle1.addEventListener('click', function() {
-    changeImage(toggle1);
-});
-
-toggle2.addEventListener('click', function() {
-    changeImage(toggle2);
-});
-
-toggle3.addEventListener('click', function() {
-    changeImage(toggle3);
-});
-
-toggle4.addEventListener('click', function() {
-    changeImage(toggle4);
-});
 
 
 
