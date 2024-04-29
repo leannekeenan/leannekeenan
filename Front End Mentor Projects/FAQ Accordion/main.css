@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --LightPink: hsl(275, 100%, 97%);
+    --GrayishPurple: hsl(292, 16%, 49%);
+    --DarkPurple: hsl(292, 42%, 14%);
+}
+
+body {
+    background: var(--GrayishPurple);
+}
+
+header {
+    display: grid;
+    place-items: stretch;
+    height: 30vh;
+    background: url('/faq-accordion-main/assets/images/background-pattern-desktop.svg');
+    background-position: center;
+}
+
+main {
+    display: grid;
+    margin: 0 auto;
+    transform: translateY(-40%);
+    width: 80%;
+    background:var(--LightPink)
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
+
+.description {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+
+.description img {
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.accordion {
+    margin: 0 2rem 1rem 2rem;
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 55px;
+    border-bottom: 1px solid hsla(292, 16%, 49%, 0.3);
+}
+
+.questions img {
+    height: 35px;
+    cursor: pointer;
+}
