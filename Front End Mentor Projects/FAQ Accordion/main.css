@@ -19,7 +19,7 @@ header {
     display: grid;
     place-items: stretch;
     height: 30vh;
-    background: url('/faq-accordion-main/assets/images/background-pattern-desktop.svg');
+    background: url('/Front End Mentor Projects/FAQ Accordion/faq-accordion-main/assets/images/background-pattern-desktop.svg');
     background-position: center;
 }
 
