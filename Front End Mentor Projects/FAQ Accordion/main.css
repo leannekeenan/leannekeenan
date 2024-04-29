@@ -25,10 +25,14 @@ header {
 
 main {
     display: grid;
+    place-items: center;
     margin: 0 auto;
     transform: translateY(-40%);
-    width: 80%;
-    background:var(--LightPink)
+    width: 100%;
+    max-width: 800px;
+    background:var(--LightPink);
+    padding-bottom: 3rem;
+    border-radius: 15px;
 }
 
 h1 {
@@ -37,9 +41,12 @@ h1 {
 
 
 .description {
+    width:100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     margin: 2rem;
+    padding-left: 4rem
 }
 
 .description img {
@@ -49,6 +56,7 @@ h1 {
 
 .accordion {
     margin: 0 2rem 1rem 2rem;
+    width: 80%;
 }
 
 .questions {
@@ -57,9 +65,22 @@ h1 {
     align-items: center;
     height: 55px;
     border-bottom: 1px solid hsla(292, 16%, 49%, 0.3);
+    margin: 15px 0;
 }
 
 .questions img {
     height: 35px;
     cursor: pointer;
 }
+
+.hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+

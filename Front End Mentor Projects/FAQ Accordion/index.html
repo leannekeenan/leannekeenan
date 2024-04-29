@@ -18,23 +18,50 @@
         </section>
 
         <section class="container accordion">
-            <div class="questions">
+            <div class="questions question-1">
                 <p class="question">What is Frontend Mentor, and how will it help me?</p>
-                <img src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
+                <img onclick="changeImage()" class="toggle toggle-1" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
             </div>
-            <div class="questions">
+
+            <div class="hidden answer-1">
+                <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
+  frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+  all levels and ideal for portfolio building.w </p>
+            </div>
+
+            <div class="questions question-2">
                 <p class="question">Is Frontend Mentor free?</p>
-                <img src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
+                <img onclick="changeImage()" class="toggle toggle-2" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
             </div>
-            <div class="questions">
+
+            <div class="hidden answer-2">
+                <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+  option providing access to a range of projects suitable for all skill levels.</p>
+            </div>
+
+            <div class="questions question-3">
                 <p class="question">Can I use Frontend Mentor projects in my portfolio?</p>
-                <img src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
+                <img onclick="changeImage()" class="toggle toggle-3" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
             </div>
-            <div class="questions">
+
+            <div class="hidden answer-3">
+                <p> Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+  way to showcase your skills to potential employers!w </p>
+            </div>
+
+            <div class="questions question-4">
                 <p class="question">  How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
-                <img src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
+                <img onclick="changeImage()" class="toggle toggle-4" src="/faq-accordion-main/assets/images/icon-plus.svg" alt="">
             </div>
+
+            <div class="hidden answer-4">
+                <p> The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+  channel where you can ask questions and seek support from other community members.w </p>
+            </div>
+
         </section>
     </main>
+
+    <script src="/script.js"></script>
 </body>
 </html>

@@ -1,12 +1,22 @@
 @media(max-width: 400px) {
+    main {
+        
+        width: 90%;
+        padding-top: 1rem;
+    }
 
     h1 {
         font-size: 1rem;
     }
 
+    p {
+        font-size: 0.8rem;
+    }
+
     .description {
         display: flex;
-        margin: 2rem;
+        margin: 1rem;
+        padding-left: 2rem;
     }
     
     .description img {
@@ -19,7 +29,7 @@
     }
     
     .questions {
-        align-items: flex-start;
+        align-items: center;
     }
     
     .question {
