@@ -15,4 +15,36 @@
         margin: 5% auto;
     }
     
+    .store-information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .store {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+        margin: 5% 0;
+        padding: 10px;
+    }
+
+    .store p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .card img {
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 5px blue;
+        width: 80%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    
 }
