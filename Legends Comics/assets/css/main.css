@@ -10,7 +10,7 @@ html, body {
     transition:  scroll-behavior 5s;
 }
 
-#landing {
+.landing-container {
     display: flex;
     min-height: 100dvh;
 }
@@ -77,6 +77,12 @@ html, body {
 
   /**************************************************/
 
+  .home-container {
+    background: url('/Legends\ Comics/images/download\ \(6\).jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 3rem;
+}
 
 .container {
     background-position: center;
@@ -105,24 +111,45 @@ html, body {
     font-weight: 600;
 }
 
+/*******************Nav Bar*******************/
+
 .main-nav {
     position: relative;
     z-index: 1000; /* Ensure it's above other content */
     background-color: rgb(165, 165, 165);
     margin: 0 auto;
-    box-shadow: 0 0 20px black;
+    box-shadow: 0 0 10px black;
     border-radius: 15px;
 }
 
-.main-nav ul {
+.nav-links {
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-around;
+    width: 100%;
+    height: 60px;
 }
 
-.main-nav ul li {
-    padding: 25px 75px;
-    
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: yellow;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px; /* Adjust padding as needed */
+    text-decoration: none;
+}
+
+.nav-links li a:hover {
+    background: rgba(255, 0, 0, .3);
 }
 
 
@@ -138,176 +165,401 @@ html, body {
     justify-content: center;
     border-radius: 15px;
 }
-
-  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-  .sticky {
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
     margin: 0 auto;
     border-radius: 0;
-  }
-
-
- .section-link {
-    display: flex;
-    list-style: none;
-    padding: 25px;
-    border-radius: 0;
- } 
-
-
- .section-link:hover {
-    background: rgba(255, 0, 0, 0.6);
-    box-shadow: 0 0 55px rgba(255, 0, 0, 0.2);
- }
-
-.section-link a {
-    font-size: 1.4rem;
-    text-decoration: none;
-    color: rgb(255, 255, 0);
-    text-shadow: 0 0 15px black;
 }
 
- .pitch {
-    width: 80%;
-    margin: 3% auto;
+.pitch {
+    width: 90%;
+    height: auto;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 1rem 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    background: rgb(7, 7, 250);
-    border-radius: 15px;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 10px;
+    background: rgba(0, 0, 255, 0.6);
+    box-shadow: 0 0 10px black;
+    border: 1px solid black;
  }
-
-.pitch div img, .pitch div p {
-    border-radius: 15px;
-}
 
  .pitch-container {
     width: 100%;
+    margin: 0 auto;
     padding: 15px;
-    
  }
 
-#pitch-image {
+ .pitch-image {
     grid-area: 1 / 1 / 2 / 2;
-    padding-right: 0;
-}
+ }
 
-#pitch-image img {
+ .pitch-image img {
     width: 100%;
-    height: 100%;
-}
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+ }
 
- #pitch-content {
+ .pitch-content {
     grid-area: 1 / 2 / 2 / 3;
- }
-
- #pitch-content p {
-    background: white;
-    height: 100%;
-    font-size: 1.75vw;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+ }
+
+ .pitch-content p {
+    line-height: 2.5rem;
+    color: white;
+    font-size: 1.5rem;
     text-align: center;
-    padding: 55px;
  }
 
- #home-container {
-    background: url('/Legends\ Comics/images/download\ \(6\).jpg')no-repeat;
-    background-position: center;
-    background-size: cover;
- }
 
- #about-container {
+
+
+.about-container {
     background: url('/Legends\ Comics/images/download\ \(5).jpg');
     background-position: center;
     background-size: cover;
     display: flex;
-    align-items: center;
- }
-
- .store-description {
-    background: white;
-    font-size: 1.4vw;
-    text-align: center;
-    width: 40%;
-    margin: 0 auto;
-    padding: 8% 5%;
-    opacity: 0.8;
-    line-height: 150%;
-    border-radius: 15px;
- }
-
- .store-offers {
-    display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255, .8);
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+}
+
+.page-headline {
+    font-size: 4rem;
+}
+
+.stores ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stores ul li {
+    list-style: none;
+}
+
+.stores ul li a {
+    font-size: 1.2rem;
+}
+
+.store {
     width: 50%;
-    margin: 0 auto;
-    border-radius: 15px;
- }
+    background: rgba(255, 255, 255, 0.8);
+    padding: 3rem;
+    margin: 1rem;
+    height: 100%;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+}
 
- .store-offers div .we-offer {
-    text-align: center;
-    font-size: 3vw;
- }
 
- .cards {
+
+.store:nth-child(1) {
+    background: rgba(0, 0, 255, 0.6);
+    color: white;
+    text-shadow: 0 0 10px black;
+    padding: 1.5rem
+}
+
+.store-information {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.about-us {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 10% auto;
+}
+
+.shop-for {
     text-align: center;
+    font-size: 1.8rem;
+    margin: 1rem auto;
+    color: red;
+    text-transform: uppercase;
+}
+
+.cards {
     display: grid;
-    width: 67.25%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    margin: 0 auto;
-    padding-top: 50px;
-    
-    padding: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .card {
-    width: 90%;
-    background-color: white;
-    margin: 15px auto;
-    padding: 15px;
-    border-radius: 15px;
+    text-align: center;
 }
 
-.card:hover {
-    background: yellow;
-}
 
- .card img {
-    width: 100%;
+.card img {
     height: auto;
-   aspect-ratio: 1;
-   border-radius: 15px;
- }
+    width: 275px;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    margin: 10px;
+    border: 3px solid blue;
+}
 
- .card p {
-    background-color: white;
-    margin: 10px auto;
-    width: 80%;
-    border-radius: 15px;
-    padding: 10px 0;
- }
+.card img:hover {
+    box-shadow: 0 0 10px yellow;
+}
 
- #comics {
-    grid-area: 1 / 1 / 2 / 2;
- }
+.card p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: red;
+    text-transform: uppercase;
+    font-weight: 600;
+}
 
- #collectables {
-    grid-area: 1 / 2 / 2 / 3;
- }
 
- #games {
-    grid-area: 2 / 1 / 3 / 2;
- }
+.location-container {
+    background: url('/Legends\ Comics/images/download\ \(3).jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 5rem auto;
+}
 
- #community {
-    grid-area: 2 / 2 / 3 / 3;
- }
+.location-container h3 {
+    padding: 3rem;
+}
 
- #locations-container {
-    height: 100vh
- }
+
+.location-information {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px black;
+    margin: 3% auto;
+    border-radius: 10px;
+}
+
+.sub-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: blue;
+    margin: 1rem;
+}
+
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+.location {
+    text-align: center;
+}
+
+.location img {
+    height: auto;
+    width: 275px;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 10px;
+    border: 5px solid blue;
+    margin: 10px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+.location h4 {
+    font-size: 1.4rem;
+    color: red;
+}
+
+.location img:hover {
+    box-shadow: 0 0 10px yellow;
+    border: 3px solid yellow;
+}
+
+h3 {
+    color: red;
+    text-shadow: 0 0 10px blue;
+    font-size: 100px;
+    margin: 5% auto;
+}
+
+.box h4 {
+    color: red;
+    font-size: 1.3rem;
+    text-shadow: none;
+}
+
+.message {
+    font-size: 1.75rem;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+    text-shadow: 0 0 10px yellow;
+}
+
+
+.connect-container {
+    background: url('/Legends\ Comics/images/download\ \(1).jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 5rem;
+}
+
+
+.connect-container .row {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.connect-container .row form {
+    flex: 1 1 40rem;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    background:var(--white);
+    border-radius: 0.5rem;
+}
+
+.connect-container .row .image {
+    flex: 1 1 55rem;
+}
+
+.connect-container .row .image img {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.connect-container .row form .box {
+    padding: 1.7rem;
+    text-transform: none;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    margin: 0.7rem 0;
+    width: 100%;
+}
+
+.connect-container .row form .box:focus {
+    box-shadow: 0 0 10px blue;
+}
+
+.connect-container .row form textarea {
+    height: 15rem;
+    resize: none;
+}
+
+.btn {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: blue;
+    color: white;
+    padding: 1rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: red;
+}
+
+/*CONTACT SECTION END*/
+
+
+
+/*FOOTER SECTION START*/
+
+.footer-container {
+    background: lightgrey;
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footer-container .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+
+.footer-container .box-container .box {
+    flex: 1 1 15rem;
+    
+}
+
+.footer-container .box-container .box h3 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.footer-container .box-container .box a {
+    display: block;
+    color: blue;
+    text-decoration: none;
+    font-size: 1.25rem;
+    padding: 1rem 0;
+    text-transform: none;
+}
+
+
+.footer-container .box-container .box a:hover {
+    color: red;
+    text-shadow: 0 0 10px yellow;
+}
+
+.footer-container .box-container .box img {
+    margin-top: 1rem;
+}
+
+.footer-container .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+
+.footer-container .credit span {
+    color: blue;
+}
+/*FOOTER SECTION END*/
+

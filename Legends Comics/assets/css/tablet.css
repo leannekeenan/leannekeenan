@@ -1,5 +1,18 @@
-@media ( max-width: 800px) {
+@media ( max-width: 1200px) {
+    .about-container {
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 0;
+    }
+
     .tagline {
         font-size: 0.7em;
     }
+
+    .about-us {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin: 5% auto;
+    }
+    
 }

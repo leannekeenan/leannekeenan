@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="https://api.iconify.design/material-symbols:calendar-month-outline-rounded.svg" type="image/x-icon">
+	<link rel="stylesheet" href="/Legends Comics/assets/css/calendar.css">
+</head>
+<body>
+
+    <div class="landing">
+        <h1>Event Calendar</h1>
+    </div>
+    <main class="calendar-container">
+        <div class="calendar">
+
+            <div class="header">
+                <button id="previousBtn">
+                    <img src="https://api.iconify.design/material-symbols:chevron-left.svg" alt="">
+                </button>
+    
+                <div class="monthYear" id="monthYear"></div>
+    
+                <button id="nextBtn">
+                    <img src="https://api.iconify.design/material-symbols:chevron-right.svg" alt="">
+                </button>
+            </div>
+
+            <div class="days">
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thr</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+                <div class="day">Sun</div>
+            </div>
+    
+            <div class="dates" id="dates"></div>
+
+        </div>
+
+        <div class="events" id="events"></div>
+    </main>
+    
+
+    <script src="/Legends Comics/assets/js/script.js"></script>
+</body>
+</html>

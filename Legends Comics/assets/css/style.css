@@ -1,0 +1,13 @@
+@media(max-width: 1600px) {
+
+
+    
+    .pitch-image {
+        padding-right: 15px;
+        padding-bottom: 1rem;
+    }
+    
+    .pitch-content p {
+        font-size: 2.25vw;
+    }
+}

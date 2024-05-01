@@ -15,38 +15,115 @@
         width: 50%;
     }
 
+    .page-headline {
+        font-size: 2rem;
+    }
+
     .stores a {
-        font-size: 1em;
-        margin: 0;
-        padding: 0.25rem
-    }
-
-    .main-nav {
-        width: 90%;
-    }
-
-    .main-nav ul li {
+        font-size: 0.8em;
+        
         padding: 15px;
     }
 
+    .main-nav {
+        width: 95%;
+    }
+
+  
     .sticky {
         width: 100%;
         border-radius: 0;
     }
 
+    .main-nav ul li a {
+        padding: 15px;
+    }
+
+    .nav-links li a{
+
+        font-size: 1rem;
+    }
+
     .pitch {
-        display: block;
-        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        }
+        
+    .pitch-image { 
+        grid-area: 1 / 1 / 2 / 2; 
     }
 
-    #pitch-image {
-        padding-right: 15px;
-        padding-bottom: 0;
+
+    .pitch-content { 
+        grid-area: 2 / 1 / 3 / 2; 
+
     }
 
-    #pitch-content p {
-        font-size: 2.25vw;
+    .pitch-content p {
+        font-size: 1rem;
+    }
+
+    .pitch-container {
+        height: 60%;
+        margin: 0;
     }
 
     
+
+    .store-information {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .store {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+        margin: 5% 0;
+        padding: 10px;
+    }
+
+    .store p {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .card img {
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 0 5px blue;
+        width: 80%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+
+    .locations {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    
+    .location img {
+        height: auto;
+        width: 300px;
+        max-width: 400px;
+        aspect-ratio: 1 / 1;
+        border-radius: 10px;
+        border: 10px solid blue;
+        margin: 5px;
+    }
+    
+
 }
