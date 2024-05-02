@@ -22,6 +22,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
 }
 
 #title-page-content {
@@ -36,14 +37,14 @@ html, body {
 
 .tagline {
     text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
 }
 
 
 
 .lets-go {
-    width: 35%;
+    width: 50%;
     margin: 4% auto;
     display: flex;
 }

@@ -1,0 +1,24 @@
+@media (max-width: 1000px) {
+    .container {
+        display: block;
+        width: 100%;
+        max-width:400px;
+        box-shadow: none;
+    }
+
+    .result-container {
+        border-radius: 0 0 15px 15px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .summary-container {
+        margin: 0
+    }
+
+    .header {
+        padding: 1rem 1.5rem
+    }
+}

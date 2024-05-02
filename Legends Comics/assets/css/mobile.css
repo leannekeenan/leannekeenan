@@ -3,6 +3,12 @@
     #landing {
         min-height: 100dvh;
     }
+    .tagline {
+        text-align: center;
+        font-size: 1.5rem;
+        color: white;
+    }
+    
 
     #title-page-content {
         width: 100%;
