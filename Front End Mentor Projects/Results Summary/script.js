@@ -29,22 +29,22 @@ console.log(totalScore); // Output the total score
 resultValue.textContent = totalScore
 
 if(totalScore <= 50) {
-    resultAdj.textContent = "FAIL";
+    resultAdj.textContent = "POOR";
     explaination.textContent = "You've scored as high as 50% of the people who've taken these tests"
 }
 
 else if(totalScore <= 70) {
-    resultAdj.textContent = "POOR";
+    resultAdj.textContent = "GOOD";
     explaination.textContent = "You've scored higher than 55% of the people who've taken these tests"
 }
 
 else if(totalScore <= 80) {
-    resultAdj.textContent = "GOOD";
+    resultAdj.textContent = "GREAT";
     explaination.textContent = "You've scored higher than 65% of the people who've taken these tests"
 }
 
 else if (totalScore >= 80) {
-    resultAdj.textContent = "GREAT";
+    resultAdj.textContent = "EXCELLENT";
     explaination.textContent = "You've scored higher than 65% of the people who've taken these tests"
 }
 
