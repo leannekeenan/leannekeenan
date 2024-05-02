@@ -116,7 +116,7 @@ html, body {
 .main-nav {
     position: relative;
     z-index: 1000; /* Ensure it's above other content */
-    background-color: rgb(165, 165, 165);
+    background-color: blue;
     margin: 0 auto;
     box-shadow: 0 0 10px black;
     border-radius: 15px;
@@ -318,6 +318,7 @@ html, body {
     border-radius: 10px;
     margin: 10px;
     border: 3px solid blue;
+    cursor: none;
 }
 
 .card img:hover {
@@ -391,6 +392,10 @@ html, body {
     margin: 10px;
     box-shadow: 0 0 10px black;
     cursor: pointer;
+}
+
+.offer img {
+    cursor: auto;
 }
 
 .location h4, .offer h4 {
@@ -473,6 +478,7 @@ h3 {
     width: 50%;
     margin: 0 auto;
     display: flex;
+    box-shadow: 0 0 10px black;
 }
 
 .connect-container .row form .box {
@@ -517,7 +523,7 @@ h3 {
 
 .footer-container {
     background: blue;
-    padding: 100px;
+    padding: 50px 100px 15px 100px;
     background-size: cover;
     background-position: center;
 }
@@ -532,6 +538,7 @@ h3 {
     text-align: center;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 10px;
+    padding: 25px 0;
 }
 
 .footer-container .box-container .box {
@@ -569,7 +576,7 @@ h3 {
     padding: 1.5rem;
     margin-top: 1.5rem;
     padding-top: 2.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 

@@ -61,17 +61,15 @@ let updateCalendar = () => {
                  
                 // Print text to the events container
                 eventsContainer.innerHTML = `
-                <ul>
-                    <li>Special Event 1 on April 16, 2024</li>
-                    <li>Special Event 2 on April 16, 2024</li>
-                    <li>Special Event 3 on April 16, 2024</li>
-                    <!-- Add more list items as needed -->
-                </ul>`;
+    <ul>
+        <li>Special Event 1 on April 16, 2024</li>
+        <li>Special Event 2 on April 16, 2024</li>
+        <li>Special Event 3 on April 16, 2024</li>
+        <!-- Add more list items as needed -->
+    </ul>
+`;
                 eventsContainer.style.color = 'rgba(255, 0, 0, 0.7)';
             }
-/*************************************************************************************************/
-
-
 
 /**************************************April 20, 2024*********************************************/
 
@@ -79,12 +77,13 @@ let updateCalendar = () => {
                  
                 // Print text to the events container
                 eventsContainer.innerHTML = `
-                <ul>
-                    <li>Special Event 1 on April 20, 2024</li>
-                    <li>Special Event 2 on April 21, 2024</li>
-                    <li>Special Event 3 on April 22, 2024</li>
-                    <!-- Add more list items as needed -->
-                </ul>`;
+    <ul>
+        <li>Special Event 1 on April 20, 2024</li>
+        <li>Special Event 2 on April 21, 2024</li>
+        <li>Special Event 3 on April 22, 2024</li>
+        <!-- Add more list items as needed -->
+    </ul>
+`;
                 eventsContainer.style.color = 'rgba(255, 255, 0, 0.7)';
             }
 
@@ -93,23 +92,12 @@ let updateCalendar = () => {
         });
 
 
-
-
-/*************************************************************************************************/
-/*************************************************************************************************/
-/*************************************************************************************************/
-
-
-
 /****************************************April 16, 2024*******************************************/
 
-        if(date.getFullYear() === 2024 && date.getMonth() === 3 && date.getDate() === 16) {
-            dateElement.style.border = '5px solid rgba(255, 0, 0, 0.7)';
-            dateElement.style.color = 'black';
-        }
-/*************************************************************************************************/
-
-
+if(date.getFullYear() === 2024 && date.getMonth() === 3 && date.getDate() === 16) {
+    dateElement.style.border = '5px solid rgba(255, 0, 0, 0.7)';
+    dateElement.style.color = 'black';
+}
 
 /***************************************April 20, 2024********************************************/
 
@@ -117,6 +105,7 @@ let updateCalendar = () => {
             dateElement.style.border = '5px solid rgba(255, 255, 0, 0.7)';
             dateElement.style.color = 'black';
         }
+
 /*************************************************************************************************/
 
         dateElement.addEventListener('mouseleave', () => {

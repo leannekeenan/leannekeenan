@@ -1,17 +1,15 @@
 <!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>Generic - Stellar by HTML5 UP</title>
+		<title>Legend Comics & Games - Valley Fair</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <link rel="stylesheet" href="/Legends Comics/assets/css/store.css">
+		<link rel="stylesheet" href="/Legends Comics/assets/css/calendar.css">
+		<link rel="stylesheet" href="/Legends Comics/assets/css/mobile.css">
+		<link rel="shortcut icon" href="/Legends Comics/images/Legends Logo.png" type="image/x-icon">
 	</head>
 	<body class="is-preload">
 
@@ -42,13 +40,17 @@
 </nav>
 				<!-- Header -->
 					<header id="header">
-						<h1>Generic</h1>
-						<p>Ipsum dolor sit amet nullam</p>
+						<h1>Valley Fair Mall</h1>
+						<p>South San Jose, California</p>
+                        
 					</header>
+
 
 				<!-- Main -->
 					<div id="main">
-
+                        <div class="store-image">
+                            <img src="/Legends Comics/images/valley fair.jpg" alt="">
+                        </div>
 						<!-- Content -->
 							<section id="content" class="main">
 								<span class="image main"><img src="images/pic04.jpg" alt="" /></span>
@@ -61,13 +63,51 @@
 
 					</div>
 
+					<div class="landing">
+						<h1>Event Calendar</h1>
+					</div>
+					<main class="calendar-container">
+						<div class="calendar">
+				
+							<div class="header">
+								<button id="previousBtn">
+									<img src="https://api.iconify.design/material-symbols:chevron-left.svg" alt="">
+								</button>
+					
+								<div class="monthYear" id="monthYear"></div>
+					
+								<button id="nextBtn">
+									<img src="https://api.iconify.design/material-symbols:chevron-right.svg" alt="">
+								</button>
+							</div>
+				
+							<div class="days">
+								<div class="day">Mon</div>
+								<div class="day">Tue</div>
+								<div class="day">Wed</div>
+								<div class="day">Thr</div>
+								<div class="day">Fri</div>
+								<div class="day">Sat</div>
+								<div class="day">Sun</div>
+							</div>
+					
+							<div class="dates" id="dates"></div>
+				
+						</div>
+				
+						<div class="events" id="events"></div>
+					</main>
+					
+				
+					
+
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
 							<h2>Aliquam sed mauris</h2>
 							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">Learn More</a></li>
+								<li><a href="/Legends Comics/index.html" class="button">Back to Main</a></li>
 							</ul>
 						</section>
 						<section>
@@ -88,7 +128,7 @@
 								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<div class="copyright">created by <a href="https:/leannekeenan.netlify.app">Leanne Keenan - Web Developer</a> | All Rights Reserved</div>
 					</footer>
 
 			</div>
@@ -101,6 +141,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="/Legends Comics/assets/js/valleyfair.js"></script>
 
 	</body>
 </html>

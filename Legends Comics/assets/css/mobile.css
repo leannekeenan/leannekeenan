@@ -26,7 +26,7 @@
     }
 
     .main-nav {
-        width: 95%;
+        width: 100%;
     }
 
   
@@ -91,5 +91,19 @@
         margin: 5px;
     }
     
+    .date {
+        padding: 0;
+    }
+    
 
+    .message {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 20px
+    }
+   
 }
