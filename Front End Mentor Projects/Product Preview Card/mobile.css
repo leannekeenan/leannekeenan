@@ -1,0 +1,25 @@
+@media (max-width: 700px) {
+    .card {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .card div {
+        height: 50%;
+        width: 100%;
+    }
+
+    .card .product img {
+        height: 400px;
+        width: inherit;
+
+    }
+
+    .product-name {
+        margin: 1rem auto;
+    }
+
+    .product-price {
+        margin: 1rem 0 
+    }
+}
