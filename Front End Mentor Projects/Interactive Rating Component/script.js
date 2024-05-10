@@ -1,32 +1,35 @@
-//rating elements as a whole
-let ratings = document.querySelectorAll('.rating');
+//gets the rating elements from HTML
+let ratings = document.querySelectorAll('input[type="text"][name="rate"]');
 
-//individual rating elements
-let one =  document.querySelector('.one');
-let two =  document.querySelector('.two');
-let three =  document.querySelector('.three');
-let four =  document.querySelector('.four');
-let five =  document.querySelector('.five');
+//defines rating choice printed to thank.html
+let choice = document.querySelector('.choice');
 
+//a forEach loop is run to identify ratings as an individual element and...
 ratings.forEach(rating => {
-    
-    rating.addEventListener('click', function() {
-        if (this.style.background === 'orange') {
-            this.style.background = ''; // Toggle off
-            
-        } else {
-            this.style.background = 'orange'; // Toggle on
-            
-        };
-    });
+    //...each element will have a function applied when clicked
+    rating.addEventListener('click', function () {
+       
+        // Clears CSS styling of background and text [hover effect]
+        ratings.forEach(option => {
+            option.style.backgroundColor = '';
+            option.style.color = ''; 
+        });
 
-    rating.addEventListener('click', function() {
-        if (this.style.color === 'white') {
-            this.style.color = ''; // Toggle off
-            
-        } else {
-            this.style.color = 'white'; // Toggle onwhite
-            
-        };
+        // Applies new styling to the clicked rating
+        this.style.backgroundColor = 'orange';
+        this.style.color = 'white';
+
+        // Sets the rating value to localStorage
+        localStorage.setItem('ratingValue', rating.value);
     });
+});
+
+// Event listener for page load
+window.addEventListener('DOMContentLoaded', function() {
+    //the localStorage is retrevied and set as the value for the rating
+    const ratingValue = localStorage.getItem('ratingValue');
+    if (choice && ratingValue) {
+        //The value is then used to fill the empty choice element on the thank.html page
+        choice.textContent = ratingValue;
+    }
 });

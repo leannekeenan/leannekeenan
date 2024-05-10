@@ -39,17 +39,24 @@ h1 {
     padding: 1.5rem;
     max-width: 400px;
     border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thank {
+    align-items: center;
+    justify-content: center;
 }
 
 .container > *, .text > * {
-    margin: 1rem 0;
+    margin: 1rem 0 .5rem 0;
 }
 
 .text > * {
     line-height: 1.75rem;
 }
 
-.star {
+.image {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +66,17 @@ h1 {
     background: hsla(216, 12%, 54%, 0.1);
     padding: 18px;
     margin-top: 0;
+   
 }
+
+.ratings {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+    border: none;
+}
+
 
 .rating {
     display: flex;
@@ -68,16 +85,8 @@ h1 {
     padding: 15px;
     border-radius: 50%;
     background: hsla(0, 0%, 100%, 0.03);
-}
-
-.ratings {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin: 2rem 0
-}
-
-.rating {
+    border: none;
+    text-align: center;
     cursor: pointer;
     height: 50px;
     width: 50px;
@@ -86,16 +95,15 @@ h1 {
 
 .rating:hover {
     background: var(--lightgrey);
-    color: white
+    color: var(--white);
 }
-
 
 .btn {
     display: flex;
     align-items: center;
     justify-content: center;
     background: var(--orange);
-    width: 100%;
+    width: 80%;
     height: 45px;
     border-radius: 25px;
     color: var(--white);
@@ -108,4 +116,26 @@ h1 {
 .btn:hover {
     background: var(--white);
     color: var(--orange);
+}
+
+.selected {
+    font-size: 1rem;
+    color: var(--orange);
+    background: hsla(0, 0%, 100%, 0.03);
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-weight: 200;
+    letter-spacing: .05rem;
+}
+
+.text-container {
+    color: var(--white);
+    text-align: center;
+    line-height: 1.76rem;
+    margin: 0 auto
+}
+
+.thank-you {
+    margin: 2rem 0 1rem 0;
+    font-weight: 800;
 }
