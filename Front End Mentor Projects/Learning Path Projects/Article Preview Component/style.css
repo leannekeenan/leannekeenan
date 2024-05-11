@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+:root {
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin: 0 auto;
+    background: var(--LightGrayishBlue);
+}
+
+.headline {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--VeryDarkGrayishBlue);
+}
+
+.subtext {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    color: var(--DesaturatedDarkBlue);
+}
+
+
+
+.container, .more {
+    display: flex;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 750px;
+    justify-content: space-evenly;
+    height: auto;
+    background: rgba(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--GrayishBlue);
+}
+
+
+
+.article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 2rem;
+    height: auto;
+}
+
+
+.article-image img {
+   height: 100%;
+   width: 100%;
+   border-radius: 15px 0 0 15px;
+}
+
+
+.author {
+    display: flex;
+}
+
+.author-image img {
+    border-radius: 50%;
+    height: 35px;
+    margin-right: 1rem
+}
+
+.author-name {
+    color: var(--VeryDarkGrayishBlue);
+}
+
+
+.more {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jump {
+    background: var(--LightGrayishBlue);
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.share img a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.share img:hover {
+    background: var(--GrayishBlue);
+}
+
+.date {
+    color: var(--DesaturatedDarkBlue);
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+  .tooltip .tooltiptext {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    visibility: hidden;
+    width: auto;
+    background-color: var(--VeryDarkGrayishBlue);
+    text-align: center;
+    border-radius: 6px;
+    padding: 10px 15px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip .tooltiptext span {
+    letter-spacing: .3rem;
+    color: var(--GrayishBlue);
+    font-size: 0.8rem;
+  }
+
+  .tooltip .tooltiptext a {
+    height: 1.75rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3px;
+    margin: 0 5px;
+    border-radius: 50%;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  

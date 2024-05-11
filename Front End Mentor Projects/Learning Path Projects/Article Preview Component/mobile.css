@@ -1,0 +1,42 @@
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 80%
+    }
+
+
+    .article-image img {
+        border-radius:  15px 15px 0 0;
+    }
+
+    .tooltip{
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+
+    .share, .tooltip {
+        display: flex;
+        flex-direction: row-reverse;
+        position: absolute;
+        bottom: 20%;
+        left: 0;
+    }
+
+    .jump {
+        z-index: 10;
+        float: right;
+    }
+
+    .tooltip .tooltiptext {
+      position: relative;
+        width: auto; 
+    }
+
+    
+
+    
+
+  
+}
