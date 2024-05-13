@@ -1,42 +1,41 @@
-@media (max-width: 600px) {
+@media (max-width: 800px) {
     .container {
-        flex-direction: column;
-        margin: 0 auto;
-        width: 80%
+        display: block;
+        width: 80%;
+        max-width: 500px;
     }
 
-
-    .article-image img {
-        border-radius:  15px 15px 0 0;
-    }
-
-    .tooltip{
+    .container-element:nth-child(2) {
         width: 100%;
-        position: relative;
-        left: 0;
+        margin: 0;
     }
 
-    .share, .tooltip {
-        display: flex;
-        flex-direction: row-reverse;
-        position: absolute;
-        bottom: 20%;
-        left: 0;
+    .text > *,
+    .more > * {
+        margin: 0.5rem 0;
     }
 
-    .jump {
-        z-index: 10;
-        float: right;
+    .more {
+        margin: 0
     }
 
+    .tooltip {
+        position: relative; /* Added positioning context */
+    }
+    
     .tooltip .tooltiptext {
-      position: relative;
-        width: auto; 
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: -875%;
+        width: auto;
+        height: 50px;
+    }
+
+    .links {
+        padding-right: 25%
     }
 
     
-
     
-
-  
 }
