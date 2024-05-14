@@ -1,41 +1,30 @@
-@media (max-width: 800px) {
-    .container {
+@media (max-width: 600px) {
+    main {
         display: block;
         width: 80%;
-        max-width: 500px;
+        margin: 0 auto
+    }  
+
+    .tooltiptext {
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        
     }
 
-    .container-element:nth-child(2) {
-        width: 100%;
+    .tooltiptext a {
+        display: flex;
         margin: 0;
+        justify-content: center;
+        flex-direction: row;
+        
     }
-
-    .text > *,
-    .more > * {
-        margin: 0.5rem 0;
-    }
-
-    .more {
-        margin: 0
-    }
-
-    .tooltip {
-        position: relative; /* Added positioning context */
-    }
-    
-    .tooltip .tooltiptext {
+     
+    .share .tooltiptext {
         position: absolute;
-        bottom: 0;
-        right: 0;
-        left: -875%;
-        width: auto;
-        height: 50px;
+        bottom: -100%;
+        left: -850%;
+        min-width: 400px;
+        z-index: -2
     }
-
-    .links {
-        padding-right: 25%
-    }
-
-    
-    
 }

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 * {
-    font-size: 13px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,120 +15,154 @@
 }
 
 body {
+    font-size: 13px;
+    min-height: 100vh;
     display: grid;
     place-items: center;
-    min-height: 100vh;
-}
-
-.container {
-    display: flex;
-    max-width: 800px;
-    
-}
-/*left hand side of container*/
-.container-element:nth-child(1) {
-    width: 40%;
-}
-
-.article-image img {
-    width: 100%;
-}
-/*Right Hand side of container*/
-.container-element:nth-child(2) {
-    width: 60%
-}
-
-.article-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 15px
-}
-
-.more {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 4rem 0 2rem
-}
-
-.more .author {
-    display: flex;
-    align-items: center;
-}
-
-.more .author .author-image img {
-    height: 45px;
-    border-radius: 50%;
-    margin-right: 5px
-}
-
-.more .author h2 {
-    font-size: .9rem;
-}
-
-.more .author .date {
-    font-size: 0.7rem;
-    color: var(--GrayishBlue);
-}
-
-img.jump {
-    padding: 15px;
-    border-radius: 50%;
-}
-
-img.jump:hover {
     background: var(--LightGrayishBlue);
 }
 
+main {
+    display: flex;
+    max-width: 600px;
+}
 
-.tooltip {
+h1 {
+    font-size: 1.2rem;
+}
+
+h2, .article-date {
+    font-size: 0.8em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+.drawers {
+    width: 100%;
+    height: 100%;
+}
+
+
+.about > * {
+    margin: .25em 0
+}
+
+.author, .more {
+    display: flex;
+}
+
+.author {
+    z-index: -2;
+}
+
+.more {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 1em;
+    
+}
+
+.description {
+    padding-left: 10px
+}
+
+.description .more .author img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.share {
     position: relative;
     display: inline-block;
     cursor: pointer;
+    width: fit-content;
 }
 
-.tooltip .links {
+.share .links {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
-.tooltip .tooltiptext {
+.share .tooltiptext {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     visibility: hidden;
-    width: auto;
     background-color: var(--VeryDarkGrayishBlue);
     text-align: center;
     border-radius: 6px;
     padding: 10px 15px;
+    visibility: hidden;
+    width: auto; /* Inherit the width of the flex container */
+    opacity: 0;
+    transition: opacity 0.3s;
     position: absolute;
-    bottom: 125%;
-    left: -100%;
+    bottom: 225%;
+    left: -50%;
+    height: 60px;
     margin-left: -60px;
+    margin-right: -15px;
     opacity: 0;
     transition: opacity 0.3s;
 }
 
-.tooltip .tooltiptext span {
+.share-icon {
+    padding: 10px;
+    border-radius: 50%;
+    
+}
+
+.share-icon:hover {
+    background: var(--GrayishBlue);
+}
+
+.tooltiptext a {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.tooltiptext span {
+    cursor:default;
+}
+
+.tooltiptext a:hover {
+    background: var(--GrayishBlue); 
+}
+
+
+
+.share .tooltiptext span {
     letter-spacing: .3rem;
     color: var(--GrayishBlue);
     font-size: 0.8rem;
 }
 
-.tooltip .tooltiptext .links a {
-    height: 1.75rem;
+.share .tooltiptext .links a {
+    height: 2.5rem;
     color: #fff;
     display: flex;
     justify-content: space-evenly;
-    padding: 3px;
-    margin: 0 5px;
+    padding: 8px;
+    margin: 0 10px;
     border-radius: 50%;
 }
 
-.tooltip:hover .tooltiptext {
+.share .tooltiptext .links a:hover {
+    background: var(--GrayishBlue);
+}
+
+.share:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
 }
