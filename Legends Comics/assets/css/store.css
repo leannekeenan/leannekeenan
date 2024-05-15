@@ -110,7 +110,6 @@ input, select, textarea {
 /* Type */
 
 	body {
-		background: url('/Legends\ Comics/images/download\ \(1\).jpg')no-repeat;
 		background-position: center;
 		background-size: cover;
 		padding-bottom: 3rem;
@@ -201,6 +200,7 @@ input, select, textarea {
 	h1 {
 		font-size: 2.5em;
 		line-height: 1.2;
+		
 	}
 
 	h2 {
@@ -3331,10 +3331,12 @@ input, select, textarea {
 	#header {
 		padding: 5em 5em 1em 5em ;
 		text-align: center;
+		color: white;
 	}
 
 		#header h1 {
 			margin: 0 0 0.25em 0;
+			
 		}
 
 		#header p {
@@ -3861,6 +3863,8 @@ input, select, textarea {
 					border-bottom-left-radius: 0;
 				}
 
+				
+
 		@media screen and (max-width: 1280px) {
 
 			#main > .main {
@@ -3947,8 +3951,14 @@ input, select, textarea {
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		padding: 5em 5em 3em 5em ;
-		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
+		width: 90%;
+		margin: 3rem auto;
+		background: blue;
+		color: yellow;
+	}
+
+	footer a:hover {
+		color: red;
 	}
 
 		#footer > * {
@@ -4259,4 +4269,10 @@ input, select, textarea {
 	.store-image img {
 		width: 100%;
 	}
+}
+
+.landing h1 {
+	color: white;
+	text-align: center;
+	margin-top: 3rem;
 }

@@ -7,7 +7,7 @@
     font-family: "Poppins", sans-serif;
 }
 
- 
+
 
 .calendar-container {
     position: relative;
@@ -107,9 +107,13 @@
     padding: 15px;
     height: auto;
     min-height: 200px;
-    background: #F9F9F9;;
+    background: rgba(57, 3, 255, 0);
     box-shadow: 0 0 10px black;
     border-radius: 5px;
 }
 
 
+.events  li {
+    font-weight: 800;
+    letter-spacing: 2px;
+}

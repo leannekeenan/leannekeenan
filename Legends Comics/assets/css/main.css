@@ -457,13 +457,12 @@ h3 {
 
 .connect-container .row {
     display: flex;
-    flex-wrap: wrap-reverse;
     gap: 1.5rem;
     align-items: center;
 }
 
 .connect-container .row form {
-    flex: 1 1 40rem;
+    flex: 1 1 80rem;
     padding: 2rem 2.5rem;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
     border: 1rem solid rgba(0, 0, 0, 0.1);
@@ -476,10 +475,11 @@ h3 {
 }
 
 .connect-container .row .image img {
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     box-shadow: 0 0 10px black;
+    max-width: 500px
 }
 
 .connect-container .row form .box {

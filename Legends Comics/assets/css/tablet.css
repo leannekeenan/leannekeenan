@@ -44,5 +44,18 @@
         height: auto;
         aspect-ratio: 1 / 1;
     }
+
+    .connect-container .row {
+        flex-direction: column-reverse;
+    }
+
+    .connect-container .row .image {
+        flex: 1 1 25rem;
+    }
+
+    .connect-container .row form {
+        flex: 1 1 20rem;
+       
+    }
     
 }
