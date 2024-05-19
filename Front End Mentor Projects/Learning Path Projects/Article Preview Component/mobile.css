@@ -5,7 +5,6 @@
         max-width: 400px;
         margin: 0 auto;
         position: relative;
-
     } 
 
     .drawers {
@@ -14,38 +13,32 @@
         border-radius: 15px 15px 0 0;
     }
     
-    .share .tooltiptext {
-        left: 0;
-    }
-
-    .tooltiptext {
-        margin: 0 auto;
-        display: flex;
-        width: 100%;
-    }
-
-    .tooltiptext a {
-        display: flex;
-        margin: 0;
-        justify-content: center;
-        flex-direction: row;
-        
-    }
 
     .share .tooltiptext {
         display: flex;
-        justify-content: space-between;
-        position: relative;
-        right: 0%;
-        left: 0%;
-        z-index: -2;
-    }
-
-    .share-icon {
-        padding: 10px;
-        border-radius: 50%;
+        justify-content: space-around;
+        align-items: center;
+    
+        width: auto; /* Inherit the width of the flex container */
+        opacity: 0;
+        transition: opacity 0.3s;
         position: absolute;
-        bottom: 15%;
-        left: 70%;
+        bottom: -65%;
+        right: -14%;
+        left: -120%;
+        height: 75px;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 0 0 10px 10px;
     }
+    
+    .share-icon {
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
 };
