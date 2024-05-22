@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--CharcoalGrey);
+}
+
+main {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--White);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+li {
+    list-style: none;
+    margin: .25rem 0
+}
+
+
+li:before {
+    content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Im0xMCAxNi40bC00LTRMNy40IDExbDIuNiAyLjZMMTYuNiA3TDE4IDguNHoiLz48L3N2Zz4=');
+    background: var(--Tomato); 
+    border-radius: 50%;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-right: 0.5em;
+    vertical-align: middle;
+  
+}
+
+.text h1, 
+.text p, 
+.text ul, 
+.text form {
+    margin: 1.5rem; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form div span {
+    color: var(--Tomato)
+}
+
+form div input {
+    height: 45px;
+    margin: .25rem 0;
+    border: 1px solid rgba(211, 211, 211, 0.2);
+    border-radius: 15px;
+    padding: 0.5rem;
+}
+
+form div input:focus,
+form div input:active {
+    border-color: var(--Tomato);
+    outline: none; /* Optional: removes the default focus outline */
+}
+
+form div div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+form button {
+    margin: 1.5rem 0;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--DarkSlateGrey);
+    color: var(--White);
+    border: none; /* Removes default border */
+}
+/*background: hsla(4, 100%, 67%, 0.1);*/
+
