@@ -1,7 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: var(--CharcoalGrey);
 }
 
 :root {
@@ -12,26 +24,50 @@
     --White: hsl(0, 0%, 100%);
 }
 
-body {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-    background: var(--CharcoalGrey);
-}
-
 main {
     display: flex;
-    height: fit-content;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
     background: var(--White);
-    padding: 15px;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+label {
+    font-weight: 800;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.join {
+    font-size: 1.5rem;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.image {
+    flex: 1;
+    position: relative;
+    padding-top: 56.25%; /* 16:9 aspect ratio */
+    background: url('/Front End Mentor Projects/Newsletter Sign-Up Form/project/desktop.png') no-repeat center center;
+    background-size: cover;
     border-radius: 15px;
 }
 
 li {
     list-style: none;
-    margin: .25rem 0
+    margin: .75rem 0;
+    font-size: 1.25rem;
+    display: flex;
 }
 
 
@@ -39,28 +75,32 @@ li:before {
     content: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Im0xMCAxNi40bC00LTRMNy40IDExbDIuNiAyLjZMMTYuNiA3TDE4IDguNHoiLz48L3N2Zz4=');
     background: var(--Tomato); 
     border-radius: 50%;
-    display: inline-block;
-    width: 1em;
-    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.5em;
+    height: 1.5em;
     margin-right: 0.5em;
     vertical-align: middle;
   
 }
 
-.text h1, 
-.text p, 
-.text ul, 
-.text form {
-    margin: 1.5rem; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+.text {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+form, button {
+    width: 100%;
 }
 
 
 form div {
     display: flex;
     flex-direction: column;
+
 }
 
 form div span {
@@ -70,7 +110,7 @@ form div span {
 form div input {
     height: 45px;
     margin: .25rem 0;
-    border: 1px solid rgba(211, 211, 211, 0.2);
+    border: 1px solid rgba(211, 211, 211);
     border-radius: 15px;
     padding: 0.5rem;
 }
