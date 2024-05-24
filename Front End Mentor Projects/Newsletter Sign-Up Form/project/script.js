@@ -1,25 +1,34 @@
 const form = document.getElementById('form');
 const email = document.getElementById('email');
-const emailError = document.getElementById('email-error')
+const emailError = document.getElementById('email-error');
+const confirmationEmail = localStorage.getItem('email');
+const userEmail = document.getElementById('user-email')
 
 function handleSubmit(e) {
     e.preventDefault();
 
     const emailValue = email.value.trim();
+    
 
     if(validateEmail(emailValue)) {
         console.log('success')
         console.log({email: email.value.trim()})
 
+        // Store the email in localStorage
+        localStorage.setItem('userEmail', emailValue);
+       
         email.value = '';
         emailError.innerHTML = '';
-        email.style.backgroundColor = ''
+        email.style.backgroundColor = '';
+
+        // Redirect to a new page
+        window.location.href = 'success.html';
+        userEmail.innerHTML = confirmationEmail;
+        console.log(userEmail)
     }
-
-    // Redirect to a new page
-    window.location.href = 'success.html'; // Replace 'success.html' with your desired page URL
-
+    
 }
+
 
 function validateEmail(emailValue) {
     if (!emailValue) {
@@ -43,4 +52,13 @@ function validateEmail(emailValue) {
 
 }
 
+// Retrieve the email from localStorage and display it
+if (confirmationEmail) {
+    document.getElementById('user-email').textContent = confirmationEmail;
+    console.log("Email stored in localStorage:", confirmationEmail); // Log stored email
+}
+
 form.addEventListener('submit', handleSubmit);
+
+
+

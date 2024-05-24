@@ -31,4 +31,19 @@
     ul {
         margin: 1rem 0
     }
+
+    .success-container {
+        height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+    }
+
+    .thanks-container * {
+       margin: 1rem 0
+    }
+
+    .thanks-container img {
+        margin: 0.5rem 0
+    }
 }
