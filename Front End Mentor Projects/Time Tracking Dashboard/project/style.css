@@ -24,15 +24,17 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     background: rgb(178, 172, 236);
-    height: 75%;
+    height: 67%;
+    min-width: 250px;
     border-radius: 15px;
+    padding: 0 2rem
 }
 
 .stat-options {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 25%;
+    height: 33%;
     padding: 0 15px
 }
 
@@ -57,7 +59,7 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 250px;
+    height: 230px;
     width: 250px;
     border-radius: 15px;
 }
@@ -66,7 +68,7 @@ body {
     background: lightgrey;
     width: 100%;
     border-radius: 15px;
-    height: 150px;
+    height: 125px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
