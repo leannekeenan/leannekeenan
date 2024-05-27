@@ -16,45 +16,7 @@ const socialHoursLW = document.getElementById('social-hours-lw');
 const personalHours = document.getElementById('personal-hours');
 const personalHoursLW = document.getElementById('personal-hours-lw');
 
-// Define variables in the global scope
-let workDailyCurrent, 
-workDailyPrevious, 
-playDailyCurrent, 
-playDailyPrevious, 
-studyDailyCurrent, 
-studyDailyPrevious, 
-exerciseDailyCurrent, 
-exerciseDailyPrevious, 
-socialDailyCurrent, 
-socialDailyPrevious, 
-personalDailyCurrent, 
-personalDailyPrevious;
 
-let workWeeklyCurrent, 
-workWeeklyPrevious, 
-playWeeklyCurrent, 
-playWeeklyPrevious, 
-studyWeeklyCurrent, 
-studyWeeklyPrevious, 
-exerciseWeeklyCurrent, 
-exerciseWeeklyPrevious, 
-socialWeeklyCurrent, 
-socialWeeklyPrevious, 
-personalWeeklyCurrent, 
-personalWeeklyPrevious;
-
-let workMonthlyCurrent, 
-workMonthlyPrevious, 
-playMonthlyCurrent, 
-playMonthlyPrevious, 
-studyMonthlyCurrent, 
-studyMonthlyPrevious, 
-exerciseMonthlyCurrent, 
-exerciseMonthlyPrevious, 
-socialMonthlyCurrent, 
-socialMonthlyPrevious, 
-personalMonthlyCurrent, 
-personalMonthlyPrevious;
 
 const fetchData = () => {
     fetch('/Front End Mentor Projects/Time Tracking Dashboard/time-tracking-dashboard-main/time-tracking-dashboard-main/data.json')
@@ -68,8 +30,10 @@ const fetchData = () => {
             console.log(data);
 
             //daily
+         
             workDailyCurrent = data[0].timeframes.daily.current;
             workDailyPrevious = data[0].timeframes.daily.previous;
+            
 
             playDailyCurrent = data[1].timeframes.daily.current;
             playDailyPrevious = data[1].timeframes.daily.previous;
@@ -127,6 +91,52 @@ const fetchData = () => {
             daily.addEventListener('click', printDailyValues);
             weekly.addEventListener('click', printWeeklyValues);
             monthly.addEventListener('click', printMonthlyValues);
+
+            function printDailyValues() {
+                workHours.textContent = workDailyCurrent;
+                workHoursLW.textContent = workDailyPrevious;
+                playHours.textContent = playDailyCurrent;
+                playHoursLW.textContent = playDailyPrevious;
+                studyHours.textContent = studyDailyCurrent;
+                studyHoursLW.textContent = studyDailyPrevious;
+                exerciseHours.textContent = exerciseDailyCurrent;
+                exerciseHoursLW.textContent = exerciseDailyPrevious;
+                socialHours.textContent = socialDailyCurrent;
+                socialHoursLW.textContent = socialDailyPrevious;
+                personalHours.textContent = personalDailyCurrent;
+                personalHoursLW.textContent = personalDailyPrevious;
+            }
+            
+            function printWeeklyValues() {
+                workHours.textContent = workWeeklyCurrent;
+                workHoursLW.textContent = workWeeklyPrevious;
+                playHours.textContent = playWeeklyCurrent;
+                playHoursLW.textContent = playWeeklyPrevious;
+                studyHours.textContent = studyWeeklyCurrent;
+                studyHoursLW.textContent = studyWeeklyPrevious;
+                exerciseHours.textContent = exerciseWeeklyCurrent;
+                exerciseHoursLW.textContent = exerciseWeeklyPrevious;
+                socialHours.textContent = socialWeeklyCurrent;
+                socialHoursLW.textContent = socialWeeklyPrevious;
+                personalHours.textContent = personalWeeklyCurrent;
+                personalHoursLW.textContent = personalWeeklyPrevious;
+            }
+            
+            function printMonthlyValues() {
+                workHours.textContent = workMonthlyCurrent;
+                workHoursLW.textContent = workMonthlyPrevious;
+                playHours.textContent = playMonthlyCurrent;
+                playHoursLW.textContent = playMonthlyPrevious;
+                studyHours.textContent = studyMonthlyCurrent;
+                studyHoursLW.textContent = studyMonthlyPrevious;
+                exerciseHours.textContent = exerciseMonthlyCurrent;
+                exerciseHoursLW.textContent = exerciseMonthlyPrevious;
+                socialHours.textContent = socialMonthlyCurrent;
+                socialHoursLW.textContent = socialMonthlyPrevious;
+                personalHours.textContent = personalMonthlyCurrent;
+                personalHoursLW.textContent = personalMonthlyPrevious;
+            }
+            
         })
         .catch((error) => {
             console.error('There is an error with the fetch', error);
@@ -135,47 +145,3 @@ const fetchData = () => {
 
 fetchData();
 
-function printDailyValues() {
-    workHours.innerText = workDailyCurrent;
-    workHoursLW.textContent = workDailyPrevious;
-    playHours.textContent = playDailyCurrent;
-    playHoursLW.textContent = playDailyPrevious;
-    studyHours.textContent = studyDailyCurrent;
-    studyHoursLW.textContent = studyDailyPrevious;
-    exerciseHours.textContent = exerciseDailyCurrent;
-    exerciseHoursLW.textContent = exerciseDailyPrevious;
-    socialHours.textContent = socialDailyCurrent;
-    socialHoursLW.textContent = socialDailyPrevious;
-    personalHours.textContent = personalDailyCurrent;
-    personalHoursLW.textContent = personalDailyPrevious;
-}
-
-function printWeeklyValues() {
-    workHours.textContent = workWeeklyCurrent;
-    workHoursLW.textContent = workWeeklyPrevious;
-    playHours.textContent = playWeeklyCurrent;
-    playHoursLW.textContent = playWeeklyPrevious;
-    studyHours.textContent = studyWeeklyCurrent;
-    studyHoursLW.textContent = studyWeeklyPrevious;
-    exerciseHours.textContent = exerciseWeeklyCurrent;
-    exerciseHoursLW.textContent = exerciseWeeklyPrevious;
-    socialHours.textContent = socialWeeklyCurrent;
-    socialHoursLW.textContent = socialWeeklyPrevious;
-    personalHours.textContent = personalWeeklyCurrent;
-    personalHoursLW.textContent = personalWeeklyPrevious;
-}
-
-function printMonthlyValues() {
-    workHours.textContent = workMonthlyCurrent;
-    workHoursLW.textContent = workMonthlyPrevious;
-    playHours.textContent = playMonthlyCurrent;
-    playHoursLW.textContent = playMonthlyPrevious;
-    studyHours.textContent = studyMonthlyCurrent;
-    studyHoursLW.textContent = studyMonthlyPrevious;
-    exerciseHours.textContent = exerciseMonthlyCurrent;
-    exerciseHoursLW.textContent = exerciseMonthlyPrevious;
-    socialHours.textContent = socialMonthlyCurrent;
-    socialHoursLW.textContent = socialMonthlyPrevious;
-    personalHours.textContent = personalMonthlyCurrent;
-    personalHoursLW.textContent = personalMonthlyPrevious;
-}
