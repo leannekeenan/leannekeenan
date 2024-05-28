@@ -1,56 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+}
+
+:root {
+    --Blue: hsl(246, 80%, 60%);
+    --LightRedWork: hsl(15, 100%, 70%);
+    --SoftBlue: hsl(195, 74%, 62%);
+    --LightRedStudy: hsl(348, 100%, 68%);
+    --LimeGreen: hsl(145, 58%, 55%);
+    --Violet: hsl(264, 64%, 52%);
+    --SoftOrange: hsl(43, 84%, 65%);
+    --VeryDarkBlue: hsl(226, 43%, 10%);
+    --DarkBlue: hsl(235, 46%, 20%);
+    --DesaturatedBlue: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+}
+
 body {
+    min-height: 100vh;
     display: grid;
     place-items: center;
-    min-height: 100vh;
+    background: var(--VeryDarkBlue);
 }
 
 .container {
     display: flex;
-    width: 100%;
-}
-
-.container > div {
-    margin: 15px;
 }
 
 .user {
-    background: grey;
-    width: fit-content;
-    border-radius: 15px;
-    max-width: 350px;
-
+    margin: 0 20px;
+    width: 400px
 }
 
-.card {
+.user .card .user-details h1 {
+    font-size: 2.3rem;
+}
+
+.user, .stat-options {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background: rgb(178, 172, 236);
-    height: 67%;
-  
+    justify-content: space-between;
+    background: var(--DarkBlue);
     border-radius: 15px;
-    padding: 0 2rem
+}
+
+
+.card {
+    background: var(--Blue);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex: 0 0 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: white;
+    font-weight: 100;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.user-details h1{
+    font-weight: 100;
 }
 
 .card img {
-    width: 100px;
+    width: 35%;
+    height: auto
 }
 
-.user-name {
-    font-size: 3rem;
-}
 
 .stat-options {
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex: 0 0 30%;
+    margin: 0 1rem;
+    align-items: flex-start;
     justify-content: space-evenly;
-    height: 33%;
-    padding: 0 15px
 }
 
 .stat-options a {
+    color:var(--DesaturatedBlue);
     text-decoration: none;
-    width: fit-content;
 }
 
 .stat-options a:hover {
@@ -62,70 +98,58 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
     width: 100%;
-    max-width: 1000px;
-}
-
-.user {
-    width: 50%;
 }
 
 .stat {
-    width: 100%;
-    padding-top: 50px;
-    z-index: 0;
+    display: flex;
+    flex-direction: column;
     border-radius: 15px;
-    height: 250px;
 }
 
-.stat > img {
-    height: 100px;
-    float: right;
-    position: relative;
-    top: -17.5%;
-    right: 2%;
-    z-index: 0;
+.stat img {
+    margin-left: 55%;
+    z-index: 1;
 }
 
 .work {
-    grid-area: 1 / 1 / 2 / 2;
-    background: orange;
+    background: var(--LightRedWork);
 }
 
 .play {
-    grid-area: 1 / 2 / 2 / 3; 
-    background: teal;
+    background: var(--SoftBlue);
 }
 
 .study {
-    grid-area: 1 / 3 / 2 / 4;
-    background: pink;
+    background: var(--LightRedStudy);
 }
 
 .exercise {
-    grid-area: 2 / 1 / 3 / 2;
-    background: green;
+    background: var(--LimeGreen);
 }
 
 .social {
-    grid-area: 2 / 2 / 3 / 3;
-    background: purple;
+    background: var(--Violet);
 }
 
 .personal {
-    grid-area: 2 / 3 / 3 / 4;
-    background: goldenrod;
+    background: var(--SoftOrange);
 }
 
 .report {
-    background: whitesmoke;
-    height: 250px;
-    width: 100%;
-    position: relative;
-    top: 0;
-    z-index: 10;
+    background: var(--VeryDarkBlue);
+    color: white;
     border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 85%;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
