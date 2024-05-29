@@ -98,8 +98,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     width: 100%;
 }
 
@@ -107,11 +107,15 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 15px;
+    z-index: -2;
+    position: relative; /* Ensure positioning is relative to this container */
+    width: 250px;
+    height: 250px;
 }
 
 .stat img {
     margin-left: 55%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .work {
@@ -147,6 +151,11 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 85%;
+    z-index: 1000;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100%; /* Cover the full width */
 }
 
 header {
