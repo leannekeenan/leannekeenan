@@ -69,9 +69,11 @@ body {
     font-weight: 100;
 }
 
-.card img {
+.card > img {
     width: 35%;
-    height: auto
+    height: auto;
+    border: 3px solid white;
+    border-radius: 50%;
 }
 
 
@@ -115,7 +117,7 @@ body {
     height: 250px;
 }
 
-.stat img {
+.stat > img {
     margin-left: 55%;
     z-index: -1;
 }
@@ -164,4 +166,8 @@ header {
     display: flex;
     justify-content: space-between;
     padding-right: 15px;
+}
+
+header span {
+    font-weight: 800;
 }
