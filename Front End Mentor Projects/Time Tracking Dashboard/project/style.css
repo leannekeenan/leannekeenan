@@ -155,7 +155,6 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     height: 85%;
-    z-index: 1000;
     position: absolute;
     top: 20%;
     left: 0;
