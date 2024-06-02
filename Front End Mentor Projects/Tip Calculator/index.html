@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Front End Mentor Projects/Tip Calculator/style.css">
+    <link rel="stylesheet" href="/Front End Mentor Projects/Tip Calculator/mobile.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">
+            <span>spli</span>
+            <span>tter</span>
+        </h1>
+    </header>
+
+    <main>
+        <section class="calculator">
+            <form action="submit">
+                <div>
+                    <label for="">Bill</label>
+                    <input type="text" id="">
+                </div>
+
+                <div>
+                    <label for="">Select Tip %</label>
+                    <div class="percentages">
+                        <button class="percentage">5%</button>
+                        <button class="percentage">10%</button>
+                        <button class="percentage">15%</button>
+                        <button class="percentage">25%</button>
+                        <button class="percentage">50%</button>
+                        <button>Custom</button>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="">Number of People</label>
+                    <input type="text" id="">
+                </div>
+            </form>
+        </section>
+
+        <section class="result">
+            <div class="result-container">
+                <div class="tip-result">
+                    <p>
+                        Tip Amount <span>/ person</span>
+                    </p>
+    
+                    <h2 class="value">$ <span id="tip"></span></h2>
+                </div>
+                <div class="total-result">
+                    <p>
+                        Total <span>/ person</span>
+                    </p>
+    
+                    <h2 class="value">$ <span id="total"></span></h2>
+                </div>
+            </div>
+            <button>Reset</button>
+        </section>
+
+
+    </main>
+</body>
+<script src="/Front End Mentor Projects/Tip Calculator/script.js"></script>
+</html>
