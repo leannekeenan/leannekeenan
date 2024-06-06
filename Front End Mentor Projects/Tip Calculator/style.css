@@ -18,6 +18,7 @@ body {
     min-height: 100vh;
 }
 
+
 .title {
     display: flex;
     flex-direction: column;
@@ -29,7 +30,8 @@ main {
     display: flex;
     background: var(--White);
     border-radius: 15px;
-    min-width: 80vw;
+    width: 80%;
+    max-width: 800px;
     height: 400px;
     padding: 1rem;
 }
