@@ -1,0 +1,78 @@
+@media (max-width: 600px) {
+    .home, .intro {
+        width: 100%;
+    }
+
+    .nav-links {
+      height: 100vh;
+      
+    }
+
+    .nav-links li, .nav-links .resume  {
+      width: 100%;
+      padding: 3rem 0;
+     
+  }
+  .nav-links .resume  {
+      padding: 3rem 0;
+ 
+  }
+
+    .intro {
+        justify-content: space-evenly;
+    }
+
+    .hello {
+        font-size: 3.5rem; 
+      }
+      .my-name {
+          font-size: 6.5rem; 
+      }
+      .my-title {
+          font-size: 3.5rem;
+      }
+      .my-purpose {
+          font-size: 3rem; 
+      }
+      .greeting {
+          font-size: 2.5rem;  
+      }
+
+      .blurb-container {
+        height: 50vh
+      }
+
+      .blurb {
+        font-size: 2rem;
+      }
+
+      .aspects {
+        width: 90%;
+        margin-top: -20%;
+      }
+
+      .aspects .card {
+        max-width: 80%;
+        padding-top: 0
+      }
+      .aspects .card:nth-child(1) {
+        border-radius: 0;
+    }
+    
+    .aspects .card:nth-child(3) {
+        border-radius: 0;
+    }
+
+      form {
+        width: 90%;
+      }
+
+      .contact-info {
+        height: 50vh;   
+    }
+    
+    .social-media {
+        top: -20%;
+    }
+    
+}
