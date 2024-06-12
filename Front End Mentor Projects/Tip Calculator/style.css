@@ -7,11 +7,14 @@
     --LightGrayishCyan: hsl(185, 41%, 84%);
     --VeryLightGrayishCyan: hsl(189, 41%, 97%);
     --StrongCyan: hsl(172, 67%, 45%);
-    --White: hsl(0, 0%, 100%);
+    --White: hwb(0 100% 0%);
+}
+
+* {
+    font-family: "Space Mono", monospace;
 }
 
 body {
-    font-family: "Space Mono", monospace;
     background: var(--LightGrayishCyan);
     display: grid;
     place-items: center;
@@ -32,9 +35,11 @@ main {
     border-radius: 15px;
     width: 80%;
     max-width: 800px;
-    height: 400px;
+    height: 300px;
     padding: 1rem;
 }
+
+
 
 section, form {
     display: flex;
@@ -46,9 +51,20 @@ section, form {
 
 input, button {
     height: 35px;
+    width: 100%;
 }
 
+.calculator {
+    margin: 0 2rem 0 1rem
+}
 
+form div input {
+    text-align: right;
+    font-size: 1.5rem;
+    color: var(--GrayishCyan);
+    background: var(--StrongCyan);
+    border: none;
+}
 
 .percentages {
     display: grid;
@@ -73,12 +89,37 @@ input, button {
     color: var(--VeryDarkCyan);
 }
 
+.custom {
+    background: var(--VeryLightGrayishCyan);
+    color: var(--VeryDarkCyan)
+}
 
+
+
+.people  {
+    background: url('https://api.iconify.design/material-symbols:person-rounded.svg?color=%237f9a9f') no-repeat;
+    background-size: contain;
+    background-size: 1.5rem;
+    background-position: center left;
+    background-color: var(--VeryLightGrayishCyan);
+}
+
+.bill {
+    background: url('https://api.iconify.design/ph:currency-dollar-bold.svg?color=%237f9a9f') no-repeat;
+    background-size: contain;
+    background-size: 1.5rem;
+    background-position: center left;
+    background-color: var(--VeryLightGrayishCyan);
+
+}
 
 
 .result {
     background: var(--VeryDarkCyan);
     border-radius: 15px;
+    justify-content: space-between;
+    padding: 1.5rem;
+    height: auto
 }
 
 .result-container {

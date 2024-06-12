@@ -1,0 +1,12 @@
+
+* {
+    font-size: 1rem;
+}
+
+.banner {
+    padding: 2rem;
+}
+.banner h1 {
+    font-size: 2rem;
+    margin: 2rem 0
+}
