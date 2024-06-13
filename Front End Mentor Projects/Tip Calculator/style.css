@@ -61,8 +61,8 @@ input, button {
 form div input {
     text-align: right;
     font-size: 1.5rem;
-    color: var(--GrayishCyan);
-    background: var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+    background: var(--LightGrayishCyan);
     border: none;
 }
 
