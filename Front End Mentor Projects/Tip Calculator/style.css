@@ -94,7 +94,14 @@ form div input {
     color: var(--VeryDarkCyan)
 }
 
-
+.bill {
+    background: url('https://api.iconify.design/ph:currency-dollar-bold.svg?color=%237f9a9f') no-repeat;
+    background-size: contain;
+    background-size: 1.5rem;
+    background-position: center left;
+    background-color: var(--VeryLightGrayishCyan);
+    
+}
 
 .people  {
     background: url('https://api.iconify.design/material-symbols:person-rounded.svg?color=%237f9a9f') no-repeat;
@@ -104,14 +111,7 @@ form div input {
     background-color: var(--VeryLightGrayishCyan);
 }
 
-.bill {
-    background: url('https://api.iconify.design/ph:currency-dollar-bold.svg?color=%237f9a9f') no-repeat;
-    background-size: contain;
-    background-size: 1.5rem;
-    background-position: center left;
-    background-color: var(--VeryLightGrayishCyan);
 
-}
 
 
 .result {
