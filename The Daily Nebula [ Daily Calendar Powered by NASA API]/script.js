@@ -3,7 +3,12 @@ fetch("https://api.nasa.gov/planetary/apod?api_key=hZ7NOTCBoWdhjN98rrFroBgKPBczM
 .then( data => {
     console.log(data)
 
-    document.querySelector('body').src = data.url;
+    let data = {
+        url: 'https://api.nasa.gov/planetary/apod?api_key=hZ7NOTCBoWdhjN98rrFroBgKPBczMQsD9Ol60StZ'
+    };
+
+
+    document.querySelector('body').style.background = data.url;
     
     document.querySelector('.date').innerText = new Date().toDateString();
     document.querySelector('img').src = data.url;

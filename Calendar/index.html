@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Calendar/style.css">
+</head>
+<body>
+    <main class="calendar-container">
+        <div class="calendar">
+
+            <div class="header">
+                <button id="previousBtn">
+                    <img src="https://api.iconify.design/material-symbols:chevron-left.svg" alt="">
+                </button>
+    
+                <div class="monthYear" id="monthYear"></div>
+    
+                <button id="nextBtn">
+                    <img src="https://api.iconify.design/material-symbols:chevron-right.svg" alt="">
+                </button>
+            </div>
+
+            <div class="days">
+                <div class="day">Mon</div>
+                <div class="day">Tue</div>
+                <div class="day">Wed</div>
+                <div class="day">Thr</div>
+                <div class="day">Fri</div>
+                <div class="day">Sat</div>
+                <div class="day">Sun</div>
+            </div>
+    
+            <div class="dates" id="dates"></div>
+
+        </div>
+
+        <div class="events" id="events"></div>
+    </main>
+</body>
+<script src="/Calendar/script.js"></script>
+</html>
