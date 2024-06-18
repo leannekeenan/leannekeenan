@@ -391,6 +391,23 @@ margin: 3rem 5%;
     background-position: center;
 }
 
+.collaborations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.collaborations h2 {
+    font-size: 3rem;
+}
+
+.collaborations div img {
+    width: auto;
+    height: 100px;
+    margin: 0 auto
+}
+
 .connect {
     height: 100vh;
     display: flex;
