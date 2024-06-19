@@ -37,7 +37,7 @@ let updateCalendar = () => {
         let activeClass = isActive ? ' active' : '';
         let dateElement = `<div class="date${activeClass}" data-date="${date.toDateString()}">${i}</div>`; // Add data-date attribute
         if (isActive) {
-            dateElement = `<div class="date${activeClass}" style="border: 5px solid rgba(145, 145, 204, 0.5);" data-date="${date.toDateString()}">${i}</div>`; // Add data-date attribute
+            dateElement = `<div class="date${activeClass}" style="border: 5px solid rgba(1, 1, 1, 0.6); background: rgba(255, 255, 255, 0.5)" data-date="${date.toDateString()}">${i}</div>`; // Add data-date attribute
         }
         datesHTML += dateElement;
     }
@@ -54,95 +54,10 @@ let updateCalendar = () => {
     dateElements.forEach(dateElement => {
         let date = new Date(dateElement.getAttribute('data-date')); 
         dateElement.addEventListener('mouseenter', () => {
-
-/***************************************April 16, 2024********************************************/
-
-            if (date.getFullYear() === 2024 && date.getMonth() === 3 && date.getDate() === 16) {
-                 
-                // Print text to the events container
-                eventsContainer.innerHTML = `
-    <ul>
-        <li>Special Event 1 on April 16, 2024</li>
-        <li>Special Event 2 on April 16, 2024</li>
-        <li>Special Event 3 on April 16, 2024</li>
-        <!-- Add more list items as needed -->
-    </ul>
-`;
-                eventsContainer.style.color = 'rgba(255, 0, 0, 0.7)';
-            }
-
-/**************************************April 20, 2024*********************************************/
-
-            if (date.getFullYear() === 2024 && date.getMonth() === 3 && date.getDate() === 20) {
-                 
-                // Print text to the events container
-                eventsContainer.innerHTML = `
-    <ul>
-        <li>Special Event 1 on April 20, 2024</li>
-        <li>Special Event 2 on April 21, 2024</li>
-        <li>Special Event 3 on April 22, 2024</li>
-        <!-- Add more list items as needed -->
-    </ul>
-`;
-                eventsContainer.style.color = 'rgba(255, 255, 0, 0.7)';
-            }
-
-/*************************************************************************************************/
-
-/**************************************May 1, 2024*********************************************/
-
-            if (date.getFullYear() === 2024 && date.getMonth() === 4 && date.getDate() === 1) {
-                 
-                // Print text to the events container
-                eventsContainer.innerHTML = `
-    <ul>
-        <li>Special Event 1 on May 1, 2024</li>
-        <li>Special Event 2 on May 1, 2024</li>
-        <li>Special Event 3 on May 1, 2024</li>
-        <!-- Add more list items as needed -->
-    </ul>
-`;
-                eventsContainer.style.color = 'rgba(0, 255, 255, 0.7)';
-            }
-
-/*************************************************************************************************/
-
-        });
-
-
-/****************************************April 16, 2024*******************************************/
-
-if(date.getFullYear() === 2024 && date.getMonth() === 3 && date.getDate() === 16) {
-    dateElement.style.border = '5px solid rgba(255, 0, 0, 0.7)';
-    dateElement.style.color = 'black';
-}
-
-/***************************************April 20, 2024********************************************/
-
-        if(date.getFullYear() === 2024 && date.getMonth() === 3 && date.getDate() === 20) {
-            dateElement.style.border = '5px solid rgba(255, 255, 0, 0.7)';
-            dateElement.style.color = 'black';
-        }
-
-/*************************************************************************************************/
-
-/***************************************May 1, 2024********************************************/
-
-        if(date.getFullYear() === 2024 && date.getMonth() === 4 && date.getDate() === 1) {
-            dateElement.style.border = '5px solid rgba(0, 255, 255, 0.7';
-            dateElement.style.color = 'black';
-        }
-
-/*************************************************************************************************/
-
-        dateElement.addEventListener('mouseleave', () => {
-            // Clear the events container when the mouse leaves the date element
-            eventsContainer.innerHTML = '';
-        });
     });
 
-}
 
+})}
 updateCalendar()
 
 previousButtonElement.addEventListener('click', () => {
