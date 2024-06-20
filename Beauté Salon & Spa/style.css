@@ -270,6 +270,9 @@ main .container a:hover {
 
 .reservation {
     padding-bottom: 50px;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    border: none
 }
 
 form {
