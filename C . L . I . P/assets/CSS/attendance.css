@@ -7,6 +7,15 @@
 
 }
 
+.attendance-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 55%;
+  margin: 0 auto;
+}
+
 /* Basic styling for form and table */
 form {
   margin-bottom: 20px;
@@ -24,3 +33,10 @@ th, td {
   text-align: left;
 }
 
+fieldset {
+  text-align: center;
+}
+
+input {
+  height: 2rem
+}

@@ -30,71 +30,73 @@
 
     </header>
 
-    <form id="shiftForm">
-        <fieldset>
-            <legend>Select Shift/Break Type</legend>
-            <legend>Shifts:</legend>
-            <input type="radio" id="day" name="shiftType" value="day">
-            <label for="day">Day</label>
-            <input type="radio" id="swing" name="shiftType" value="swing">
-            <label for="swing">Swing</label>
-            <input type="radio" id="overnight" name="shiftType" value="overnight">
-            <label for="overnight">Overnight</label>
-            <legend>Breaks</legend>
-            <input type="radio" id="break" name="breakOrLunch" value="break">
-            <label for="break">Break</label>
-            <input type="radio" id="lunch" name="breakOrLunch" value="lunch">
-            <label for="lunch">Lunch</label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Select Shift Function</legend>
-            <input type="radio" id="startShift" name="shiftFunction" value="start">
-            <label for="startShift">Start</label>
-            <input type="radio" id="stopShift" name="shiftFunction" value="stop">
-            <label for="stopShift">Stop</label>
-        </fieldset>
-        
-      
-        
-        <fieldset>
-            <legend>Campus</legend>
-            <input type="radio" id="bayfrontCampus" name="campus" value="Bayfront">
-            <label for="bayfrontCampuss">Bayfront</label>
-            <input type="radio" id="chilcoCampus" name="campus" value="Chilco">
-            <label for="chilcoCampu">Chilco</label>
-            <input type="radio" id="classicCampus" name="campus" value="Classic">
-            <label for="classicCampus">Classic</label>
-            <input type="radio" id="gatewayCampus" name="campus" value="Gateway">
-            <label for="gatewayCampus">Gateway</label>
-            <input type="radio" id="willowCampus" name="campus" value="Willow">
-            <label for="willowCampus">Willow</label>
-            <input type="radio" id="eventsCampus" name="campus" value="Events">
-            <label for="eventsCampus">Events</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Employee ID</legend>
-            <input type="text" id="employeeId" name="employeeId" required>
-        </fieldset>
-
-        <button type="button" onclick="handleClockFunction()">Submit</button>
-    </form>
-
-    <table id="shiftTable">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Employee ID</th>
-                <th>Campus</th>
-                <th>Shift</th>
-                <th>Timestamps</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- Table rows will be added here dynamically -->
-        </tbody>
-    </table>
+    <div class="attendance-container">
+        <form id="shiftForm">
+            <fieldset>
+                <legend>Select Shift/Break Type</legend>
+                <legend>Shifts:</legend>
+                <input type="radio" id="day" name="shiftType" value="day">
+                <label for="day">Day</label>
+                <input type="radio" id="swing" name="shiftType" value="swing">
+                <label for="swing">Swing</label>
+                <input type="radio" id="overnight" name="shiftType" value="overnight">
+                <label for="overnight">Overnight</label>
+                <legend>Breaks</legend>
+                <input type="radio" id="break" name="breakOrLunch" value="break">
+                <label for="break">Break</label>
+                <input type="radio" id="lunch" name="breakOrLunch" value="lunch">
+                <label for="lunch">Lunch</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Select Shift Function</legend>
+                <input type="radio" id="startShift" name="shiftFunction" value="start">
+                <label for="startShift">Start</label>
+                <input type="radio" id="stopShift" name="shiftFunction" value="stop">
+                <label for="stopShift">Stop</label>
+            </fieldset>
+            
+          
+            
+            <fieldset>
+                <legend>Campus</legend>
+                <input type="radio" id="bayfrontCampus" name="campus" value="Bayfront">
+                <label for="bayfrontCampuss">Bayfront</label>
+                <input type="radio" id="chilcoCampus" name="campus" value="Chilco">
+                <label for="chilcoCampu">Chilco</label>
+                <input type="radio" id="classicCampus" name="campus" value="Classic">
+                <label for="classicCampus">Classic</label>
+                <input type="radio" id="gatewayCampus" name="campus" value="Gateway">
+                <label for="gatewayCampus">Gateway</label>
+                <input type="radio" id="willowCampus" name="campus" value="Willow">
+                <label for="willowCampus">Willow</label>
+                <input type="radio" id="eventsCampus" name="campus" value="Events">
+                <label for="eventsCampus">Events</label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Employee ID</legend>
+                <input type="text" id="employeeId" name="employeeId" required>
+            </fieldset>
+    
+            <button type="button" onclick="handleClockFunction()">Submit</button>
+        </form>
+    
+        <table id="shiftTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Employee ID</th>
+                    <th>Campus</th>
+                    <th>Shift</th>
+                    <th>Timestamps</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be added here dynamically -->
+            </tbody>
+        </table>
+    </div>
 
     
 </body>
