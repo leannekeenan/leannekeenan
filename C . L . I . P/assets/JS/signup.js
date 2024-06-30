@@ -13,6 +13,7 @@ document.querySelector('form').addEventListener('submit', function(event) {
         alert('Passwords do not match');
         return;
     }
+    
   
     var userDetails = {
         firstName: firstName,
