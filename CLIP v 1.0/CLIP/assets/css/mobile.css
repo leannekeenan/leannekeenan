@@ -1,0 +1,43 @@
+@media screen and (max-width: 800px) {
+    header {
+        padding: 1rem;
+    }
+
+    header span {
+        font-size: 2.5rem;
+    }
+    
+    ul li a, .nav-functions button {
+        font-size: 1.2rem;
+        width: 70px;
+        text-align: center;
+    }
+
+    .about-container .container {
+        width: 100%;
+    }
+
+    .about-container .about-details {
+        flex-direction: column;
+    }
+
+    .feature-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .actions-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .social a img {
+        height: 30px;
+        width: 30px;
+        margin: 1rem
+    }
+
+    footer .details span {
+        font-size: 1.3rem;
+    }
+}

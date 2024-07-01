@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.L.I.P - Analytics</title>
+    <link rel="shortcut icon" href="/C . L . I . P/assets/MEDIA/C.L.I.P clear.png" type="image/x-icon">
+    <link rel="stylesheet" href="/C . L . I . P/assets/CSS/common-internal-content.css">
+    <link rel="stylesheet" href="assets/css/analytics.css">
+</head>
+<body>
+    <header>
+        <span class="logo">CLIP</span>
+       <div class="header-functions">
+        
+            <ul class="nav-links">
+                <li><a href="/time management.html">Time Management</a></li>
+                <li ><a href="/time off request.html">TOR Submission</a></li>
+                <li><a class="active" href="/analytics.html">Shift Analytics</a></li>
+            </ul>
+        
+
+        <a href="index.html">Logout</a>
+       </div>
+        
+    </header>
+
+   <main class="container">
+    <section class="analytics">
+        <h1 class="title">Shift Analytics Dashboard</h1>
+        <p> This comprehensive dashboard is designed to provide valuable insights into your time management and work patterns. Here, you can track and analyze your time spent on breaks, lunches, and at each campus across various timeframes</p>
+
+        <ol>
+            <span>Key Features:</span>
+            <li><strong>Analytics Breakdown</strong> View your time allocation for breaks, lunches, and campus locations on a daily, weekly, monthly, and annual basis.</li>
+            <li><strong>Enhanced Time Management</strong> Utilize the insights from the analytics to optimize your work schedule and improve productivity.</li>
+            <li><strong>Performance Tracking:</strong> Monitor your adherence to break and lunch policies, ensuring compliance with company guidelines.</li>
+            <li><strong>Location Insights:</strong> Understand your time spent at different campuses, helping you manage your work locations more effectively.</li>
+        </ol>
+        <table class="analyticsGraphs">
+            <thead class="title-container">
+                <th colspan="4"><h2 class="title">Analytics</h2></th>
+            </thead>
+
+            <tbody>
+                <!--Day-->
+                <tr class="day">
+                    <thead>
+                        <th colspan="4"><h3>Day</h3></th>
+                    </thead>
+                    <td>
+                        <span id="thisDate"></span>
+                    </td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td><canvas></canvas></td>
+                </tr>
+                <!--Week-->
+                <tr class="week">
+                    <thead>
+                        <th colspan="4"><h3>Week</h3></th>
+                    </thead>
+                    <td>
+                        <span id="thisWeek"></span>
+                    </td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td><canvas></canvas></td>
+                </tr>
+                <!--Month-->
+                <tr class="month">
+                    <thead>
+                        <th colspan="4"><h3>Month</h3></th>
+                    </thead>
+                    <td>
+                        <span id="thisMonth"></span>
+                    </td>
+                    <td>
+                        <div>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td><canvas></canvas></td>
+                </tr>
+                <!--Year-->
+                <tr class="year">
+                    <thead>
+                        <th colspan="4"><h3>Year</h3></th>
+                    </thead>
+                     <td>
+                        <span id="thisYear"></span>
+                     </td>
+                     <td>
+                        <div>
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </td>
+                    <td><canvas></canvas></td>
+                </tr>
+            </tbody>
+        </table>        
+    </section>
+   </main>
+</body>
+<script src="/C . L . I . P/assets/JS/analytics.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+</html>

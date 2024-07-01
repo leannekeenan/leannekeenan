@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+:root {
+    --spaceCadet: #2B2D42;
+    --coalGrey: #8D99AE;
+    --Xanthic: #F8F32B;
+    --White: #f5f5f5;
+    --Black: #1a1a1a;
+}
+
+body {
+background: var(--coalGrey);
+color: var(--spaceCadet); 
+height: 80vh;
+display: grid;
+place-items: var(--spaceCadet);
+}
+
+header {
+    padding: 2rem;
+    font-size: 3.5rem;
+    margin: 1rem;
+}
+
+header span a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: var(--spaceCadet)
+}
+
+.glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.4),rgb(209, 207, 209, 0.4),rgba(255, 255, 255, 0.4));
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px var(--coalGrey);
+}
+
+.container {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    width: 50%;
+    height: auto;
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto
+}
+
+form div, form button {
+    margin: .5rem;
+    width: 100%;
+}
+
+
+
+.input-box {
+    width: auto;
+    display: flex;
+    align-items: center;
+    margin: .5rem ;
+    width: 85%;
+}
+
+.input-box input, .submit {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: .5rem 0
+}
+
+.icon img {
+    height: 100%;
+    padding: .5rem
+}
+
+.options > * {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.options label {
+    flex-direction: row;
+}
+
+.options label input {
+    margin: 1rem;
+}
+
+.options div h3 a {
+    text-decoration: none;
+    color: var(--spaceCadet);
+    padding: .5rem
+}
+
+.options div h3 a:hover {
+    color: var(--Xanthic);
+}
+.signature {
+    width: 100vw;
+}
+
+.submit {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIP - TOR Form</title>
+    <link rel="shortcut icon" href="/assets/images/C.L.I.P clear.png" type="image/x-icon">
+    <link rel="stylesheet" href="/assets/css/time off request.css">
+    <link rel="stylesheet" href="/assets/css">
+</head>
+<body>
+    <header>
+        <span class="logo">CLIP</span>
+       <div class="header-functions">
+        
+            <ul class="nav-links">
+                <li><a href="/time management.html">Time Management</a></li>
+                <li><a class="active" href="/time off request.html">TOR Submission</a></li>
+                <li><a href="/analytics.html">Shift Analytics</a></li>
+            </ul>
+        
+
+        <a href="index.html">Logout</a>
+       </div>
+        
+    </header>
+
+    <main class="container">
+        <h1 class="title">Time Off Request Submission Form</h1>
+        <div>
+            <span class="review">Please review the following guidelines carefully before submitting your request:</span>
+            <ol class="instruction">
+                <li>
+                    <strong>Advance Notice:</strong> Submit your request at least two weeks in advance to ensure timely processing and approval.
+                </li>
+                <li>
+                    <strong>Approval Process:</strong> All requests require approval from your manager or supervisor. Longer or strategically timed absences may need additional levels of approval.
+                </li>
+                <li>
+                    <strong>Blackout Dates:</strong> Be aware of any blackout dates when time off is restricted due to peak business periods or important company events.
+                </li>
+                <li>
+                    <strong>Leave Balance:</strong> Ensure you have sufficient leave balance available by checking your eHub account. The system will not automatically check a your current balance, and an insufficent balance may result in a denial of your leave.
+                </li>
+                <li>
+                    <strong>Form Completeness:</strong> Complete all required fields in the form, including dates, type of leave, reason for the request, and any necessary documentation. Incomplete forms will automatically be denied.
+                </li>
+                <li>
+                    <strong>Documentation:</strong> Report supporting documentation such as a doctor’s note for medical leave directly to human resources. Do not give personal resords or information to leadership or management.
+                </li>
+                <li>
+                    <strong>Conflict Management:</strong> Your request will be reviewed to avoid conflicts with other employees’ time off, ensuring smooth business operations. That being said, we work from a "first come, first served" basis.
+                </li>
+                <li>
+                    <strong>Submission Method:</strong> Submit your request through this digital platform as it is the designated method for processing time off requests. Forms submitted outside of the platform wil not be considered for approval.
+                </li>
+                <li>
+                    <strong>Acknowledgment and Tracking:</strong> You will receive an acknowledgment upon submission within the platform. An email will be sent to you with the decision regarding your leave and will act as a receipt of approval.
+                </li>
+                <li>
+                    <strong>Emergency Leave:</strong> For emergency leave requests, follow the specific guidelines which may allow for shorter notice periods.
+                </li>
+                <li>
+                    <strong>Return to Work:</strong> Follow the specified process for notifying your manager or HR department upon your return to work.
+                </li>
+                <li>
+                    <strong>Communication:</strong> Coordinate with your team and manager about your planned absence to ensure all necessary work coverage is arranged.
+                </li>
+            </ol>
+        </div>
+
+        <span>fill out the form below</span>
+        <form action="" class="container">
+            
+            <h2>Time Off Request Form</h2>
+            
+            <fieldset class="user-details">
+                <legend>Employee Information</legend>
+                <label for="employeeID">ID#</label>
+                <input type="text" name="employeeID" id="employeeID" required> 
+
+                <label for="first-name" >First Name</label>
+                <input type="text" id="first-name" required>
+
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name" >
+
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" required>
+
+                <label for="suffix">Suffix</label>
+                <select name="suffix" id="">
+                    <option value=""></option>
+                    <option value="">Sr</option>
+                    <option value="">Jr</option>
+                    <option value="">III</option>
+                    <option value="">Esq</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="shift-details">
+                <legend>What shift are you regularly scheduled for?</legend>
+
+               <div class="shift">
+                    <label for="shift">Shift</label>
+                    <select required>
+                        <option value=""></option>
+                        <option value="Day" name="Day" id="Day">Day</option>
+                        <option value="Swing" name="Swing" id="Swing">Swing</option>
+                        <option value="Overnight" name="Overnight" id="Overnight">Overnight</option>
+                    </select>
+               </div>
+
+                <div class="campus">
+                    <label for="base-campus">Base Campus</label>
+                    <select name="campuses" id="campuses" required>
+                        <option value=""></option>
+                        <option value="Bayfront">Bayfront</option>
+                        <option value="Chilco">Chilco</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Gateway">Gateway</option>
+                        <option value="Willow">Willow</option>
+                        <option value="Events">Events</option>
+                    </select>
+                </div>
+
+                <div class="building">
+                    <label for="campus-building">Building Number</label>
+                    <input type="text" name="campus-building" id="campus-building">
+                </div>
+
+                <div class="position-type">
+                    <label for="base-position">Base Position</label>
+                    <select name="base-position" id="base-position" required>
+                        <option value=""></option>
+                        <option value="fox">fox (bike team)</option>
+                        <option value="rover">rover (foot patrol)</option>
+                        <option value="static">static (post)</option>
+                        <option value="mobile">mobile (vehicle team)</option>
+                        <option value="relief">relief (breaker)</option>
+                        <option value="leadership">lima (leadership)</option>
+                        <option value="supervsior">raven (supervisor)</option>
+                        <option value="manager">eagle (manager)</option>
+                    </select>
+                </div>
+
+                <div class="id">
+                    <label for="position-id" class="position-id">Position ID#</label>
+                <select name="position-id" id="position-id">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="8">8</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="float">float</option>
+                </select>
+
+                </div>
+
+                <div class="days">
+                    <label for="days-off">What days are you regularly scheduled off?</label>
+                    <div class="days-off" id="days-off" required>
+                        <input type="checkbox" value="Sunday">Sun
+                        <input type="checkbox" value="Monday">Mon
+                        <input type="checkbox" value="Tuesday">Tues
+                        <input type="checkbox" value="Wednesday">Wed
+                        <input type="checkbox" value="Thursday">Thu
+                        <input type="checkbox" value="Friday">Fri
+                        <input type="checkbox" value="Saturday">Sat
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset class="request-details">
+                <legend>Request Details</legend>
+
+                <div class="reason">
+                    <label for="reason">What is the reason for the request?</label>
+                    <select name="reasons" id="reasons" required>
+                        <option value=""></option>
+                        <option value="Bereavement">Bereavement</option>
+                        <option value="Buyback">Buyback</option>
+                        <option value="Educational">Educational Leave</option>
+                        <option value="FMLA">FMLA</option>
+                        <option value="Jury Duty">Jury Duty</option>
+                        <option value="Military">Military Deployment</option>
+                        <option value="Personal">Personal Leave</option>
+                        <option value="PTO">PTO</option>
+                        <option value="Relgious">Relgious Observance</option>
+                        <option value="Sabbatical">Sabbatical Leave</option>
+                        <option value="Voting">Voting</option>
+                    </select>
+                </div>
+
+                <div class="depart">
+                    <label for="departure-date">Departure Date <span class="check">(for buyback, enter todays date)</span></label>
+                    <input type="departure-date" name="" id="departure-date" required>
+                </div>
+
+                <div class="return">
+                    <label for="return-date">Return Date <span class="check">(for buyback, enter payout date)</span></label>
+                    <input type="date" name="return-date" id="return-date" required>
+                </div>
+
+                <div class="hours">
+                    <label for="hours">Specify how many accrued hours you would like to apply <span class="check">(check your eHub to see alottment)</span></label>
+                    <input type="text" required>
+                </div>
+            </fieldset>
+            
+            <fieldset class="disclaimer">
+                <legend>Disclaimer</legend>
+
+                <input type="checkbox" class="disclaimer-check" id="disclaimer-check" required> I acknowledge that the approval of this request is required before it is made active. I allow the leadership and management team to email me a confirmation email of the result of the request at the supplied email address below.
+
+                <div class="email">
+                    <label for="email">Email Address <span class="check">(please use company issued email address)</span></label>
+                    <input type="email" name="email" id="email" required>
+               </div>
+
+            </fieldset>
+
+            <fieldset class="confirmation">
+
+                <legend>Conformation</legend>
+
+                <span>please sign below to authorize the time off request</span>
+               
+                <div class="canvas-container">
+                    <canvas class="signature" id="signature-pad" aria-required="true"></canvas>
+                </div>
+               
+
+            
+               <br>
+               <div class="canvas-buttons">
+                <button onclick="clearCanvas()">Clear</button>
+                <button onclick="saveSignature()">Save</button>
+               </div>
+               
+            </fieldset>
+
+            <div class="todays-date">
+                <label for="submission-date">Date of Submission</label>
+                <input type="date" name="submission-date" id="submission-date" required>
+           </div>
+            <button class="submit" onclick="generatePDF()" type="submit"><span>Submit</span></button>
+        </form>
+    </main>
+    <script src="/assets/js/signature.js"></script>
+    <script src="/assets/js/TOR email.js"></script>
+    <script src="/assets/js/TOR receipt.js"></script>
+    <script src="/assets/js/generate PDF.js"></script>
+    <script src="/assets/js/days off.js"></script>
+</body>
+</html>
