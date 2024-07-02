@@ -183,3 +183,67 @@ tbody {
 .title {
     font-size: 2rem;
 }
+
+
+
+footer {
+    background: var(--spaceCadet);
+    width: 90%;
+    position: relative;
+    left: 5%;
+    padding: 3rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0
+}
+
+footer div > *{
+    color:var(--coalGrey)
+}
+
+footer h4, footer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--coalGrey);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+
+footer h4 a {
+    color: var(--Xanthic);
+    padding: 3px;
+} 
+
+body.dark-mode footer h4 a {
+    color: var(--Xanthic);
+}
+
+footer .social a img {
+    height: 50px;
+    width: 50px;
+    margin: 1rem
+}
+
+footer .details {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .details h2 {
+    font-size: 2rem;
+}
+
+footer .details span {
+    font-size: 1.8rem;
+}
+
+

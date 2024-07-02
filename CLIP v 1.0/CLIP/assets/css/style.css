@@ -266,33 +266,33 @@ main {
 }
 
 .one img {
-    content: url('/assets/images/accurate\ time\ [color].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/accurate\ time\ [color].png');
 }
 
 body.dark-mode .one img {
-    content: url('/assets/images/accurate\ time\ [white].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/accurate\ time\ [white].png');
 }
 
 .two img {
-    content: url('/assets/images/convenience\ [color].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/convenience\ [color].png');
 }
 
 body.dark-mode .two img {
-    content: url('/assets/images/convenience\ [white].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/convenience\ [white].png');
 }
 .three img {
-    content: url('/assets/images/time\ off [color].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/time\ off [color].png');
 }
 
 body.dark-mode .three img {
-    content: url('/assets/images/time\ off [white].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/time\ off [white].png');
 }
 .four img {
-    content: url('/assets/images/clipboard\ [color].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/clipboard\ [color].png');
 }
 
 body.dark-mode .four img {
-    content: url('/assets/images/clipboard\ [white].png');
+    content: url('/CLIP v 1.0/CLIP/assets/images/clipboard\ [white].png');
 }
 
 
