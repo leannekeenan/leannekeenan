@@ -1,6 +1,91 @@
-#calendar {
-    background: red;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+body {
+    font-family: Arial, sans-serif;
 }
+
+.calendar-container, .time-slots-container {
+    margin: 20px;
+    text-align: center;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.calendar-header button {
+    margin: 0 10px;
+    padding: 5px 10px;
+}
+
+button img {
+    height: 25px
+}
+
+.calendar-header span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.calendar-day, .calendar-day-empty, .calendar-header-cell {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    text-align: center;
+}
+
+
+.calendar-day {
+    cursor: pointer;
+}
+
+.calendar-day.disabled {
+    background-color: #7a7a7a;
+    color: white;
+    cursor: not-allowed;
+}
+
+.calendar-day:hover:not(.disabled) {
+    background-color: #ddd;
+}
+
+.calendar-header-cell {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    cursor: default;
+}
+
+.time-slot {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.time-slot.selected {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.time-slot.booked {
+    background-color: #6c757d;
+    color: #fff;
+    cursor: not-allowed;
+}
+
+
