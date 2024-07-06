@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentMonthYearDisplay = document.getElementById('current-month-year');
     const prevMonthButton = document.getElementById('prev-month');
     const nextMonthButton = document.getElementById('next-month');
+    const bookingForm = document.getElementById('booking-form');
     
     const timeSlots = [
         '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM',
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let bookedSlots = {};
     let currentDate = new Date();
+    let selectedTimeSlot = null;
 
     async function fetchBookedSlots() {
         try {
@@ -83,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const dayOfWeek = selectedDate.getDay();
 
         timeSlotsContainer.innerHTML = ''; // Clear previous time slots
+        selectedTimeSlot = null;
 
         // Only show time slots for allowed days
         if (dayOfWeek !== 5 && dayOfWeek !== 6 && dayOfWeek !== 0) {
@@ -94,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (bookedSlots[date] && bookedSlots[date].includes(time)) {
                     slotElement.classList.add('booked');
                 } else {
-                    slotElement.addEventListener('click', () => selectTimeSlot(slotElement));
+                    slotElement.addEventListener('click', () => selectTimeSlot(slotElement, date, time));
                 }
 
                 timeSlotsContainer.appendChild(slotElement);
@@ -102,13 +105,56 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function selectTimeSlot(slotElement) {
+    function selectTimeSlot(slotElement, date, time) {
         const selected = document.querySelector('.time-slot.selected');
         if (selected) {
             selected.classList.remove('selected');
         }
         slotElement.classList.add('selected');
+        selectedTimeSlot = { date, time };
     }
+
+    async function saveBooking(bookingData) {
+        try {
+            const response = await fetch('http://localhost:3000/api/booked-slots', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(bookingData)
+            });
+            if (response.ok) {
+                await fetchBookedSlots(); // Refresh booked slots
+                renderCalendar(currentDate.getFullYear(), currentDate.getMonth()); // Re-render the calendar
+                loadTimeSlots(selectedTimeSlot.date); // Re-load time slots for the selected date
+                alert('Booking successful!');
+            } else {
+                alert('Failed to book the slot. Please try again.');
+            }
+        } catch (error) {
+            console.error('Failed to save booking:', error);
+            alert('Failed to book the slot. Please try again.');
+        }
+    }
+
+    bookingForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        if (selectedTimeSlot) {
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+
+            const bookingData = {
+                name,
+                phone,
+                service,
+                date: selectedTimeSlot.date,
+                time: selectedTimeSlot.time
+            };
+
+            saveBooking(bookingData);
+        } else {
+            alert('Please select a time slot.');
+        }
+    });
 
     function changeMonth(offset) {
         currentDate.setMonth(currentDate.getMonth() + offset);

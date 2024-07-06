@@ -2,14 +2,14 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.calendar-container, .time-slots-container {
+.calendar-container, .time-slots-container, .user-info-container {
     margin: 20px;
     text-align: center;
 }
 
 .calendar-header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
 }
@@ -17,10 +17,6 @@ body {
 .calendar-header button {
     margin: 0 10px;
     padding: 5px 10px;
-}
-
-button img {
-    height: 25px
 }
 
 .calendar-header span {
@@ -32,8 +28,6 @@ button img {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 .calendar-day, .calendar-day-empty, .calendar-header-cell {
@@ -47,14 +41,12 @@ button img {
     text-align: center;
 }
 
-
 .calendar-day {
     cursor: pointer;
 }
 
 .calendar-day.disabled {
-    background-color: #7a7a7a;
-    color: white;
+    background-color: #dcdcdc;
     cursor: not-allowed;
 }
 
@@ -88,4 +80,20 @@ button img {
     cursor: not-allowed;
 }
 
+.user-info-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.user-info-container div {
+    margin: 10px 0;
+}
+
+.user-info-container label {
+    margin-right: 10px;
+}
+
+.user-info-container button {
+    padding: 10px 20px;
+}
