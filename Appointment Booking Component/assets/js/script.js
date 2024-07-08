@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <p><strong>Date:</strong> ${selectedTimeSlot.date}</p>
             <p><strong>Time:</strong> ${selectedTimeSlot.time}</p>
         `;
-        const recipientEmail = 'management@example.com'; // replace with actual recipient email
+        const recipientEmail = 'leanne.keenan1@outlook.com'; // replace with actual recipient email
 
         await sendWorkOrderEmail(workOrderDetails, recipientEmail);
 
@@ -220,3 +220,5 @@ async function sendWorkOrderEmail(workOrderDetails, recipientEmail) {
         console.error('Error sending email:', error);
     }
 }
+
+
