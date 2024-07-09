@@ -1,23 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function () {
     const calendar = document.getElementById('calendar');
     const timeSlotsContainer = document.getElementById('time-slots');
     const currentMonthYearDisplay = document.getElementById('current-month-year');
     const prevMonthButton = document.getElementById('prev-month');
     const nextMonthButton = document.getElementById('next-month');
     const bookingForm = document.getElementById('booking-form');
+    const clearFormButton = document.getElementById('clear-form-btn');
 
-    const timeSlots = [
-        '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM',
-        '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'
-    ];
-
-    let bookedSlots = {};
     let currentDate = new Date();
     let selectedTimeSlot = null;
+    let bookedSlots = {};
 
     async function fetchBookedSlots() {
         try {
-            const response = await fetch('http://localhost:3000/api/booked-slots');
+            const response = await fetch('/api/booked-slots');
             if (!response.ok) {
                 throw new Error('Failed to fetch booked slots');
             }
@@ -67,22 +63,15 @@ document.addEventListener('DOMContentLoaded', () => {
             dayElement.textContent = day;
             dayElement.className = 'calendar-day';
 
-            // Check if the day is disabled (Friday, Saturday, or Sunday)
             if (dayOfWeek === 0 || dayOfWeek === 5 || dayOfWeek === 6) {
                 dayElement.classList.add('disabled');
             } else {
-                // Add click event listener to load time slots and manage selection
                 dayElement.addEventListener('click', () => {
-                    // Remove selected class from previously selected day
                     const selected = document.querySelector('.calendar-day.selected');
                     if (selected) {
                         selected.classList.remove('selected');
                     }
-
-                    // Add selected class to the clicked day
                     dayElement.classList.add('selected');
-
-                    // Load time slots for the clicked day
                     loadTimeSlots(`${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`);
                 });
             }
@@ -97,6 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
         timeSlotsContainer.innerHTML = '';
         selectedTimeSlot = null;
 
+        const timeSlots = [
+            '9:00 AM', '10:00 AM', '11:00 AM', '12:00 PM',
+            '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM', '5:00 PM'
+        ];
+
         timeSlots.forEach(time => {
             const timeSlotElement = document.createElement('div');
             timeSlotElement.textContent = time;
@@ -106,16 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 timeSlotElement.classList.add('booked');
             } else {
                 timeSlotElement.addEventListener('click', () => {
-                    // Remove selected class from previously selected time slot
                     const selected = document.querySelector('.time-slot.selected');
                     if (selected) {
                         selected.classList.remove('selected');
                     }
-
-                    // Add selected class to the clicked time slot
                     timeSlotElement.classList.add('selected');
-
-                    // Set the selected time slot
                     selectedTimeSlot = { date, time };
                 });
             }
@@ -134,34 +123,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
+        const email = document.getElementById('email').value;
         const service = document.getElementById('service').value;
+        const { date, time } = selectedTimeSlot;
 
-        const bookingData = {
-            date: selectedTimeSlot.date,
-            time: selectedTimeSlot.time,
-            name,
-            phone,
-            service
-        };
+        try {
+            const response = await fetch('/api/book', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, phone, email, service, date, time }),
+            });
 
-        await saveBooking(bookingData);
+            if (!response.ok) {
+                throw new Error('Failed to book appointment');
+            }
 
-        // Send email confirmation
-        const workOrderDetails = `
-            <p><strong>Name:</strong> ${name}</p>
-            <p><strong>Phone:</strong> ${phone}</p>
-            <p><strong>Service:</strong> ${service}</p>
-            <p><strong>Date:</strong> ${selectedTimeSlot.date}</p>
-            <p><strong>Time:</strong> ${selectedTimeSlot.time}</p>
-        `;
-        const recipientEmail = 'leanne.keenan1@outlook.com'; // replace with actual recipient email
+            const { confirmation } = await response.json();
+            alert(`Appointment booked successfully! Confirmation number: ${confirmation}`);
 
-        await sendWorkOrderEmail(workOrderDetails, recipientEmail);
+            await fetchBookedSlots();
+            renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
+            loadTimeSlots(`${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${String(currentDate.getDate()).padStart(2, '0')}`);
 
-        alert('Booking confirmed and email sent.');
+            bookingForm.reset();
+            document.querySelector('.time-slot.selected').classList.remove('selected');
+            selectedTimeSlot = null;
+        } catch (error) {
+            console.error('Failed to book appointment:', error);
+            alert('Failed to book appointment. Please try again.');
+        }
+    });
+
+    clearFormButton.addEventListener('click', () => {
         bookingForm.reset();
+        const selectedTimeSlotElement = document.querySelector('.time-slot.selected');
+        if (selectedTimeSlotElement) {
+            selectedTimeSlotElement.classList.remove('selected');
+        }
         selectedTimeSlot = null;
-        loadTimeSlots(selectedTimeSlot.date);
     });
 
     prevMonthButton.addEventListener('click', () => {
@@ -174,51 +175,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
     });
 
-    document.getElementById('clear-form-btn').addEventListener('click', () => {
-        bookingForm.reset();
-        // Clear selected time slot
-        selectedTimeSlot = null;
-        // Remove selected class from any previously selected slot
-        const selectedSlot = document.querySelector('.time-slot.selected');
-        if (selectedSlot) {
-            selectedSlot.classList.remove('selected');
-        }
-    });
-
-    // Initial rendering
-    fetchBookedSlots().then(() => {
-        renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
-    });
+    fetchBookedSlots();
+    renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
 });
-
-async function saveBooking(bookingData) {
-    try {
-        const response = await fetch('http://localhost:3000/api/booked-slots', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(bookingData)
-        });
-        if (!response.ok) {
-            throw new Error('Failed to save booking');
-        }
-    } catch (error) {
-        console.error('Error saving booking:', error);
-    }
-}
-
-async function sendWorkOrderEmail(workOrderDetails, recipientEmail) {
-    try {
-        const response = await fetch('http://localhost:3000/api/send-email', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ workOrderDetails, recipientEmail })
-        });
-        if (!response.ok) {
-            throw new Error('Failed to send email');
-        }
-    } catch (error) {
-        console.error('Error sending email:', error);
-    }
-}
-
-

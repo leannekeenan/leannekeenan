@@ -54,12 +54,10 @@ body {
     background-color: #ddd;
 }
 
-/* Add a new class for selected date */
 .calendar-day.selected {
     background-color: #007bff;
     color: #fff;
 }
-
 
 .calendar-header-cell {
     background-color: transparent;
@@ -91,6 +89,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 20px;
 }
 
 .user-info-container div {
@@ -103,35 +102,25 @@ body {
 
 .user-info-container button {
     padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
 }
 
 .user-info-container button#cancel-appointment-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
     background-color: #dc3545;
     color: #fff;
-    border: none;
-    cursor: pointer;
-    display: none;
 }
 
 .user-info-container button#cancel-appointment-btn:hover {
     background-color: #c82333;
 }
 
-
 .user-info-container button#clear-form-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
     background-color: #ffc107;
     color: #fff;
-    border: none;
-    cursor: pointer;
 }
 
 .user-info-container button#clear-form-btn:hover {
     background-color: #e0a800;
 }
-
-
-
