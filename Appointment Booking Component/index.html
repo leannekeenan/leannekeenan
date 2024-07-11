@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/Appointment Booking Component/assets/css/style.css">
 </head>
 <body>
-    
     <div class="calendar-container">
         <div class="calendar-header">
             <button id="prev-month">Previous</button>
@@ -44,6 +43,20 @@
                     <option value="brake-repair">Brake Repair</option>
                     <option value="transmission-repair">Transmission Repair</option>
                 </select>
+            </div>
+            <div>
+                <label for="make"></label>Vehicle Make
+                <input type="text" id="make">
+            </div>
+
+            <div>
+                <label for="model"></label>Vehicle Model
+                <input type="text" id="model">
+            </div>
+
+            <div>
+                <label for="year"></label>Production Year
+                <input type="text" id="year">
             </div>
             <button type="submit">Book Appointment</button>
             <button id="clear-form-btn" type="button">Clear Form</button>

@@ -22,7 +22,7 @@ async function sendEmail(recipient, subject, htmlContent) {
         console.log('Email sent:', info.messageId);
     } catch (error) {
         console.error('Error sending email:', error);
-        throw error; // Propagate the error to handle it in the caller function
+        throw error;
     }
 }
 

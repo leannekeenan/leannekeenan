@@ -4,40 +4,27 @@ body {
 
 .calendar-container, .time-slots-container, .user-info-container {
     margin: 20px;
-    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .calendar-header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
-}
-
-.calendar-header button {
-    margin: 0 10px;
-    padding: 5px 10px;
-}
-
-.calendar-header span {
-    font-size: 1.2em;
-    font-weight: bold;
 }
 
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 5px;
+    margin-top: 10px;
 }
 
 .calendar-day, .calendar-day-empty, .calendar-header-cell {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    margin: 5px;
+    padding: 10px;
     border: 1px solid #ccc;
-    background-color: #f0f0f0;
-    border-radius: 50%;
     text-align: center;
 }
 
@@ -45,82 +32,50 @@ body {
     cursor: pointer;
 }
 
+.calendar-day.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
 .calendar-day.disabled {
-    background-color: #dcdcdc;
+    background-color: #f9f9f9;
+    color: #ccc;
     cursor: not-allowed;
 }
 
-.calendar-day:hover:not(.disabled) {
-    background-color: #ddd;
-}
-
-.calendar-day.selected {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.calendar-header-cell {
-    background-color: transparent;
-    border: none;
-    font-weight: bold;
-    cursor: default;
-}
-
 .time-slot {
-    display: inline-block;
-    margin: 5px;
     padding: 10px;
     border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 5px;
     cursor: pointer;
 }
 
 .time-slot.selected {
-    background-color: #28a745;
-    color: #fff;
+    background-color: #4CAF50;
+    color: white;
 }
 
 .time-slot.booked {
-    background-color: #6c757d;
-    color: #fff;
+    background-color: #f9f9f9;
+    color: #ccc;
     cursor: not-allowed;
 }
 
-.user-info-container form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+.user-info-container form div {
+    margin-bottom: 10px;
 }
 
-.user-info-container div {
-    margin: 10px 0;
-}
-
-.user-info-container label {
-    margin-right: 10px;
-}
-
-.user-info-container button {
-    padding: 10px 20px;
-    margin-top: 10px;
-    cursor: pointer;
+button {
+    padding: 10px;
     border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.user-info-container button#cancel-appointment-btn {
-    background-color: #dc3545;
-    color: #fff;
-}
-
-.user-info-container button#cancel-appointment-btn:hover {
-    background-color: #c82333;
-}
-
-.user-info-container button#clear-form-btn {
-    background-color: #ffc107;
-    color: #fff;
-}
-
-.user-info-container button#clear-form-btn:hover {
-    background-color: #e0a800;
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }

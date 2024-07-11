@@ -58,12 +58,12 @@ document.addEventListener('DOMContentLoaded', function () {
         for (let day = 1; day <= daysInMonth; day++) {
             const date = new Date(year, month, day);
             const dayOfWeek = date.getDay();
-
+            const today = new Date();
             const dayElement = document.createElement('div');
             dayElement.textContent = day;
             dayElement.className = 'calendar-day';
 
-            if (dayOfWeek === 0 || dayOfWeek === 5 || dayOfWeek === 6) {
+            if (dayOfWeek === 0 || dayOfWeek === 5 || dayOfWeek === 6 || date < today.setHours(0, 0, 0, 0)) {
                 dayElement.classList.add('disabled');
             } else {
                 dayElement.addEventListener('click', () => {
@@ -148,7 +148,10 @@ document.addEventListener('DOMContentLoaded', function () {
             loadTimeSlots(`${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${String(currentDate.getDate()).padStart(2, '0')}`);
 
             bookingForm.reset();
-            document.querySelector('.time-slot.selected').classList.remove('selected');
+            const selectedElement = document.querySelector('.time-slot.selected');
+            if (selectedElement) {
+                selectedElement.classList.remove('selected');
+            }
             selectedTimeSlot = null;
         } catch (error) {
             console.error('Failed to book appointment:', error);
@@ -175,6 +178,10 @@ document.addEventListener('DOMContentLoaded', function () {
         renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
     });
 
-    fetchBookedSlots();
-    renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
+    async function init() {
+        await fetchBookedSlots();
+        renderCalendar(currentDate.getFullYear(), currentDate.getMonth());
+    }
+
+    init();
 });
