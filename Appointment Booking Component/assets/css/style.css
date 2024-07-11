@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.calendar-container, .time-slots-container, .user-info-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.calendar-day, .calendar-day-empty, .calendar-header-cell {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.calendar-day {
+    cursor: pointer;
+}
+
+.calendar-day.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.calendar-day.disabled {
+    background-color: #f9f9f9;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.time-slot {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.time-slot.selected {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.time-slot.booked {
+    background-color: #f9f9f9;
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.user-info-container form div {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
