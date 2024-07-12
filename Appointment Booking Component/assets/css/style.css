@@ -2,11 +2,15 @@ body {
     font-family: Arial, sans-serif;
 }
 
+
+
 .calendar-container, .time-slots-container, .user-info-container {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .calendar-header {
@@ -43,6 +47,13 @@ body {
     cursor: not-allowed;
 }
 
+.time-slots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .time-slot {
     padding: 10px;
     border: 1px solid #ccc;
@@ -63,6 +74,8 @@ body {
 }
 
 .user-info-container form div {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 10px;
 }
 
