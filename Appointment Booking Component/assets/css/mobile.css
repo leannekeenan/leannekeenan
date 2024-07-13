@@ -1,0 +1,26 @@
+@media (max-width: 900px) {
+    .form-headline {
+        text-align: center;
+    }
+
+    .calendar-container, .time-slots-container, .user-info-container {
+        margin: 0
+    }
+    .booking-component {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .booking-component > div {
+        width: 90%;
+        margin: 0 auto
+    }
+
+    .header-cell, .time-slot {
+        font-size: 0.9rem;
+    }
+
+    .calendar-day, .calendar-day-empty, .calendar-header-cell {
+        padding: 8px
+    }
+}

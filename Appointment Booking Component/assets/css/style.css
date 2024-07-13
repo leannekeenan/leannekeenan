@@ -1,22 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
 }
 
+.booking-component {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 0 auto;
+}
 
+.booking-component div {
+    width: auto;
+}
+
+.booking-component .user-info-container.container form input,
+.user-info-container.container form select {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-info-container.container form input {
+    width: 80%;
+}
 
 .calendar-container, .time-slots-container, .user-info-container {
     margin: 20px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    max-width: 1000px;
-    margin: 0 auto;
 }
 
 .calendar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.calendar-header button {
+    width: 100px;
+}
+
+.calendar-header button img {
+    width: 30%;
+    height: auto;
 }
 
 .calendar-grid {
@@ -48,10 +84,10 @@ body {
 }
 
 .time-slots {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .time-slot {
@@ -74,21 +110,102 @@ body {
 }
 
 .user-info-container form div {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-buttons {
+    width: 100%;
+    margin: 0 auto;
 }
 
 button {
+    width: 100%;
     padding: 10px;
+    margin: .5rem 0;
     border: none;
-    background-color: #4CAF50;
-    color: white;
     cursor: pointer;
     border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.form-buttons button:nth-child(1) {
+    background: rgb(76, 175, 80);
+    color: white;
+}
+
+.form-buttons button:nth-child(1):hover {
+    box-shadow: 0 0 5px #4CAF50;
+}
+
+.form-buttons button:nth-child(2) {
+    background: rgba(255, 69, 0, 0.7);
+    color: white;
+}
+
+.form-buttons button:hover {
+    background: #f5f5f5;
+    color: black;
+}
+
+.form-buttons button:nth-child(2):hover {
+    box-shadow: 0 0 5px orangered;
 }
 
 button:disabled {
     background-color: #ccc;
     cursor: not-allowed;
+}
+
+/* Ensure parent container takes full width */
+.service-types {
+    width: 100%;
+    max-width: 100%;
+}
+  
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Make it responsive and consistent with input */
+}
+
+.custom-select {
+    position: relative;
+    width: 100%;
+}
+
+.selected {
+    
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure the selected div takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.options {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    z-index: 1000;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure each option takes full width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.option:hover {
+    background-color: rgba(76, 175, 80, 0.5);
+}
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #4CAF50;
 }
