@@ -19,10 +19,12 @@
     color: var(--silver);
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
+
 }
 
 body {
     background: var(--offWhite);
+   
 }
 
 nav {
@@ -33,8 +35,27 @@ nav {
     z-index: 1000;
     padding: 5rem;
     display: flex;
+    justify-content: space-between;
     background: var(--offWhite);
     box-shadow: 0 0 10px var(--silver);
+    
+}
+
+nav .coffee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background: rgb(224, 224, 22);
+}
+
+nav .coffee:hover {
+    background: rgba(224, 224, 22, 0.1);
+    box-shadow: 0 0 10px rgb(224, 224, 22);
 }
 
 li {
@@ -46,7 +67,6 @@ h1, h2, h3, h4, h5, h6 {
 
 nav, .nav-links {
     display: flex;
-    justify-content: flex-end;
     align-items: center;   
 }
 
@@ -128,11 +148,15 @@ h1 {
 
 .collapse {
     display: none;
+    
 }
+
+
 
 nav .collapse img {
     height: 60px;
     cursor: pointer;
+    z-index: 100000;
 }
 
 
@@ -164,6 +188,7 @@ nav .collapse img {
     flex-wrap: wrap;
     height: 50%;
     line-height: auto;
+    
 }
 
 .hello {
