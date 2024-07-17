@@ -151,7 +151,9 @@ h1 {
     
 }
 
-
+nav {
+    z-index: 1000;
+}
 
 nav .collapse img {
     height: 60px;
