@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Calendar from 'react-calendar';
 import { useNavigate } from 'react-router-dom';
-import '../../assets/css/calendar.css';
+import '../../assets/css/booking.css';
+import '../../assets/css/index.css';
 
 const services = [
   'Haircut',
@@ -49,9 +50,12 @@ const Booking = () => {
     <div className='container' style={{ backgroundColor: 'lightgreen'}}>
       <h2>Book an Appointment</h2>
       <form onSubmit={handleSubmit}>
-        <div className='container-top'>
-            <div className='user-info'>
-                <div>
+        <div className="data">
+
+          <div className="user-inputs">
+            <div className="user-info">
+
+              <div className='user-name'>
                 <label htmlFor="name">Name: </label>
                 <input
                     id="name"
@@ -60,70 +64,73 @@ const Booking = () => {
                     onChange={(e) => setName(e.target.value)}
                     required
                 />
-                </div>
+              </div>
 
-                <div>
-                <label htmlFor="email">Email: </label>
-                <input
-                    id="email"
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    required
-                />
-                </div>
+              <div className="user-email">
+                  <label htmlFor="email">Email: </label>
+                  <input
+                      id="email"
+                      type="text"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                      required
+                  />
+              </div>
 
-                <div>
-                <label htmlFor="phone">Phone: </label>
-                <input
-                    id="phone"
-                    type="phone"
-                    value={phone}
-                    onChange={(e) => setPhone(e.target.value)}
-                    required
-                />
-                </div>
-
-                <div>
-            <label htmlFor="service">Service: </label>
-            <select
-                id="service"
-                value={service}
-                onChange={(e) => setService(e.target.value)}
-                required
-            >
-                <option value="" disabled>Select a service</option>
-                {services.map((service, index) => (
-                <option key={index} value={service}>{service}</option>
-                ))}
-            </select>
-            </div>
-
-            <div>
-            <label htmlFor="stylist">Stylist: </label>
-            <select
-                id="stylist"
-                value={stylist}
-                onChange={(e) => setStylist(e.target.value)}
-            >
-                <option value="" disabled>Select a stylist (optional)</option>
-                {stylists.map((stylist, index) => (
-                <option key={index} value={stylist}>{stylist}</option>
-                ))}
-            </select>
-            </div>
-
-            <div>
-            <label htmlFor="requests">Notes:</label>
-            <textarea
-                id="requests"
-                value={requests} // Bind value to state
-                onChange={(e) => setRequests(e.target.value)} // Update state on change
-            />
-            </div>
+              <div className="user-phone">
+          
+                  <label htmlFor="phone">Phone: </label>
+                  <input
+                      id="phone"
+                      type="text"
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
+                      required
+                  />
+              </div>
 
             </div>
 
+            <div className="booking-info">
+
+              <div className='service-type'>
+                <label htmlFor="service">Service: </label>
+                <select id="service" value={service} onChange={(e) => setService(e.target.value)} required>
+                  <option value="" disabled>Select a service</option>
+                  {services.map((service, index) => (
+                    <option key={index} value={service}>{service}</option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="stylist-choice">
+                <label htmlFor="stylist">Stylist: </label>
+                <select
+                    id="stylist"
+                    value={stylist}
+                    onChange={(e) => setStylist(e.target.value)}
+                >
+                    <option value="" disabled>Select a stylist (optional)</option>
+                    {stylists.map((stylist, index) => (
+                    <option key={index} value={stylist}>{stylist}</option>
+                    ))}
+                </select>
+              </div>
+
+              <div className="notes">
+                  <label htmlFor="requests">Notes:</label>
+                  <textarea
+                  id="requests"
+                  value={requests} // Bind value to state
+                  onChange={(e) => setRequests(e.target.value)} // Update state on change
+                  />
+              </div>
+
+            </div>
+            
+          </div>
+
+          <div className="calendar">
             <div className='calendar-container'>
                 <label>Choose a date for your service:</label>
                 <Calendar
@@ -134,22 +141,10 @@ const Booking = () => {
                     required
                 />
             </div>
+          </div>
         </div>
-
-        <div className='container-bottom'>
-            
-            <input type="checkbox" name="terms" id="" />I accept the <a href="/terms">Terms & Conditions</a>
-        </div> 
-
-        <div className="confirmation">
-          <h2>You have selected:</h2>
-          <p>Date: {date.toLocaleDateString()}</p>
-          <p>Service: {service}</p>
-          <p>Stylist: {stylist}</p>
-          <p>Requested Accommodations: {requests}</p> {/* Display the requests */}
-        </div>
-        
-        <button type="submit">Confirm Booking</button>
+      
+        <div className="confirm"></div>
       </form>
     </div>
   );

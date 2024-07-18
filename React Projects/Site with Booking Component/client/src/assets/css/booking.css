@@ -1,0 +1,29 @@
+form {
+  width: 80%;
+  margin: 0 auto
+}
+
+.data, .confirm {
+  display: flex;
+  justify-content: center;
+
+  }
+  
+  .data div {
+    width: 100%;
+  }
+
+  .data > div {
+    margin: 1rem
+  }
+  
+  .data .user-inputs div div {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+
+  .react-calendar__month-view__days button {
+    padding: 10px;
+
+  }
