@@ -19,6 +19,7 @@ const stylists = [
 ];
 
 const Booking = () => {
+  {/*Trigger Component state variables*/}
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
@@ -28,7 +29,7 @@ const Booking = () => {
   const [requests, setRequests] = useState(''); // Add state for special requests
   const [bookedSlots, setBookedSlots] = useState({});
   const [selectedTimeSlot, setSelectedTimeSlot] = useState(null);
-  const navigate = useNavigate();
+  const navigate = useNavigate(); //redirects once appointment is sucessfully booked
 
   useEffect(() => {
     const fetchBookedSlots = async () => {
@@ -53,7 +54,7 @@ const Booking = () => {
     setSelectedTimeSlot(time);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => { //e = submit event
     e.preventDefault();
 
     if (!selectedTimeSlot) {
@@ -89,6 +90,7 @@ const Booking = () => {
       <h2>Book an Appointment</h2>
       <form onSubmit={handleSubmit}>
         <div className="data">
+
           <div className="user-inputs">
 
             <div className="user-info">
@@ -125,6 +127,7 @@ const Booking = () => {
             </div>
 
             <div className="booking-info">
+
               <div className='service-type'>
                 <label htmlFor="service">Service: </label>
                 <select id="service" value={service} onChange={(e) => setService(e.target.value)} required>
@@ -134,6 +137,7 @@ const Booking = () => {
                   ))}
                 </select>
               </div>
+
               <div className="stylist-choice">
                 <label htmlFor="stylist">Stylist: </label>
                 <select
@@ -163,7 +167,7 @@ const Booking = () => {
               </div>
 
             </div>
-            
+
           </div>
 
           <div className="calendar">
@@ -172,7 +176,7 @@ const Booking = () => {
               <label>Choose a date for your service:</label>
               <Calendar
                 className="custom-calendar"
-                onChange={setDate}
+                onChange={setDate} 
                 value={date}
                 calendarType="gregory"
                 required
@@ -198,16 +202,29 @@ const Booking = () => {
           </div>
           
         </div>
+
+
         <div className="confirm">
+
           <div className="confirmation">
-            <h2>You have selected:</h2>
+            <h2>Appointment Details:</h2>
+            <h3>About You</h3>
+            <p>Name: {name}</p>
+            <p>Email: {email}</p>
+            <p>Phone: {phone}</p>
+            <h3>About Your Appointment</h3>
             <p>Date: {date.toLocaleDateString()}</p>
             <p>Time: {selectedTimeSlot}</p>
             <p>Service: {service}</p>
             <p>Stylist: {stylist}</p>
             <p>Requested Accommodations: {requests}</p>
           </div>
-          <button type="submit">Confirm Booking</button>
+
+          <div className="buttons">
+            <button type="submit">Confirm Booking</button>
+            <button>Clear Form</button>
+          </div>
+
         </div>
       </form>
     </div>
