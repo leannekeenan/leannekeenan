@@ -1,6 +1,6 @@
 //Import useState to capture customer selections and control form data.
 import React, { useState } from 'react';
-import React from "react";
+
 import Calendar from 'react-calendar'
 import TimePicker from 'react-time-picker'
 import 'react-time-picker/dist/TimePicker.css';
@@ -26,7 +26,34 @@ const services = [
 
 const Booking = () => {
     const [name, setName] = useState('');
+    const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
+    const [date, setDate] = useState(new Date());
+    const [service, setService] = useState('');
+    const [stylist, setStylist] = useState('');
+    const [time, setTime] = useState('');
+
+    const navigate = useNavigate();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const response = await fetch('http://localhost:5000/api/bookings',  {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application.json',
+            },
+            body: JSON.stringify({name, email, phone, date, service, stylist, time})
+        })
+
+        if(response.ok) {
+            alert(`Booking for ${name} at ${time} on ${date} with ${stylist} has been booked`);
+        navigate('/')        
+        }
+        else {
+            alert(`Booking failed. Try again.`)
+        }
+    }
+
     return (
         <div>
 
@@ -70,6 +97,22 @@ const Booking = () => {
 
                 <div className="booking-details">
 
+                    <div className='calendar'>
+                        <label htmlFor="date">Pick a date</label>
+                        <Calendar
+                        onChange={setDate}
+                        value={date}
+                        required
+                        />
+
+                        <label htmlFor="time">Select a time</label>
+                        <TimePicker 
+                        onChange={ setTime } 
+                        value={time} 
+                        required
+                        />
+                    </div>
+
                     <div className="services">
                         <label htmlFor="services">Services</label>
                         <select 
@@ -79,24 +122,36 @@ const Booking = () => {
                         onChange={ (e) => setService(e.target.value)}
                         required
                         >
-                            
+                            <option value="" disabled>Select a service</option>
+                            {
+                            services.map(
+                                (service, index) => {
+                                    <option key={index} value={service}>{service}</option>
+                                }
+                              )
+                            }
                         </select>
                     </div>
 
-                    <div className="stylist">
-                        <label htmlFor="stylist">Stylist</label>
-                        <select 
-                        name="stylist" 
-                        id="stylist"
-                        value={ stylist }
-                        onChange={ (e) => setStylist(e.target.value)}
-                        ></select>
+                    <div className='stylists'>
+                        <label htmlFor="stylist">Stylist: </label>
+                        <select
+                            id="stylist"
+                            value={stylist}
+                            onChange={(e) => setStylist(e.target.value)}
+                        >
+                            <option value="" disabled>Select a stylist (optional)</option>
+                            {stylists.map((stylist, index) => (
+                            <option key={index} value={stylist}>{stylist}</option>
+                            ))}
+                        </select>
                     </div>
 
-                    <div className='calendar'>
-                        <Calendar/>
-                        <TimePicker onChange={onChange} value={value} />
+                    <div className="confirmation">
+                    <p>Selected date: {date.toLocaleDateString()}</p>
                     </div>
+
+                    <button type="submit">Book</button>
                 </div>
             </form>
         </div>
