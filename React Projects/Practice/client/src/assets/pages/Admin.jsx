@@ -18,7 +18,13 @@ const Admin = () => {
         <ul>
             { bookings.map((booking) => {
                 <li key={booking._id}>
-                    
+                    <p>name: ${booking.name}</p>
+                    <p>email: ${booking.email}</p>
+                    <p>phone: ${booking.phone}</p>
+                    <p>service: ${booking.service}</p>
+                    <p>stylist: ${booking.stylist}</p>
+                    <p>date: ${new Date(booking.date).toLocaleDateString()}</p>
+                    <p>time: ${booking.time}</p>
                 </li>
             })}
         </ul>
