@@ -46,7 +46,7 @@ const Booking = () => {
         })
 
         if(response.ok) {
-            alert(`Booking for ${name} at ${time} on ${date} with ${stylist} has been booked`);
+            alert(`${name} , your booking for ${service} at ${time} on ${date} with ${stylist} has been made`);
         navigate('/')        
         }
         else {
@@ -100,8 +100,9 @@ const Booking = () => {
                     <div className='calendar'>
                         <label htmlFor="date">Pick a date</label>
                         <Calendar
-                        onChange={setDate}
+                        onChange={ setDate }
                         value={date}
+                        calendarType= "gregory"
                         required
                         />
 
