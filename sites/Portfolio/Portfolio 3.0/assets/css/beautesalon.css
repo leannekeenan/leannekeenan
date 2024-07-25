@@ -1,0 +1,40 @@
+
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrapper:before {
+    display: none;
+}
+
+#wrapper > header  {
+    margin-bottom: -1;
+    padding-top: 2em;
+}
+#wrapper .inner .image {
+    border-radius: 5px;
+    border: 0;
+    display: inline-block;
+    position: relative;
+}
+
+@media screen and (max-width: 980px) {
+    #wrapper > header  {
+        margin-bottom: -6em;
+        padding-top: 1em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul {
+        display: inline-block;
+    }
+}
+

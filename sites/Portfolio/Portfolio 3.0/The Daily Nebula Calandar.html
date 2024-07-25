@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>The Daily Nebula Calendar (Powered by NASA)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Leanne Keenan - Front-End Developer</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="index.html">Home</a></li>
+								<li><a href="whatIDo.html">What I Do</a></li>
+								<li><a href="whoIAm.html">Who I am</a></li>
+								<li><a href="myWork.html">My Portfolio</a></li>
+								<li><a href="contactMe.html">Contact</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2><a href="https://thedailynebula.netlify.app">The Daily Nebula Calendar (Powered by NASA)</a></h2>
+								<img src="/images/daily nebula.jpg" width="100%" alt="">
+								<p>With a user-friendly interface and thoughtfully curated content, "The Daily Nebula Calendar" is suitable for space enthusiasts of all ages. Whether you're a seasoned astronomer or just someone who appreciates the beauty of the cosmos, this app will ignite your curiosity and inspire a sense of wonder.</p>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<h3 class="major">About the Code</h3>
+									<p> This code creates a web page that displays daily photos or videos of the universe, powered by the NASA API. Users can visit the page to explore captivating images or videos of space, accompanied by descriptive information. It provides an immersive and educational experience about the wonders of our universe.</p>
+
+									<p>The HTML structure defines the layout of the page. It includes meta tags for character encoding, viewport settings, and page description. The title of the page is set as "The Daily Nebula." The code also references an external CSS file for styling purposes. The HTML elements consist of a heading, paragraph, and a section to display the daily content. The section includes an image, iframe (for videos), date, title, and description.</p>
+
+									<p>The CSS styling defines the visual appearance of the page. It sets the text alignment, padding, dimensions, box shadow, and border radius for different elements. The styling ensures a centered layout and enhances the visual presentation of the content.</p>
+
+									<p>The JavaScript code fetches data from the NASA API by making a fetch request to the specified URL. Upon receiving the data, it updates the HTML elements dynamically. The date is set to the current date using JavaScript's Date object. If the media type is an image, the fetched HD image URL is assigned to the src attribute of the image element. If the media type is a video, the URL is assigned to the src attribute of the iframe element. The title and description are also updated with the corresponding data from the API response.</p>
+
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							
+							<ul class="copyright">
+								<li>&copy; Leanne Keenan. All rights reserved.</li><li>2023</li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
