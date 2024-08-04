@@ -1,0 +1,10 @@
+nav a {
+    padding: 1rem;
+    margin: .5rem;
+    text-decoration: none;
+    color: var(--brown)
+}
+
+nav a:hover {
+    border-bottom: 1px solid var(--brown);
+}
