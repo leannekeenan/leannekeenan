@@ -6,6 +6,7 @@
 
 body {
     background: var(--beige);
+    scroll-behavior: smooth;
 }
 
 .hero {
@@ -14,8 +15,10 @@ body {
     align-items: center;
 }
 
+
+
 .fade {
-    animation: fade 5s ease-in-out 1 forwards;
+    animation: fade 3s ease-in-out 1 forwards;
 }
 
 
