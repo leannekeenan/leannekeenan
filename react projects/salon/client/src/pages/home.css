@@ -5,7 +5,7 @@
 }
 
 body {
-    background: var(--beige);
+    background: url('/public/Untitled-1 (4).png');
     scroll-behavior: smooth;
 }
 
@@ -15,7 +15,10 @@ body {
     align-items: center;
 }
 
-
+.container {
+    width: 80%;
+    background: var(--white)
+}
 
 .fade {
     animation: fade 3s ease-in-out 1 forwards;
