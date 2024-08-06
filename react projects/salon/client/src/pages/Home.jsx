@@ -9,9 +9,11 @@ const Home = () => {
 
             <main>
                 <section className="hero">
-                    <img className="logo fade" src="/public/istockphoto-2158631426-612x612 -2.png" alt="" />
-                    <h1 className="company">Beaute Salon</h1>
-                    <span>where beauty meets excellence</span>
+                    <div className="intro">
+                        <img className="logo fade" src="/public/istockphoto-2158631426-612x612 -2.png" alt="" />
+                        <h1 className="company">Beaute Salon</h1>
+                        <span>where beauty meets excellence</span>
+                    </div>
                 </section>
 
                 <section className="container">
