@@ -1,6 +1,6 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import './App.css'
+
 
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <div>
       
       <header>
-        <h1>Beaute Salon</h1>
+        <h1><img src="../public/istockphoto-2158631426-612x612 -2.png" alt="" /> Beaute Salon</h1>
         <nav>
           
           <a href="/">Home</a>

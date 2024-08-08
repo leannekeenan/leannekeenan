@@ -7,21 +7,26 @@
 
 
 .hero {
-    background: url('/public/Untitled-1 (5).png') no-repeat;
+    background: url('/public/salon III.png') no-repeat;
     background-size: cover;
+    background-position: center;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
-    height: 100vh;
 }
 
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.intro img {
+  height: 50%
 }
 
 
@@ -38,4 +43,5 @@
     to {
       opacity: 1; /* End fully visible */
     }
-  }
+}
+

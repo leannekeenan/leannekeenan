@@ -10,3 +10,12 @@ nav a {
 nav a:hover {
     border-bottom: 1px solid var(--brown);
 }
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+header h1 img {
+    height: 80px
+}
