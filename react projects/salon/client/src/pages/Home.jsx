@@ -13,16 +13,24 @@ const Home = () => {
                 <section className="hero">
                     <div className="intro">
                         <img className="logo fade" src="/public/istockphoto-2158631426-612x612 -2.png" alt="" />
-                        <h1 className="company">Beaute Salon</h1>
-                        <span>where beauty meets excellence</span>
+                        <h1 className="company fade">Beaute Salon</h1>
+                        <span className='fade'>where beauty meets excellence</span>
                     </div>
                 </section>
 
                 <section className="container">
                     <section className="section welcome">
+                        <div className="text">
                         <p>
                             Our salon is a sanctuary for those seeking the finest in hair, skin, and nail care. At Beauté, we believe that everyone deserves to look and feel their best. Our team of skilled professionals is dedicated to providing exceptional services tailored to your unique needs.
                         </p>
+                        </div>
+                        <div className="image">
+                            <img src="/public/compliment.png" alt="" />
+                        </div>
+                        
+
+                        
 
                     </section>
 
