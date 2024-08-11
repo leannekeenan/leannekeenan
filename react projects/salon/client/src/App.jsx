@@ -21,9 +21,22 @@ const App = () => {
         
         </nav>
       </header>
+
       <main>
         <Outlet/>
       </main>
+
+      <footer>
+        <div className="social">
+          <img src="../public/facebook [white].png" alt="" />
+          <img src="../public/instagram [white].png" alt="" />
+          <img src="../public/snapchat [white].png" alt="" />
+          <img src="../public/threads [white].png" alt="" />
+          <img src="../public/twitter [white].png" alt="" />
+        </div>
+        <div className="details"></div>
+      </footer>
+      
     </div>
   )
 }
