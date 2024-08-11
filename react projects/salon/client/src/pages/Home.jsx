@@ -10,12 +10,13 @@ const Home = () => {
         <>
 
             <main>
+                <div className="intro">
+                    <img className="logo fade" src="/public/istockphoto-2158631426-612x612 -2.png" alt="" />
+                    <h1 className="company fade">Beaute Salon</h1>
+                    <span className='fade'>where beauty meets excellence</span>
+                </div>
                 <section className="section hero">
-                    <div className="intro">
-                        <img className="logo fade" src="/public/istockphoto-2158631426-612x612 -2.png" alt="" />
-                        <h1 className="company fade">Beaute Salon</h1>
-                        <span className='fade'>where beauty meets excellence</span>
-                    </div>
+                    
                 </section>
 
                 <section className="container">
@@ -57,7 +58,7 @@ const Home = () => {
                     <section className="section location">
                         <div>
                             <p>
-                                Conveniently located in the heart of [City Name], Beauté Salon is open [days of the week] from [opening hours]. Whether you're planning a visit before work, during lunch, or for an evening of pampering, our flexible hours accommodate your schedule.
+                                Conveniently located in the heart of Redwood City, Beauté Salon is open Monday to Saturday from 8am to 5pm. Whether you are planning a visit before work, during lunch, or for an evening of pampering, our flexible hours accommodate your schedule.
                             </p>
                         </div>
 
@@ -76,15 +77,20 @@ const Home = () => {
                     </section>
 
                     <section className="section reach">
-                        <div>
-                            <p>
-                                Booking an appointment has never been easier. Call us at [phone number], email us at [email address], or visit our online booking page to schedule your next visit. Follow us on social media for the latest updates and special offers.
-                            </p>
+                        
+                        <div className="container">
+                            <div className="buttons">
+                                <a href="../pages/Services.jsx">Services</a>
+                                <a href="../pages/Appointments.jsx">Appointments</a>
+                            </div>
+
+                            <div>
+                                <p>
+                                    Booking an appointment has never been easier. Call us at 888-876-5309, email us at hello@beaute.com, or visit our online booking page to schedule your next visit. Follow us on social media for the latest updates and special offers.
+                                </p>
+                            </div>
                         </div>
-                        <div className="buttons">
-                            <a href="../pages/Services.jsx">Services</a>
-                            <a href="../pages/Appointments.jsx">Appointments</a>
-                        </div>
+                        
                     </section>
                 </section>
             </main>

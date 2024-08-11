@@ -10,7 +10,7 @@ const App = () => {
     <div>
       
       <header>
-        <h1><img src="../public/istockphoto-2158631426-612x612 -2.png" alt="" /> Beaute Salon</h1>
+        <img src="../public/istockphoto-2158631426-612x612 -2.png" alt="" /> 
         <nav>
           
           <a href="/">Home</a>
@@ -28,13 +28,32 @@ const App = () => {
 
       <footer>
         <div className="social">
-          <img src="../public/facebook [white].png" alt="" />
-          <img src="../public/instagram [white].png" alt="" />
-          <img src="../public/snapchat [white].png" alt="" />
-          <img src="../public/threads [white].png" alt="" />
-          <img src="../public/twitter [white].png" alt="" />
+
+          <a href="">
+            <img src="../public/facebook [white].png" alt="" />
+          </a>
+          
+          <a>
+            <img src="../public/instagram [white].png" alt="" />
+          </a>
+
+          <a>
+            <img src="../public/snapchat [white].png" alt="" />
+          </a>
+
+          <a>
+            <img src="../public/threads [white].png" alt="" />
+          </a>
+
+          <a>
+            <img src="../public/twitter [white].png" alt="" />
+          </a>
+
         </div>
-        <div className="details"></div>
+        <div className="details">
+          <p className="address">737 Jefferson Ave, Suite 316</p>
+          <p>Redwood City California, 94202</p>
+        </div>
       </footer>
       
     </div>

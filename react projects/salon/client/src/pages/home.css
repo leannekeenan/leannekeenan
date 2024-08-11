@@ -1,0 +1,192 @@
+.hero {
+    background: url('../../public/salon\ III.png');
+    background-position: bottom;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: -10;
+}
+
+.intro {
+    height: 70vh;
+    position: static;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: -1;
+  }
+
+  .intro h1, .intro span {
+    color: var(--white);
+    text-shadow: 0 0 15px var(--black);
+  }
+  
+  .intro h1 {
+    font-size: 5rem;
+  }
+  
+  .intro span {
+    font-size: 2.5rem;
+  }
+  
+  .logo{
+    width: 20%;
+  }
+  
+  .intro span {
+    font-size: 1.5rem;
+  }
+  
+  .fade {
+      animation: fade 3s ease-in-out 1 forwards;
+  }
+  
+  
+  @keyframes fade {
+      from {
+        opacity: 0; /* Start invisible */
+      }
+      to {
+        opacity: 1; /* End fully visible */
+      }
+  }
+  
+  .welcome {
+    background: var(--white);
+    position: relative;
+    top: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px var(--black);
+  }
+  
+  .welcome div {
+    display: flex;
+    margin: 2rem;
+    width: 50%;
+  }
+  
+  .welcome div:nth-child(1) {
+    background: var(--beige);
+    padding: 5.5rem 2rem;
+    flex: 1;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .text, .welcome img {
+    width: 100%;
+  }
+  
+  .offer {
+    position: relative;
+    top: 250px;
+    background: var(--black);
+    opacity: 0.95;
+    padding: 3rem;
+  }
+  
+  .offer p {
+    color: var(--beige);
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  .break {
+    height: 30vh;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  .who {
+    position: relative;
+    top: 100px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px var(--black);
+  }
+  
+  .who div, .who div img {
+    width: 100%;
+  }
+  
+  .who div {
+    padding: 2rem
+  }
+  
+  .location {
+    position: relative;
+    top: 100px;
+    background: url('../public/decorative\ background.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px var(--black);
+    z-index: -1;
+  }
+  
+  .location div {
+    width: 100%;
+    margin: 2rem;
+  }
+  
+  iframe {
+    box-shadow: 0 0 10px var(--brown);
+  }
+  
+  .reach {
+    position: relative;
+    top: 100px;
+    display: flex;
+    align-items: center;
+    background: url('../../public/salon\ II.png')no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 50vh;
+    box-shadow: 0 0 10px var(--black);
+  }
+
+  .reach .container {
+    height: inherit;
+    width: 100%;
+    background: rgba(227, 215, 208, 0.8);
+  }
+  
+  .reach div {
+    width: 100%;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    
+  }
+  
+  .buttons a {
+    background-color: var(--white);
+    min-width: 200px;
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--brown);
+    margin: 0.25rem 
+  }
