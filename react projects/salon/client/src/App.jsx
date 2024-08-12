@@ -18,9 +18,9 @@ const App = () => {
         <nav>
           
           <a href="/">Home</a>
+          <a href="/about">About</a>
           <a href="/staff">Staff</a>
           <a href="/services">Services</a>
-          <a href="/about">About</a>
           <a href="/appointments">Appointments</a>
         
         </nav>

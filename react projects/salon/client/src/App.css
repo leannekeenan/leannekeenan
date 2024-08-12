@@ -40,6 +40,10 @@ header nav a {
     padding: 1rem
 }
 
+nav a:hover, nav a:focus {
+    border-bottom: 1px solid var(--brown);
+}
+
 p {
     font-size: 2rem;
     padding: 4rem
@@ -49,7 +53,7 @@ p {
 /*FOOTER*/
 footer {
     position: relative;
-    top: 100px;
+    top: 200px;
     background-color: var(--black);
     opacity: 0.95;
     display: flex;
