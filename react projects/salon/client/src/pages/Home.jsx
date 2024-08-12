@@ -1,11 +1,10 @@
 import React from 'react';
 import './home.css';
 import '../App.css';
-
-
+ 
 
 const Home = () => { 
-
+   
     return (
         <>
 

@@ -4,7 +4,11 @@ import { Outlet } from 'react-router-dom'
 
 
 const App = () => {
-  
+  const style = {
+    display: 'flex',
+    justifyContent: 'flex-end',
+    marginBottom: '100px',
+  };
 
   return (
     <div>
@@ -26,7 +30,7 @@ const App = () => {
         <Outlet/>
       </main>
 
-      <footer>
+      <footer style={style}>
         <div className="social">
 
           <a href="">

@@ -1,0 +1,53 @@
+.staff-intro {
+    height: 80dvh;
+    background: url('../../public/Untitled-1\ \(4\).png');
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+}
+
+.staff-intro div {
+    width: 100%;
+}
+
+.staff-intro div img {
+    width: 100%;
+}
+
+.staff-container {
+    padding-top: 250px;
+}
+
+.our-professionals {
+    animation: slide 2s ease-out forwards;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(200%); /* Start completely offscreen to the right */
+  }
+  100% {
+    transform: translateX(90%); /* End halfway across the screen */
+  }
+}
+
+.member {
+    display: flex;
+}
+
+.member div {
+    width: 100%;
+}
+
+.member div img {
+    width: 100%;
+    
+}
