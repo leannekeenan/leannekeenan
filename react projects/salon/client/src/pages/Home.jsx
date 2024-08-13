@@ -40,8 +40,6 @@ const Home = () => {
                         </p>
                     </section>
 
-                    <section className="section break"></section>
-
                     <section className="section who">
                         <div>
                             <img src="../public/hair wash station 1.png" alt="" />
