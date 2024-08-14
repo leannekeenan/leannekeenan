@@ -1,0 +1,7 @@
+body {
+    background-image: url('../public/decorative background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+}

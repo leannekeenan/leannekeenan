@@ -2,6 +2,7 @@ import React from "react";
 import './staff.css';
 
 
+
 const Staff = () => {
 
 
@@ -13,7 +14,7 @@ const Staff = () => {
                 <section className="staff-intro">
                     <div>
                         <p className="our-professionals">
-                        At Beauté Salon, our dedicated team of beauty professionals is committed to providing exceptional service and ensuring that every client feels pampered and valued. Get to know the talented individuals who make Beauté Salon a premier destination for all your beauty needs.
+                            At Beauté Salon, our dedicated team of beauty professionals is committed to providing exceptional service and ensuring that every client feels pampered and valued. Get to know the talented individuals who make Beauté Salon a premier destination for all your beauty needs.
                         </p>
                     </div>
 

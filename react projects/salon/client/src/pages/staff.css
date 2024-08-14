@@ -1,0 +1,145 @@
+
+
+:root {
+    --beige: #e3d7d0;
+    --white: #fdfdfd;
+    --brown: #bc9a7c;
+    --black: #0e0d0d;
+}
+
+
+.staff-intro {
+    height: 80dvh;
+    background: url('../../public/Untitled-1\ \(4\).png');
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -150px;
+    box-shadow: 0 0 10px var(--black);
+}
+
+.staff-intro div {
+    width: 100%;
+}
+
+.staff-intro div img {
+    width: 100%;
+}
+
+.staff-container {
+    padding-top: 250px;
+}
+
+.our-professionals {
+    animation: slide 2s ease-out forwards;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(200%); /* Start completely offscreen to the right */
+  }
+  100% {
+    transform: translateX(90%); /* End halfway across the screen */
+  }
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blurb p {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.blurb ul li {
+    width: 70%;
+
+}
+
+.details li {
+    list-style:circle;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.member {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(227, 215, 208, 0.8);
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 0 10px var(--brown);
+}
+.member:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.member div {
+    width: 100%;
+}
+
+.member div img {
+    width: 80%;
+    margin: 0 10%;
+    box-shadow: 0 0 10px var(--brown);
+}
+
+.make-appointment {
+    position: relative;
+    top: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    background: var(--brown);
+    padding: 3rem;
+    margin-bottom: 100px;
+    box-shadow: 0 0 10px var(--black);
+}
+
+.make-appointment div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.make-appointment div p {
+    font-size: 2.4rem;
+    padding: 5rem;
+    text-align: center;
+}
+
+.make-appointment div a {
+    padding: 1rem 2rem;
+    width: 50%;
+    margin: 2rem auto;
+    font-size: 2.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--beige);
+    border: 2px solid var(--brown);
+    color: rgba(14, 13, 13, 0.7);
+    text-shadow: 2px 0 0 var(--brown);
+}
+
+.make-appointment div img {
+    width: 100%;
+    box-shadow: 0 0 10px var(--beige);
+}
+
+

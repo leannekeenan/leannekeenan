@@ -15,15 +15,15 @@ const Appointments = () => {
 
   return (
     <>
-    
-        <section className='appointments'>
+      <main className='appointments-page'>
+      <section className='appointments'>
         <button onClick={() => scrollToSection(employeeRef)}>Employee Login</button>
         <div>
-    <p>
-        Book with us today by calling 888-867-5309 or using our virtual booking system below. Enter your information and details about your preferences. We will send you a confirmation email with the details or contact you if we have any additional questions.
+        <p>
+            Book with us today by calling 888-867-5309 or using our virtual booking system below. Enter your information and details about your preferences. We will send you a confirmation email with the details or contact you if we have any additional questions.
 
-        <button onClick={() => scrollToSection(bookingRef)}>Book Now</button>
-    </p>
+            <button onClick={() => scrollToSection(bookingRef)}>Book Now</button>
+        </p>
 
     <p>
     Not quite sure who to see? Don&apos;t know what service you want? Take a peek at our Staff page to find the right professional for you or peruse our Services page to find just the right service.
@@ -56,6 +56,7 @@ const Appointments = () => {
         <p>Content for section 2.</p>
       </section>
       </div>
+      </main>
     </>
   );
 }

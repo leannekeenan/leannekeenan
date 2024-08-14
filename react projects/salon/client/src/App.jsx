@@ -31,32 +31,49 @@ const App = () => {
       </main>
 
       <footer style={style}>
+
+        <p>
+          Follow us on social media for the latest updates and special offers
+        </p>
         <div className="social">
 
-          <a href="">
-            <img src="../public/facebook [white].png" alt="" />
+          <div>
+            <a href="">
+              <img src="../public/facebook [white].png" alt="" />
           </a>
+          </div>
           
-          <a>
-            <img src="../public/instagram [white].png" alt="" />
+          <div>
+            <a>
+              <img src="../public/instagram [white].png" alt="" />
           </a>
+          </div>
 
-          <a>
-            <img src="../public/snapchat [white].png" alt="" />
+          <div>
+            <a>
+              <img src="../public/snapchat [white].png" alt="" />
           </a>
+          </div>
 
-          <a>
-            <img src="../public/threads [white].png" alt="" />
+          <div>
+            <a>
+              <img src="../public/threads [white].png" alt="" />
           </a>
+          </div>
 
-          <a>
-            <img src="../public/twitter [white].png" alt="" />
-          </a>
+          <div>
+            <a>
+              <img src="../public/twitter [white].png" alt="" />
+            </a>
+          </div>
 
         </div>
+
         <div className="details">
           <p className="address">737 Jefferson Ave, Suite 316</p>
           <p>Redwood City California, 94202</p>
+          <p>888-876-5309</p>
+          <p>hello@beaute.com</p>
         </div>
       </footer>
       

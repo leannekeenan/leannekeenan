@@ -8,7 +8,7 @@ const Home = () => {
     return (
         <>
 
-            <main>
+            <main className='home-page'>
                 <div className="intro">
                     <img className="logo fade" src="/public/istockphoto-2158631426-612x612 -2.png" alt="" />
                     <h1 className="company fade">Beaute Salon</h1>
@@ -35,9 +35,11 @@ const Home = () => {
                     </section>
 
                     <section className="section offer">
-                        <p>
-                            Discover a wide range of services designed to enhance your natural beauty. From precision haircuts and vibrant coloring to rejuvenating facials and flawless manicures, Beauté Salon is your one-stop destination for all things beauty.
-                        </p>
+                        <div>
+                            <p>
+                                Discover a wide range of services designed to enhance your natural beauty. From precision haircuts and vibrant coloring to rejuvenating facials and flawless manicures, Beauté Salon is your one-stop destination for all things beauty.
+                            </p>
+                        </div>
                     </section>
 
                     <section className="section who">
@@ -45,7 +47,7 @@ const Home = () => {
                             <img src="../public/hair wash station 1.png" alt="" />
                         </div>
 
-                        <div>
+                        <div className='text'>
                             <p>
                             Our talented team comprises experienced stylists, estheticians, and nail technicians passionate about their craft. Each member brings their unique expertise to ensure you receive the highest quality care in a relaxing and welcoming environment.
                             </p>
@@ -74,20 +76,26 @@ const Home = () => {
                     </section>
 
                     <section className="section reach">
-                        
                         <div className="container">
                             <div className="buttons">
-                                <a href="../pages/Services.jsx">Services</a>
-                                <a href="../pages/Appointments.jsx">Appointments</a>
+                                    <a href="/services">Services</a>
+                                    <a href="/appointments">Appointments</a>
                             </div>
 
                             <div>
-                                <p>
-                                    Booking an appointment has never been easier. Call us at 888-876-5309, email us at hello@beaute.com, or visit our online booking page to schedule your next visit. Follow us on social media for the latest updates and special offers.
-                                </p>
-                            </div>
-                        </div>
-                        
+                                    <p>
+                                        Booking an appointment has never been easier. 
+                                        Call, email, or visit our online booking page to schedule your next visit.
+                                    </p>
+
+                                    <p>
+                                        Not sure what service is for you? 
+                                        Check out our services page to see what we offer.
+                                    </p>
+
+                                    
+                            </div> 
+                        </div>                       
                     </section>
                 </section>
             </main>

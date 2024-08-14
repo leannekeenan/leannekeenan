@@ -1,0 +1,182 @@
+:root {
+    --beige: #e3d7d0;
+    --white: #fdfdfd;
+    --brown: #bc9a7c;
+    --black: #0e0d0d;
+}
+
+
+h1 {
+    font-size: 8rem;
+}
+
+.intro span {
+    font-size: 4rem;
+}
+
+.home-page {
+    background-image: url('../../public/salon\ III.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Keeps the background image fixed when scrolling */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 3rem;
+}
+
+.intro img {
+    width: 20%;
+    margin: 5%;
+}
+
+.intro h1, .intro span {
+    color: var(--beige);
+    text-shadow: 0 0 5px var(--black);
+}
+
+.fade {
+    animation: fade 3s ease-in-out 1 forwards;
+}
+
+
+@keyframes fade {
+    from {
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      opacity: 1; /* End fully visible */
+    }
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 0 10px var(--black);
+}
+
+.section div {
+    width: 100%;
+}
+
+.welcome, .who {
+    background: var(--white);
+    display: flex;
+    align-items: stretch;
+  }
+
+  .welcome div, .who div {
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome .text , .who .text {
+    background: var(--beige);
+    padding: 0 10rem;
+    text-align: center;
+    
+  }
+
+  .welcome .text p {
+    padding: 3rem;
+  }
+
+  .welcome div, .welcome div img, .who div img {
+    width: 100%;
+  }
+
+  
+
+  .offer {
+    margin: 10rem 0;
+  }
+  
+  .offer div {
+    width: 100%;
+    background: var(--black);
+    opacity: 0.95;
+    padding: 5rem;
+  }
+  
+  .offer p {
+    color: var(--beige);
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+  }
+  
+  
+
+.location {
+    padding: 3rem 0;
+    background: url('../../public/decorative\ background.png');
+}
+
+.location p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.reach {
+    background: url('../../public/clean\ iv.png');
+    background-size: cover;
+    background-position: center;
+    height: 500px
+}
+
+.reach .container {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.25);
+    height: 100%;
+}
+
+.reach div {
+    width: 100%;
+}
+
+.reach div:nth-child(2) {
+  box-shadow: 0 0 10px var(--brown);
+}
+
+.reach .container div p {
+    margin: .5rem auto;
+    padding: 2rem 0;
+    
+}
+
+.reach .container div:nth-child(2) {
+  background: rgba(253, 253, 253, 0.7);
+  padding: 5rem;
+  margin: 3rem; 
+}
+
+.reach .buttons a{
+    padding: 1rem 2rem;
+    width: 50%;
+    margin: 2rem auto;
+    font-size: 2.5rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--beige);
+    border: 2px solid var(--brown);
+    color: rgba(14, 13, 13, 0.7);
+    text-shadow: 2px 0 0 var(--brown);
+}
+
+.reach .buttons a:hover {
+    box-shadow: 0 0 10px var(--brown);
+}
