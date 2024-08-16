@@ -1,3 +1,25 @@
+.about-container {
+    padding-top: 100px;
+}
+
 .about-container section {
-    height: 100vh
+    display: flex;
+}
+
+.our-team {
+    align-items: center;
+    justify-content: center;
+}
+
+.our-team div {
+    width: 100%
+}
+
+.our-team div p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.our-team div img {
+    width: 100%;
 }
