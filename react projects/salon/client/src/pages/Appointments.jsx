@@ -15,7 +15,7 @@ const Appointments = () => {
 
   return (
     <>
-      <main className='appointments-page'>
+      <main className='appointments-container'>
       <section className='appointments'>
         <button onClick={() => scrollToSection(employeeRef)}>Employee Login</button>
         <div>

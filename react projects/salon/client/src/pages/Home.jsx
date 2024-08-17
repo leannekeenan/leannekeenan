@@ -22,7 +22,8 @@ const Home = () => {
                     <section className="section welcome">
                         <div className="text">
                         <p>
-                            Our salon is a sanctuary for those seeking the finest in hair, skin, and nail care. At Beauté, we believe that everyone deserves to look and feel their best. Our team of skilled professionals is dedicated to providing exceptional services tailored to your unique needs.
+
+                            Our salon is more than just a place to get your hair or nails done; it's a sanctuary designed for those who seek the highest standards in hair, skin, and nail care. At Beauté, we believe that beauty is not a luxury but a right, and everyone deserves to look and feel their absolute best. Whether you’re looking for a transformative haircut, rejuvenating facial, or a flawless manicure, we provide personalized care that caters to your individual needs, ensuring you leave our salon feeling refreshed, confident, and truly beautiful.
                         </p>
                         </div>
                         <div className="image">

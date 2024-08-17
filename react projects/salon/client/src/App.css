@@ -12,6 +12,10 @@
     font-size: 62.5%;
 }
 
+
+h3 {
+    font-size: 5rem;
+}
 header {
     width: 100%;
     position: fixed;
