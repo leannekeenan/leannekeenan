@@ -23,7 +23,7 @@ const Home = () => {
                         <div className="text">
                         <p>
 
-                            Our salon is more than just a place to get your hair or nails done; it's a sanctuary designed for those who seek the highest standards in hair, skin, and nail care. At Beauté, we believe that beauty is not a luxury but a right, and everyone deserves to look and feel their absolute best. Whether you’re looking for a transformative haircut, rejuvenating facial, or a flawless manicure, we provide personalized care that caters to your individual needs, ensuring you leave our salon feeling refreshed, confident, and truly beautiful.
+                            Our salon is more than just a place to get your hair or nails done; it's a sanctuary designed for those who seek the highest standards in hair, skin, and nail care.  Whether you’re looking for a transformative haircut, rejuvenating facial, or a flawless manicure, we provide personalized care that caters to your individual needs, ensuring you leave our salon feeling refreshed, confident, and truly beautiful.
                         </p>
                         </div>
                         <div className="image">
