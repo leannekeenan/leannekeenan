@@ -39,31 +39,31 @@ const App = () => {
 
           <div>
             <a href="">
-              <img src="../public/facebook [white].png" alt="" />
+              <img src="/facebook [white].png" alt="" />
           </a>
           </div>
           
           <div>
             <a>
-              <img src="../public/instagram [white].png" alt="" />
+              <img src="/instagram [white].png" alt="" />
           </a>
           </div>
 
           <div>
             <a>
-              <img src="../public/snapchat [white].png" alt="" />
+              <img src="/snapchat [white].png" alt="" />
           </a>
           </div>
 
           <div>
             <a>
-              <img src="../public/threads [white].png" alt="" />
+              <img src="/threads [white].png" alt="" />
           </a>
           </div>
 
           <div>
             <a>
-              <img src="../public/twitter [white].png" alt="" />
+              <img src="/twitter [white].png" alt="" />
             </a>
           </div>
 

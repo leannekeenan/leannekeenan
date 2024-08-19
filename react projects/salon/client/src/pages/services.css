@@ -1,0 +1,75 @@
+.services-container {
+    padding: 100px 0;
+}
+
+.services {
+    width: 80%;
+    margin: 0 auto;
+    
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px var(--brown);
+}
+
+td {
+    font-size: 2rem;
+}
+
+.menu-items {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .service-category {
+    margin-bottom: 30px;
+  }
+
+  h2 { 
+    font-size: 3rem;
+    text-align: center;
+}
+  
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .menu-item {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .menu-item .item {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .item-name {
+    font-weight: bold;
+    padding: 10px;
+    width: 30%;
+  }
+  
+  .item-description {
+    padding: 10px;
+    width: 50%;
+  }
+  
+  .item-price {
+    text-align: right;
+    padding: 10px;
+    width: 20%;
+  }
+  
+  .book-appointment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brown);
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--beige)
+}
