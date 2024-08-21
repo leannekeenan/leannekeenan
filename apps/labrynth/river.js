@@ -16,19 +16,20 @@ function renderRiver() {
 function getCardIcon(card) {
     switch (card) {
         case 'Right Path':
-            return '🛤️'; // Path icon
+            return '<span class="icon-size">🛤️</span>'; // Path icon
         case 'Treasure':
-            return '💎'; // Treasure icon
+            return '<span class="icon-size">💎</span>'; // Treasure icon
         case 'Monster':
-            return '👹'; // Monster icon
+            return '<span class="icon-size">👹</span>'; // Monster icon
         case 'Trap':
-            return '⚠️'; // Trap icon
+            return '<span class="icon-size">⚠️</span>'; // Trap icon
         case 'Dead End':
-            return '🚫'; // Dead End icon
+            return '<span class="icon-size">🚫</span>'; // Dead End icon
         default:
-            return '❓'; // Fallback icon
+            return '<span class="icon-size">❓</span>'; // Fallback icon
     }
 }
+
 
 const cardElement = document.createElement('div');
 cardElement.className = 'card';

@@ -176,3 +176,9 @@ li h4 {
 .about div  {
     margin: 5rem 0
 }
+
+
+.icon-size {
+    font-size: 2rem; /* Adjust the size as needed */
+    line-height: 1; /* Ensure the icon doesn’t get distorted */ 
+}
