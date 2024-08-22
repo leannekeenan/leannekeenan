@@ -1,5 +1,5 @@
 // App.jsx
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 function App() {
@@ -10,15 +10,6 @@ function App() {
     price: '',
     when: ''
   });
-  const [dataTable, setDataTable] = useState([]);
-
-  useEffect(() => {
-    // Fetch data from the server
-    fetch('/api/purchases')
-      .then(response => response.json())
-      .then(data => setDataTable(data))
-      .catch(err => console.log(err));
-  }, []);
 
   const handleChange = (e) => {
     setFormData({
@@ -29,26 +20,10 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Send form data to the server
-    fetch('/api/purchases', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(formData)
-    })
-      .then(response => response.json())
-      .then(newEntry => {
-        setDataTable([...dataTable, newEntry]);
-      })
-      .catch(err => console.log(err));
+    console.log('Form Data:', formData);
 
-    // Reset form fields
-    setFormData({
-      what: '',
-      where: '',
-      categorized: '',
-      price: '',
-      when: ''
-    });
+    // Logic to store data in localStorage or send to backend
+    localStorage.setItem('purchaseData', JSON.stringify(formData));
   };
 
   return (
@@ -59,37 +34,19 @@ function App() {
 
       <main>
         <form onSubmit={handleSubmit}>
-          {/* Form fields */}
           <fieldset>
             <label htmlFor="what">What was purchased:</label>
-            <input
-              id="what"
-              name="what"
-              type="text"
-              value={formData.what}
-              onChange={handleChange}
-            />
+            <input id="what" name="what" type="text" value={formData.what} onChange={handleChange} />
           </fieldset>
 
           <fieldset>
             <label htmlFor="where">Where was it purchased from:</label>
-            <input
-              id="where"
-              name="where"
-              type="text"
-              value={formData.where}
-              onChange={handleChange}
-            />
+            <input id="where" name="where" type="text" value={formData.where} onChange={handleChange} />
           </fieldset>
 
           <fieldset>
             <label htmlFor="categorized">This can be categorized as:</label>
-            <select
-              name="categorized"
-              id="categorized"
-              value={formData.categorized}
-              onChange={handleChange}
-            >
+            <select name="categorized" id="categorized" value={formData.categorized} onChange={handleChange}>
               <option value="choose">Choose an option</option>
               <option value="Automotive">Automotive</option>
               <option value="Gas">Gas</option>
@@ -138,53 +95,16 @@ function App() {
 
           <fieldset>
             <label htmlFor="price">How much was it:</label>
-            <input
-              id="price"
-              name="price"
-              type="text"
-              value={formData.price}
-              onChange={handleChange}
-            />
+            <input id="price" name="price" type="text" value={formData.price} onChange={handleChange} />
           </fieldset>
 
           <fieldset>
             <label htmlFor="when">When was it purchased:</label>
-            <input
-              id="when"
-              name="when"
-              type="date"
-              value={formData.when}
-              onChange={handleChange}
-            />
+            <input id="when" name="when" type="date" value={formData.when} onChange={handleChange} />
           </fieldset>
 
           <button type="submit">Submit</button>
         </form>
-
-        {dataTable.length > 0 && (
-          <table>
-            <thead>
-              <tr>
-                <th>What</th>
-                <th>Where</th>
-                <th>Category</th>
-                <th>Price</th>
-                <th>When</th>
-              </tr>
-            </thead>
-            <tbody>
-              {dataTable.map((item, index) => (
-                <tr key={index}>
-                  <td>{item.what}</td>
-                  <td>{item.where}</td>
-                  <td>{item.categorized}</td>
-                  <td>{item.price}</td>
-                  <td>{item.when}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        )}
       </main>
 
       <footer>
