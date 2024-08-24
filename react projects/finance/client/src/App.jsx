@@ -10,6 +10,7 @@ function App() {
     price: '',
     when: ''
   });
+  const [dataTable, setDataTable] = useState([]);
 
   const handleChange = (e) => {
     setFormData({
@@ -20,10 +21,15 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form Data:', formData);
-
-    // Logic to store data in localStorage or send to backend
-    localStorage.setItem('purchaseData', JSON.stringify(formData));
+    setDataTable([...dataTable, formData]);
+    localStorage.setItem('purchaseData', JSON.stringify([...dataTable, formData]));
+    setFormData({
+      what: '',
+      where: '',
+      categorized: '',
+      price: '',
+      when: ''
+    });
   };
 
   return (
@@ -105,6 +111,31 @@ function App() {
 
           <button type="submit">Submit</button>
         </form>
+
+        {dataTable.length > 0 && (
+          <table>
+            <thead>
+              <tr>
+                <th>What</th>
+                <th>Where</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>When</th>
+              </tr>
+            </thead>
+            <tbody>
+              {dataTable.map((item, index) => (
+                <tr key={index}>
+                  <td>{item.what}</td>
+                  <td>{item.where}</td>
+                  <td>{item.categorized}</td>
+                  <td>{item.price}</td>
+                  <td>{item.when}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
       </main>
 
       <footer>

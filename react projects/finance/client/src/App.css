@@ -61,6 +61,11 @@ input, select {
   width: 100%;
 }
 
+.unselectable {
+  color: #999; /* Light gray color */
+  background-color: #f0f0f0; /* Optional: change background */
+}
+
 button {
   padding: 10px;
   font-size: 1rem;
