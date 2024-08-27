@@ -138,7 +138,11 @@ function App() {
         )}
 
         <section className="container">
-          Spending Breakdown
+          <h2>Spending Breakdown</h2>
+          <div className="day"></div>
+          <div className="week"></div>
+          <div className="month"></div>
+          <div className="year"></div>
         </section>
       </main>
 
