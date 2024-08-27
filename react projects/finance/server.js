@@ -1,18 +1,16 @@
-// server.js
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
+require('dotenv').config(); // Load environment variables
+
 const app = express();
 
 // Middleware
 app.use(cors());
 app.use(express.json());
 
-// MongoDB connection URI
-const mongoURI = 'your_mongodb_connection_string';
-
-// Connect to MongoDB
-mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
+// Connect to MongoDB using the environment variable
+mongoose.connect('mongodb+srv://lkeenan:5GNjppdsJSlkPytU@cluster0.wz6e6r3.mongodb.net/personal_finance_app?retryWrites=true&w=majority&appName=Cluster0')
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
