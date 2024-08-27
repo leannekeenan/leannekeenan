@@ -136,6 +136,10 @@ function App() {
             </tbody>
           </table>
         )}
+
+        <section className="container">
+          Spending Breakdown
+        </section>
       </main>
 
       <footer>

@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: auto;
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
@@ -77,4 +77,8 @@ button {
 
 button:hover {
   background-color: #21a1f1;
+}
+
+tbody {
+  width: 80%;
 }
