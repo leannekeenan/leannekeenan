@@ -18,7 +18,6 @@ planes.addEventListener('click', dungeonBackground5)
 swamp.addEventListener('click', dungeonBackground6)
 underground.addEventListener('click', dungeonBackground7)
 kingdomEntry.addEventListener('click', dungeonBackground8)
-
 backgroundMenu.addEventListener('change', select)
 
 function dungeonBackground1() {
