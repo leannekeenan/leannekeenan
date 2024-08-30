@@ -47,8 +47,6 @@ function getCardIcon(card) {
 
 
 
-
-
 const cardElement = document.createElement('div');
 cardElement.className = 'card';
 cardElement.innerHTML = getCardIcon(card); // Use innerHTML to render HTML content
