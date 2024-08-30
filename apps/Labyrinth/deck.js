@@ -15,6 +15,7 @@ let playerActions = {
 };
 let usedActions = [];
 
+
 // Shuffle deck helper function
 function shuffleDeck() {
 for (let i = deck.length - 1; i > 0; i--) {
