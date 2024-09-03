@@ -3,11 +3,12 @@ import './App.css'
 import { Outlet } from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [name, setName] = useState(name)
 
   return (
     <>
     <header>
+      <h1>Welcome to your template booking react project</h1>
       <nav>
         <a href="/">Home</a>
         <a href="/staff">Staff</a>
@@ -18,7 +19,7 @@ function App() {
     </header>
 
     <main>
-      { <Outlet/> }
+      <Outlet/> 
     </main>
       
     </>
