@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react'
 import Calendar from 'react-calendar'
 import { useNavigate } from 'react-router-dom'
 
@@ -15,6 +16,7 @@ const stylists = [
 ]
 
 const Booking = () => {
+    const [name, setName] = useState(name)
     return (
         <>
             <h1>Booking</h1>
@@ -52,6 +54,8 @@ const Booking = () => {
                     <select name="" id="">
                         <option value=""></option>
                     </select>
+
+                    <Calendar/>
 
                 </form>
             </div>
