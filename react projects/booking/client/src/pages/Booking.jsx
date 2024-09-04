@@ -45,14 +45,17 @@ const Booking = () => {
                       onChange={(e) => setDate(e.target.value)} 
                       required/>
 
-                    <label htmlFor="service"></label>
-                    <select name="service" id="service">
-                        <option value="option1"></option>
+                    <label htmlFor="service">Services</label>
+                    <select name="service" 
+                    id="service"
+                    value={service}
+                    onChange={(e) => setService(e.target.value)}>
+                        
                     </select>
 
-                    <label htmlFor=""></label>
-                    <select name="" id="">
-                        <option value=""></option>
+                    <label htmlFor="">Stylists</label>
+                    <select name="stylist" id="stylist">
+                        
                     </select>
 
                     <Calendar/>
