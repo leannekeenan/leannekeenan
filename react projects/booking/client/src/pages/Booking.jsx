@@ -16,11 +16,11 @@ const stylists = [
 ]
 
 const Booking = () => {
-    const [name, setName] = useState(name)
-    const [email, setEmail] = useState(email)
-    const [date, setDate] = useState(date).toLocaleString()
-    const [service, setService] = useState(service)
-    const [stylist, setStylist] = useState(stylist)
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [date, setDate] = useState(new Date())
+    const [service, setService] = useState('')
+    const [stylist, setStylist] = useState('')
     return (
         <>
             <h1>Booking</h1>
