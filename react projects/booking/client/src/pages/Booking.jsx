@@ -17,6 +17,10 @@ const stylists = [
 
 const Booking = () => {
     const [name, setName] = useState(name)
+    const [email, setEmail] = useState(email)
+    const [date, setDate] = useState(date).toLocaleString()
+    const [service, setService] = useState(service)
+    const [stylist, setStylist] = useState(stylist)
     return (
         <>
             <h1>Booking</h1>
@@ -39,27 +43,32 @@ const Booking = () => {
                       required/>
 
                     <label htmlFor="">Date:</label>
-                    <input type="date"
-                      id='date'
-                      value={date} 
-                      onChange={(e) => setDate(e.target.value)} 
-                      required/>
-
+                    <Calendar
+                        onChange={setDate}
+                        value={date} 
+                        required
+                    />
+                    <p>Date: {date.toLocaleDateString()}</p>
                     <label htmlFor="service">Services</label>
                     <select name="service" 
                     id="service"
                     value={service}
-                    onChange={(e) => setService(e.target.value)}>
-                        
+                    onChange={(e) => setService(e.target.value)}
+                    required>
+                        <option value="" disabled>Select an option</option>
+                        {services.map((service, index) => {
+                            <option key={(index)} value={service}>{service}</option>
+                        })}
                     </select>
 
                     <label htmlFor="">Stylists</label>
                     <select name="stylist" id="stylist">
-                        
+                    <option value="" disabled>Select an option</option>
+                        {stylists.map((stylist, index) => {
+                            <option key={(index)} value={stylist}>{stylist}</option>
+                        })}
                     </select>
-
-                    <Calendar/>
-
+                    <button type="submit">Book</button>
                 </form>
             </div>
         </>
