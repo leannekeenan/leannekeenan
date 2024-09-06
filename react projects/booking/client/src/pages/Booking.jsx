@@ -21,6 +21,20 @@ const Booking = () => {
     const [date, setDate] = useState(new Date())
     const [service, setService] = useState('')
     const [stylist, setStylist] = useState('')
+
+    const navigate = useNavigate()
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const response = await fetch('http://localhost:5000/api/bookings'),  {
+            method: 'POST',
+            headers: {
+                `Content-type`
+            }
+        }
+    }
+
     return (
         <>
             <h1>Booking</h1>
@@ -48,7 +62,9 @@ const Booking = () => {
                         value={date} 
                         required
                     />
+
                     <p>Date: {date.toLocaleDateString()}</p>
+
                     <label htmlFor="service">Services</label>
                     <select name="service" 
                     id="service"
@@ -68,6 +84,7 @@ const Booking = () => {
                             <option key={(index)} value={stylist}>{stylist}</option>
                         })}
                     </select>
+
                     <button type="submit">Book</button>
                 </form>
             </div>
