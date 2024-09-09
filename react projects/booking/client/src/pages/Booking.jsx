@@ -16,10 +16,12 @@ const services = [
   'Event Styling'
 ];
 
+
 const stylists = [
   'Emily Johnson',
   'Michael Lee',
-  'Sarah Brown'
+  'Sarah Brown',
+  'Bobbi Martin'
 ];
 
 const Booking = () => {
