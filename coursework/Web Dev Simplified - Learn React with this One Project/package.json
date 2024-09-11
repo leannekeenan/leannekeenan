@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "web-dev-simplified---learn-react-with-this-one-project": "file:"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
