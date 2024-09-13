@@ -1,0 +1,284 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: url('/assets/bay\ area\ brewers\ guild\ image\ II.png') no-repeat;
+    background-size: cover;
+}
+
+.hero-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+
+.hero-content .logo {
+    width: 35%;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content p {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+    background: #CD462E;
+    color: white;
+    padding: 25px 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.cta-btn:hover {
+    background: #ff4f41;
+}
+
+/* Section Styling */
+section {
+    padding: 0; /* Remove padding from all sections */
+    margin: 0; /* Remove margin from all sections */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.addons {
+    display: flex;
+    flex-direction: column;
+}
+
+.addons div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.addons div span:nth-child(2) {
+    color:#ff4f41;
+}
+
+/* General Headings and Paragraphs */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Menu Section Styling */
+#menu {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+.menu-category h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.menu-group {
+    padding-bottom: 5dvh;
+}
+
+.menu-group p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-group h4 {
+    font-size: 1.8rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+    align-items: flex-start;
+}
+
+ul li p {
+    margin: 5px 0 0;
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+}
+p span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.item-price {
+    color: #ff6f61;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Sports Section */
+.sports {
+    background: url('/assets/football\ field.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw; /* Ensure it spans full width */
+    height: auto; /* Adjust height as needed */
+    margin: 0;
+    padding: 2.5% 0;
+    overflow-x: hidden; /* Hide any horizontal overflow */
+    color: white
+}
+
+/* General Layout */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.away, .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Adjust this to set enough height */
+    width: auto;
+}
+
+.vs-symbol {
+    margin: 0 10px;
+    font-size: 75px;
+}
+
+.team-logo {
+    max-width: 550px;
+    height: 100%;
+    align-self: center;
+}
+
+input[type="text"] {
+    width: 100px;
+    padding: 5px;
+}
+
+.time, .date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.time span {
+    font-size: 2rem;
+}
+
+/* Styling for Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
