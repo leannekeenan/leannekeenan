@@ -4113,6 +4113,7 @@ body.is-menu-visible #menu {
 
 				#main .resources .links a {
 					display: flex;
+					color: var(--primary)
 				}
 			
 				#main .resources .links a:hover {
