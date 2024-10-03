@@ -1,0 +1,19 @@
+.character-card {
+  display: flex; /* Enable Flexbox */
+  align-items: flex-start; /* Align items at the start */
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+}
+
+.character-image {
+  max-width: 300px;
+  width: 100%; /* Ensure it scales responsively */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add space between image and text */
+}
+
+.character-details {
+  flex: 1; /* Allow text to take up remaining space */
+}
