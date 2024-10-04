@@ -1,7 +1,8 @@
 const characters = [
   { name: 'Carri Letters', affiliation: 'Dwarves', location: 'Erebor', details: 'Leader of the Dwarves', image: './images/Carri Letters.png' },
   { name: 'Kyu', affiliation: 'Wizards', location: 'Middle-Earth', details: 'Wise and powerful', image: './images/Kyu Osmodius Underwood Gailwind Higglsbee.png' },
-  { name: 'Paige Turnner', affiliation: 'Rangers', location: 'Gondor', details: 'King of Gondor', image: './images/Paige Turnner.png' }
+  { name: 'Paige Turnner', affiliation: 'Rangers', location: 'Gondor', details: 'King of Gondor', image: './images/Paige Turnner.png' },
+  { name: 'Scarlet Letters', affiliation: 'Dwarves', location: 'Erebor', details: 'Sister of Carri Letters. While her sister went the way of diplomacy she went the way of piracy and their relationship while strained by their career paths never waivered in their undying loyalty to each other.', image: './images/Carri Letters.png' }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
