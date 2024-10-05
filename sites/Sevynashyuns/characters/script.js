@@ -1,8 +1,48 @@
 const characters = [
-  { name: 'Carri Letters', affiliation: 'Dwarves', location: 'Erebor', details: 'Leader of the Dwarves', image: './images/Carri Letters.png' },
-  { name: 'Kyu', affiliation: 'Wizards', location: 'Middle-Earth', details: 'Wise and powerful', image: './images/Kyu Osmodius Underwood Gailwind Higglsbee.png' },
-  { name: 'Paige Turnner', affiliation: 'Rangers', location: 'Gondor', details: 'King of Gondor', image: './images/Paige Turnner.png' },
-  { name: 'Scarlet Letters', affiliation: 'Dwarves', location: 'Erebor', details: 'Sister of Carri Letters. While her sister went the way of diplomacy she went the way of piracy and their relationship while strained by their career paths never waivered in their undying loyalty to each other.', image: './images/Carri Letters.png' }
+  { 
+    name: 'Carri Letters', 
+    race: 'Tiefling', 
+    class: 'Rogue', 
+    title: ' Apathian Burreaucrat', 
+    previous: "Iratian Soldier", 
+    location: 'Apathe', 
+    from: 'Irateia', 
+    image: './images/Carri Letters.png', 
+    notes: ''
+  },
+
+  { 
+    name: 'Kyu', 
+    race: 'Wizard', 
+    class: '', 
+    title: 'Wise and powerful', 
+    location: 'Middle-Earth', 
+    from: '', 
+    image: './images/Kyu Osmodius Underwood Gailwind Higglsbee.png', 
+    notes: ''
+  },
+
+  { 
+    name: 'Paige Turnner', 
+    race: '', 
+    class: 'Ranger', 
+    title: 'King of Gondor', 
+    location: 'Gondor', 
+    from: '', 
+    image: './images/Paige Turnner.png', 
+    notes: ''
+  },
+
+  { 
+    name: 'Scarlet Letters', 
+    race: 'Dwarf', 
+    class: 'Pirate', 
+    title: '', 
+    location: 'Erebor', 
+    from: '', 
+    image: './images/Carri Letters.png', 
+    notes: 'Sister of Carri Letters. While her sister went the way of diplomacy she went the way of piracy, and their relationship, while strained by their career paths, never wavered in their undying loyalty to each other.'
+  }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -27,9 +67,13 @@ function displayCharacters(characters) {
     characterDetails.classList.add('character-details');
     characterDetails.innerHTML = `
       <h3>${character.name}</h3>
-      <p><strong>Affiliation:</strong> ${character.affiliation}</p>
-      <p><strong>Location Met:</strong> ${character.location}</p>
-      <p><strong>Details:</strong> ${character.details}</p>
+      <p><strong>Race:</strong> ${character.race}</p>
+      <p><strong>Class:</strong> ${character.class}</p>
+      <p><strong>Title:</strong> ${character.title}</p>
+      <p><strong>Previous Position:</strong> ${character.previous}</p>
+      <p><strong>Location:</strong> ${character.location}</p>
+      <p><strong>From:</strong> ${character.from}</p>
+      <p><strong>Notes:</strong> ${character.notes}</p>
     `;
 
     // Append the image and text to the card
@@ -43,9 +87,13 @@ function searchCharacters() {
   const searchQuery = document.getElementById('search').value.toLowerCase();
   const filteredCharacters = characters.filter(character =>
     character.name.toLowerCase().includes(searchQuery) ||
-    character.affiliation.toLowerCase().includes(searchQuery) ||
+    character.race.toLowerCase().includes(searchQuery) ||
+    character.class.toLowerCase().includes(searchQuery) ||
+    character.title.toLowerCase().includes(searchQuery) ||
+    character.previous.toLowerCase(includes(searchQuery))||
     character.location.toLowerCase().includes(searchQuery) ||
-    character.details.toLowerCase().includes(searchQuery)
+    character.from.toLowerCase().includes(searchQuery) ||
+    character.notes.toLowerCase().includes(searchQuery)
   );
   displayCharacters(filteredCharacters);
 }
