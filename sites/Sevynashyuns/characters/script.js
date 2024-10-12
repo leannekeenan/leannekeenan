@@ -41,18 +41,56 @@ const characters = [
     location: '', 
     from: '', 
     image: './images/Carri Letters.png', 
-    notes: 'Sister of Carri Letters. While her sister went the way of diplomacy she went the way of piracy, and their relationship, while strained by their career paths, never wavered in their undying loyalty to each other.'
+    notes: 'Captain of the Mailstrom. Sister of Carri Letters. While her sister went the way of diplomacy she went the way of piracy, and their relationship, while strained by their career paths, never wavered in their undying loyalty to each other.'
   },
 
   { 
-    name: '', 
-    race: '', 
-    class: '', 
+    name: 'Mel Odious', 
+    race: 'Tiefling', 
+    class: 'Bard', 
+    title: 'Entertainer', 
+    location: '', 
+    from: '', 
+    image: '', 
+    notes: ''
+  },
+
+  { 
+    name: 'Beau Tye', 
+    race: 'Human', 
+    class: 'Bard', 
+    title: 'Entertiner', 
+    location: '', 
+    from: '', 
+    image: '', 
+    notes: ''
+  },
+
+  { 
+    name: 'Chuck Elle Hutt', 
+    race: 'Halfling', 
+    class: 'Entertainer', 
     title: '', 
     location: '', 
     from: '', 
     image: '', 
     notes: ''
+  }
+
+  ,{ 
+    name: 'Baylor Quick', 
+    race: 'Half Elf', 
+    class: 'Rogue', 
+    title: 'Entertainer [Musician]', 
+    location: '', 
+    from: '', 
+    image: '', 
+    notes: `
+    <li>Personality: Cunning and resourceful, Baylor uses charm and wit to manipulate social situations to their advantage. Known for their clever comebacks and ability to read people, Baylor is skilled at gaining allies and influencing people, but their loyalty can be fickle. </li>
+    <br>
+    <li>Backstory: Baylor Quick grew up in a wealthy family, constantly surrounded by the rich and powerful. With a natural talent for deception and performance, they quickly rose to prominence in the noble circles. They gained fame not just for their style but for their cunning ability to outwit rivals and secure advantageous deals. However, Baylor also harbors a secret: they’ve been using their skills to spy on powerful figures and gather information to protect their own interests.</li>
+  
+    `
   }
 ];
 

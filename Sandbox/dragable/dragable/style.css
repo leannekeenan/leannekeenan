@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.draggable {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    position: absolute;
+    cursor: grab;
+    border-radius: 10px;
+}
+
+#draggable-1 { top: 50px; left: 50px; background-color: #FF5722; }
+#draggable-2 { top: 50px; left: 200px; background-color: #2196F3; }
+#draggable-3 { top: 50px; left: 350px; background-color: #FFC107; }
+#draggable-4 { top: 200px; left: 50px; background-color: #9C27B0; }
+#draggable-5 { top: 200px; left: 200px; background-color: #00BCD4; }
+#draggable-6 { top: 200px; left: 350px; background-color: #8BC34A; }
+#draggable-7 { top: 350px; left: 200px; background-color: #FFEB3B; }
