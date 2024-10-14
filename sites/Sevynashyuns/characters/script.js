@@ -84,7 +84,7 @@ const characters = [
     title: 'Entertainer [Musician]', 
     location: '', 
     from: '', 
-    image: '', 
+    image: './images/Baylor Quick .png', 
     notes: `
     <li>Personality: Cunning and resourceful, Baylor uses charm and wit to manipulate social situations to their advantage. Known for their clever comebacks and ability to read people, Baylor is skilled at gaining allies and influencing people, but their loyalty can be fickle. </li>
     <br>
