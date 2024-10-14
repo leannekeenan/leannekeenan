@@ -91,7 +91,19 @@ const characters = [
     <li>Backstory: Baylor Quick grew up in a wealthy family, constantly surrounded by the rich and powerful. With a natural talent for deception and performance, they quickly rose to prominence in the noble circles. They gained fame not just for their style but for their cunning ability to outwit rivals and secure advantageous deals. However, Baylor also harbors a secret: they’ve been using their skills to spy on powerful figures and gather information to protect their own interests.</li>
   
     `
-  }
+  },
+   {
+    name: '', 
+    race:'',
+    class: '',
+    title: '',
+    location: '',
+    from: '',
+    image: '',
+    notes: `
+    <li></li>
+    `
+   }
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
