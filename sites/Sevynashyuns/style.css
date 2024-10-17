@@ -5,6 +5,9 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
@@ -39,8 +42,8 @@ body {
 
   .container, tr {
     max-width: 1200px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 25px auto;
+    background-color: #eee;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
