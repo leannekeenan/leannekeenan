@@ -92,7 +92,20 @@ const characters = [
   
     `
   },
-   {
+  {
+    name: 'Al Leave', 
+    race:'Half Elf',
+    class: 'Druid',
+    title: 'Herbalist',
+    location: '',
+    from: '',
+    image: '',
+    notes: `
+    <li></li>
+    `
+  },
+
+  {
     name: '', 
     race:'',
     class: '',
