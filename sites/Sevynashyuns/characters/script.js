@@ -101,7 +101,13 @@ const characters = [
     from: '',
     image: '',
     notes: `
-    <li></li>
+    <li>
+    Al Leave is a half-elf druid and skilled herbalist hailing from the city-state of Adoreon, known for its pursuit of physical and mental pleasures. Born to an elven mother and a human father, Al grew up on the outskirts of the city's lush gardens and expansive libraries, where the pursuit of botany and herbal alchemy were respected crafts. He became fascinated with the medicinal and magical properties of plants, apprenticing under a well-known herbalist while learning druidic magic from a local grove.
+    </li>
+
+    <li>
+    Al's half-elven heritage grants him a natural affinity for the forest and an ageless wisdom, while his time in Adoreon gave him a keen understanding of both physical and magical remedies. Though he has distanced himself from the city's excesses, he still maintains ties with the Collegiate, occasionally seeking rare ingredients or trading his unique brews. Al is also rumored to know secrets about the herbs used in various rituals in Adoreon, some of which may even hint at the darker aspects of the city's obsession with satisfaction.
+    </li>
     `
   },
 
