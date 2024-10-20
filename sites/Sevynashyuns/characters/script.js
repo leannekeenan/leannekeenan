@@ -41,7 +41,17 @@ const characters = [
     location: '', 
     from: '', 
     image: './images/Scarlett Letters.png', 
-    notes: 'Captain of the Mailstrom. Sister of Carri Letters. While her sister went the way of diplomacy she went the way of piracy, and their relationship, while strained by their career paths, never wavered in their undying loyalty to each other.'
+    notes: `
+    <li>
+    Captain of the Mailstrom.
+    </li>
+    <li>
+     Sister of Carri Letters.
+    </li>
+    <li>
+     While her sister went the way of diplomacy she went the way of piracy, and their relationship, while strained by their career paths, never wavered in their undying loyalty to each other.
+     </li>
+     `
   },
 
   { 
