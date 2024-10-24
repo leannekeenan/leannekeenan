@@ -8,7 +8,10 @@ const characters = [
     location: 'Apathe', 
     from: 'Irateia', 
     image: './images/Carri Letters.png', 
-    notes: ''
+    notes: `
+    <li>Carri Letters is a seasoned messenger for the Apathian government, known for her sharp wit and unrivaled efficiency. She has spent years navigating the intricacies of Apathian bureaucracy, learning to thrive in the sluggish, politically charged environment where others might falter. </li>
+    <li>Now a trusted courier for the highest-ranking officials in Apathe, Carri balances the sharp intellect and ambition of her Adoreon roots with the pragmatism and discretion demanded by Apathe’s ruling class. Her deep connections to both city-states and her understanding of their cultures make her invaluable in delivering sensitive political messages</li>
+    `
   },
 
   { 
