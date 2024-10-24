@@ -12,7 +12,7 @@ const characters = [
   },
 
   { 
-    name: 'Kyu', 
+    name: 'Kyu (Akyutaneous ', 
     race: 'Wizard', 
     class: '', 
     title: 'Wise and powerful', 
@@ -134,7 +134,7 @@ const characters = [
     `
    },
 
-     {
+  {
     name: '', 
     race:'',
     class: '',
