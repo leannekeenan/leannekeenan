@@ -61,6 +61,14 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 2rem;
+  }
+
+  td a {
+    text-decoration: none;
+    color: #eee;
+    background: #777;
+    padding: 1rem 3rem;
   }
 
   td:nth-child(2) {

@@ -9,20 +9,31 @@ const characters = [
     from: 'Irateia', 
     image: './images/Carri Letters.png', 
     notes: `
-    <li>Carri Letters is a seasoned messenger for the Apathian government, known for her sharp wit and unrivaled efficiency. She has spent years navigating the intricacies of Apathian bureaucracy, learning to thrive in the sluggish, politically charged environment where others might falter. </li>
-    <li>Now a trusted courier for the highest-ranking officials in Apathe, Carri balances the sharp intellect and ambition of her Adoreon roots with the pragmatism and discretion demanded by Apathe’s ruling class. Her deep connections to both city-states and her understanding of their cultures make her invaluable in delivering sensitive political messages</li>
+    <li>
+    Carri Letters is a seasoned messenger for the Apathian government, known for her sharp wit and unrivaled efficiency. She has spent years navigating the intricacies of Apathian bureaucracy, learning to thrive in the sluggish, politically charged environment where others might falter. 
+    </li>
+    <li>
+    Now a trusted courier for the highest-ranking officials in Apathe, Carri balances the sharp intellect and ambition of her Adoreon roots with the pragmatism and discretion demanded by Apathe’s ruling class. Her deep connections to both city-states and her understanding of their cultures make her invaluable in delivering sensitive political messages
+    </li>
     `
   },
 
   { 
-    name: 'Kyu (Akyutaneous ', 
+    name: 'Kyu Osmodius Underwood Gailwind Higglsbee', 
     race: 'Wizard', 
     class: '', 
     title: 'Wise and powerful', 
     location: 'Middle-Earth', 
     from: '', 
     image: './images/Kyu Osmodius Underwood Gailwind Higglsbee.png', 
-    notes: ''
+    notes: `
+    <li>
+    Kyu grew up among the resilient and fiercely proud artisans of Arrogan, a city-state where craftsmanship is revered as the highest form of expression. As a dwarf from Arrogan, Kyu's early life was rooted in tradition, working tirelessly to hone his skills in forging, building, and crafting. But Kyu’s curiosity extended beyond physical creation; he was drawn to the allure of knowledge itself, which led him to Adoreon’s archives. There, he became an Archivist, poring over volumes of texts, maps, and forgotten lore that deepened his knowledge of ancient mechanisms, arcane relics, and powerful artifacts.
+    </li>
+    <li>
+    Eventually, Kyu was appointed by the Apathian government as the party's quartermaster, tasked with managing their supplies, logistics, and equipment—a role well-suited to his discerning eye and practical knowledge. His time as an archivist sharpened his ability to spot relics with hidden potential, and his Arrogan background taught him to recognize quality in even the simplest tools. Known for his gruff humor and no-nonsense attitude, Kyu takes pride in adapting, retrofitting, and enhancing gear, transforming everyday items into resources ready for any unexpected challenge. Part inventor, part strategist, Kyu’s meticulous attention to detail has made him an invaluable support to the party, ensuring they remain well-prepared, well-equipped, and always one step ahead.
+    </li>
+    `
   },
 
   { 
@@ -33,7 +44,13 @@ const characters = [
     location: 'Gondor', 
     from: '', 
     image: './images/Paige Turnner.png', 
-    notes: ''
+    notes: `
+    <li>
+    Paige Turner grew up amid the vibrant intellectual circles of Adoreon, where their natural curiosity and affinity for the arcane led them to a position as an Arcane Research Assistant. In this role, Paige honed a meticulous approach to studying ancient spells and artifacts, often working late into the night, deciphering complex texts, and testing obscure incantations. Paige’s growing knowledge eventually attracted the attention of Apathian scholars, and they were offered a coveted position in Apathe as an Academic Librarian—an opportunity to broaden their horizons and delve even deeper into magical lore.
+    </li>
+
+    <li></li>
+    `
   },
 
   { 
