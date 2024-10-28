@@ -21,7 +21,7 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background: url('/assets/bay\ area\ brewers\ guild\ image\ II.png') no-repeat;
+    background: url('./assets/bay\ area\ brewers\ guild\ image\ II.png') no-repeat;
     background-size: cover;
 }
 
