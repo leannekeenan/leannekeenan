@@ -103,6 +103,7 @@ section {
 .addons div {
     display: flex;
     justify-content: space-between;
+    padding: 5px 0;
 }
 
 .addons div span:nth-child(2) {
@@ -126,7 +127,7 @@ p {
 /* Menu Section Styling */
 #menu {
     background-color: #f9f9f9;
-    padding: 60px 20px;
+    padding: 60px 0;
 }
 
 .menu-category {
@@ -214,7 +215,6 @@ p span {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
 }
 
 .teams {
