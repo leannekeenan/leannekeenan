@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sweet Adventures Club</title>
+    <link rel="shortcut icon" href="../Sweet Adventures Club II/assets/cheesecake icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        
         <div class="navbar">
             <div class="logo">
                 <img src="../Sweet Adventures Club II/assets/cheesecake icon.png" alt="">
@@ -25,6 +25,7 @@
             </ul>
         </div>
     </header>
+
     <main>
         <section class="home" id="home">
             <div>
@@ -153,21 +154,17 @@
             <form action="">
 
              <!--Customer Details-->
-             <div>
+             <div class="customer-details" id="customer-details">
                 <label>Whats your first name?</label>
                 <input type="text" placeholder="first name">
                 <label>Whats your last name?</label>
                 <input type="text" placeholder="last name">
-             </div>
-                
-             <div>
                 <label>Whats your email? <h6>(We need it to receive yuor order details)</h6></label>
                 <input type="email" placeholder="email address">
                 <label>Whats your phone number? <h6>(We need it to reach you if we have a question)</h6></label>
                 <input type="tel" placeholder="phone number">
              </div>
              <!--Order Details-->
-
              <div class="item-ordering" id="item-ordering">
                 <p>Select the flavors and toppings you'd like to order. Each item is sold by the dozen.</p>
             
@@ -243,7 +240,8 @@
                 </div>
              </div>
 
-             <div>
+             <!--Delivery Details-->
+             <div class="delivery-details" id="delivery-details">
                     <label>When do you need your order by?</label>
                     <input type="date" name="" id="" placeholder="when do you need your order by?">
                     
@@ -288,6 +286,7 @@
            </div>
         </section>
     </main>
+    
     <footer class="footer">
         <div class="footer-content">
             <p>&copy; 2024 Sweet Adventures Bakery. All rights reserved.</p>
