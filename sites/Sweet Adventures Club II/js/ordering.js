@@ -101,4 +101,16 @@ document.addEventListener('DOMContentLoaded', function () {
         // You can replace this with an actual submission action (e.g., send to server)
         console.log('Order Submitted:', orderDetails);
     });
+
+    // Example JavaScript code to dynamically insert items into the ordered-items div
+const orderedItems = document.getElementById('ordered-items');
+
+// Assuming items are stored in an array
+
+items.forEach(item => {
+    const p = document.createElement('p');
+    p.textContent = item; // Set text content
+    orderedItems.appendChild(p); // Append it to the div
+});
+
 });

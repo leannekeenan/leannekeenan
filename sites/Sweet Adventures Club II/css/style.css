@@ -384,7 +384,18 @@ input:focus, textarea:focus {
 .order-review h3 {
     width: 100%;
     text-align: center;
-    color: var(--base)
+    color: var(--base);
+}
+
+#ordered-items {
+    background-color: var(--text);
+    color: var(--base); /* Change text color */
+    padding: 1rem;
+    border-radius: 8px;
+    min-height: 100px; /* Ensure there's space for content */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .order-review button, .contact-form form button {

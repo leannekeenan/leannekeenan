@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="ordering" id="ordering">
+        <h2>Place Your Order</h2>
+        <p>Fill out the form below with the details for your order and we will send you a confirmation email shortly.</p>
+        <form action="" id="orderForm">
+    
+            <!-- Customer Details -->
+            <div class="customer-details" id="customer-details">
+                <label for="firstName-order">What's your first name?</label>
+                <input type="text" placeholder="First Name" name="firstName-order" id="firstName-order" required>
+                <label for="lastName-order">What's your last name?</label>
+                <input type="text" placeholder="Last Name" name="lastName-order" id="lastName-order" required>
+                <label for="email-order">What's your email? <small>(Required for order confirmation)</small></label>
+                <input type="email" placeholder="Email Address" name="email-order" id="email-order" required>
+                <label for="phoneNumber-order">What's your phone number? <small>(In case we have questions)</small></label>
+                <input type="tel" placeholder="Phone Number" name="phoneNumber-order" id="phoneNumber-order" required>
+            </div>
+    
+            <!-- Order Details -->
+            <div class="item-ordering" id="item-ordering">
+                <p>Select the flavors and toppings you'd like to order. Each item is sold by the dozen.</p>
+    
+                <!-- Cheesecake Flavors -->
+                <div class="item-group">
+                    <h3>Choose Your Cheesecake Flavors</h3>
+                    <label for="classic">
+                        Classic:
+                        <input type="number" id="classic" name="classic" min="0" placeholder="Quantity" />
+                    </label>
+                    <!-- Add other cheesecake options similarly -->
+                </div>
+    
+                <!-- Toppings -->
+                <div class="item-group">
+                    <h3>Choose Your Toppings</h3>
+                    <label for="strawberry">
+                        Strawberry:
+                        <input type="number" id="strawberry" name="strawberry" min="0" placeholder="Quantity" />
+                    </label>
+                    <!-- Add other topping options similarly -->
+                </div>
+            </div>
+    
+            <!-- Delivery Details -->
+            <div class="delivery-details" id="delivery-details">
+                <label for="delivery-date">When do you need your order by?</label>
+                <input type="date" name="delivery-date" id="delivery-date" required>
+                <label for="delivery-address">Where do you want your order delivered?</label>
+                <input type="text" placeholder="Delivery Address" id="delivery-address" name="delivery-address" required>
+            </div>
+    
+            <!-- Payment Details -->
+            <div class="payment-details" id="payment-details">
+                <h3>Payment Information</h3>
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456" required>
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required>
+            </div>
+    
+            <!-- Order Review -->
+            <div class="order-review" id="order-review">
+                <h3>Order Review</h3>
+                <div class="ordered-items" id="ordered-items"></div>
+                <p>Total: $<span id="total-price">0.00</span></p>
+                <button type="submit" id="order-submit">Submit Order</button>
+            </div>
+    
+        </form>
+        <script src="../order form/script.js"></script>
+    </section>
+        
+</body>
+</html>
