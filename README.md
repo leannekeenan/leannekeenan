@@ -1,7 +1,7 @@
 <h1 align="center">Hi!, I'm Leanne Keenan</h1>
 <h3 align="center">A full-stack developer from Redwood City, CA.</h3>
 
-<h3 align="center">About Me</h3>
+
 <p align="center">
 I’m a passionate full-stack developer with a knack for building creative solutions to real-world problems. After earning my BS in Information Technology, I’ve dedicated my time to self-teaching and mastering technologies like React, Node.js, and MongoDB. My love for coding stems from the thrill of turning ideas into interactive, functional applications. When I’m not coding, I enjoy exploring new ideas for projects, supporting local businesses, and gaming.
 </p>
