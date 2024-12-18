@@ -53,13 +53,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
     <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="but me a coffee - leanne keenan" />
   </a>
   
-  <a href="https://leannekeenan.netlify.app" target="_blank">
-    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" height="50" width="210"  alt="Visit My Personal Portfolio">
-  </a>
 
-  <a href="https://sweetadventuresclub.netlify.app" target="_blank">
-  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="leannekeen0" data-color="#f2f0ca" data-emoji="🏪" data-font="Cookie" data-text="Support My Small Business" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#FFDD00"></script>
-</a>
 
 </p>
 
