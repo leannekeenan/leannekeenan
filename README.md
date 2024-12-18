@@ -40,10 +40,13 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 </p>
 <br><br>
 <h3 align="center">Stats:</h3>
+<p align="center">
+  
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=leannekeenan&show_icons=true&locale=en&layout=compact" alt="leannekeenan" />
+  &nbsp;
+  <img src="https://github-readme-stats.vercel.app/api?username=leannekeenan&show_icons=true&locale=en" alt="leannekeenan" />
+  &nbsp;
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=leannekeenan&" alt="leannekeenan" />
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs?username=leannekeenan&show_icons=true&locale=en&layout=compact" alt="leannekeenan" />
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api?username=leannekeenan&show_icons=true&locale=en" alt="leannekeenan" />
-&nbsp;
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=leannekeenan&" alt="leannekeenan" />
+</p>
 
