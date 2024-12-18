@@ -52,6 +52,8 @@ My journey has been anything but linear, and I’m proud of the resilience and a
   <a href="https://www.buymeacoffee.com/leannekeenan" target="blank"> 
     <img align="center" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="but me a coffee - leanne keenan" />
   </a>
+
+  [![Support My Small Business](https://cdn.buymeacoffee.com/buttons/default-yellow.png)](https://sweetadventuresclub.netlify.app)
   
 
 
