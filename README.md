@@ -12,19 +12,19 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 <div align="center">
   <table>
     <tr>
-      <th><strong>Purpose</strong></th>
+      <th><strong>What I'm Working ON</strong></th>
       <th><strong>Details</strong></th>
     </tr>
     <tr>
-      <td><strong>Current Project</strong></td>
-      <td>🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a TTRPG game to simulate dungeon crawls</td>
+      <td><strong>Most Recent Project</strong></td>
+      <td>🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a homebrew Dungeons and Dragons module to simulate dungeon crawls</td>
     </tr>
     <tr>
-      <td><strong>Building a Small Business</strong></td>
+      <td><strong>Small Business Project</strong></td>
       <td>🏪 <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake</td>
     </tr>
     <tr>
-      <td><strong>Developing an App</strong></td>
+      <td><strong>App Project</strong></td>
       <td>📱 <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock</td>
     </tr>
     <tr>
