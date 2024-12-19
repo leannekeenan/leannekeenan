@@ -21,13 +21,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 
 - View my resume at: [https://leannekeenan.netlify.app/resume.pdf](https://leannekeenan.netlify.app/resume.pdf)
 
-<h3 align="center">Connect with me:</h3>
-<p align="center">
-<a href="https://codepen.io/lkeenan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="lkeenan" height="30" width="40" /></a>
-<a href="https://twitter.com/leanne_m_keenan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="leanne_m_keenan" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/leanne-keenan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="leanne-keenan" height="30" width="40" /></a>
-<a href="https://discord.gg/https://discord.gg/uGYXjTxZ" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.gg/uGYXjTxZ" height="30" width="40" /></a>
-</p>
+
 
 <h3 align="center">Languages and Tools:</h3>
 <p align="center"> 
@@ -51,6 +45,17 @@ My journey has been anything but linear, and I’m proud of the resilience and a
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=leannekeenan&show_icons=true&locale=en&layout=compact" alt="leannekeenan" />
 
 </p>
+
+<br><br>
+
+<h3 align="center">Connect with me:</h3>
+<p align="center">
+<a href="https://codepen.io/lkeenan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="lkeenan" height="30" width="40" /></a>
+<a href="https://twitter.com/leanne_m_keenan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="leanne_m_keenan" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/leanne-keenan" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="leanne-keenan" height="30" width="40" /></a>
+<a href="https://discord.gg/https://discord.gg/uGYXjTxZ" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/discord.svg" alt="https://discord.gg/uGYXjTxZ" height="30" width="40" /></a>
+</p>
+
 
 <br><br>
 
