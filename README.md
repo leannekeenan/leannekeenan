@@ -9,7 +9,7 @@ I’m a passionate full-stack developer with a knack for building creative solut
 My journey has been anything but linear, and I’m proud of the resilience and adaptability I’ve gained along the way. My goal is to contribute to meaningful projects, collaborate with great teams, and continue learning every step of the way.
 </p>
 
-<div align="center" width="500px">
+<div align="center" >
   <table>
     <tr>
       <th><strong>What I'm Working On</strong></th>
@@ -30,7 +30,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
   </table>
 </div>
 
-<div align="center" width="500px">
+<div align="center">
   <table>
      <tr>
       <th><strong>My Details</strong></th>
