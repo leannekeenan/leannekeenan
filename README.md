@@ -10,14 +10,15 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 </p>
 
 <p align="center">
-  | **Purpose**                               | **Details**                                                                                           |
+| **Purpose**                               | **Details**                                                                                           |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **Current Project**                       |  Current Project <br>  [Trials & Treasures](https://trialsandtreasures.netlify.app/) <br>  Creating q company called Sweet Adventures Club <br> A bakery specializing in cheesecake |
-| **Building a Small Business**             |  Building a Small Business <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> [line3] Sweet Adventures Club <br> A bakery focused on cheesecakes |
-| **Developing an App**                     |  Developing an App <br> [CLIP](https://clipapp.netlify.app) <br> [CLIP](https://clipapp.netlify.app) <br>  An app to organize clippings |
-| **Portfolio Website**                     |  Portfolio Website <br>[https://leannekeenan.netlify.app](https://leannekeenan.netlify.app) <br> [Portfolio](https://leannekeenan.netlify.app) <br>  Showcase my projects |
-| **Contact Email**                         |  Contact Email <br> ![email icon](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Email_icon.svg/1024px-Email_icon.svg.png) <br>  Email me at <br>  **l_keenan@outlook.com** |
-| **Resume**                                |  Resume <br> [https://leannekeenan.netlify.app/resume.pdf](https://leannekeenan.netlify.app/resume.pdf) <br>  [Resume](https://leannekeenan.netlify.app/resume.pdf) <br>  View my professional experience |
+| **Current Project**                       | 🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a TTRPG game to simulate dungeon crawls |
+| **Building a Small Business**             | 🏪 <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake |
+| **Developing an App**                     | 📱 <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock |
+| **Portfolio Website**                     | 🌐 <br> [Portfolio](https://leannekeenan.netlify.app) <br> Showcase sites apps and games created by yours truly|
+| **Contact Email**                         | 📧 <br> **l_keenan@outlook.com** | Feel free to contact me at any time!|
+| **Resume**                                | 📄 <br> [Resume](https://leannekeenan.netlify.app/resume.pdf) <br> View my professional experience |
+
 
 </p>
 
