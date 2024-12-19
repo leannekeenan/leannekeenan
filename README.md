@@ -56,5 +56,9 @@ My journey has been anything but linear, and I’m proud of the resilience and a
   <a href="https://sweetadventuresclub.netlify.app/">
     <img align="center" src="https://imgur.com/QWI5Drp.jpg" alt="support my small business" />
   </a>
+
+  <a href="https://leannekeenan.netlify.app" target="blank">
+    <img align="center" src="https://imgur.com/FNpw47r.jpg" alt="visit my portfolio"/>
+  </a>
 </p>
 
