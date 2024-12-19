@@ -9,18 +9,16 @@ I’m a passionate full-stack developer with a knack for building creative solut
 My journey has been anything but linear, and I’m proud of the resilience and adaptability I’ve gained along the way. My goal is to contribute to meaningful projects, collaborate with great teams, and continue learning every step of the way.
 </p>
 
-
-| **Purpose**                               | **Details**                                                                                           |
-|-------------------------------------------|-------------------------------------------------------------------------------------------------------|
-| **Current Project**                       | 🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a TTRPG game to simulate dungeon crawls |
-| **Building a Small Business**             | 🏪 <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake |
-| **Developing an App**                     | 📱 <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock |
-| **Portfolio Website**                     | 🌐 <br> [Portfolio](https://leannekeenan.netlify.app) <br> Showcase sites, apps, and games created by yours truly |
-| **Contact Email**                         | 📧 <br> **l_keenan@outlook.com** <br> Feel free to contact me at any time! |
-| **Resume**                                | 📄 <br> [Resume](https://leannekeenan.netlify.app/resume.pdf) <br> View my professional experience |
-
-
-
+<div align="center">
+  | **What I'm Working On**                   | **Details**                                                                                           |
+  |-------------------------------------------|-------------------------------------------------------------------------------------------------------|
+  | **Current Project**                       | 🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a TTRPG game to simulate dungeon crawls |
+  | **Small Business**                        | 🏪 <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake |
+  | **Recent App**                            | 📱 <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock |
+  | **Portfolio Website**                     | 🌐 <br> [Portfolio](https://leannekeenan.netlify.app) <br> Showcase sites, apps, and games created by yours truly |
+  | **Contact Email**                         | 📧 <br> **l_keenan@outlook.com** <br> Feel free to contact me at any time! |
+  | **Resume**                                | 📄 <br> [Resume](https://leannekeenan.netlify.app/resume.pdf) <br> View my professional experience |
+</div>
 
 
 
