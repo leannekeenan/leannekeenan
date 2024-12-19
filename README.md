@@ -10,17 +10,37 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 </p>
 
 <div align="center">
-  | **What I'm Working On**                   | **Details**                                                                                           |
-  |-------------------------------------------|-------------------------------------------------------------------------------------------------------|
-  | **Current Project**                       | 🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a TTRPG game to simulate dungeon crawls |
-  | **Small Business**                        | 🏪 <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake |
-  | **Recent App**                            | 📱 <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock |
-  | **Portfolio Website**                     | 🌐 <br> [Portfolio](https://leannekeenan.netlify.app) <br> Showcase sites, apps, and games created by yours truly |
-  | **Contact Email**                         | 📧 <br> **l_keenan@outlook.com** <br> Feel free to contact me at any time! |
-  | **Resume**                                | 📄 <br> [Resume](https://leannekeenan.netlify.app/resume.pdf) <br> View my professional experience |
+  <table>
+    <tr>
+      <th><strong>Purpose</strong></th>
+      <th><strong>Details</strong></th>
+    </tr>
+    <tr>
+      <td><strong>Current Project</strong></td>
+      <td>🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a TTRPG game to simulate dungeon crawls</td>
+    </tr>
+    <tr>
+      <td><strong>Building a Small Business</strong></td>
+      <td>🏪 <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake</td>
+    </tr>
+    <tr>
+      <td><strong>Developing an App</strong></td>
+      <td>📱 <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock</td>
+    </tr>
+    <tr>
+      <td><strong>Portfolio Website</strong></td>
+      <td>🌐 <br> [Portfolio](https://leannekeenan.netlify.app) <br> Showcase sites, apps, and games created by yours truly</td>
+    </tr>
+    <tr>
+      <td><strong>Contact Email</strong></td>
+      <td>📧 <br> **l_keenan@outlook.com** <br> Feel free to contact me at any time!</td>
+    </tr>
+    <tr>
+      <td><strong>Resume</strong></td>
+      <td>📄 <br> [Resume](https://leannekeenan.netlify.app/resume.pdf) <br> View my professional experience</td>
+    </tr>
+  </table>
 </div>
-
-
 
 <h3 align="center">Languages and Tools:</h3>
 <p align="center"> 
