@@ -48,7 +48,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 <br><br>
 
 <h3 align="center">Support:</h3>
-<p>
+<p align="center">
   <a href="https://www.buymeacoffee.com/leannekeenan" target="blank"> 
     <img align="center" src="https://imgur.com/5uS0scd.jpg" alt="but me a coffee - leanne keenan" />
   </a>
