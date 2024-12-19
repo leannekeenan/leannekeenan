@@ -27,7 +27,16 @@ My journey has been anything but linear, and I’m proud of the resilience and a
       <td><strong>App Project</strong></td>
       <td>📱 <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock</td>
     </tr>
-    <tr>
+  </table>
+</div>
+
+<div>
+  <table>
+     <tr>
+      <th><strong>My Details</strong></th>
+      <th><strong>Where You Can Find Them</strong></th>
+    </tr>
+       <tr>
       <td><strong>Portfolio Website</strong></td>
       <td>🌐 <br> [Portfolio](https://leannekeenan.netlify.app) <br> Showcase sites, apps, and games created by yours truly</td>
     </tr>
