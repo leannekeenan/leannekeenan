@@ -54,7 +54,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
   </a>
 
   <a href="https://sweetadventuresclub.netlify.app/">
-    <img align="center" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-color="#BD5FFF" data-emoji="🏪"  data-text="Support My Small Business" alt="support my small business" />
+    <img align="center" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="leannekeen0" data-color="#BD5FFF" data-emoji="🏪"  data-font="Cookie" data-text="Support My Small Business" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" alt="support my small business" />
   </a>
 </p>
 
