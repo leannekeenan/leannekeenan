@@ -12,7 +12,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 <div align="center">
   <table>
     <tr>
-      <th><strong>What I'm Working ON</strong></th>
+      <th><strong>What I'm Working On</strong></th>
       <th><strong>Details</strong></th>
     </tr>
     <tr>
@@ -30,7 +30,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
   </table>
 </div>
 
-<div>
+<div align="center">
   <table>
      <tr>
       <th><strong>My Details</strong></th>
