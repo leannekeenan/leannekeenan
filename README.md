@@ -9,7 +9,7 @@ I’m a passionate full-stack developer with a knack for building creative solut
 My journey has been anything but linear, and I’m proud of the resilience and adaptability I’ve gained along the way. My goal is to contribute to meaningful projects, collaborate with great teams, and continue learning every step of the way.
 </p>
 
-<p align="center">
+
 | **Purpose**                               | **Details**                                                                                           |
 |-------------------------------------------|-------------------------------------------------------------------------------------------------------|
 | **Current Project**                       | 🏆 <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a TTRPG game to simulate dungeon crawls |
@@ -19,7 +19,7 @@ My journey has been anything but linear, and I’m proud of the resilience and a
 | **Contact Email**                         | 📧 <br> **l_keenan@outlook.com** <br> Feel free to contact me at any time! |
 | **Resume**                                | 📄 <br> [Resume](https://leannekeenan.netlify.app/resume.pdf) <br> View my professional experience |
 
-</p>
+
 
 
 
