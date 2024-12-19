@@ -17,15 +17,15 @@ My journey has been anything but linear, and I’m proud of the resilience and a
     </tr>
     <tr>
       <td><strong>Most Recent Project</strong></td>
-      <td> <img src="https://imgur.com/2kmBUNV.jpg" width="200"> <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a homebrew Dungeons and Dragons module to simulate dungeon crawls</td>
+      <td> <img src="https://imgur.com/2kmBUNV.jpg" width="500"> <br> [Trials & Treasures](https://trialsandtreasures.netlify.app) <br> A Game within a homebrew Dungeons and Dragons module to simulate dungeon crawls</td>
     </tr>
     <tr>
       <td><strong>Small Business Project</strong></td>
-      <td> <img src="https://imgur.com/sSG0biy.jpg" width="200">  <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake</td>
+      <td> <img src="https://imgur.com/sSG0biy.jpg" width="500">  <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> Creating a company called Sweet Adventures Club <br> A bakery specializing in cheesecake</td>
     </tr>
     <tr>
       <td><strong>App Project</strong></td>
-      <td> <img src="https://imgur.com/0KOMrBQ.jpg" width="200">  <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock</td>
+      <td> <img src="https://imgur.com/0KOMrBQ.jpg" width="500">  <br> [CLIP](https://clipapp.netlify.app) <br> A "Comprehensive Log In Program" to track time on and off the clock</td>
     </tr>
   </table>
 </div>
