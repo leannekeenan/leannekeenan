@@ -9,17 +9,18 @@ I’m a passionate full-stack developer with a knack for building creative solut
 My journey has been anything but linear, and I’m proud of the resilience and adaptability I’ve gained along the way. My goal is to contribute to meaningful projects, collaborate with great teams, and continue learning every step of the way.
 </p>
 
-- Recently I've been working on: [Trials & Treasures](https://trialsandtreasures.netlify.app/)
+<p align="center">
+  | **Purpose**                               | **Details**                                                                                           |
+|-------------------------------------------|-------------------------------------------------------------------------------------------------------|
+| **Current Project**                       |  Current Project <br>  [Trials & Treasures](https://trialsandtreasures.netlify.app/) <br>  Creating q company called Sweet Adventures Club <br> A bakery specializing in cheesecake |
+| **Building a Small Business**             |  Building a Small Business <br> [Sweet Adventures Club](https://sweetadventuresclub.netlify.app) <br> [line3] Sweet Adventures Club <br> A bakery focused on cheesecakes |
+| **Developing an App**                     |  Developing an App <br> [CLIP](https://clipapp.netlify.app) <br> [CLIP](https://clipapp.netlify.app) <br>  An app to organize clippings |
+| **Portfolio Website**                     |  Portfolio Website <br>[https://leannekeenan.netlify.app](https://leannekeenan.netlify.app) <br> [Portfolio](https://leannekeenan.netlify.app) <br>  Showcase my projects |
+| **Contact Email**                         |  Contact Email <br> ![email icon](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Email_icon.svg/1024px-Email_icon.svg.png) <br>  Email me at <br>  **l_keenan@outlook.com** |
+| **Resume**                                |  Resume <br> [https://leannekeenan.netlify.app/resume.pdf](https://leannekeenan.netlify.app/resume.pdf) <br>  [Resume](https://leannekeenan.netlify.app/resume.pdf) <br>  View my professional experience |
 
-- I'm building a small business: [Sweet Adventures Club](https://sweetadventuresclub.netlify.app)
+</p>
 
-- I'm also building an app: [CLIP](https://clipapp.netlify.app)
-
-- View my portfolio at: [https://leannekeenan.netlify.app](https://leannekeenan.netlify.app)
-
-- Send me an email at: **l_keenan@outlook.com**
-
-- View my resume at: [https://leannekeenan.netlify.app/resume.pdf](https://leannekeenan.netlify.app/resume.pdf)
 
 
 
